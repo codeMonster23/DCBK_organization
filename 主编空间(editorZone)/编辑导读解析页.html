@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/new_editorZone.css" rel="stylesheet" type="text/css" />
+<title>汇编素材文章预览</title>
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<script src="../js/jquery.promptToggle.js"></script>
+</head>
+
+<body bgcolor="#F0EADC">
+<!--top banner-->
+<div class="ecHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo left editorLogo"><a href="#"><img src="../images/header-and-footer/new_echf-logo1.jpg" width="229" height="40"/></a>
+    <a href="#"><img src="../images/header-and-footer/new_echf-logo3.jpg" width="106" height="40"/></a></div>
+    <div class="addNav left clearfix"><a href="#">首页</a> <a href="#">我的主页</a> <a href="#">编创指南</a></div>
+    <div class="editorInfo right"><a class="name" href="#">summer10123</a><a class="img" href="#"><img src="../images/editorZone/ec-icon19-message.png" width="15" height="14" align="absmiddle" /></a><a href="#">（<i>123</i>）</a>| <a class="exit" href="#">退出</a>
+    </div>
+  </div>
+</div>
+
+<!--top banner over-->
+<div class="article_cont clearfix">
+	<div class="tit_info left clearfix">
+    	<h1>重视启发式教育就是一种精神现代化</h1>
+        <p>来源：《21世纪经济报道》&nbsp;|&nbsp;作者：张立伟&nbsp;|&nbsp;下载次数(22)&nbsp;|&nbsp;被引次数 (14)</p>
+    </div>
+</div>
+<div class="bookView">
+    <div class="book_hd">
+        <div class="header_l left">
+            <a class="btn btn1" href="">全屏显示</a>
+            <a class="btn btn2" href="">放大</a>
+            <a class="btn btn3" href="">缩小</a>
+        </div>
+        <div class="header_c left">
+            <a class="btn btn4" href="">上一页</a>
+            <div class="btn btn5" href=""><input type="text" value="12"/>/15 <a href="">跳转</a></div>
+            <a class="btn btn6" href="">下一页</a>
+        </div>
+    </div>
+    <div class="book_bd"></div>
+</div>
+<div class="navAxis">
+	<a href="#" class="nav1">文章预览</a>
+    <a href="#editTab" class="nav2 cur">导读</a>
+ 	<a href="#editTab" class="nav2">解读/解析/赏析</a>
+ 	 <a href="#editTab" class="nav2">点评</a>
+     <a href="#editTab" class="nav2">知识点</a>
+    <a href="#editTab" class="nav2" style="margin-bottom:0;">创新点</a>
+</div>
+<div class="editTab" id="editTab">
+	<div class="tabHead clearfix"><a href="javascript:void(0)" class="tabNav a1 bgcolor1 navSelect"><span class="bgcolor1"></span>文前导读</a><a href="javascript:void(0)" class="tabNav a2 bgcolor2"><span class="bgcolor2"></span>解读/解析/赏析</a><a href="javascript:void(0)" class="tabNav a3 bgcolor3"><span class="bgcolor3"></span>点评</a><a href="javascript:void(0)" class="tabNav a4 bgcolor4"><span class="bgcolor4"></span>知识点</a><a href="javascript:void(0)" class="tabNav a5 bgcolor5"><span class="bgcolor5"></span>创新点</a></div>
+    <div class="tabCont">
+    	<div class="contBox box1">
+        	<p class="tipsmessage">导读内容会显示在文章前，<a href="#">如何撰写导读？</a></p>
+            <div class="area">
+            </div>
+            <div class="btn"><a href="javascript:void(0)" class="save">保存</a><a href="javascript:void(0)" class="clear">清空</a></div>
+        </div>
+        <div class="contBox box2 displayN">
+            	<p class="topItem"><input type="radio" name="1" id="r1" autocomplete="off"/><label for="r1">解读</label><input type="radio" name="2" id="r2" autocomplete="off"/><label for="r2">解析</label><input type="radio" name="3" id="r3" autocomplete="off"/><label for="r3">赏析</label><a href="#">如何撰写解读/解析/赏析？</a></p>
+                <script>
+					$(".topItem input").change(
+						function(){
+						$(this).prop("checked", true).siblings("input").prop("checked", false)
+					})
+                </script>
+              <div class="titInput"><input type="text" class="colorGrey" value="请输入标题" /></div>
+              <script>PromptToggle($(".titInput input"),"请输入标题","colorGrey","")</script>
+            <div class="area">
+            </div>
+              <div class="btn"><a href="javascript:void(0)" class="save">保存</a><a href="javascript:void(0)" class="clear">清空</a></div>
+        </div>
+        <div class="contBox box3 displayN">
+        	<p class="tipsmessage"><a href="#">如何点评文章？</a></p>
+            <div class="area">
+            </div>
+            <div class="btn"><a href="javascript:void(0)" class="save">保存</a><a href="javascript:void(0)" class="clear">清空</a></div>
+        </div>
+        <div class="contBox box4 displayN"  >
+        	<p class="tipsmessage"><a href="#">如何归纳知识点？</a></p>
+            <div class="area">
+            </div>
+            <div class="btn"><a href="javascript:void(0)" class="save">保存</a><a href="javascript:void(0)" class="clear">清空</a></div>
+        </div>
+        <div class="contBox box5 displayN"  >
+        	<p class="tipsmessage"><a href="#">如何总结创新点？</a></p>
+            <div class="area">
+            </div>
+            <div class="btn"><a href="javascript:void(0)" class="save">保存</a><a href="javascript:void(0)" class="clear">清空</a></div>
+        </div>
+    </div>
+    
+</div>
+<div class="returnBtn"><a href="#" class="btn">返回继续编创作品</a></div>
+<script>
+	$(".navAxis .nav2").click(function(){
+		var index1=$(this).index(".navAxis .nav2")
+		$(this).addClass("cur").siblings().removeClass("cur")
+		$(".tabHead .tabNav").eq(index1).addClass("navSelect").siblings().removeClass("navSelect")
+		$(".tabCont .contBox").eq(index1).fadeIn(300).siblings().hide()
+		})
+	$(".tabHead .tabNav").click(function(){
+		var index2=$(this).index()
+		$(".navAxis .nav2").eq(index2).addClass("cur").siblings().removeClass("cur")
+		$(this).addClass("navSelect").siblings().removeClass("navSelect")
+		$(".tabCont .contBox").eq(index2).fadeIn(300).siblings().hide()
+		})
+</script>
+<!--foot-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+<!--foot over-->
+<!--******************************script 分界线***************************************-->
+</body>
+</html>

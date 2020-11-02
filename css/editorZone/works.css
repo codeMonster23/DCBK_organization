@@ -1,0 +1,592 @@
+/*
+* @Author: ld
+* @Date:   2016-06-02 09:31:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-08-18 14:17:16
+*/
+/*****上传作品*****/
+.worksWrap .procedure{
+	padding: 0;
+}
+.worksWrap .procedure .steps{
+	margin-left: 12px;
+	background-color: #f7f7f7;
+}
+.worksWrap .procedure .banner{
+	margin: 13px 0 10px 12px;
+}
+.worksWrap .procedure .steps .subset{
+	width: 401px;
+	padding: 0 14px;
+	background-color: #f6f5f0;
+}
+.worksWrap .procedure .steps .chapter{
+	padding-bottom: 0;
+}
+.worksWrap .subset h2{
+	line-height: 38px;
+	margin-top: 13px;
+	font-size: 14px;
+	color:#d10200;
+}
+.worksWrap .topS{
+	position: relative;
+	width: 100%;
+	height: 279px;
+	margin: 0 auto;
+	border-radius: 3px;
+	text-align: center;
+	background: #FFFBF8 url(../../images/editorZone/works_bg.jpg) 0 0 no-repeat;
+}
+.worksWrap .topS img{
+	margin-top: 40px;
+}
+.worksWrap .topS  a.btn{
+	display: block;
+	width: 160px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 80px;
+	margin: 40px auto 0;
+	background: #f79327 url(../../images/editorZone/works-btn-bg.png) 33px center no-repeat;
+	border-radius: 4px;
+	font-family: 微软雅黑;
+	font-size: 18px;
+	color:#fff;
+	text-align: left;
+}
+.worksWrap .topS a.btn:hover{
+	text-decoration: none;
+}
+.worksWrap .subset .tips{
+	padding:15px 0 0 9px;
+}
+.worksWrap .subset .tips h3{
+	line-height: 27px;
+	font-size: 16px;
+	color:#808080;
+}
+.worksWrap .subset .tips p{
+	line-height: 24px;
+	color:#808080;
+	overflow: hidden;
+}
+.worksWrap .subset .tips p i{
+	float: left;
+	width: 13px;
+	font-style: normal;
+}
+.worksWrap .subset .tips p span{
+	float: left;
+	width: 378px;
+}
+.worksWrap .subset .tips p a{
+	color:#0c74da;
+}
+.worksWrap .subset .tips p img{
+	margin: 0 5px;
+	vertical-align: text-bottom;
+}
+.worksWrap .uploadInfo{
+	margin-top: 17px;
+}
+.worksWrap .uploadInfo .p1{
+	font: 16px/32px 微软雅黑;
+	color:#4a4a4a;
+	text-align: center;
+}
+.worksWrap .uploadInfo .uploading {
+	height: 14px;
+	color: #4A4A4A;
+}
+.worksWrap .uploadInfo .uploading div {
+	width: 246px;
+	height: 12px;
+	padding: 1px;
+	border: 1px solid #ffa849;
+	margin: 0 auto 10px;
+}
+.worksWrap .uploadInfo .uploading div .span1 {
+	display: block;
+	width: 81%;
+	height: 12px;
+	line-height: 12px;
+	text-align: right;
+	background: #ffa849;
+	color:#fff;
+}
+.worksWrap .uploadInfo .uploading .p2{
+	color:#dfc5a7;
+}
+.worksWrap .uploadInfo  .p3{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color:#ff9602;
+}
+.worksWrap .uploadInfo.fail .p1{
+	color:#cab8a3;
+}
+.worksWrap .uploadInfo.fail .p3{
+	color:#ec0000;
+}
+.worksWrap .uploadBtn{
+	position: absolute;
+	bottom:1px;
+	right:1px;
+	float: right;
+	width:399px;
+	height: 32px;
+	background-color: #fceede;
+}
+.worksWrap .uploadBtn a{
+	float: right;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 18px;
+	margin: 9px 13px 0 7px;
+	color: #337ABF;
+}
+.worksWrap .uploadBtn .sc {
+	background: url(../../images/editorZone/ec-icon19-delete.png) no-repeat left center;
+}
+.worksWrap .uploadBtn .cxsc{
+	padding-left: 20px;
+	background: url(../../images/editorZone/ec-icon19-cxsc.png) no-repeat left center;
+}
+.worksWrap .uploadBtn .yl{
+	padding-left: 20px;
+	background: url(../../images/editorZone/ec-icon19-yl.png) no-repeat left center;
+}
+/*****章节目录*****/
+.worksWrap .catalogue-bd{
+	width: 683px;
+	padding:0 20px 0 12px;
+	margin: 0 auto;
+}
+.worksWrap .chapter1{
+	position: relative;
+	font-weight: bold;
+	color:#404040;
+}
+.worksWrap .chapter2 .chapter1{
+	font-weight: normal;
+}
+.worksWrap .chapter-nav a{
+	float: left;
+	margin-top: 10px;
+}
+.worksWrap .chapter-nav .icon5{
+	width: 17px;
+	height: 17px;
+	font-family: "微软雅黑";
+}
+.worksWrap .chapter-nav .fold{
+	background: url(../../images/editorZone/charter-icon2.png) no-repeat;
+}
+.worksWrap .chapter-nav .fold.active{
+	background: url(../../images/editorZone/charter-icon3.png) no-repeat;
+}
+.worksWrap .operate{
+	width: 87px;
+	position: absolute;
+	right:0;
+	top:0;
+}
+.worksWrap .operate .btns{
+	width: 146px;
+	position: absolute;
+	right:0;
+}
+.worksWrap  .operate .btns a,.worksWrap  .instructions .btns a.btn1{
+	float: left;
+	width: 68px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #f68e1f;
+	margin: 0;
+	background:none;
+	border-radius: 0;
+	font-size: 14px;
+	text-align: center;
+}
+.worksWrap  .operate .btns .btn1,.worksWrap  .instructions .btns a.btn1{
+	background-color: #f68e1f;
+	color:#fff;
+	margin-right: 6px;
+}
+.worksWrap  .instructions .btns a.btn1{
+	float: right;
+	margin: 10px 0;
+}
+.worksWrap  .operate .btns .btn2{
+	background-color: #fff;
+	color:#f68e1f;
+}
+.worksWrap  .operate .btns a:hover{
+	text-decoration: none;
+}
+.worksWrap .chapter-nav a{
+	float: left;
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+	margin: 7px 6px 0 0;
+}	
+.worksWrap .chapter-nav .operate a.icon{
+	float: right;
+}
+.worksWrap .chapter-nav a.icon1{
+	background: url(../../images/editorZone/operateBtn1.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon2{
+	background: url(../../images/editorZone/operateBtn2.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon3{
+	background: url(../../images/editorZone/operateBtn3.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon4{
+	margin-left: 12px;
+	background: url(../../images/editorZone/operateBtn4.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon4.cur{
+	background: url(../../images/editorZone/operateBtn4-c.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon1.active{
+	background: url(../../images/editorZone/operateBtn1-active.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon2.active{
+	background: url(../../images/editorZone/operateBtn2-active.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon3.active{
+	background: url(../../images/editorZone/operateBtn3-active.png) center no-repeat;
+}
+.worksWrap .chapter-nav a.icon4.active{
+	background: url(../../images/editorZone/operateBtn4-active.png) center no-repeat;
+}
+.worksWrap .btn-add{
+	display: block;
+	width: 125px;
+	height: 34px;
+	padding-left: 38px;
+	border: 1px dashed #f79327;
+	background: #fff2e3 url(../../images/editorZone/addBtn.png) 15px center no-repeat;
+	text-align: center;
+	font:16px/34px "宋体";
+	color:#404040;
+}
+.worksWrap .btn-add:hover{
+	text-decoration: none;
+}
+.worksWrap .btns a.btn-save{
+	float: right;
+	width: 70px;
+	height: 34px;
+}
+.worksWrap  textarea{
+	width: 615px;
+	height: 164px;
+	padding: 8px;
+	margin: 10px 0 0 47px;
+	border:1px solid  #cdcdcd;
+}
+.add-chapter{
+	display: none;
+}
+.worksWrap .chapter .footBtn a{
+	float: left;
+	width: 75px;
+	height: 31px;
+	line-height: 31px;
+	background-image: url(../../images/editorZone/ez33-btnIcon.gif);
+	text-align: center;
+	color:#666;
+	margin-left: 10px;
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+.worksWrap .chapter .footBtn .btn-return{
+	width: 100px;
+	margin-left: 0;
+	height: 30px;
+	background-image: url(../../images/editorZone/ez35-btnModify.gif);
+}
+.worksWrap .chapter .footBtn .btn-save,.worksWrap .chapter .footBtn .btn-preview{
+	float: right;
+}
+.worksWrap .chapter .footBtn a:hover{
+	text-decoration: none;
+}
+/*****章节目录End*****/
+
+/*****草稿箱 待审核*****/
+.myFrame .detailWrap .operation span{
+	line-height: 26px;
+	margin-right: 10px;
+	font-weight: bold;
+	color:#f79327;
+}
+.myFrame .detailWrap .operation .eClassify{
+	margin-right: 8px;
+}
+.works .newPage a:hover{
+	background-color: #539fe9;
+	border-color: #539fe9;
+}
+.works .catalogue-bd .instructions .btns a{
+	float: right;
+	margin: 0;
+	width: 68px;
+	height: 32px;
+	font: 14px/32px 微软雅黑;
+	margin-top: 10px;
+	border-radius: 0;
+}
+/*****意见反馈*****/
+.adivceWrap{
+	position: relative;
+	width: 924px;
+	height: 475px;
+	margin: 45px auto;
+	padding: 0 18px;
+	background-color: #fff;
+}
+.adivceWrap h1{
+	padding-top: 9px;
+	border-bottom: 1px solid #f2f2f2;
+	font:bold 18px/41px 微软雅黑;
+	color:#4c4c4c;
+}
+.adivceWrap .content{
+	margin: 43px 0 0 80px;
+}
+.adivceWrap .inputs{
+	overflow: hidden;
+}
+.adivceWrap label{
+	float: left;
+	width: 65px;
+	line-height: 34px;
+}
+.adivceWrap textarea{
+	float: left;
+	width: 650px;
+	height: 180px;
+	padding: 8px;
+	border: 1px solid #bfbfbf;
+	resize:none;
+	margin:0;
+}
+.adivceWrap input{
+	float:left;
+	width: 225px;
+	height: 30px;
+	padding-left: 5px;
+	border: 1px solid #bfbfbf;
+}
+.adivceWrap .btn-submit{
+	display: block;
+	width: 139px;
+	height: 42px;
+	margin-left: 65px;
+	*margin-left:80px;
+	background-color: #d30b0b;
+	border-radius: 4px;
+	text-align: center;
+	font:bold 16px/42px 微软雅黑;
+	color:#fff;
+}
+.adivceWrap .btn-submit:hover{
+	text-decoration: none;
+}
+.adivceWrap .inputs2{
+	margin: 18px 0;
+}
+.modal{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+.modal-content{
+	position: absolute;
+	top:218px;
+	left:50%;
+	margin-left: -285px;
+	width: 473px;
+	height: 145px;
+	padding: 60px 0 0 97px;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2),-2px -2px 5px rgba(0,0,0,0.2);
+}
+.modal-content .close{
+	position: absolute;
+	right:5px;
+	top:5px;
+	width: 26px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #f7f7f7;
+	color:#e6e6e6;
+	text-align: center;
+	font-size: 26px;
+}
+.modal-content .close:hover{
+	text-decoration: none;
+} 
+.modal-content dt,.modal dd{
+	float: left;
+}
+.modal-content dt{
+	margin-right: 45px;
+}
+.modal-content dd h2{
+	margin-bottom: 16px;
+	font:normal 30px/30px 微软雅黑;
+	color:#4a4a4a;
+}
+.modal-content dd p{
+	line-height: 22px;
+	font-size: 14px;
+	color:#684411;
+}
+.works .myFrame .my-table .name span{
+	display: inline-block;
+	margin-left: 8px;
+	cursor: pointer;
+}
+.procedure{
+	padding-top: 0;
+}
+.procedure .displayOk {
+	width:auto;
+	padding-left: 0;
+	margin-left: 50px;
+	padding-top: 46px;
+}
+
+.typeText .frame {
+	width: 642px;
+	height: 28px;
+	padding-top: 6px;
+	padding-left: 6px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+.typeText .frameBorder{
+	border-color: #f69308;
+}
+.typeText .frame input {
+	float: left;
+	line-height: 22px;
+	height: 22px;
+	width: 100%;
+}
+.typeText .frame .keyword,.typeText .frame .tag{
+	float: left;
+	background-color: #666666;
+	line-height: 22px;
+	height: 22px;
+	padding-left: 8px;
+	padding-right: 15px;
+	position: relative;
+	color: #FFF;
+	margin-right: 5px;
+	margin-bottom: 6px;
+}
+.typeText .frame .close {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	height: 5px;
+	width: 5px;
+	background-image: url(../../images/editorZone/ez8-close.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.colorGrey {
+	color: #999999;
+}
+.chapter2{
+	display: block;
+}
+.chapter2.active{
+	display: none;
+}
+.worksWrap .chapter-nav{
+	position: relative;
+	height: 36px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	overflow: hidden;
+}
+.worksWrap .chapter-nav1{
+	margin-left: 50px;	
+}
+.worksWrap .chapter-nav2{
+	margin-left: 26px;	
+}
+.worksWrap .chapter-nav3{
+	margin-left: 65px;	
+}
+.worksWrap .chapter-item{
+	float: left;
+	width: 658px;
+	height: 34px;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+.worksWrap .chapter-nav1 .chapter-item,.worksWrap .chapter-nav2 .chapter-item{
+	width: 631px;
+	font-size: 14px;
+}
+.worksWrap .chapter-nav3 .chapter-item{
+	width: 616px;	
+	font-size: 12px;
+}
+.worksWrap .chapter-item.active{
+	background-color: #fff2e3;
+	border:1px solid #fadbba;
+}
+.worksWrap .chapter-item  input{
+	width: 502px;
+	height: 32px;
+	line-height: 32px;
+	*height: 30px;
+	*line-height: 30px;
+	padding-left: 4px;
+	border: 1px solid #f68e1f;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.worksWrap .chapter2 .chapter-item input{
+	width: 475px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.worksWrap .chapter-nav3 .chapter-item input{
+	width: 460px;	
+	font-size: 12px;
+}
+.worksWrap .chapterTitle span{
+	float: left;
+	max-width: 527px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 5px;
+	white-space:nowrap; 
+	-webkit-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-ms-text-overflow:ellipsis;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.worksWrap .chapter-nav1 .chapterTitle span,.worksWrap .chapter-nav2 .chapterTitle span{
+	max-width: 500px;
+}
+.worksWrap .chapter-nav3 .chapterTitle span{
+	max-width: 485px;
+}

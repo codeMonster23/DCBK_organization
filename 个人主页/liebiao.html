@@ -1,0 +1,335 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link href="../css/public.css" rel="stylesheet" type="text/css">
+    <link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/personalHomepage/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/personalHomepage/personalHomepage.css" />
+    <script src="../js/jQuery-v1.11.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<!--*******************header********************-->
+<div class="topBanner">
+  <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+      <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+      <div class="right user-bar">
+        <div class="downlist">
+          <a class="colorGrey loginState" href="#">北京大学</a>
+          <div class="list_box listBoxPosition11">
+            <ul>
+              <li><a href="#">　编创中心</a></li>
+              <li><a href="#">　我的主页</a></li>
+              <li><a href="#" class="quit">　退出登录</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <span> | </span>
+        <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+        <span> | </span>
+         <div class="downlist">
+          <a class="colorGrey" href="#">编创空间 </a>
+        </div>
+        <span> | </span>
+        <a class="colorGrey" href="#">帮助</a>
+      </div>         
+  </div>
+</div>
+<script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+    lb.css("display","none");
+    var index=ls.index(this);
+    lb.eq(index).css("display","block");
+},function(){
+    lb.css("display","none");
+    })
+lb.hover(function(){
+    $(this).css("display","block");
+    },function(){
+    $(this).css("display","none");
+})
+})()
+</script>
+<!--*******************banner start**************-->
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="touxiang"><img class="png" src="../images/personalHomepage/touxiang1.png" height="144" width="144" alt="" /></div>
+            <div class="txt">
+                <div class="title">
+                    <h3>闫春更的个人专栏</h3>
+                    <span class="icon png"></span>
+                    <span class="zishu">14/16</span>
+                    <!-- 编辑文本 -->
+                    <div class="bianji" style="display:none">
+                        <ul>
+                            <li>
+                                <select name="" id="ziti">
+                                    <option value="" selected="true">字号</option>
+                                    <option value="">45</option>
+                                    <option value="">48</option>
+                                    <option value="">60</option>
+                                </select>
+                            </li>
+                            <li class="colors">
+                                <select name="颜色" id="colors" value="颜色">
+                                    <option value="">颜色</option>
+                                </select>
+                                <!-- <input type="color" style="display:none" /> -->
+                                <div class="coimg" style="position:absolute; z-index:5; left:0;top:20px; display:none;"><img class="pngFix" src="../images/personalHomepage/color.png" height="247" width="197" alt="" /></div>
+                            </li>
+                            <li>恢复默认</li>
+                            <li class="save">保存</li>
+                        </ul>    
+                    </div>
+                </div>
+                <div class="qianming">
+                    <p>学然后知不足，教然后知困。</p>
+                    <span class="png"></span>
+                    <i class="zishu">80/200</i>
+                    <!-- 编辑文本 -->
+                    <div class="bianji" style="display:none">
+                        <ul>
+                            <li>
+                                <select name="" id="ziti">
+                                    <option value="" selected="true">字号</option>
+                                    <option value="">12</option>
+                                    <option value="">14</option>
+                                    <option value="">16</option>
+                                </select>
+                            </li>
+                            <li class="colors">
+                                <select name="颜色" id="colors" value="颜色">
+                                    <option value="">颜色</option>
+                                </select>
+                                <!-- <input type="color" style="display:none" /> -->
+                                <div class="coimg" style="position:absolute; z-index:5; left:0;top:20px; display:none;"><img class="pngFix" src="../images/personalHomepage/color.png" height="247" width="197" alt="" /></div>
+                            </li>
+                            <li>恢复默认</li>
+                            <li class="save">保存</li>
+                        </ul>    
+                    </div>
+                </div>         
+            </div>
+            <div class="huanfu">
+                <div class="btn"></div>
+            </div>
+        </div> 
+    </div>
+<!--*******************banner end****************-->
+
+<!--*******************内容 start****************-->
+<div class="content-wrap">
+    <div class="content">
+    <!--*******************左侧内容 start****************-->
+        <div class="sidebar"> 
+          <!--个人信息-->
+          <div class="personnal type">
+            <dl class="nicheng w239">
+              <dt class="blue name">欧阳朵儿<span class="v"></span></dt>
+              <dd class="blue grjj"><span></span>个人简介</dd>
+            </dl>
+            <dl class="job w239">
+              <dt>单位：</dt>
+              <dd>中国知网</dd>
+            </dl>
+            <dl class="w239">
+              <dt>职业：</dt>
+              <dd>互联网高级设计师</dd>
+            </dl>
+            <dl class="jianjie w239">
+              <dt>简介：</dt>
+              <dd>人生不止，寂寞不已。寂寞人生爱无休寞是爱永远的主题我和我的影子独处。它说它悄悄话想跟我说。它说它很想念你。</dd>
+            </dl>
+            <dl class="download download1 w239">
+              <dd> <a href=""><span class="orange">10</span><br />
+                作品</a> <a href=""><span class="orange">3804</span><br />
+                阅读</a></dd>
+            </dl>
+          </div>
+          <!--热门作品-->
+          <div class="hot type">
+            <h4 class="w239">热门作品：</h4>
+            <ul  class="w239">
+              <li><a href="" class="blue">如何成为一枚优雅地女子</a></li>
+              <li><a href="" class="blue">以花入馔：舌尖上的鲜花美食</a></li>
+              <li><a href="" class="blue">小学四年级数学教案</a></li>
+              <li><a href="" class="blue">数列——数列的基本知识和在日</a></li>
+              <li><a href="" class="blue">重载铁路设计与施工技术创新汇</a></li>
+              <li><a href="" class="blue">中小学生心理健康教育·教师读本</a></li>
+              <li class="no-border"><a href="" class="blue">你是灰，而我是色彩</a></li>
+            </ul>
+          </div>
+        </div>
+    <!--*******************左侧内容 end****************-->
+    <!--*******************右侧内容 start****************-->
+    <div class="content-right personPage-for-page">
+        <div class="style">
+            <ul class="paixu">
+                <li class="time current"><a href="">时间<span></span></a></li>
+                <li class="populaarity"><a href="">人气<span></span></a></li>
+            </ul>
+            <ul class="liebiao item">
+                <li><a href="index.html" class="img-b">大图<span></span></a></li>
+                <li class="current"><a href="" class="lb">列表<span></span></a></li>
+            </ul>
+        </div>
+            
+        <div class="item">  
+        <ul class="show">
+            <li class="show1">
+                <div class="show1-l">
+                    <img src="../images/personalHomepage/lb1.jpg" />
+                </div>
+                <div class="show1-r">
+                    <div class="show1r-t">
+                        如果大学可以重来一次
+                    </div>
+                    <div class="show1r-m">
+                        <span>简介:</span>此文为“晨茹大笨钟”于2013年8月10号，至2014年8月9号于公共账号“第一财经资讯”中发表的每日分钟音频文字实录及注解。2013-2014年是中国许多重大事件的转折之年，蛇年多变，换届，人口拐点，政策分钟音频文字实录及注解。2013-2014年是中国许多重大事件的转折之年，蛇年多变，换届，人口拐点，政策红利结束，互事件的转折之年，蛇年多变，换转折拐点，政策..<a href="#">详细<span class="xx">>></span></a>
+                    </div>
+                    <div class="show1r-b">阅读（1835）</div>
+                </div>
+            </li>
+            <li class="show1">
+                <div class="show1-l">
+                    <img src="../images/personalHomepage/lb2.jpg" />
+                </div>
+                <div class="show1-r">
+                    <div class="show1r-t">
+                        舌尖上的中国——中国饮食文化初探 
+                    </div>
+                    <div class="show1r-m">
+                        <span>简介:</span>中国饮食根植于中华大地的土壤之中，经过数千年的传承和发展，形成现在独树一帜、博大精深的饮食文化。中国饮食文化地区差异明显，且向外传播，对邻国甚至西方的饮食文化都产生了深远的影响。中国饮食文化将会继续引领风骚，成为中国最宝贵的一笔文化遗产。<a href="#">详细<span class="xx">>></span></a>
+                    </div>
+                   <div class="show1r-b">阅读（1835）</div>
+                </div>
+            </li>
+            <li class="show1">
+                <div class="show1-l">
+                    <img src="../images/personalHomepage/lb3.jpg" />
+                </div>
+                <div class="show1-r">
+                    <div class="show1r-t">
+                        儒家眼中的君子
+                    </div>
+                    <div class="show1r-m">
+                        <span>简介:</span>学做一名君子，修身养德，坦坦荡荡，胸怀天下，兼济四方，乃达至善。<a href="#">详细<span class="xx">>></span></a>
+                    </div>
+                    <div class="show1r-b">阅读（1835）</div>
+                </div>
+            </li>
+            <li class="show1">
+                <div class="show1-l">
+                    <img src="../images/personalHomepage/lb4.jpg" />
+                </div>
+                <div class="show1-r">
+                    <div class="show1r-t">
+                        从头美到脚——陪伴女人一生的美丽智慧书
+                    </div>
+                    <div class="show1r-m">
+                        <span>简介:</span>开启美丽的密码，展现由内而外的素养之美，美丽就是这么简单，不用花钱，不用花太长时间依然可以使你拥有不老的青春，俏丽的容颜。青春是一首美丽的诗，每个人都希望自己永远俊俏美丽，容颜不老。美丽是一门功课，只有做足功课的人，才能真正掌握美丽的技巧。本文集帮助你掌握美容技巧的智慧宝典，让你不用花太长时间，就可以轻轻松松得到自己想要的东西。<a href="#">详细<span class="xx">>></span></a>
+                    </div>
+                    <div class="show1r-b">阅读（1835）</div>
+                </div>
+            </li>
+            <li class="show1">
+                <div class="show1-l">
+                    <img src="../images/personalHomepage/lb5.jpg" />
+                </div>
+                <div class="show1-r">
+                    <div class="show1r-t">
+                        韶华易逝，偷飨慢时光
+                    </div>
+                    <div class="show1r-m">
+                        <span>简介:</span>繁花似锦，不过转瞬即逝，如飞蛾扑火般短暂的绚烂，把玩文字，为心灵的旅程寻一方净土。韶华易逝，不过数个寒暑，走过喧嚣的人生，回归一杯清茶的安宁，偷飨慢时光。<a href="#">详细<span class="xx">>></span></a>
+                    </div>
+                    <div class="show1r-b">阅读（1835）</div>
+                </div>
+            </li>
+            <li class="show1">
+                <div class="show1-l">
+                    <img src="../images/personalHomepage/lb6.jpg" />
+                </div>
+                <div class="show1-r">
+                    <div class="show1r-t">
+                        网络时代下的国民阅读——从阅读的改变发现科技影响的利弊
+                    </div>
+                    <div class="show1r-m">
+                        <span>简介:</span>信息化时代，忙碌的工作生活，这些条件慢慢让我们失去了阅读的兴趣。与其说我们没有时间，不如说网络异化了我们的身心，让我们在繁杂的信息下渐渐沦为媒体和娱乐的奴隶，没有了思考的自由和欲望。但这并不意味着网络的犯罪或是人的退化，因为当我们了解了这个时代，了解自身的阅读，你就会重新审视网络和阅读，重新爱上这个时代。<a href="#">详细<span class="xx">>></span></a>
+                    </div>
+                    <div class="show1r-b">阅读（1835）</div>
+                </div>
+            </li>
+        </ul>
+        </div>  
+        <script>
+			$(".show1r-b .zan").click(function(){
+				$(this).toggleClass("click")	
+				})
+		   $(".show1r-b .save").click(function(){
+				$(this).toggleClass("click")	
+				if($(this).hasClass("click")){
+					$(this).text("已收藏")	
+					}
+				else{$(this).text("收藏")	}
+				})
+        </script>
+         <div class="page"> 
+            <div id="pagination" class="pagination"><span class="current">1</span><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=2">2</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=3">3</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=4">4</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=5">5</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=6">…</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=2">下一页</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=8">尾页</a></div>
+        </div>
+    </div>
+
+    <!--*******************右侧内容 end****************-->
+       <div style="clear:both"></div>
+    </div>
+       <div style="clear:both"></div>
+</div>
+<!-- 设置背景 -->
+<div class="beijing">
+    <h3><span><a href=""></a></span>背景设置</h3>
+    <ul>
+        <li><a href=""><img src="../images/personalHomepage/beijing1.jpg" height="109" width="273" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing2.jpg" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing3.jpg" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing4.jpg" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing5.jpg" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing6.jpg" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing7.jpg" alt="" /></a></li>
+        <li><a href=""><img src="../images/personalHomepage/beijing8.jpg" alt="" /></a></li>
+        <li><img src="../images/personalHomepage/beijing9.jpg" alt="" /></li>
+    </ul>
+    <!--上传图片--> 
+    <div class="shangchuan">
+        <div class="sc-btn">重新上传</div>
+        <div class="img">
+            <img src="../images/personalHomepage/shanchuan_03.jpg" height="270" width="885" alt="" />
+            <div class="zhezhao-t"></div>
+            <div class="zhezhao-b"></div> 
+            <div class="zhezhao-l"></div> 
+            <div class="zhezhao-r"></div>  
+        </div>       
+        <div class="suofang">
+            <span class="jian"></span>
+            <span class="line">
+                <span class="circle"></span>
+            </span> 
+            <span class="jia"></span>   
+        </div>
+    </div>   
+    <div class="btn">
+        <div class="btn1"><a href="">确定</a></div>
+        <div class="btn2"><a href="">取消</a></div>
+    </div>
+</div>
+<div id="zhezhao"></div>
+</body>
+</script>
+<!--*******************footer********************-->
+    </body>
+</html>

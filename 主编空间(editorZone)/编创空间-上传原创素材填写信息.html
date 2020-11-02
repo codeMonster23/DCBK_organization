@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script src="../js/jquery.promptToggle.js"></script>
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+</head> 
+<body bgcolor="#EBEBEB">
+<div class="ecHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo left editorLogo"><a href="#"><img src="../images/header-and-footer/new_echf-logo1.jpg" width="229" height="40"/></a>
+    <a href="#"><img src="../images/header-and-footer/new_echf-logo3.jpg" width="106" height="40"/></a></div>
+    <div class="addNav left clearfix"><a href="#" class="cur">首页</a> <a href="#">我的主页</a> <a href="#">编创指南</a></div>
+    <div class="editorInfo right"><a class="name" href="#">summer10123</a> | <a class="exit" href="#">退出</a>
+    </div>
+  </div>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto ecZone clearfix">
+    <div class="ecSideMenu left">
+      	<div class="editorIntro">
+        	<a href="javascript:void(0);" class="headImage"><img src="../imagesTemp/editorZone/ec1-avatar.jpg" width="112" height="112" /></a>
+            <div class="shortIntro positionR">
+            	<p class="userName"><span>我是创作大师</span></p>
+            	<div class="text-box">切斯·克劳福 (ChaceCrawford)，1985年7月18日出生于德克萨斯州卢博克市，美国演员。2007年...</div>
+                <a href="#" class="edit positionA"></a>
+                <script>
+					$(".shortIntro").hover(function(){$(this).children(".edit").css({"display":"block"})},function(){$(this).children(".edit").css({"display":"none"})})
+                </script>
+            </div>
+        </div>
+        <div class="sideBtn">
+            	<a href="#" class="btn1">作品编创</a>
+                <a href="#" class="btn2">上传素材</a>
+          </div>
+        <div class="line1"></div>
+        <div class="materialLibrary  c_section current">
+        	 <h1>素材库</h1>
+             <p><a href="#">搜索CNKI素材</a></p>
+             <p><a href="#">我的CNKI素材库</a></p>
+             <p><a href="#" class="cur">我的原创素材库</a></p>
+        </div>
+        <div class="line1"></div>
+        <div class="production c_section ">
+        	<h1><a href="#">作品管理</a></h1>
+        </div>
+        <div class="line1"></div>
+        <div class="account  c_section">
+        	<h1>账户管理</h1>
+            <p><a href="#">收益结算</a></p>
+            <p><a href="#">我的银行卡</a></p>
+        </div>
+        <div class="line1"></div>
+        <div class="personal c_section">
+        	<h1><a href="#">个人资料</a></h1>
+        </div>
+         <div class="line1"></div>
+         <div class="message c_section">
+         	<h1><a href="#">消息中心</a></h1>
+         </div>
+        <script>
+			var Se=$(".c_section")
+			$(Se).hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})
+        </script>
+    </div>
+    <div class="myFrame left"> 
+    	<div class="topInfo clearfix"><span class="left">当前位置：<a href="#" class="upper">素材库</a> &gt; <a href="#" class="upper">我的原创素材库</a>&gt; 上传原创素材</span></div>    
+        <div class="uploadTit"><h1>上传原创素材</h1></div>
+        <div class="uploadInfo">
+        	<p class="p1">正在上传5篇文章（已成功上传 <span>2</span> 篇，失败 <span>1</span> 篇）</p>
+            <p class="p2">文章上传完成后，请您填写文章信息；信息不完整的文章将无法用于作品编创；您可从草稿箱查找并完善文章信息。</p>
+            <a href="javascript:void(0)" class="add-button">继续添加</a>
+
+        </div>   
+       <div class="upload-box">
+       		<span class="num">1</span>
+            <div class="box1">
+            	<div class="titWrap">
+                	<p class="text">基于RFID技术的智能仓储管理系统架构方案<a href="javascript:void(0)"><img src="../images/editorZone/ec-icon19-titbj.gif" width="15" height="15"/></a></p>
+                    <div class="editName clearfix">
+                    	<div class="addImg clearfix left"><img src="../images/editorZone/ec-icon19-pdf.gif" width="16" height="16" /><input class="left nameText"  value=""/></div><a class="left sure" href="javascript:void(0)" >确定</a><a href="javascript:void(0)" class="left cancel">取消</a>
+                    </div>
+                    <script>
+						var text=$(".titWrap .text").text()
+						$(".titWrap .editName input").val(text)
+						$(".titWrap .text a").click(
+							function(){
+								$(this).parent(".text").css({"display":"none"}).siblings(".editName").css({"display":"block"})
+								})
+					    $(".titWrap .editName .cancel").click(
+							function(){
+								$(this).parent(".editName").css({"display":"none"}).siblings(".text").css({"display":"block"})
+								})
+                    </script>
+                	<a href="javascript:void(0)" class="fold">收起</a>
+                </div>
+                <div class="conduct clearfix"><a href="javascript:void(0)" class="yl">预览</a><a href="javascript:void(0)" class="sc">删除</a></div>
+                <div class="itemWrap clearfix">
+                	<label class="left">文章摘要</label>
+                    <textarea class="left colorGrey">请填写文章摘要（选填）</textarea>
+                    <span class="positionA count">还能输入<var>--</var>字</span>
+                    <script>PromptToggle($(".itemWrap textarea"),"请填写文章摘要（选填）","left colorGrey","left") </script>
+                    <script>
+        				(function() {
+            			var counter = $(".itemWrap textarea").val().length; //获取文本域的字符串长度
+           				 $(".itemWrap .count var").text(211 - counter);
+            			$(".itemWrap textarea").keyup(function() {
+                		var text = $(".itemWrap textarea").val();
+               			var counter = text.length;
+               			 $(".itemWrap .count var").text(200 - counter);    //每次减去字符长度
+            			});})()
+    			</script>
+                </div>
+                <div class="space"></div>
+                <div class="itemWrap selectWrap clearfix">
+                	<label class="left hasbg1"> 分类</label>
+                    <select><option>分类一</option></select> <select><option>分类二</option></select> <select><option>分类三</option></select><a class="addSelect" href="javascript:void(0)"></a> 
+                    <script>
+					/*增加select 最多插入两排*/
+					(function(){
+					$(".addSelect").click(function(){
+						var count=$(".selectWrap select").length;
+						if(count==3)
+						{
+							$(".selectWrap label").css("height","76px");
+							for(var i=0;i<3;i++)
+							{
+								var selectNode=document.createElement("select");
+								selectNode.id="lastSelect";
+								$(".selectWrap").append(selectNode);
+								$("#lastSelect").insertBefore(".addSelect");
+								selectNode.id="";
+							}
+							$(this).css("background-image","url(../images/editorZone/ec-icon19-minus.gif)")
+						}
+						if(count==6)
+						{
+							$(".selectWrap label").css("height","34");
+							for(var j=5;j>2;j--)
+							{
+								$(".selectWrap select").eq(j).remove();
+							}
+							$(this).css("background-image","url(../images/editorZone/ec-icon19-add.gif)")
+						}
+						})
+					})()	
+			</script> 
+                </div>
+                <div class="alert">请选择二级分类</div>
+                <div class="itemWrap clearfix">
+                	<label class="left hasbg2">关键词</label>
+                    <div class="frame left" id="parentFrame">
+                		<input class="colorGrey" id="keyword" type="text" value="多个关键词请用空格隔开，数量不超过5个" />
+            		</div>
+                </div>
+                 <div class="alert">请输入中英文1-5个关键字</div>
+                 <div class="itemWrap clearfix">
+                 	<label class="left hasbg2">保存至</label>
+                    <div class="left album"><p class="name colorGrey">我的原创素材库</p>
+                        <div class="dropDownList">
+                            <div class="list_item1 clearfix"><p class="left">未分类</p><span class="left"></span></div>
+                            <div class="list_item1 clearfix"><a href="javascript:void(0)" class="toggle toggle1"></a><p class="left">教学素材1</p><i class="left count">（22）</i><span class="left"></span></div>
+                            <div class="list_item1"><a href="javascript:void(0)" class="toggle toggle2"></a><p class="left">教学素材1</p><i class="left count">（22）</i><span class="left"></span></div>
+                            <div class="list_item2">
+                            	<div class="create"><div class="frameset left"><input type="text" value="" /><a href="javascript:void(0)">创建</a></div></div>
+                                <div class="sublist"><span>教学素材2</span></div>
+                                <div class="sublist"><span>教学素材3</span></div>
+                                 <div class="shelter positionA"></div>
+                            </div>
+                            <div class="createItem">
+                                <p>新建素材分类</p>
+                                <div class="createNew clearfix"><div class="frameset"><input type="text" value="" /><a href="javascript:void(0)">创&nbsp;建</a></div></div>
+        					</div>
+                        </div>
+                    </div>
+                    
+                 </div>
+                 <div class="alert">请选择素材分类</div>
+                 <a href="#" class="saved">保&nbsp;存</a>
+            </div>
+            <div class="box2"><p class="name left">基于RFID技术的智能仓储管理系统架构方案.pdf</p><a href="javascript:void(0)" class="yl">预览</a><a href="javascript:void(0)" class="sc">删除</a><a href="javascript:void(0)" class="unfold">展开</a></div>
+           
+       </div> 
+       
+       <div class="upload-box">
+       		<span class="num bgGrey">2</span>
+            <div class="box2"><p class="name left">基于RFID技术的智能仓储管理系统架构方案.pdf</p><div class="left uploading"><div class="left"><span class="span1"></span></div><i class="left i1">75%</i><i class="left i1">正在上传</i></div><a href="javascript:void(0)" class="sc">删除</a></div>   
+       </div>
+       <div class="upload-box">
+       		<span class="num bgGrey">3</span>
+            <div class="box2"><p class="name left">基于RFID技术的智能仓储管理系统架构方案.pdf</p><div class="left uploading"><span class="span2">上传失败，同名文件已存在，是否覆盖？</span></div><div class="btn-fail left"><a href="javascript:void(0)" class="btn1 left">点击覆盖</a><a href="javascript:void(0)" class="btn2 right">取消上传</a></div></div>   
+       </div>
+       <div class="upload-box">
+       		<span class="num bgGrey">4</span>
+            <div class="box2"><p class="name left">基于RFID技术的智能仓储管理系统架构方案.pdf</p><div class="left uploading">等待上传......</div><a href="javascript:void(0)" class="sc">删除</a></div>   
+       </div>
+       <div class="upload-box">
+       		<span class="num">5</span>
+            <div class="box1">
+            	<div class="titWrap">
+                	<p class="text">基于RFID技术的智能仓储管理系统架构方案<a href="javascript:void(0)"><img src="../images/editorZone/ec-icon19-titbj.gif" width="15" height="15"/></a></p>
+                    <div class="editName clearfix">
+                    	<input class="left nameText"  value=""/><a class="left sure" href="javascript:void(0)" >确定</a><a href="javascript:void(0)" class="left cancel">取消</a>
+                    </div>
+                    <script>
+						var text=$(".titWrap .text").text()
+						$(".titWrap .editName input").val(text)
+						$(".titWrap .text a").click(
+							function(){
+								$(this).parent(".text").css({"display":"none"}).siblings(".editName").css({"display":"block"})
+								})
+					    $(".titWrap .editName .cancel").click(
+							function(){
+								$(this).parent(".editName").css({"display":"none"}).siblings(".text").css({"display":"block"})
+								})
+                    </script>
+                	<a href="javascript:void(0)" class="fold">收起</a>
+                </div>
+                <div class="conduct clearfix"><a href="javascript:void(0)" class="yl">预览</a><a href="javascript:void(0)" class="sc">删除</a></div>
+                <div class="itemWrap clearfix">
+                	<label class="left">文章摘要</label>
+                    <textarea class="left colorGrey">请填写文章摘要（选填）</textarea>
+                    <span class="positionA count">还能输入<var>--</var>字</span>
+                    <script>PromptToggle($(".itemWrap textarea"),"请填写文章摘要（选填）","left colorGrey","left") </script>
+                    <script>
+        				(function() {
+            			var counter = $(".itemWrap textarea").val().length; //获取文本域的字符串长度
+           				 $(".itemWrap .count var").text(211 - counter);
+            			$(".itemWrap textarea").keyup(function() {
+                		var text = $(".itemWrap textarea").val();
+               			var counter = text.length;
+               			 $(".itemWrap .count var").text(200 - counter);    //每次减去字符长度
+            			});})()
+    			</script>
+                </div>
+                <div class="space"></div>
+                <div class="itemWrap selectWrap clearfix">
+                	<label class="left hasbg1"> 分类</label>
+                    <select><option>分类一</option></select> <select><option>分类二</option></select> <select><option>分类三</option></select><a class="addSelect" href="javascript:void(0)"></a> 
+                    <script>
+					/*增加select 最多插入两排*/
+					(function(){
+					$(".addSelect").click(function(){
+						var count=$(".selectWrap select").length;
+						if(count==3)
+						{
+							$(".selectWrap label").css("height","76px");
+							for(var i=0;i<3;i++)
+							{
+								var selectNode=document.createElement("select");
+								selectNode.id="lastSelect";
+								$(".selectWrap").append(selectNode);
+								$("#lastSelect").insertBefore(".addSelect");
+								selectNode.id="";
+							}
+							$(this).css("background-image","url(../images/editorZone/ec-icon19-minus.gif)")
+						}
+						if(count==6)
+						{
+							$(".selectWrap label").css("height","34");
+							for(var j=5;j>2;j--)
+							{
+								$(".selectWrap select").eq(j).remove();
+							}
+							$(this).css("background-image","url(../images/editorZone/ec-icon19-add.gif)")
+						}
+						})
+					})()	
+			</script> 
+                </div>
+                <div class="alert">请选择二级分类</div>
+                <div class="itemWrap clearfix">
+                	<label class="left hasbg2">关键词</label>
+                    <div class="frame left" id="parentFrame">
+                		<input class="colorGrey" id="keyword" type="text" value="多个关键词请用空格隔开，数量不超过5个" />
+            		</div>
+                </div>
+                 <div class="alert">请输入中英文1-5个关键字</div>
+                 <div class="itemWrap clearfix">
+                 	<label class="left hasbg2">保存至</label>
+                    <div class="left album"><p class="name colorGrey">我的原创素材库</p>
+                        <div class="dropDownList">
+                            <div class="list_item1 clearfix"><p class="left">未分类</p><span class="left"></span></div>
+                            <div class="list_item1 clearfix"><a href="javascript:void(0)" class="toggle toggle1"></a><p class="left">教学素材1</p><i class="left count">（22）</i><span class="left"></span></div>
+                            <div class="list_item1"><a href="javascript:void(0)" class="toggle toggle2"></a><p class="left">教学素材1</p><i class="left count">（22）</i><span class="left"></span></div>
+                            <div class="list_item2">
+                            	<div class="create"><div class="frameset left"><input type="text" value="" /><a href="javascript:void(0)">创建</a></div></div>
+                                <div class="sublist"><span>教学素材2</span></div>
+                                <div class="sublist"><span>教学素材3</span></div>
+                                 <div class="shelter positionA"></div>
+                            </div>
+                            <div class="createItem">
+                                <p>新建素材分类</p>
+                                <div class="createNew clearfix"><div class="frameset"><input type="text" value="" /><a href="javascript:void(0)">创&nbsp;建</a></div></div>
+        					</div>
+                        </div>
+                    </div>
+                    <script>
+						$("body").click(function(){
+						$(".dropDownList").hide()
+					})
+						$(".album .name").click(
+							function(){
+						$(this).siblings(".dropDownList").css({"display":"block"})	
+						return false;	
+						})
+						$(".dropDownList .createItem p ").click(
+							function(event){
+							$(this).css({"display":"none"}).siblings(".createNew").css({"display":"block"})		
+							event.stopPropagation();
+								})
+					 $(".dropDownList .list_item1 p").click(
+					 	function(event){
+						$(".dropDownList").css({"display":"none"})	
+						event.stopPropagation();
+						})
+					
+                    </script>
+                 </div>
+                 <div class="alert">请选择素材分类</div>
+                 <a href="#" class="saved">保&nbsp;存</a>
+            </div>
+            <div class="box2"><div class="successName left"><p class="p1">基于RFID技术的智能仓储管理系统架构方案.pdf</p><p class="p2">保存成功！您可在<a href="#">我的原创素材库</a>内查看该素材。</p></div><a href="javascript:void(0)" class="yl">预览</a><a href="javascript:void(0)" class="sc">删除</a><a href="javascript:void(0)" class="unfold">展开</a></div>
+           
+       </div> 
+        <script>
+			$(".box1 .fold").click(
+				function(){
+					$(this).parents(".box1").css({"display":"none"}).siblings(".box2").css({"display":"block"})
+					$(this).parents(".upload-box").css({"z-index":"1"})	
+					var width1=$(".ecSideMenu").height()
+					var width2=$(".myFrame").height()	
+					if(width1<width2){
+						$(".myFrame").height("auto")						
+						}
+					else{
+						var ecSideMenu=$(".ecSideMenu");
+						var myFrame=$(".myFrame");
+    					var maxV=Math.max(ecSideMenu.height(),myFrame.height())+35;
+						myFrame.height(maxV);	
+						}		
+					}
+			)
+			$(".box2 .unfold").click(
+				function(){
+					$(this).parents(".box2").css({"display":"none"}).siblings(".box1").css({"display":"block"})
+					var index=$(this).parents(".upload-box").index()
+					$(this).parents(".upload-box").css({"z-index":40-index})
+					var width1=$(".ecSideMenu").height()
+					var width2=$(".myFrame").height()	
+					if(width1<width2){
+						$(".myFrame").height("auto")						
+						}
+					else{
+						var ecSideMenu=$(".ecSideMenu");
+						var myFrame=$(".myFrame");
+    					var maxV=Math.max(ecSideMenu.height(),myFrame.height())+35;
+						myFrame.height(maxV);	
+						}
+					})
+			$(".box2").hover(
+				function(){
+					$(this).addClass("hover")	
+					},
+				function(){
+					$(this).removeClass("hover")	
+					})
+ 
+        </script>
+   </div>
+ </div> 
+</div>
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************-->
+<script>
+/*插入关键字*/
+(function(){
+var input=$("#keyword");
+var jsNode=document.getElementById("keyword");
+function CreateKeywordNode(value)
+{
+	var keyword=document.createElement("div");
+	var closeIt=document.createElement("div");
+	closeIt.className="close";
+	keyword.className="keyword";
+	var text=document.createTextNode(value);
+	keyword.appendChild(text);
+	keyword.appendChild(closeIt);
+	document.getElementById("parentFrame").insertBefore(keyword,jsNode);
+	jsNode.value="";	
+}
+
+/*根据用户的输入是否带有空格来判断*/
+input.keyup(function(e)
+{
+	var value=$(this).val();
+	var useInputLength=value.length;
+	
+	if($.trim(value).length!=useInputLength && Boolean($.trim(value).length))
+	{   
+		var children=$(this).parent().children();
+		var sumLen=0;
+		var childrenLen=children.length;
+		for(var i=0;i<childrenLen;i++)
+		{
+			sumLen += children.eq(i).width();
+		}
+		if(sumLen<350)
+		{
+			CreateKeywordNode(jsNode.value);
+			$(".keyword .close").click(function(){$(this).parent().remove();});
+		}
+	}
+});
+
+input.focus(function()
+{
+	if($(this).val()=="多个关键词请用空格隔开，数量不超过5个")
+	{
+		$(this).val("");
+		$(this).removeClass("colorGrey");
+	}
+})
+input.blur(function()
+{
+	if($(this).val()=="" && $(this).parent().children().length==1)
+	{
+		$(this).val("多个关键词请用空格隔开，数量不超过5个");
+		$(this).addClass("colorGrey");
+	}
+	else
+	{
+		var value=$(this).val();
+		var useInputLength=value.length;
+		if($.trim(value).length==useInputLength && Boolean($.trim(value).length))
+		{   
+			var children=$(this).parent().children();
+			var sumLen=0;
+			var childrenLen=children.length;
+			for(var i=0;i<childrenLen;i++)
+			{
+				sumLen += children.eq(i).width();
+			}
+			if(sumLen<350)
+		    {
+				CreateKeywordNode(jsNode.value);
+				$(".keyword .close").click(function(){$(this).parent().remove();});
+			}
+		}
+	}
+})
+})()	
+</script>
+
+<script>
+/**左右高度自适应*/
+mysetHeight(); 
+function mysetHeight()
+{
+	var ecSideMenu=$(".ecSideMenu");
+	var myFrame=$(".myFrame");
+    var maxV=Math.max(ecSideMenu.height(),myFrame.height())+35;
+		 myFrame.height(maxV);	
+}
+</script>
+
+</body>
+</html>

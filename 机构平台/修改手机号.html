@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="../css/personalHomepage/global.css" />
+        <link rel="stylesheet" type="text/css" href="../css/personalHomepage/personalHomepage.css" />
+        <link href="../css/personalHomepage/leaveMessage.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+        <script src="../js/wordLimit.js"></script>
+        <script src="../js/jquery.promptToggle.js"></script>
+    </head>
+    <body>
+    	<div class="phone-pop phone-pop1">
+        	<div class="top"><p class="left">提示</p><a href="#" class="close right">&times;</a></div>
+            <div class="phone-box">
+            	<div class="container">
+                    <div class="title"><span>请先验证手机号</span></div>
+                    <div class="tel-wrap">
+                        <div class="input-group">
+                            <div class="row tel-no clearfix"><label>原手机号：</label><div class="input-box"><input class="colorGrey long" type="text" value="请输入原手机号码"></div></div>
+                            <p class="reminder"></p>
+                            <div class="row clearfix"><label>新手机号：</label><div class="input-box"><input class="colorGrey long" type="text" value="请输入新手机号码"></div></div>
+                            <p class="reminder"></p>
+                            <div class="row yzm clearfix"><label>验证码：</label><div class="input-box"><input class="colorGrey" type="text" value="请输入手机验证码" /></div><span class="yzm-box click">获取验证码</span></div>
+                            <p class="reminder">验证码错误，请重新验证</p>
+                        </div>
+                        <div class="tel-btn clearfix"><a href="#" class="sure">确 定</a><a href="#" class="cancel">取 消</a></div>
+                    </div>
+                    <script>
+                        PromptToggle($('.row input').eq(0),"请输入原手机号码","colorGrey")
+						PromptToggle($('.row input').eq(1),"请输入新手机号码","colorGrey")
+						PromptToggle($('.row input').eq(2),"请输入手机验证码","colorGrey")
+						$(".tel-wrap input").focus(
+							function(){
+							 $(this).addClass("focus")	
+								})
+						$(".tel-wrap input").blur(
+							function(){
+							 $(this).removeClass("focus")	
+								})
+                    </script>     
+                    <div class="tip">
+                        <p>·为了保障您的账户安全，请您务必填写真实有效的手机号码</p>
+                        <p>·如果收不到验证码，请与我们联系（QQ：851061860）</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

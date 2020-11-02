@@ -1,0 +1,146 @@
+.topBanner{margin-bottom: 0;}
+.banner{
+    height: 400px;
+    background:  url(../../images/Signin/banner.jpg) center no-repeat;
+}
+.inner{
+    width:1190px;
+    margin: 0 auto;
+}
+.banner   .login-box{
+    float: right;
+    width: 302px;
+    height: 342px;
+    margin: 30px 70px 0 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.banner   .login-box ul.login-title{
+    margin-bottom: 30px;
+}
+.banner   .login-box ul.login-title li {
+    float: left;
+    width: 151px;
+    height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #a5a5a5;
+    background-color: #efefef;
+	display:inline;
+    text-align: center;
+}
+.banner   .login-box ul.login-title li.user{
+    border-top-left-radius: 5px;
+}
+.banner   .login-box ul.login-title li.editor{
+    border-top-right-radius: 5px;
+}
+.banner   .login-box ul.login-title li.active{
+    width: 150px;
+    border-right: 1px solid #a5a5a5;
+    border-bottom-color: #fff;
+    background-color: #fff;
+}
+.banner   .login-box ul.login-title li.editor.active{
+    border-right:none;
+    border-left: 1px solid #a5a5a5;
+}
+.banner   .login-box ul.login-title li a{
+    text-decoration: none;
+    color: #313131;
+    font-size: 18px;
+    font-family:"微软雅黑";
+}
+.banner   .login-box-content{
+    padding: 0 18px;
+}
+.banner   .login-box .input-group{
+    height: 42px;
+     margin-bottom: 14px;
+}
+.banner   .login-box .input-group input{
+    width: 244px;
+    height: 42px;
+	line-height:42px;
+    padding-left: 20px;
+    border: 1px solid #cfd2d3;
+    border-radius: 5px;
+    color:#000;
+}
+.banner   .login-box .login-setting .noid {
+    float: right;
+    font-size: 12px;
+    color: #2a99df;
+    text-decoration: none;
+}
+.banner   .login-box .login-btn{
+    width: 265px;
+    height: 45px;
+    border:none;
+	border-radius:5px;
+    background-color: #e40404;
+    color: #fff;
+    font-family:"微软雅黑";
+    font-size: 20px;
+}
+.banner   .login-box-content .apply{
+    display: none;
+    text-align: right;
+    margin-top: 20px;
+    color:#f26658;
+}
+.banner .person-login-main .person-login-box .login-box-content .login-button {
+    background-color: #ee6122;
+    color:#fae7e0;
+	height:54px;
+	font-size:22px;
+	font-weight:bold;
+	width:319px;
+}
+
+.banner .person-login-main .person-login-box .login-box-content .login-setting .noid{
+    color:#b3b3b3;
+    font-size: 12px;
+}
+
+.banner .person-login-main .person-login-box .login-box-content .login-setting .tip{
+  
+    font-size: 12px;
+}
+.banner .login-box-content .login-setting{
+    padding:7px 0 25px;
+    font-size:12px;
+}
+.banner .login-box-content .login-setting .checkbox{
+    margin-right: 6px;
+    height: 13px;
+
+}
+/**主编推荐**/
+.editor-recommend{width: 1800px;margin: 0 auto;background-color: #fafafa;border-bottom: 1px solid #efefef;}
+.editor-recommend .box .title,.editor-recommend .p1,.classify{width: 1221px;margin: 0 auto;}
+.editor-recommend .box{border-bottom: none;}
+.editor-recommend .box .title {width:1207px;padding:25px 0 0  14px;height:32px; margin-bottom: 30px; }
+.editor-recommend .box .title i,.classify .display .title i{float: left;width: 32px;height: 32px;background:  url(../../images/Signin/icon1.png) no-repeat;margin-right: 7px;}
+.classify .display .title i{background-image: url(../../images/Signin/icon2.jpg);}
+.editor-recommend .box .title .text,.classify .display .title .theme { float: left;height: 32px;line-height: 32px;font-size:18px; color:#5b4a2f;font-family: "微软雅黑";}
+.editor-recommend .p1 {width:1183px;padding: 0 0 47px 38px;border: none;background-color: #fafafa;}
+.editor-recommend .p1 .s,.editor-recommend .p1 .s .name{ width:100px;}
+.editor-recommend .p1 .s .avatar{width: 100px;height:100px;border-radius: 50%;}
+.editor-recommend .p1 .s .avatar{display: block;width: 99px;height: 99px;border: 1px solid #dddada;}
+.editor-recommend .p1 .s .avatar img{border-radius: 50%;}
+.editor-recommend .p1 .s .name a { font-weight: bold;}
+.editor-recommend .p1 .s .picLink { height: 100px; width: 100px;}
+.editor-recommend .p1 .s .personal-index{color:#2a99df;border-color: #e5e5e5;}
+.classify{margin-top: 0;margin-bottom: 82px;}
+.classify .display{width: 100%;}
+.classify .display .title{height: 32px;padding: 20px 0 18px 14px;width:1207px;background-color: #fff;}
+.classify .display .items{width:auto;height:auto;padding: 0;}
+.classify .display .items dl{padding: 0;margin: 0;width: 304px;height: 286px;text-align: left;border: 1px solid #eceae6;border-right:none; background-color: #fff;float: left;overflow: hidden;}
+.classify .display .items dl.last{border-right: 1px solid #eceae6;}
+.classify .display .items dl dt a{display:block;width: 261px;height: 191px;margin: 21px;margin-bottom: 0;}
+.classify .display .items dl dd .nameNormal,.classify .display .items dl .source{padding-left: 21px;}
+.classify .display .items dl dd .nameNormal{height: 30px;line-height: 30px;padding-top: 5px;color:#2a99df;font-size: 14px;font-weight: bold;display:block;}
+.classify .display .items dl dd .nameHover{padding-left: 21px;}
+.classify .display .items dl .source a{color:#5b4a2f;}
+.classify .display .items dl .source a i{color:#b2b1b1;margin-left: 7px;}
+.classify .display .items dl .source .a-hover i{color:#fff;}

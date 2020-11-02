@@ -1,0 +1,266 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/platform/platform.css" rel="stylesheet" type="text/css">
+<link href="../css/Signin/signin.css" rel="stylesheet" type="text/css">
+<link href="../css/personalHomepage/global.css" rel="stylesheet" type="text/css"/>
+<link href="../css/personalHomepage/personalHomepage.css" rel="stylesheet" type="text/css"  />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<!--*******************header********************--> 
+<!--*******************banner start**************-->
+<div class="topBanner">
+    <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+        <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+        <div class="right user-bar">
+          <div class="downlist">
+            <a class="colorGrey loginState" href="#">北京大学</a>
+            <div class="list_box listBoxPosition11">
+              <ul>
+                <li><a href="#">　编创中心</a></li>
+                <li><a href="#">　我的主页</a></li>
+                <li><a href="#" class="quit">　退出登录</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <span> | </span>
+          <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+          <span> | </span>
+           <div class="downlist">
+            <a class="colorGrey" href="#">编创空间 </a>
+          </div>
+          <span> | </span>
+          <a class="colorGrey" href="#">帮助</a>
+        </div>         
+    </div>
+</div>
+<script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+    lb.css("display","none");
+    var index=ls.index(this);
+    lb.eq(index).css("display","block");
+},function(){
+    lb.css("display","none");
+    })
+lb.hover(function(){
+    $(this).css("display","block");
+    },function(){
+    $(this).css("display","none");
+})
+})()
+</script>
+<div class="jgBanner">
+  <div class="inner">
+    <div class="avatar"><img src="../images/jg/jg_avatar.png" height="177" width="177" alt="" /></div>
+    <div class="name">北京大学医学系特色资源中心</div>
+    <div class="icon right"> 
+      <span class="guanzhu"><a href="javascript:void(0)" class="follow">申请成为主编</a></span> 
+    </div>
+  </div>
+</div>
+<!--*******************banner end****************--> 
+
+<!--*******************内容 start****************-->
+<div class="content-wrap jgContent pdb60">
+  <!--导航-->
+    <div class="nav-bar">
+      <ul class="clearfix">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">作品</a></li>
+          <li><a href="#">主编</a></li>
+          <li class="current"><a href="">机构简介</a></li>
+          <li><a href="#">公告</a></li>
+          <li class="search right clearfix">
+            <div class="subject-select left">
+              <div class="display">作品</div>
+              <div class="items">
+                <div class="item">作品</div>
+                <div class="item">主编</div>
+              </div>
+            </div>
+            <div class="searchInputBg left">
+              <input class="colorGrey" type="text" value="请输入关键词搜索" onfocus="if(this.value=='请输入关键词搜索'){this.value=''}" onblur="if(this.value==''){this.value='请输入关键词搜索'}">
+              <div class="searchIcon left"></div>
+            </div>
+          </li>
+      </ul>
+    </div>
+    <script>
+    //仿select
+    (function(){
+      var di=$(".subject-select .display");
+      var list=$(".subject-select .items");
+      var itemm=$(".subject-select .items .item");
+      var searchInput=$(".jgContent .nav-bar .searchInputBg input");
+      var time=50;
+      var flag=false;
+            di.hover(function()
+      {
+        flag=true;
+        list.slideDown(time,null,function(){flag=false;});
+      },function(){})
+      itemm.hover(function(){$(this).addClass("itemHover");},function(){$(this).removeClass("itemHover");})
+      itemm.click(function()
+      {
+        di.html($(this).html());
+        $(this).parent().slideUp(time);
+      })
+      $("body").click(function()
+      {
+        if(list.css("display")=="block"&&flag==false)
+        {
+          list.slideUp(time);
+        }
+      })
+      searchInput.focus(function() {
+        $(this).parents('.search').addClass('active')
+      }).blur(function() {
+        $(this).parents('.search').removeClass('active')
+      });
+
+    })()
+  </script> 
+  <div class="content"> 
+    <!--*******************左侧内容 start****************-->
+    <div class="sidebar"> 
+      <!--个人信息-->
+      <div class="personnal type item1">
+        <h4 class="w239">机构名片</h4>
+        <dl class="w239">
+          <dt>名称: </dt>
+          <dd>北医三院</dd>
+        </dl>
+        <dl class="jianjie w239">
+          <dt>简介：</dt>
+          <dd>北京大学第三医学院（简称“北医三院”）始建于1958年，是卫生部直属主管的集医疗、教学、科研和预防保健为一体的现代化综合性三级甲等医院。</dd>
+        </dl>
+        <dl class="download download1">
+          <dd> <a href=""><span class="orange">181</span><br />作品</a><a href="" class="no-border"><span class="orange">649</span><br />主编</a> </dd>
+        </dl>
+      </div>
+      <!--人气主编-->
+      <div class="focus type item2">
+        <h4 class="w239">人气主编</h4>
+        <ul class="clearfix">
+          <li>
+            <a href="" class="avatar"><img src="http://p.bianke.cnki.net/api/face/59D5CF61DEDD58A3D90056E69C4CE55C.jpg" width="75" height="75" /></a>
+            <a href="" target="_blank" class="name">友夏</a>
+            <a href="" target="_blank" class="personal-index">Ta的专栏</a>
+          </li>
+          <li>
+            <a href="" class="avatar"><img src="http://p.bianke.cnki.net/api/face/59D5CF61DEDD58A3D90056E69C4CE55C.jpg" width="75" height="75" /></a>
+            <a href="" target="_blank" class="name">友夏</a>
+            <a href="" target="_blank" class="personal-index">Ta的专栏</a>
+          </li>
+          <li>
+            <a href="" class="avatar"><img src="http://p.bianke.cnki.net/api/face/59D5CF61DEDD58A3D90056E69C4CE55C.jpg" width="75" height="75" /></a>
+            <a href="" target="_blank" class="name">友夏</a>
+            <a href="" target="_blank" class="personal-index">Ta的专栏</a>
+          </li>
+          <li>
+            <a href="" class="avatar"><img src="http://p.bianke.cnki.net/api/face/59D5CF61DEDD58A3D90056E69C4CE55C.jpg" width="75" height="75" /></a>
+            <a href="" target="_blank" class="name">友夏</a>
+            <a href="" target="_blank" class="personal-index">Ta的专栏</a>
+          </li>
+          <li>
+            <a href="" class="avatar"><img src="http://p.bianke.cnki.net/api/face/59D5CF61DEDD58A3D90056E69C4CE55C.jpg" width="75" height="75" /></a>
+            <a href="" target="_blank" class="name">友夏</a>
+            <a href="" target="_blank" class="personal-index">Ta的专栏</a>
+          </li>
+          <li>
+            <a href="" class="avatar"><img src="http://p.bianke.cnki.net/api/face/59D5CF61DEDD58A3D90056E69C4CE55C.jpg" width="75" height="75" /></a>
+            <a href="" target="_blank" class="name">友夏</a>
+            <a href="" target="_blank" class="personal-index">Ta的专栏</a>
+          </li>
+        </ul>
+      </div>
+      <!--公开出版-->
+      <div class="hot type item3">
+        <h4 class="w239">公开出版</h4>
+        <ul>
+          <li><a href="" class="blue">如何成为一枚优雅地女子</a></li>
+          <li><a href="" class="blue">以花入馔：舌尖上的鲜花美食</a></li>
+          <li><a href="" class="blue">小学四年级数学教案</a></li>
+          <li><a href="" class="blue">数列——数列的基本知识和在日</a></li>
+          <li><a href="" class="blue">重载铁路设计与施工技术创新汇</a></li>
+          <li><a href="" class="blue">中小学生心理健康教育·教师读本</a></li>
+          <li class="no-border"><a href="" class="blue">你是灰，而我是色彩</a></li>
+        </ul>
+      </div>
+      <!--常用链接-->
+      <div class="hot type item4">
+        <h4 class="w239">常用链接</h4>
+        <ul>
+          <li><a href="" class="blue">北京大学图书馆</a></li>
+          <li><a href="" class="blue">北京大学校园论坛</a></li>
+          <li class="no-border"><a href="" class="blue">中国知网</a></li>
+        </ul>
+      </div>
+      <!--我要留言-->
+      <div class="type item5">
+        <h4 class="w239">我要留言</h4>
+        <a href="" class="btn">给管理员留言</a>
+      </div>
+    </div>
+    <!--*******************左侧内容 end****************--> 
+    <!--*******************右侧内容 start****************-->
+    <div class="content-right personPage-for-page"> 
+        <!--机构简介-->
+        <div class="intro classify new-arrival ">
+          <div class="display">
+            <div class="title clearfix">
+              <div class="theme">机构简介</div>
+            </div>
+            <div class="items clearfix">
+              <h1>北京大学简介</h1>
+              <div class="pic"><img src="../images/jg/intro_pic.jpg" alt="" /></div>
+              <div class="article">
+                <p>北京大学创办于1898年，初名京师大学堂，是中国第一所国立综合性大学，也是当时中国最高教育行政机关。辛亥革命后，于1912年改为现名。</p>
+                <p>作为新文化运动的中心和“五四”运动的策源地，作为中国最早传播马克思主义和民主科学思想的发祥地，作为中国共产党最早的活动基地，北京大学为民族的振兴和解放、国家的建设和发展、社会的文明和进步做出了不可替代的贡献，在中国走向现代化的进程中起到了重要的先锋作用。爱国、进步、民主、科学的传统精神和勤奋、严谨、求实、创新的学风在这里生生不息、代代相传。</p>
+                <p>1917年，著名教育家蔡元培出任北京大学校长，他“循思想自由原则，取兼容并包主义”，对北京大学进行了卓有成效的改革，促进了思想解放和学术繁荣。陈独秀、李大钊、毛泽东以及鲁迅、胡适等一批杰出人才都曾在北京大学任职或任教。</p>
+                <p>1937年卢沟桥事变后，北京大学与清华大学、南开大学南迁长沙，共同组成长沙临时大学。不久，临时大学又迁到昆明，改称国立西南联合大学。抗日战争胜利后，北京大学于1946年10月在北平复学。</p>
+                <p>中华人民共和国成立后，全国高校于1952年进行院系调整，北京大学成为一所以文理基础教学和研究为主的综合性大学，为国家培养了大批人才。据不完全统计，北京大学的校友和教师有400多位两院院士，中国人文社科界有影响的人士相当多也出自北京大学。</p>
+                <p>改革开放以来，北京大学进入了一个前所未有的大发展、大建设的新时期，并成为国家“211工程”重点建设的两所大学之一。</p>
+                <p>1998年5月4日，北京大学百年校庆之际，国家主席江泽民在庆祝北京大学建校一百周年大会上发表讲话，发出了“为了实现现代化，我国要有若干所具有世界先进水平的一流大学”的号召。在国家的支持下，北京大学适时启动“创建世界一流大学计划”，从此，北京大学的历史翻开了新的一页。</p>
+                <p>2000年4月3日，北京大学与原北京医科大学合并，组建了新的北京大学。原北京医科大学的前身是国立北京医学专门学校，创建于1912年10月26日。20世纪三、四十年代，学校一度名为北平大学医学院，并于1946年7月并入北京大学。1952年在全国高校院系调整中，北京大学医学院脱离北京大学，独立为北京医学院。1985年更名为北京医科大学，1996年成为国家首批“211工程”重点支持的医科大学。两校合并进一步拓宽了北京大学的学科结构，为促进医学与人文社会科学及理科的结合，改革医学教育奠定了基础。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--*******************右侧内容 end****************--> 
+  </div>
+</div>
+<!--*******************footer********************--> 
+  <div class="ecFooter">
+      <div class="width1190pxAuto">
+          <div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+          <div class="websiteInfo left clearfix">
+              <p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+              <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+          </div>
+          <div class="wxwrap clearfix right">
+              <div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+              <div class="about left">
+                  <p class="tit">官方微信</p>
+                  <p>扫二维码</p>
+                  <p>轻松关注</p>
+              </div>
+          </div>
+      </div>
+  </div>
+<!--*******************footer end********************--> 
+</body>
+</html>
+
+

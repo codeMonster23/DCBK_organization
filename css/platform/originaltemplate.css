@@ -1,0 +1,121 @@
+.template1 .works .catalog .paragraph .chapter .item{
+	padding-top: 0;
+}
+.template1 .works .catalog .paragraph .chapter .item.first{
+	padding-top: 13px;
+}
+.template1 .works .catalog .paragraph .chapter .item .title{
+	height: 36px;
+	line-height: 36px;
+}
+.template1 .works .catalog .paragraph .chapter .item .title .name,.template1 .works .catalog .paragraph .chapter .item .title {
+	background:none;
+}
+.template1 .works .catalog .paragraph .chapter .chapterName{
+	padding-top: 0;
+}
+.template1 .works .catalog .paragraph .chapter .item1.first{
+	padding-top: 6px;
+}
+.template1 .works .catalog .paragraph .chapter .item1 .title .name{
+	padding-left: 64px;
+	font-size: 12px;
+}
+.template1 .works .catalog .paragraph .chapter .item1 .title{
+	height: 28px;
+	line-height: 28px;
+}
+.template1 .works .catalog .price .howMuch{
+	padding-left: 0;
+	text-align: center;
+}	
+.template1  .banner .author{
+	position: absolute;
+	top:234px;
+	left:350px;
+	font-size: 16px;
+	font-weight: bold;
+	color:#404040;
+}
+.template1  .banner .bannerIcon{
+	width: 122px;
+	position: absolute;
+	right:0;
+}
+.template1  .banner .bannerIcon{
+	margin-left: 4px;
+}
+.template1 .works .catalog .paragraph .bigname .intro{
+	position: relative;
+	top: -2px;
+	color: #1093DF;
+	margin-left: 20px;
+	padding-left: 17px;
+	background: url(../../images/platform/template1/pt1-dyicon.gif) no-repeat left 4px;
+	font-size: 12px;
+	font-weight: normal;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	padding-top: 6px;
+	text-decoration: none;
+}
+.template1 .works .side  .intro1{
+	font-size: 14px;
+	line-height: 26px;
+	padding-right: 22px;
+	padding-left: 27px;
+	padding-bottom: 15px;
+}
+.template1 .works .side .intro1 .content p {
+text-indent: 28px;
+}
+.template1 .works .side .intro1 .title {
+	line-height: 36px;
+	font-weight: bold;
+}
+.t2-sideBorderBottom {
+	border-bottom: 1px solid #757575;
+}
+.t2-sideTitleC {
+	color: #dddddd;
+}
+.t2-sideContentC {
+	color: #bbbbbb;
+}
+.cyan .t2-sideBorderBottom {
+	border-bottom: 1px solid #cfe4d8;
+}
+.cyan .t2-sideTitleC {
+	color: #338858;
+}
+.cyan .t2-sideContentC {
+	color: #579e76;
+}
+.coffee .t2-sideBorderBottom {
+	border-bottom: 1px solid #baa788;
+}
+.coffee .t2-sideTitleC {
+	color: #643912;
+}
+.coffee .t2-sideContentC {
+	color: #643912;
+}
+.template1 .works .catalog .paragraph .prefaceWrap .m_article .fold{
+	color:#1093DF;
+}
+
+.template1 .works  .catalog .paragraph-dy .prefaceWrap .m_article{
+	background: #f7f7f7;
+}
+.template1 .works .catalog .paragraph-wdy .chapter{
+	height: 59px;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 0;
+}
+.template1 .works .catalog .paragraph-wdy{
+	padding-top: 6px;
+}
+.template1 .works .catalog .paragraph-wdy .chapter .chapterName{
+	line-height: 59px;
+}

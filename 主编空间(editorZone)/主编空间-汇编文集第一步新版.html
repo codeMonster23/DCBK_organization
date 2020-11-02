@@ -1,0 +1,1349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.promptToggle.js"></script>
+<script src="../js/iColor.js"></script>
+<script src="../js/autoTextarea.js"></script>
+<script src="../js/wordLimit.js"></script>
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#f1ebde">
+<div class="ecHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo left editorLogo"><a href="#"><img src="../images/header-and-footer/new_echf-logo1.jpg" width="229" height="40"/></a>
+    <a href="#"><img src="../images/header-and-footer/new_echf-logo3.jpg" width="106" height="40"/></a></div>
+    <div class="addNav left clearfix"><a href="#">首页</a> <a href="#">我的主页</a> <a href="#">编创指南</a></div>
+    <div class="editorInfo right"><a class="name" href="#">summer10123</a><a class="img" href="#"><img src="../images/editorZone/ec-icon19-message.png" width="15" height="14" align="absmiddle" /></a><a href="#">（<i>123</i>）</a>| <a class="exit" href="#">退出</a>
+    </div>
+  </div>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto editorZone clearfix">
+  <a href="" class="btn-advice"><img src="../images/editorZone/adviice-icon.png" height="50" width="50" alt=""></a>
+   <a href="#" class="hbzs"></a>
+    <div class="procedure">
+      <div class="banner"><img src="../images/editorZone/ez6-banner1.jpg" width="1163" height="44" /></div>
+      <div class="steps">
+        <div class="fill left">
+          <div class="typeText">
+            <label>文集标题：</label>
+                <div class="frameText frameBorder">
+                <input class="colorGrey textPart" type="text" value="请输入..." />
+                </div>
+          </div>
+          <!--<div class="prompt"><span>中英文2-25个字</span></div>-->  
+          <div class="subTitle clearfix">
+          	<div class="add-remove plus">增加副标题</div>
+            <div class="subName">
+            	<label>副标题：</label>
+                <div class="subDiv">
+                	<input type="text" class="subTitleInput" value="" />
+                </div>
+            	
+            </div>
+          </div>
+          <script>
+          //增加副标题
+		  	  var time=100;
+			  $(".procedure .steps .fill .subTitle .add-remove").click(function(){
+				  var subName=$(this).parent().children(".subName");
+				  if(subName.css("display")=="none")
+				  {
+					$(this).html("删除副标题").removeClass("plus").addClass("minus");
+					subName.slideDown(time);
+					
+				  }
+				  else
+				  {
+					$(this).html("添加副标题").removeClass("minus").addClass("plus");  
+					subName.slideUp(time);  
+				  }
+				  })
+		  
+          </script>
+          <div class="typeText">
+            <label>关 键 词：</label>
+        	<div class="frame frameBorder" id="parentFrame">
+                <input class="colorGrey" id="keyword" type="text" value="请用空格键隔开" />
+            </div>
+			<script>
+				/*文本框内文字显隐和样式更换*/
+				PromptToggle($(".procedure .steps .fill .typeText .textPart"),"请输入...","colorGrey");
+			</script>
+          </div>
+          <div class="prompt"><span>中英文1-5个关键字</span></div>
+          <div class="typeTextarea">
+            <label>文集简介：</label>
+            <textarea></textarea>
+          </div>
+          <div class="prompt"><span>中英文5-500字</span></div>
+          <div class="typeSelect">
+            <label>文集分类：</label>
+            <select>
+              <option>分类一</option>
+            </select>
+            <select>
+              <option>分类二</option>
+            </select>
+            <select>
+              <option>分类三</option>
+            </select>
+            <a class="addSelect" href="javascript:void(0)">+</a> </div>
+          <!--<div class="boundary"></div>-->
+          <div class="interface">
+            <label>文集封面：</label>
+            <div class="area areaBorder">
+              <div class="preview surface cover">
+              		<div class="litimg style1">
+                    	<img class="pic" src="../images/editorZone/ec-editcoverbg1.jpg" width="153" height="218" />
+                        <div class="block block1">标题示例</div>
+                        <div class="block block2">副标题示例</div>
+                        <div class="block block3">作者示例</div>
+                         <div class="figure"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="100%"/></div>
+                    </div>
+              </div>
+              <a href="javascript:void(0);" class="change change1"></a> </div>
+          </div>
+          <div class="prompt"><span>上传图片过大/过小</span></div>
+          <div class="interface">
+            <label>文集模板：</label>
+            <div class="area areaBorder">
+              <div class="preview template"></div>
+              <a href="javascript:void(0);" class="change change2"></a> </div>
+          </div>
+          <div class="prompt"><span>上传图片过大/过小</span></div>
+          <div class="boundary"></div>
+          <div class="operate">
+          	<input type="button" value="下一步" class="next" />
+            <input type="button" value="存草稿" class="save" />
+          </div>
+          
+        </div>
+        <div class="subset right"> 
+          <!--欢迎页-->
+<<<<<<< .mine
+          <div class="welcomePic">
+            <h2>汇编创作系统</h2>
+            <p><span>您可以利用CNKI文献及自己的原创文章汇编创作</span></p>
+            <img src="../images/editorZone/ez10-welcomePage.jpg" width="414" height="576" />
+          </div>
+          <div class="welcomePic" style="display:none"><img src="../images/editorZone/ez10-welcomePage.jpg" width="414" height="576" /></div>
+=======
+          <div class="welcomePic"><img src="../images/editorZone/ez10-welcomePage.jpg" width="414" height="576" /></div>
+>>>>>>> .r402
+          <!--编辑文集封面-->
+          <div class="switchTable switchTableNew">
+            	<div class="chooseBg">
+                	<h1>请选择背景排版<span></span></h1>
+                    <ul class="bgList clearfix">
+                    	<li><img src="../images/editorZone/ec-cover1.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover2.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover3.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover4.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover5.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover6.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover7.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover8.jpg" width="120" height="170" /></li>
+                        <li><img src="../images/editorZone/ec-cover9.jpg" width="120" height="170" /></li>
+                    </ul>
+                </div>
+                <div class="editBg displayN">
+                	<div class="editCover">
+                    <!--编辑封面开始-->
+                    	<div class="coverGroup">
+                        	<div class="coverArea cover1 current" >
+                            	<img class="picBg" src="../images/editorZone/ec-editcoverbg1.jpg" width="374" height="530" />
+                                <div class="confine">
+                                <div class="item item1 type1-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                  	<input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="19"/>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <div class="fontColor"></div>
+                                        <div class="alignLeft"></div>
+                                        <div class="alignCenter"></div>
+                                        <div class="alignRight"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                <div class="item item2 type1-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                <textarea class="input input2 autoTextarea colorGrey">请输入副标题</textarea>
+                                <a href="javascript:void(0)" class="del"></a>
+                                <div class="editBox">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                        <div class="fontColor"></div>
+                                        <div class="alignLeft"></div>
+                                        <div class="alignCenter"></div>
+                                        <div class="alignRight"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                <div class="item item3 type1-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                	<input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                    <div class="editBox">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                        <div class="fontColor"></div>
+                                        <div class="alignLeft"></div>
+                                        <div class="alignCenter"></div>
+                                        <div class="alignRight"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                </div>
+                                </div>
+                                <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="100%"/><a href="javascript:void(0)">上传图片</a></div>
+                            </div>
+                            <div class="coverArea cover2">
+                                    <img class="picBg" src="../images/editorZone/ec-editcoverbg2.jpg" width="374" height="530" />
+                                    <div class="confine">
+                                    <div class="item item1 type1-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                        <input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="12"/>
+                                        <a href="javascript:void(0)" class="del"></a>
+                                        <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2 type1-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                    <textarea class="input input2 autoTextarea colorGrey">请输入副标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3 type1-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                        <input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                        <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                        <a href="javascript:void(0)" class="del"></a>
+                                    </div>
+                                    </div>
+                                    <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="94.4%"/><a href="javascript:void(0)">上传图片</a></div>
+                                </div>
+                          	<div class="coverArea cover3">
+                            	<img class="picBg" src="../images/editorZone/ec-editcoverbg3.jpg" width="374" height="530" />
+                                <div class="item item1 type3-1 default" onselectstart="return false"><span class="text vertical">请输入标题</span>
+                                  	<textarea class="input input1 colorGrey">请输入标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox upright">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <div class="fontColor"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                <div class="item item2 type3-2 default" onselectstart="return false"><span class="text vertical">请输入副标题</span>
+                                  	<textarea class="input input2 colorGrey">请输入副标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox upright">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                        <div class="fontColor"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                <div class="item item3 type3-3 default" onselectstart="return false"><span class="text vertical">请输入作者</span>
+                                  	<textarea class="input input3 colorGrey">请输入作者</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox upright">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                        <div class="fontColor"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="73%"/><a href="javascript:void(0)">上传图片</a></div>
+                            </div>
+                          	<div class="coverArea cover4">
+                            	<img class="picBg" src="../images/editorZone/ec-editcoverbg4.jpg" width="374" height="530" />
+                                <div class="confine">
+                                <div class="item item1 type1-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                        <input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="12"/>
+                                        <a href="javascript:void(0)" class="del"></a>
+                                        <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                <div class="item item2 type1-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                    <textarea class="input input2 autoTextarea colorGrey">请输入副标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                <div class="item item3 type1-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                            <input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                            <div class="editBox">
+                                                <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                <div class="fontColor"></div>
+                                                <div class="alignLeft"></div>
+                                                <div class="alignCenter"></div>
+                                                <div class="alignRight"></div>
+                                                <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                            </div>
+                                            <a href="javascript:void(0)" class="del"></a>
+                                        </div>
+                                        </div>  
+                                <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="85.7%"/><a href="javascript:void(0)">上传图片</a></div>
+                            </div>
+                        	<div class="coverArea cover5">
+                            	<img class="picBg" src="../images/editorZone/ec-editcoverbg5.jpg" width="374" height="530" />
+                                <div class="confine">
+                                <div class="item item1 type1-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                        <input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="12"/>
+                                        <a href="javascript:void(0)" class="del"></a>
+                                        <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                <div class="item item2 type1-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                    <textarea class="input input2 autoTextarea colorGrey">请输入副标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                <div class="item item3 type1-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                            <input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                            <div class="editBox">
+                                                <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                <div class="fontColor"></div>
+                                                <div class="alignLeft"></div>
+                                                <div class="alignCenter"></div>
+                                                <div class="alignRight"></div>
+                                                <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                            </div>
+                                            <a href="javascript:void(0)" class="del"></a>
+                                        </div>
+                                </div>  
+                                <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="65%"/><a href="javascript:void(0)">上传图片</a></div>
+                            </div>
+                        	<div class="coverArea cover6">
+                            	<img class="picBg" src="../images/editorZone/ec-editcoverbg6.jpg" width="374" height="530" />
+                                <div class="confine">
+                                <div class="item item1 type1-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                        <input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="12"/>
+                                        <a href="javascript:void(0)" class="del"></a>
+                                        <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                <div class="item item2 type1-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                    <textarea class="input input2 autoTextarea colorGrey">请输入副标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox">
+                                            <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                            <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                            <div class="fontColor"></div>
+                                            <div class="alignLeft"></div>
+                                            <div class="alignCenter"></div>
+                                            <div class="alignRight"></div>
+                                            <a href="javascript:void(0)" class="boxSave">保存</a>
+                                            <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                        </div>
+                                    </div>
+                                <div class="item item3 type1-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                            <input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                            <div class="editBox">
+                                                <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                <div class="fontColor"></div>
+                                                <div class="alignLeft"></div>
+                                                <div class="alignCenter"></div>
+                                                <div class="alignRight"></div>
+                                                <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                            </div>
+                                            <a href="javascript:void(0)" class="del"></a>
+                                        </div>
+                                        </div>  
+                                <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="51.2%"/><a href="javascript:void(0)">上传图片</a></div>
+                            </div>
+                            <div class="coverArea cover7">
+                                        <img class="picBg" src="../images/editorZone/ec-editcoverbg7.jpg" width="374" height="530" />
+                                        <div class="confine">
+                                        <div class="item item1 type2-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                                <input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="8"/>
+                                                <a href="javascript:void(0)" class="del"></a>
+                                                <div class="editBox">
+                                                    <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                    <div class="fontColor"></div>
+                                                    <div class="alignLeft"></div>
+                                                    <div class="alignCenter"></div>
+                                                    <div class="alignRight"></div>
+                                                    <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                    <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                                </div>
+                                            </div>
+                                        <div class="item item2 type2-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                            <input class="input input2 colorGrey" value="请输入副标题" />
+                                            <a href="javascript:void(0)" class="del"></a>
+                                            <div class="editBox">
+                                                    <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                    <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                    <div class="fontColor"></div>
+                                                    <div class="alignLeft"></div>
+                                                    <div class="alignCenter"></div>
+                                                    <div class="alignRight"></div>
+                                                    <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                    <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                                </div>
+                                            </div>
+                                        <div class="item item3 type2-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                                    <input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                                    <div class="editBox">
+                                                        <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                        <div class="fontColor"></div>
+                                                        <div class="alignLeft"></div>
+                                                        <div class="alignCenter"></div>
+                                                        <div class="alignRight"></div>
+                                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="del"></a>
+                                                </div>
+                                                </div>  
+                                        <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="78.6%"/><a href="javascript:void(0)">上传图片</a></div>
+                                    </div>
+                            <div class="coverArea cover8">
+                                        <img class="picBg" src="../images/editorZone/ec-editcoverbg8.jpg" width="374" height="530" />
+                                        <div class="item item1 type3-1 default" onselectstart="return false"><span class="text vertical">请输入标题</span>
+                                  	<textarea class="input input1 colorGrey">请输入标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox upright">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <div class="fontColor"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                		<div class="item item2 type3-2 default" onselectstart="return false"><span class="text vertical">请输入副标题</span>
+                                  	<textarea class="input input2 colorGrey">请输入副标题</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox upright">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                        <div class="fontColor"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                		<div class="item item3 type3-3 default" onselectstart="return false"><span class="text vertical">请输入作者</span>
+                                  	<textarea class="input input3 colorGrey">请输入作者</textarea>
+                                    <a href="javascript:void(0)" class="del"></a>
+                                    <div class="editBox upright">
+                                    	<select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                        <div class="fontColor"></div>
+                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                    </div>
+                                </div>
+                                		 <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="23%"/><a href="javascript:void(0)">上传图片</a></div>
+                               </div>      
+                            <div class="coverArea cover9">
+                                  <img class="picBg" src="../images/editorZone/ec-editcoverbg9.jpg" width="374" height="530" />
+                                  <div class="confine">
+                                  <div class="item item1 type2-1 default" onselectstart="return false"><span class="text">请输入标题</span>
+                                                <input type="text" class="input input1 colorGrey" value="请输入标题" maxlength="8"/>
+                                                <a href="javascript:void(0)" class="del"></a>
+                                                <div class="editBox">
+                                                    <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                    <div class="fontColor"></div>
+                                                    <div class="alignLeft"></div>
+                                                    <div class="alignCenter"></div>
+                                                    <div class="alignRight"></div>
+                                                    <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                    <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                                </div>
+                                            </div>
+                                  <div class="item item2 type2-2 default" onselectstart="return false"><span class="text">请输入副标题</span>
+                                            <input class="input input2 colorGrey" value="请输入副标题" />
+                                            <a href="javascript:void(0)" class="del"></a>
+                                            <div class="editBox">
+                                                    <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                    <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                    <div class="fontColor"></div>
+                                                    <div class="alignLeft"></div>
+                                                    <div class="alignCenter"></div>
+                                                    <div class="alignRight"></div>
+                                                    <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                    <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                                </div>
+                                            </div>
+                                  <div class="item item3 type2-3 default" onselectstart="return false"><span class="text">请输入作者</span>
+                                                    <input type="text" class="input input3 colorGrey" value="请输入作者" maxlength="13"/>
+                                                    <div class="editBox">
+                                                        <select class="fontFamily"><option>字体</option><option>宋体</option><option>黑体</option><option>微软雅黑</option></select>
+                                                        <select class="fontSize"><option>字号</option><option>12</option><option>14</option><option>16</option></select>
+                                                        <div class="fontColor"></div>
+                                                        <div class="alignLeft"></div>
+                                                        <div class="alignCenter"></div>
+                                                        <div class="alignRight"></div>
+                                                        <a href="javascript:void(0)" class="boxSave">保存</a>
+                                                        <a href="javascript:void(0)" class="boxCancel">取消</a>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="del"></a>
+                                                </div>
+                                  </div>  
+                                  <div class="illustration"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="70.4%"/><a href="javascript:void(0)">上传图片</a></div>
+                               </div>      
+                            
+              <!--编辑封面结束-->              
+                        </div>
+                        <script>
+						//编辑框显隐
+						//双击信息模块
+						$(".coverArea .item").dblclick(function(){
+							$(this).addClass("dblclick").removeClass("default").children(".text").hide().siblings(".input, .del, .editBox").show()
+  							$(this).children(".autoTextarea").bind("keydown keyup",function(){
+   							$(this).autosize();}).autosize();
+							 return false;
+							})
+						
+						$(".coverArea .item .input, .coverArea .item .editBox").click(function(e){
+							e.stopPropagation();//阻止冒泡
+							})
+						$(".coverArea .editBox").dblclick(function(e){
+							e.stopPropagation();//阻止冒泡
+							})
+						$(".coverArea .item").click(function(){
+							$(this).addClass("default")
+							})
+						/*$(document).click(function(){
+							$(".coverArea .input").hide().siblings(".text").show().siblings(".del, .editBox").hide();
+							$(".coverArea .input").parent(".item").removeClass("dblclick");	
+							return false;
+							})*/
+						PromptToggle($(".coverArea .item .input1"),"请输入标题","input input1 colorGrey","input input1")
+						PromptToggle($(".coverArea .item .input2"),"请输入副标题","input input2 autoTextarea colorGrey","input input2 autoTextarea")
+						PromptToggle($(".coverArea .type3-2 .input2"),"请输入副标题","input input2 colorGrey","input input2")
+						PromptToggle($(".coverArea .item .input3"),"请输入作者","input input3 colorGrey","input input3")
+						//多行文本限制字数
+						wordLimit($(".type1-2 .input2"),44)
+						wordLimit($(".type3-1 .input1"),12)
+						wordLimit($(".type3-2 .input2"),20)
+						wordLimit($(".type3-3 .input3"),13)
+						
+                        </script>
+                        
+                        <div class="operateBtn">
+                        	<a href="javascript:void(0)" class="addText">添加文本</a><a href="javascript:void(0)" class="previewBtn">预 览</a><a href="javascript:void(0)" class="saveBtn">保 存</a>
+                        </div>
+                        
+                    </div>
+                    <div class="styleTab">
+                    	<div class="tagBox"><a href="javascript:void(0)" class="cur">更换背景排版</a><a href="javascript:void(0)">更换图片</a></div>
+                        <div class="displayBox">
+                        	<ul class="bgType clearfix">
+                            	<li><img src="../images/editorZone/ec-cover1.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover2.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover3.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover4.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover5.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover6.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover7.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover8.jpg" width="120" height="170" /></li>
+                        		<li><img src="../images/editorZone/ec-cover9.jpg" width="120" height="170" /></li>
+                            </ul>
+                        </div>
+                        <div class="displayBox displayN">
+                        	<ul class="bgImg clearfix">
+                            	<li><a href="javascript:void(0)" class="addImg">上传自定义图片</a></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg2.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg3.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg4.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg5.jpg" width="170" height="124" /></li>
+                            </ul>
+                            <ul class="bgImg clearfix displayN">
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg6.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg7.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg8.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg9.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg10.jpg" width="170" height="124" /></li>
+                                <li><img src="../imagesTemp/editorZone/ec-coverimg11.jpg" width="170" height="124" /></li>
+                            </ul>
+                            <div class="picPage"><a href="javascript:void(0)" class="in">1</a><a href="javascript:void(0)">2</a></div>
+                            <script>
+								$(".picPage a").click(function(){
+									var index=$(this).index()
+								$(this).addClass("in").siblings().removeClass("in")
+								$(".bgImg").eq(index).show().siblings(".bgImg").hide()
+								})
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="btns">
+              <input type="button" value="取消" class="cancel" />
+              <input type="button" value="确定" class="confirm" />
+            </div>-->
+          <!--选择模板-->
+          <div class="chooseTemplate" style="display:none;">
+            <div class="title">选择模版 >><!--<a class="replace" href="#">换一组</a>--></div>
+            <div class="template">
+                    <div class="systemPic">
+                        <ul class="defaultPics">
+                        <li class="normal"><img src="../imagesTemp/editorZone/ec-step2-template1.jpg"  width="176" height="234" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ec-step2-template2.jpg"  width="176" height="234" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ec-step2-template3.jpg"  width="176" height="234" /></li>
+                      </ul>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+<!--******************************预览封面部分 分界线***************************************-->
+<div class="shade">
+</div>
+<a href="javascript:void(0)" class="pre-close"></a>
+<div class="preview-group">
+    	<div class="pg-cover model1 pg-cover1">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg1.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="100%" /></div>
+        </div>
+        <div class="pg-cover model1 pg-cover2">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg2.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="94.4%" /></div>
+        </div>
+        <div class="pg-cover model3 pg-cover3">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg3.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="73%" /></div>
+        </div>
+         <div class="pg-cover model1 pg-cover4">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg4.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="85.7%" /></div>
+        </div>
+        <div class="pg-cover model1 pg-cover5">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg5.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="65%" /></div>
+        </div>
+        <div class="pg-cover model1 pg-cover6">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg6.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="51.2%" /></div>
+        </div>
+        <div class="pg-cover model1 pg-cover7">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg7.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="78.6%" /></div>
+        </div>
+        <div class="pg-cover model4 pg-cover8">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg8.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="23%" /></div>
+        </div>
+        <div class="pg-cover model2 pg-cover9">
+        	<img class="picbg" src="../images/editorZone/ec-editcoverbg9.jpg" width="611" height="863" /> 
+            <div class="pg-box pg-box1">请输入标题</div>
+            <div class="pg-box pg-box2">请输入副标题</div>
+            <div class="pg-box pg-box3">请输入作者</div>
+            <div class="img"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="70.4%" /></div>
+        </div>
+</div>
+
+
+<!--******************************script 分界线***************************************--> 
+
+<script>
+/*图片选中效果*/
+(function(){
+var defaultPicLi=$(".defaultPics li");
+defaultPicLi.click(function(){
+	var index=0
+	if($(".procedure .steps .subset .chooseTemplate").css("display")=="block")
+	{
+		index=1;
+	}
+	defaultPicLi.removeClass("click").addClass("normal");
+	$(this).removeClass("normal").addClass("click");
+	var src=$(this).children("img").attr("src");
+	if(src!=null)
+	{
+		var pre=$(".area .preview").eq(index);
+		if(pre.contents("img"))
+		{
+			pre.children().remove();
+		}
+		
+			var img=document.createElement("img");
+			img.src=src;
+			img.width=pre.width();
+			img.height=pre.height();
+			pre.append(img);
+		
+	}
+	})
+	
+/*var img=$(".template img");	
+img.click(function(){
+	    img.removeClass("imgClick");		
+		$(this).addClass("imgClick");
+		var src=$(this)[0].src;
+		if(src!=null)
+		{
+			$(".area .preview").eq(1).children("img")[0].src=src;	
+		}
+	})	
+*/
+})()
+</script>
+
+<script>
+/*系统图片与上传图片切换*/
+(function(){
+var coverA=$(".coverPics a");
+coverA.click(function(){
+	var index=coverA.index(this);
+	coverA.removeClass("active").addClass("inactive");
+	coverA.eq(index).removeClass("inactive").addClass("active");
+	$(".picsBox").css("display","none");
+	$(".picsBox").eq(index).css("display","block");
+	})
+})()
+</script> 
+<script>
+/*增加select 最多插入两排*/
+(function(){
+$(".addSelect").click(function(){
+	var count=$(".typeSelect select").length;
+	if(count==3)
+	{
+		$(".typeSelect label").css("height","60px");
+		for(var i=0;i<3;i++)
+		{
+			var selectNode=document.createElement("select");
+			selectNode.id="lastSelect";
+			$(".typeSelect").append(selectNode);
+			$("#lastSelect").insertBefore(".addSelect");
+			selectNode.id="";
+		}
+		$(this).html("-");
+	}
+	if(count==6)
+	{
+		$(".typeSelect label").css("height","auto");
+		for(var j=5;j>2;j--)
+		{
+			$(".typeSelect select").eq(j).remove();
+		}
+		$(this).html("+");
+	}
+	})
+})()	
+</script> 
+<script>
+/*点击编辑文集封面或文集模板*/
+
+	function SubsetDisplay(switchTable,chooseTemplate)
+	{
+		var coverNode=$(".switchTable");
+		var templateNode=$(".chooseTemplate");	
+		$(".welcomePic").slideUp(400);
+		if(switchTable)
+		{
+			coverNode.slideDown(400);
+			templateNode.slideUp(400);
+		}
+		if(chooseTemplate)
+		{
+			coverNode.slideUp(400);
+			templateNode.slideDown(400);
+		}
+	}
+	
+/*选择文集模板区域鼠标移动上去效果 点击效果*/
+(function(){	
+	var change=$(".interface .area .change");
+	var preview=$(".interface .area .preview");
+	var area=$(".interface .area");
+	area.hover(function()
+	{
+		$(this).removeClass("areaBorder").addClass("borderRed1");
+		var pre=$(this).children(".preview");
+		var classes=pre.attr("class");
+		classes +="Hover";
+		pre[0].className=classes;
+	},function()
+	{
+		$(this).removeClass("borderRed1").addClass("areaBorder");
+		var pre=$(this).children(".preview");
+		var classes=pre.attr("class");
+		var subClass=classes.substr(0,classes.length-5);
+		pre[0].className=subClass;
+	})
+	change.click(function(){
+			var index=change.index(this);
+			if(index==0)
+			{
+				SubsetDisplay(true,false);	
+			}
+			if(index==1)
+			{
+				SubsetDisplay(false,true);
+			}
+		})
+	preview.click(function(){
+			var index=preview.index(this);
+			if(index==0)
+			{
+				SubsetDisplay(true,false);	
+			}
+			if(index==1)
+			{
+				SubsetDisplay(false,true);
+			}
+		})	
+})()	
+</script>
+<script>
+/*插入关键字*/
+(function(){
+var input=$("#keyword");
+var jsNode=document.getElementById("keyword");
+function CreateKeywordNode(value)
+{
+	var keyword=document.createElement("div");
+	var closeIt=document.createElement("div");
+	closeIt.className="close";
+	keyword.className="keyword";
+	var text=document.createTextNode(value);
+	keyword.appendChild(text);
+	keyword.appendChild(closeIt);
+	document.getElementById("parentFrame").insertBefore(keyword,jsNode);
+	jsNode.value="";	
+}
+
+/*根据用户的输入是否带有空格来判断*/
+input.keyup(function(e)
+{
+	var value=$(this).val();
+	var useInputLength=value.length;
+	
+	if($.trim(value).length!=useInputLength && Boolean($.trim(value).length))
+	{   
+		var children=$(this).parent().children();
+		var sumLen=0;
+		var childrenLen=children.length;
+		for(var i=0;i<childrenLen;i++)
+		{
+			sumLen += children.eq(i).width();
+		}
+		if(sumLen<350)
+		{
+			CreateKeywordNode(jsNode.value);
+			$(".keyword .close").click(function(){$(this).parent().remove();});
+		}
+	}
+});
+
+input.focus(function()
+{
+	if($(this).val()=="请用空格键隔开")
+	{
+		$(this).val("");
+		$(this).removeClass("colorGrey");
+	}
+})
+input.blur(function()
+{
+	if($(this).val()=="" && $(this).parent().children().length==1)
+	{
+		$(this).val("请用空格键隔开");
+		$(this).addClass("colorGrey");
+	}
+	else
+	{
+		var value=$(this).val();
+		var useInputLength=value.length;
+		if($.trim(value).length==useInputLength && Boolean($.trim(value).length))
+		{   
+			var children=$(this).parent().children();
+			var sumLen=0;
+			var childrenLen=children.length;
+			for(var i=0;i<childrenLen;i++)
+			{
+				sumLen += children.eq(i).width();
+			}
+			if(sumLen<350)
+		    {
+				CreateKeywordNode(jsNode.value);
+				$(".keyword .close").click(function(){$(this).parent().remove();});
+			}
+		}
+	}
+})
+})()	
+</script>
+<script>	
+/*当文本框获得焦点时，边框变为红色	*/
+(function(){
+$(".procedure .steps .fill .typeText input").focus(function()
+{ 
+	$(this).parent().addClass("borderRed1").removeClass("frameBorder");
+})	
+$(".procedure .steps .fill .typeText input").blur(function()
+{
+	$(this).parent().removeClass("borderRed1").addClass("frameBorder");
+})
+
+$(".procedure .steps .fill .typeTextarea textarea").focus(function()
+{ 
+	$(this).addClass("borderRed1").removeClass("frameBorder");
+})	
+$(".procedure .steps .fill .typeTextarea textarea").blur(function()
+{
+	$(this).removeClass("borderRed1").addClass("frameBorder");
+})
+})()
+</script>
+<script>
+(function(){
+		  /*存草稿和下一步按钮的鼠标移动上去效果*/
+		  var input=$(".procedure .steps .fill .operate input");
+		  input.hover(function()
+		  {
+			  var classes=$(this).attr("class");
+			  classes +="Hover";
+			  $(this)[0].className=classes;
+		  },function()
+		  {
+			  var classes=$(this).attr("class");
+			  var subClass=classes.substr(0,classes.length-5);
+			  $(this)[0].className=subClass;
+		  })
+})()		  
+</script>
+<!--20160316New-->
+<script>
+//点击小图进入编辑封面页面
+	var chooseBg=$(".switchTable .chooseBg")
+	var  editBg=$(".switchTable .editBg")
+	var Li=$(".switchTable .chooseBg li")
+	var tag=$(".styleTab .tagBox a")
+	Li.click(
+		function(){
+		chooseBg.slideUp(100);
+		editBg.slideDown(100)
+			/*左侧高度自适应*/  
+	setTimeout('var height=$(".steps").height();$(".fill").height(height-109)',100)
+	var index0=Li.index(this)
+	$(".bgType li").eq(index0).addClass("cur").siblings("li").removeClass("cur")
+	$(".coverGroup .coverArea").eq(index0).addClass("current").siblings().removeClass("current")	
+	})
+ tag.click(function(){
+	 var index=$(this).index()
+	 $(this).addClass("cur").siblings().removeClass("cur")
+	 $(".displayBox").eq(index).slideDown(200).siblings(".displayBox").slideUp(200)
+	 })
+</script>
+<!--点击底部小模板可编辑区域联动更换-->
+<script>
+	var cLi=$(".bgType li")
+	cLi.click(function(){
+	 var index1=cLi.index(this)
+	 $(this).addClass("cur").siblings("li").removeClass("cur")
+	 $(".coverGroup .coverArea").eq(index1).addClass("current").siblings().removeClass("current")	
+})
+//选择插图，更改封面图片
+   var cImg=$(".bgImg li img")
+   cImg.click(function(){
+	   var route= $(this).attr("src")
+	   $(this).addClass("current").parent("li").siblings().children("img").removeClass("current")
+	$(".coverArea .illustration img").attr({"src":route})   
+	   })
+
+</script>
+<script>
+						//删除文本框
+							$(".coverArea .item .del").click(function(){
+								var itemBox=$(this).parents(".item")
+								var index = itemBox.index()
+								itemBox.css("visibility","hidden").removeClass("dblclick").addClass("default").children(".editBox, .input, .del").hide();
+								itemBox.children(".text").show()
+								if(index==0){
+									$(".coverArea .item1").css("visibility","hidden").removeClass("dblclick").addClass("default").children(".editBox, .input, .del").hide();
+									$(".litimg .block1").hide()
+									$(".pg-cover .pg-box1").hide()
+									$(".coverArea .item1").children(".text").show()
+									itemBox.children(".text").text("请输入标题").css({"font-size":"26px","font-family":"Microsoft YaHei","color":"#666666","text-align":"center"})
+									itemBox.children(".input").val("请输入标题").css({"font-size":"26px","font-family":"Microsoft YaHei","color":"#999999","text-align":"center"})
+									}
+							 if(index==1){
+								 itemBox.children(".text").text("请输入副标题").css({"font-size":"14px","font-family":"Microsoft YaHei","color":"#666666","text-align":"left"})                                 
+								    $(".litimg .block2").hide()
+									$(".pg-cover .pg-box2").hide()
+									itemBox.children(".input").val("请输入副标题").css({"font-size":"14px","font-family":"Microsoft YaHei","color":"#999999","text-align":"left"})
+								 }
+						   if(index==2){
+							 	  $(".litimg .block3").hide()
+							     $(".pg-cover .pg-box3").hide()
+								 itemBox.children(".text").text("请输入作者").css({"font-size":"12px","font-family":"Microsoft YaHei","color":"#666666","text-align":"left"})
+								 itemBox.children(".input").val("请输入作者").css({"font-size":"12px","font-family":"Microsoft YaHei","color":"#999999","text-align":"left"})
+								 }})
+							//添加文本
+							$(".addText").click(function(){
+								var editAreaitem =$(".coverArea .item")
+								var Length=$(".coverArea").length
+								for( var n=0;n<Length-1;n++){
+								if(editAreaitem.eq(3*n).css("visibility")=="hidden"){
+									editAreaitem.eq(3*n).css("visibility","visible");
+									$(".litimg .block1").show()
+									$(".pg-cover .pg-box1").show()
+									return false;
+									}
+								if(editAreaitem.eq(3*n+1).css("visibility")=="hidden"){
+									editAreaitem.eq(3*n+1).css("visibility","visible");
+									$(".litimg .block2").show()
+									$(".pg-cover .pg-box2").show()
+									return false;
+									}
+							   if(editAreaitem.eq(3*n+2).css("visibility")=="hidden"){
+									editAreaitem.eq(3*n+2).css("visibility","visible");
+									$(".litimg .block3").show()
+									$(".pg-cover .pg-box3").show()
+									return false;}
+								}})
+							
+                        </script>
+<!--编辑盒子改变样式脚本-->
+<script>
+	var temp1={
+		edit:{
+			box1:{
+				fontFamily:"",
+				fontSize:"",
+				fontColor:"",
+				textAlign:"",
+				textWord:""
+				},
+		  box2:{
+				fontFamily:"",
+				fontSize:"",
+				fontColor:"",
+				textAlign:"",
+				textWord:""
+				},
+		 box3:{
+				fontFamily:"",
+				fontSize:"",
+				fontColor:"",
+				textAlign:"",
+				textWord:""
+				},
+			img:""}}
+	/*函数（设置css）*/
+	function SetAttr1(editNode,attrName){
+		editNode.bind("change",function(){
+			attrName.fontFamily=$(this).val()
+			$(this).parent().siblings(".input").css("font-family",attrName.fontFamily)
+			})}
+  function SetAttr2(editNode,attrName){
+		editNode.bind("change",function(){
+			attrName.fontSize=$(this).val()
+			$(this).parent().siblings(".input").css("font-size",attrName.fontSize)
+			})}
+    function SetAttr3(editNode,attrName,attrVal){
+		editNode.bind("click",function(){
+			attrName.textAlign=attrVal
+			$(this).parent().siblings(".input").css(attrName,attrName.textAlign)
+			})}
+	function Color(editNode,attrName){
+		editNode.iColor(function (hx) {
+		attrName.fontColor="#"+hx
+		$(this).parent().siblings(".input").css("color",attrName.fontColor)
+   });}
+	SetAttr1($(".type1-1 .editBox .fontFamily"),temp1.edit.box1)
+	SetAttr1($(".type1-2 .editBox .fontFamily"),temp1.edit.box2)
+	SetAttr1($(".type1-3 .editBox .fontFamily"),temp1.edit.box3)
+	SetAttr2($(".type1-1 .editBox .fontSize"),temp1.edit.box1)
+	SetAttr2($(".type1-2 .editBox .fontSize"),temp1.edit.box2)
+	SetAttr2($(".type1-3 .editBox .fontSize"),temp1.edit.box3)
+	SetAttr3($(".type1-1 .editBox .alignLeft"),temp1.edit.box1,"left")
+	SetAttr3($(".type1-1 .editBox .alignCenter"),temp1.edit.box1,"center")
+	SetAttr3($(".type1-1 .editBox .alignRight"),temp1.edit.box1,"right")
+	SetAttr3($(".type1-2 .editBox .alignLeft"),temp1.edit.box2,"left")
+	SetAttr3($(".type1-2 .editBox .alignCenter"),temp1.edit.box2,"center")
+	SetAttr3($(".type1-2 .editBox .alignRight"),temp1.edit.box2,"right")
+	SetAttr3($(".type1-3 .editBox .alignLeft"),temp1.edit.box3,"left")
+	SetAttr3($(".type1-3 .editBox .alignCenter"),temp1.edit.box3,"center")
+	SetAttr3($(".type1-3 .editBox .alignRight"),temp1.edit.box3,"right")
+	Color($(".type1-1 .editBox .fontColor"),temp1.edit.box1)
+	Color($(".type1-2 .editBox .fontColor"),temp1.edit.box2)
+	Color($(".type1-3 .editBox .fontColor"),temp1.edit.box3)
+	/*编辑盒子保存按钮*/
+ $(".coverArea .type1-1 .editBox .boxSave").bind("click",function(){	
+	temp1.edit.box1.textWord=$(this).parents(".editBox").siblings(".input").val()
+   $(this).parents(".item1").removeClass("dblclick").children(".text").show().css({"font-family":temp1.edit.box1.fontFamily,"font-size":temp1.edit.box1.fontSize+"px", "text-align":temp1.edit.box1.textAlign,"color":temp1.edit.box1.fontColor}).text(temp1.edit.box1.textWord)
+   $(this).parents(".editBox").hide().siblings(".del, .input").hide()
+	})
+$(".coverArea .type1-2 .editBox .boxSave").bind("click",function(){	
+	temp1.edit.box2.textWord=$(this).parents(".editBox").siblings(".input").val()
+   $(this).parents(".item2").removeClass("dblclick").children(".text").show().css({"font-family":temp1.edit.box2.fontFamily,"font-size":temp1.edit.box2.fontSize+"px","text-align":temp1.edit.box2.textAlign,"color":temp1.edit.box2.fontColor}).text(temp1.edit.box2.textWord)
+   $(this).parents(".editBox").hide().siblings(".del, .input").hide()
+	})	
+$(".coverArea .type1-3 .editBox .boxSave").bind("click",function(){	
+	temp1.edit.box3.textWord=$(this).parents(".editBox").siblings(".input").val()
+   $(this).parents(".item3").removeClass("dblclick").children(".text").show().css({"font-family":temp1.edit.box3.fontFamily,"font-size":temp1.edit.box3.fontSize+"px","text-align":temp1.edit.box3.textAlign,"color":temp1.edit.box3.fontColor}).text(temp1.edit.box3.textWord)
+   $(this).parents(".editBox").hide().siblings(".del, .input").hide()
+	})
+	/*保存按钮*/
+$(".operateBtn .saveBtn").click(function(){
+	var indexA=$(".coverGroup .coverArea.current").index(".coverArea")
+	temp1.edit.img=$(".coverArea .illustration img").attr("src")
+	$(".surface .litimg").eq(indexA).addClass("display").siblings(".litimg").removeClass("display")
+	$(".surface .litimg .figure img, .pg-cover .img img").attr("src",temp1.edit.img)
+	$(".surface .litimg .block1").css({"font-family":temp1.edit.box1.fontFamily,"text-align":temp1.edit.box1.textAlign,"color":temp1.edit.box1.fontColor})
+	$(".surface .litimg .block2").css({"font-family":temp1.edit.box2.fontFamily,"text-align":temp1.edit.box2.textAlign,"color":temp1.edit.box2.fontColor})
+	$(".surface .litimg .block3").css({"font-family":temp1.edit.box3.fontFamily,"text-align":temp1.edit.box3.textAlign,"color":temp1.edit.box3.fontColor})
+	})
+	
+//预览按钮
+$(".previewBtn").click(function(){
+	var indexA=$(".coverGroup .coverArea.current").index(".coverArea")
+	$(".shade, .preview-group, .pre-close").show()
+	$(".preview-group .pg-cover").eq(indexA).addClass("show").siblings(".pg-cover").removeClass("show")
+	$(".preview-group .pg-cover.model1 .pg-box1").css({"font-family":temp1.edit.box1.fontFamily,"text-align":temp1.edit.box1.textAlign,"color":temp1.edit.box1.fontColor})
+	if(temp1.edit.box1.textWord==""){$(".preview-group .pg-cover.model1 .pg-box1").text("请输入标题")}
+	else {$(".preview-group .pg-cover .pg-box1").text(temp1.edit.box1.textWord)}
+	if(temp1.edit.box1.fontSize==26){$(".preview-group .pg-cover.model1 .pg-box1").css({"font-size":"50px"})}
+	if(temp1.edit.box1.fontSize==24){$(".preview-group .pg-cover.model1 .pg-box1").css({"font-size":"44px"})}
+	if(temp1.edit.box1.fontSize==22){$(".preview-group .pg-cover.model1 .pg-box1").css({"font-size":"40px"})}
+	$(".preview-group .pg-cover .pg-box2").css({"font-family":temp1.edit.box2.fontFamily,"text-align":temp1.edit.box2.textAlign,"color":temp1.edit.box2.fontColor})
+	if(temp1.edit.box2.textWord==""){$(".preview-group .pg-cover.model1 .pg-box2").text("请输入副标题")}
+	else{$(".preview-group .pg-cover .pg-box2").text(temp1.edit.box2.textWord)}
+	if(temp1.edit.box2.fontSize==16){$(".preview-group .pg-cover.model1 .pg-box2").css({"font-size":"20px"})}
+	if(temp1.edit.box2.fontSize==14){$(".preview-group .pg-cover.model1 .pg-box2").css({"font-size":"18px"})}
+	if(temp1.edit.box2.fontSize==12){$(".preview-group .pg-cover.model1 .pg-box2").css({"font-size":"16px"})}
+	$(".preview-group .pg-cover.model1 .pg-box3").css({"font-size":temp1.edit.box3.fontSize,"font-family":temp1.edit.box3.fontFamily,"text-align":temp1.edit.box3.textAlign,"color":temp1.edit.box3.fontColor})
+	if(temp1.edit.box3.textWord==""){$(".preview-group .pg-cover.model1 .pg-box3").text("请输入作者")}
+	else{$(".preview-group .pg-cover.model1 .pg-box3").text(temp1.edit.box3.textWord)}
+	})
+$(".pre-close").click(function(){
+	$(".shade, .preview-group, .pre-close").hide()
+	})	 
+</script>
+<!--封面合成最终大图部分-->
+<div class="compound">
+	<div class="coverFinal coverFinal1 category1">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg1.jpg" width="1240" height="1754" />
+    	 <div class="part part1">冬季，不只可以看雪以看雪</div>
+         <div class="part part2">忽如一夜春风来，千树万树梨花开</div>
+         <div class="part part3">主编：逆流而上</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="100%" /></div>
+    </div>
+    <div class="coverFinal coverFinal2 category1">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg2.jpg" width="1240" height="1754" />
+    	 <div class="part part1">异乡客</div>
+         <div class="part part2">——你若虚怀若谷，异乡也是故乡。</div>
+         <div class="part part3">主编：核桃林</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="94.4%" /></div>
+    </div>
+    <div class="coverFinal coverFinal3 category3">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg3.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="73%" /></div>
+    </div>
+     <div class="coverFinal coverFinal4 category1">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg4.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="85.7%" /></div>
+    </div>
+     <div class="coverFinal coverFinal5 category1">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg5.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="65%" /></div>
+    </div>
+    <div class="coverFinal coverFinal6 category1">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg6.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="51.2%" /></div>
+    </div>
+    <div class="coverFinal coverFinal7 category2">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg7.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="78.6%" /></div>
+    </div>
+    <div class="coverFinal coverFinal8 category4">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg8.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="280"/></div>
+    </div>
+    <div class="coverFinal coverFinal9 category2">
+    	 <img class="bgPic" src="../images/editorZone/ec-editcoverbg9.jpg" width="1240" height="1754" />
+    	 <div class="part part1">请输入标题</div>
+         <div class="part part2">请输入副标题</div>
+         <div class="part part3">请输入作者</div>
+         <div class="inset"><img src="../imagesTemp/editorZone/ec-coverimg1.jpg" width="70.4%"/></div>
+    </div>    
+    
+    <!--<script>
+		$(".compound .coverFinal.category1 .part1").css({"font-family":temp1.edit.box1.fontFamily,"text-align":temp1.edit.box1.textAlign,"color":temp1.edit.box1.fontColor})
+		if(temp1.edit.box1.textWord==""){$(".compound .coverFinal.category1 .part1").text("请输入标题")}
+		else {$(".compound .coverFinal.category1 .part1").text(temp1.edit.box1.textWord)}
+		if(temp1.edit.box1.fontSize==26){$(".compound .coverFinal.category1 .part1").css({"font-size":"100px"})}
+		if(temp1.edit.box1.fontSize==24){$(".compound .coverFinal.category1 .part1").css({"font-size":"90px"})}
+		if(temp1.edit.box1.fontSize==22){$(".compound .coverFinal.category1 .part1").css({"font-size":"80px"})}
+        if(temp1.edit.box1.fontSize==20){$(".compound .coverFinal.category1 .part1").css({"font-size":"70px"})}
+        if(temp1.edit.box1.fontSize==18){$(".compound .coverFinal.category1 .part1").css({"font-size":"60px"})}
+		$(".compound .coverFinal.category1 .part2").css({"font-family":temp1.edit.box2.fontFamily,"text-align":temp1.edit.box2.textAlign,"color":temp1.edit.box2.fontColor})
+	if(temp1.edit.box2.textWord==""){$(".compound .coverFinal.category1 .part2").text("请输入副标题")}
+	else{$(".compound .coverFinal.category1 .part2").text(temp1.edit.box2.textWord)}
+	if(temp1.edit.box2.fontSize==16){$(".preview-group .pg-cover.model1 .pg-box2").css({"font-size":"40px"})}
+	if(temp1.edit.box2.fontSize==14){$(".preview-group .pg-cover.model1 .pg-box2").css({"font-size":"38px"})}
+	if(temp1.edit.box2.fontSize==12){$(".preview-group .pg-cover.model1 .pg-box2").css({"font-size":"36px"})}
+	$(".compound .coverFinal.category1 .part3").css({"font-family":temp1.edit.box2.fontFamily,"text-align":temp1.edit.box2.textAlign,"color":temp1.edit.box2.fontColor})
+	if(temp1.edit.box3.textWord==""){$(".compound .coverFinal.category1 .part3").text("请输入作者")}
+	else{$(".compound .coverFinal.category1 .part3").text(temp1.edit.box3.textWord)}
+	if(temp1.edit.box2.fontSize==16){$(".preview-group .pg-cover.model1 .pg-box3").css({"font-size":"28px"})}
+	if(temp1.edit.box2.fontSize==14){$(".preview-group .pg-cover.model1 .pg-box3").css({"font-size":"26px"})}
+	if(temp1.edit.box2.fontSize==12){$(".preview-group .pg-cover.model1 .pg-box3").css({"font-size":"24px"})}
+	$(".compound .coverFinal .inset img").attr("src",temp1.edit.img)
+    </script>-->
+</div>
+
+<!--意见反馈按钮-->
+<script type="text/javascript">
+  $(window).scroll(function(){
+    var A = $(window).scrollTop();
+    if(($(".ecFooter").offset().top - $(window).scrollTop()) < $(window).height()){
+        var fixOffset = $(window).height()-($(".ecFooter").offset().top-$(window).scrollTop());
+        $(".btn-advice").css("bottom",fixOffset+ "px"); 
+    }else{
+        $(".btn-advice").css("bottom",""); 
+    }
+});
+var wWidth=$(window).width();
+var l=(wWidth-1190)/2;
+$('.btn-advice').css("left",l+1200+'px');
+</script>
+</body>
+</html>

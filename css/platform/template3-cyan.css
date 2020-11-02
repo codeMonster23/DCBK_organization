@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+.t3-BodyBgC { background-color: #cce275; background-image: url(../../images/platform/template3/t3-topBg3.jpg); background-repeat: no-repeat; background-position: center 54px; }
+.t3-siteMapColor { color: #799867; }
+.t3-bannnerBgPic { background-image: url(../../images/platform/template3/t3-bannerBg3.jpg);  }
+.t3-bannnerColor { color:#541200;}
+.t3-introBorder { border:1px solid #a5bc4a;}
+.t3-catalogTitleBorder { border-top:14px solid #e97556;}
+.t3-catalogTitleBg-color { color:#9f2707; background-color:#ffd162; background-image:url(../../images/platform/template3/t3-titleBg3.jpg);}
+.t3-sideEditorBg { background-image:url(../../images/platform/template3/t3-editorBg3.jpg)}
+.template3 .article .side .previewCatalog dl .t3-sideContentCurrent { background-image: url(../../images/platform/template3/t3-chapter2.jpg); }
+.template3 .article .side .previewCatalog dl .t3-sideContentCurrent a { color:#ea8a64;}
+.t3-floatAreaBorder { border-top: 8px solid #e97556; }
+

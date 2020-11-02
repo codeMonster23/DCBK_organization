@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/checkboxSelectAll.js"></script>
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/new_editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#EBEBEB">
+<div class="topBanner">
+  <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+    
+    <!--//--------------------------------------->
+    
+    <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+    <!--<div class="right"><a class="colorGrey loginState" href="#">蒋萌</a> | <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey loginState" href="#">我的智库</a> | <a class="colorGrey" href="#">购物车( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey" href="#">充值</a> | <a class="colorGrey" href="#">帮助</a></div>-->
+    
+    
+    <div class="right user-bar">
+      <div class="downlist">
+        <a class="colorGrey loginState" href="#">蒋萌</a>
+        <div class="list_box listBoxPosition11">
+          <ul>
+            <li><a href="#">　编创中心</a></li>
+            <li><a href="#">　我的主页</a></li>
+            <li><a href="#" class="quit">　退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <span> | </span>
+      <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+      <span> | </span>
+       <div class="downlist">
+        <a class="colorGrey" href="#">编创空间 </a>
+      </div>
+      <span> | </span>
+      <a class="colorGrey" href="#">帮助</a>
+    </div>
+    
+    
+    
+    
+  </div>
+  <script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+	lb.css("display","none");
+	var index=ls.index(this);
+	lb.eq(index).css("display","block");
+},function(){
+	lb.css("display","none");
+	})
+lb.hover(function(){
+	$(this).css("display","block");
+	},function(){
+	$(this).css("display","none");
+})
+})()
+</script>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto ecZone clearfix">
+    <div class="ecSideMenu left">
+      	<div class="editorIntro">
+        	<a href="javascript:void(0);" class="headImage"><img src="../imagesTemp/editorZone/ec1-avatar.jpg" width="112" height="112" /></a>
+            <div class="shortIntro positionR">
+            	<p class="userName"><span>我是创作大师</span></p>
+            	<div class="text-box">切斯·克劳福 (ChaceCrawford)，1985年7月18日出生于德克萨斯州卢博克市，美国演员。2007年...</div>
+                <a href="#" class="edit positionA"></a>
+                <script>
+					$(".shortIntro").hover(function(){$(this).children(".edit").css({"display":"block"})},function(){$(this).children(".edit").css({"display":"none"})})
+                </script>
+            </div>
+        </div>
+        <div class="sideBtn">
+            	<a href="#" class="btn1">作品编创</a>
+                <a href="#" class="btn2">上传素材</a>
+          </div>
+        <div class="line1"></div>
+        <div class="materialLibrary  c_section current">
+        	 <h1>素材库</h1>
+             <p><a href="#" class="cur">搜索CNKI素材</a></p>
+             <p><a href="#">我的CNKI素材库</a></p>
+             <p><a href="#">我的原创素材库</a></p>
+        </div>
+        <div class="line1"></div>
+        <div class="production c_section">
+        	<h1><a href="#">作品管理</a></h1>
+        </div>        
+        <div class="line1"></div>
+        <div class="personal c_section">
+        	<h1><a href="#">个人资料</a></h1>
+        </div>
+         <div class="line1"></div>
+         <a href="javascript:void(0)" class="leaveNote" ><img src="../images/editorZone/zjg-ly.jpg" width="225" height="82" /></a>
+        <script>
+			var Se=$(".c_section")
+			$(Se).hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})
+        </script>
+    </div>
+    <div class="material left"> 
+      <div class="mheader">
+        <div class="title">当前位置：<a href="#">首页</a> &gt; 素材库 &gt; 搜索CNKI素材</div> 
+        <div class="line"></div>
+      </div>
+      <h2 class="find">搜索汇编素材</h2>
+      <div class="seek">
+      		<div class="clearfix choose">
+            	<div class="btn" id="btn">
+                	<span class="remove"></span>
+                    <span class="add"></span>   
+        		</div>
+                 <div class="selectwrap" id="selectwrap">
+        			<div class="select">
+            			<p class="item">全&nbsp;文</p><input class="left" type="text" value="" /><div class="yearwrap displayN">
+                        <div class="fromwrap left positionR"><i class="left">从</i><p class="p from right positionR"><b>不限</b><span class="positionA"></span></p>
+                        <ul class="fromlist positionA">
+                        	<li>不限</li>
+                            <li>1915年</li>
+                            <li>1949年</li>
+                            <li>1979年</li>
+                        </ul>
+                        </div>
+                        <div class="towrap left positionR"><i class="left">到</i><p class="p to right positionR"><b>不限</b><span class="positionA"></span></p>
+                        <ul class="tolist positionA">
+                        	<li class="ndy">不限</li>
+                            <li>1979年</li>
+                            <li>1949年</li>
+                            <li>1915年</li>
+                        </ul>
+                        </div>
+                        	
+                        </div> 
+                		<ul class="itemlist">
+                        	<li>全&nbsp;文</li>
+                            <li>主&nbsp;题</li>
+                            <li>篇&nbsp;名</li>
+                            <li>关键词</li>
+                            <li>作&nbsp;者</li>
+                            <li>作者单位</li>
+                            <li>文献来源</li>
+                            <li>基&nbsp;金</li>
+                            <li class="fbsj">发表时间</li>      
+                		</ul>
+                        
+                     </div>
+                    
+                     <a class="search" href="#" id="search">搜索</a>
+            	</div>
+                
+                     <script>
+window.onload=function()
+{
+	(function()
+	{
+		var aBtn=document.getElementById('btn');
+		var oWrap=document.getElementById('selectwrap');
+		var oAdd=aBtn.children[1];
+		var oS=document.getElementById('search');
+		oAdd.onclick=function()
+		{
+			var oBox=document.createElement('div');
+			oBox.className='select';
+			oBox.innerHTML='<p class="item">全&nbsp;文</p><input  type="text" value=""><div class="yearwrap displayN"> <div class="fromwrap left positionR"><i class="left">从</i><p class="p from right positionR"><b>不限</b><span class="positionA"></span></p>'+'<ul class="fromlist positionA ">'
+                        	+'<li>不限</li>'
+                            +'<li>1915年</li>'
+                            +'<li>1949年</li>'
+                            +'<li>1979年</li>'
+                        +'</ul>'
+						+'</div><div class="towrap left positionR"><i class="left">到</i><p class="p to right positionR"><b>不限</b><span class="positionA"></span></p>'+
+                        '<ul class="tolist positionA">'
+                        	+'<li class="ndy">不限</li>'
+                            +'<li>1979年</li>'
+                            +'<li>1949年</li>'
+                            +'<li>1915年</li>'
+                        +'</ul>'
+                        +'</div></div>'  
+                +'<ul class="itemlist">'
+					+'<li>全&nbsp;文</li>'
+                	+'<li>主&nbsp;题</li>'
+                    +'<li>篇&nbsp;名</li>'
+                    +'<li>关键词</li>'
+					+'<li>作&nbsp;者</li>'
+					+'<li>作者单位</li>'
+                     + '<li>文献来源</li>'
+                      +'<li>基&nbsp;金</li>'
+					  +'<li class="fbsj">发表时间</li>'
+                +'</ul>';
+			oWrap.appendChild(oBox);
+			oS.style.top=(oWrap.children.length-2)*52+'px';
+			if(oWrap.children.length>2)
+			{
+				aBtn.children[0].style.display='inline-block';
+			}
+			else
+			{
+			aBtn.children[0].style.display='none';
+			}
+		}
+		document.onclick=function(ev)
+		{
+			var oEvent=ev||event;
+			var oTarget=oEvent.srcElement || oEvent.target;
+			if(oTarget.className=='remove')
+			{
+				if(oWrap.children.length>2)
+				{
+					oWrap.removeChild(oWrap.children[oWrap.children.length-1]);
+					oS.style.top=(oWrap.children.length-2)*52+'px'; 
+				}
+				if(oWrap.children.length<=2){
+						aBtn.children[0].style.display='none';	
+						}
+				/*else
+				{
+					aBtn.children[1].style.display='none';
+				}*/
+				
+			}				
+		}
+	})()
+}
+</script>
+					 <script>
+   				 (function(){
+					 $(".from").live("click",function(){
+        			var start = 1980; // 指定开始年份
+        			var end = new Date().getFullYear(); // 获取当前年份
+       				 for(i=start;i<=end;i++)
+            		{$(".fromlist").append("<li>"+i+"年</li>")}})})()
+				</script>
+				     <script>
+                   (function(){
+					    $(".to").live("click",function(){
+                        var start = 1980; // 指定开始年份
+                        var end = new Date().getFullYear(); // 获取当前年份
+                        for(i=start;i<=end;i++)
+                            {$(".tolist .ndy").after("<li>"+i+"年</li>")}}) 
+                    })()
+                </script>
+                     <script>
+				(function(){  
+                                      
+					$(".select .item").live("click",
+						function(){
+                        $(".select .itemlist").hide()   
+                        $(this).siblings(".itemlist").show()
+						$(this).parent(".select").css({"z-index":"20"})//ie6、7修正
+							})
+					$(".select .itemlist").live("mouseover",
+                    function(){$(this).show();$(this).parent(".select").css({"z-index":"20"})}).live("mouseout",function(){
+						$(this).hide()
+						$(this).parent(".select").css({"z-index":"1"})
+						}	
+					)
+					$(".select .itemlist li").live("mouseover",
+						function(){
+							$(this).addClass("gray")	
+							}).live("mouseout",
+						function(){
+							$(this).removeClass("gray")	
+							}
+					)
+					$(".select .itemlist li").live("click",
+						function(){
+						var Text=$(this).text()	
+						$(this).parent(".select .itemlist").siblings(".item").text(Text)	
+						$(this).parent(".select .itemlist").hide()	
+						$(this).parent(".select").css({"z-index":"1"})
+						$(this).parent(".select .itemlist").removeClass("itemlistspec")
+						$(this).parents(".select").removeClass("selectspec")
+						$(this).parent().siblings("input").css({"display":"block"})
+						$(this).parent().siblings(".yearwrap").css({"display":"none"})
+							})
+					$(".select .itemlist .fbsj").live("click",
+						function(){
+						$(this).parent(".select .itemlist").addClass("itemlistspec")
+						$(this).parents(".select").addClass("selectspec")
+						$(this).parent().siblings("input").css({"display":"none"})
+						$(this).parent().siblings(".yearwrap").css({"display":"block"})
+							})
+					})()
+            </script>
+            		 <script>
+				(function(){
+					$(".yearwrap .p").live("mouseover",
+					function(){
+							$(this).addClass("hoverp")}).live("mouseout",
+					function(){
+							$(this).removeClass("hoverp")})
+					$(".yearwrap .p").live("click",
+						function(){
+							$(".yearwrap ul").css({"display":"none"})
+							$(".yearwrap .p").removeClass("clickp")
+							$(this).parents(".selectspec").css({"z-index":100})   
+                        	$(this).siblings("ul").show(5)
+							$(this).addClass("clickp")}//不触发body点击事件用live
+					)
+					$(".yearwrap ul li").live("mouseover",
+						function(){
+							$(this).addClass("hover")}).live("mouseout",function(){
+							$(this).removeClass("hover")})
+					$(".select .yearwrap ul li").live("click",
+						function(){
+						var Text=$(this).text()	
+						$(this).parent("ul").siblings(".p").children("b").text(Text)	
+						$(this).parent("ul").hide()	
+						$(".select .itemlist").removeClass("itemlistspec")
+							})		
+						$(".select .yearwrap ul").live("mouseover",function(){
+						$(this).css({"display":"block"})}).live("mouseout",function(){
+						$(this).css({"display":"none"})
+						$(this).siblings(".p").removeClass("clickp")
+						})
+						$("body").click(
+						function(){
+						$(".select ul").hide()
+						$(".select").css({"z-index":"1"})
+						$(".yearwrap .p").removeClass("clickp")	
+							})})()
+                </script>	
+            </div>
+            <div class="scope clearfix">
+            	<div class="left s1 clearfix">
+                	<label class="left">检索范围：</label>
+                    <div class="checkbox all left"><span class="check left"></span><span class="text left">全部</span></div>
+                </div>
+                <div class="left s2 clearfix">
+                	<div class="checkbox left"><span class="check left"></span><span class="text left">经济管理</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text lock left">农业科技</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">信息科技</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">社会科学I</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技I</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">基础科学</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">医药卫生</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">哲学人文</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">社会科学II</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技II</span></div>
+                </div>
+            </div>
+            <script>
+				/*复选框效果*/
+				$(".scope .checkbox").click(function(){
+					$(this).toggleClass("checked")
+					})
+				$(".scope .all").click(function(){
+					if($(this).hasClass("checked")){
+						$(".scope .s2 .checkbox").addClass("checked")
+						}
+					else{$(".scope .s2 .checkbox").removeClass("checked")}
+					})
+            </script>
+      </div>
+      <!--搜索结果-->
+      <div class="searchResult">
+        <div class="summary">
+        	<p class="t">通过分类查找素材：</p>
+          <div class="classify">
+       	  	<p><a href="#">经济管理</a> |  <a href="#">医药卫生</a> |  <a href="#">农业科技</a> |  <a href="#">信息科技</a> |  <a href="#">基础科学</a> |  <a href="#">哲学人文</a> |  <a href="#">工程科技Ⅰ</a> |  <a href="#">社会科学Ⅰ</a></p>
+            <p><a href="#">经济信息</a> |  <a href="#">基础教育</a> |  <a href="#">精品文化</a> |  <a href="#">精品文艺</a> |  <a href="#">精品科普</a> |  <a href="#">党政党建</a> |  <a href="#">工程科技Ⅱ</a> |  <a href="#">社会科学Ⅱ</a></p> 
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************-->
+<script>
+/**左右高度自适应*/
+mysetHeight(); 
+function mysetHeight()
+{
+	var ecSideMenu=$(".ecSideMenu");
+	var material=$(".material");
+    var maxV=Math.max(ecSideMenu.height(),material.height())+35;
+		 material.height(maxV);	
+}
+</script>
+
+</body>
+</html>

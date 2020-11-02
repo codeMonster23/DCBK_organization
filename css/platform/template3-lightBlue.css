@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*black template css*/
+
+.t3-BodyBgC { background-color: #d0edf9; background-image: url(../../images/platform/template3/t3-topBg1.jpg); background-repeat: no-repeat; background-position: center 54px; }
+.t3-siteMapColor { color: #9f3d16; }
+.t3-bannnerBgPic { background-image: url(../../images/platform/template3/t3-bannerBg1.jpg);  }
+.t3-bannnerColor { color:#000;}
+.t3-introBorder { border:1px solid #e9e9e9;}
+.t3-catalogTitleBorder { border-top:14px solid #ea8a64;}
+.t3-catalogTitleBg-color { color:#d36938; background-color:#f7ee93; background-image:url(../../images/platform/template3/t3-titleBg1.jpg);}
+.t3-sideEditorBg { background-image:url(../../images/platform/template3/t3-editorBg1.jpg)}
+.template3 .article .side .previewCatalog dl .t3-sideContentCurrent { background-image: url(../../images/platform/template3/t3-chapter2.jpg); }
+.template3 .article .side .previewCatalog dl .t3-sideContentCurrent a { color:#ea8a64;}
+.t3-floatAreaBorder { border-top: 8px solid #eb8b65; }
+

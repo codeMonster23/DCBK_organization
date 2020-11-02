@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script src="../js/jquery.promptToggle.js"></script>
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/new_editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="#EBEBEB">
+	<div class="pop-message">
+    	<a href="#" class="close"></a>
+    	<h1>给管理员留言</h1>
+        <div class="box">
+        	<div class="item clearfix">
+            	<label class="left">问题描述：</label>
+                <textarea class="left colorGrey">请给管理员留下您的宝贵意见</textarea>
+            </div>
+            <div class="item clearfix">
+            	<label class="left">联系方式：</label>
+                <input class="left colorGrey" type="text" value="请输入手机号或邮箱（选填）" autocomplete="off" />
+            </div>
+            <script>
+				PromptToggle($(".item textarea"),"请给管理员留下您的宝贵意见","left colorGrey","left")
+				PromptToggle($(".item input"),"请输入手机号或邮箱（选填）","left colorGrey","left")
+            </script>
+            <a href="#" class="submit">提　交</a>
+        </div>
+       
+    </div>
+
+</body>
+</html>

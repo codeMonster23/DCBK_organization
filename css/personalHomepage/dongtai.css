@@ -1,0 +1,76 @@
+/* 内容右侧 */
+/*show-start*/
+.dynamic-show { width:915px; height:auto; padding-top:13px; }
+.show1 { width:867px; height:257px; overflow:hidden; padding:20px 28px 0px 20px; background:#fff; margin-bottom:11px; }
+.show1-l { width:69px; height:100%; overflow:hidden; float:left; }
+.show1-lk { width:60px; margin-right:9px; height:60px; overflow:hidden; float:left; }
+.show1-l img { width:100%; display:block; }
+.show1-r { width:798px; height:257px; float:left; }
+.show1r-t { width:100%; height:25px; float:left; font-size:16px; color:#575757; }
+.show1r-t span { color:#0386d9; float:left; }
+.show1r-t p { float:left; }
+.show1r-t .v { background:url(../../images/personalHomepage/v2.jpg) no-repeat; padding:5px 10px 5px 8px; margin-top: 6px;/* margin-top:4px;
+    float:left;
+    color:#ff9702;
+    font-family:"宋体";
+    margin-left:3px;
+    margin-right:5px; */
+}
+.show1r-m { width:791px; height:195px; padding-left:7px; float:left; /*overflow:hidden;*/
+    position:relative; }
+.show1r-m .bg { display:block; height:100%; position:absolute; left:0px; top:0px; width:100%; }
+.show1rm-t { width:759px; height:159px; overflow:hidden; position:absolute; top:8px; left:15px; border-bottom:1px solid #e1e1e4; }
+.show1rm-l { width:171px; height:124px; margin-top:15px; float:left; overflow:hidden; }
+.show1rm-l img { width:100%; display:block; }
+.show1rm-r { width:577px; height:140px; float:left; margin-top:15px; margin-left:11px; }
+.show1rmr-t { width:100%; height:28px; border-bottom:1px solid #e1e1e4; color:#0386d9; font-size:16px; }
+.show1rm-b { width:100%; height:89px; margin-top:13px; color:#797979; line-height:25px; font-size: 13px; }
+.show1rm-b .jj { font-weight: bold; }
+.show1rm-b .xx { color:#0386d9; margin-left:24px; }
+.show1rm-bb { width:246px; height:35px; line-height:45px; /*overflow:hidden;*/
+    position:absolute; top:160px; right:23px; font-size:12px; }
+.bianke { height: 128px; }
+.bianke .show1-r { height: 128px; }
+.bianke .show1-r .show1rm-t { height: 63px; border:0; }
+.bianke .show1r-m { height: 65px; }
+.bianke .bg { height: 65px; }
+.bianke .biaoqian { padding-top: 20px; }
+.liu { width:66px; height:35px; color:#9b9b9b; margin-right:5px; float:left; }
+.liur-r { width:170px; height:35px; float:right; /*overflow:hidden;*/
+}
+.liur { float:left; color:#0386d9; margin:0px; }
+.liur img { float:left; margin-top:15px; margin-right:3px; }
+.liur span { color:#9b9b9b; margin-left:3px; }
+.show1rm-l img { width:100%; display:block; }
+.show1r-b { width:791px; height:30px; line-height:35px; font-size:12px; color:#9b9b9b; padding-left:7px; }
+/*2*/
+.show3rm-r { width:752px; word-wrap: break-word; }
+/*4*/
+.show4rm-l { width:132px; height:132px; overflow:hidden; float:left; }
+.show4rm-l img { height:100%; margin-top:15px; display:block; }
+.show4rm-r { width:609px; height:140px; float:left; margin-top:15px; margin-left:11px; }
+.show4rm-rl { width:258px; height:100%; float:left; }
+.show4rm-rlt { width:100%; height:24px; line-height: 24px; color:#0386d9; font-size:16px; }
+.show4rm-rlt span { margin-left:5px; color:#ff9702; }
+.show4rm-rlm { width:100%; height:14px; color:#797979; font-size:12px; margin-top:10px; line-height:14px; margin-bottom:15px; }
+.show4rm-rlm span { color:#dddddd; margin-left:17px; margin-right:14px; }
+.show4rm-rl-b { width:100%; height:25px; }
+/*6-start*/
+.show6rm-zhu { width:107px; height:23px; border:1px solid #afafaf; font-size:12px; line-height: 23px; }
+.show6rm-zhu span { color:#a5a5a5; float:left; }
+.show6rm-zhu div { width:40px; height:23px; float:left; color:#a5a5a5; cursor:pointer; }
+.show6rm-zhu .show6rm-zhu-l { width:55px; padding-left:5px; /*background:red;*/
+}
+.show6rm-zhu-l img { height:10px!important; width: 8px!important; float:left; margin:6px 2px 0 2px; }
+.show6rm-zhu .show6rm-zhu-r { color:#0785dc; text-align:center; }
+/*6-end*/
+.show4rm-rl-b img { display:block; width: 90px; height:25px; }
+.show4rm-rr { width:350px; height:140px; float:left; }
+.show4rm-rr-t { width:100%; height:30px; border-bottom:1px solid #e1e1e4; color:#575757; font-size: 13px; line-height: 30px; }
+.show4rm-rr-b { width:100%; height:106px; padding-top:9px; }
+.show4rm-rr-b a { color:#0386d9; font-size: 12px; float:left; margin-bottom:12px; width:100%; height:auto; }
+.show1rm-bb a { width:auto; height:35px; float:right; color:#0386d9; }
+.di-cha { width:100%; height:18px; float:left; background:#fff; border-bottom:1px solid #e2dbcb; text-align:center; /*line-height:22px;*/
+    padding-top:4px; color:#0386d9; }
+.di-cha img { display:inline-block; }
+/*show-end*/

@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/new_editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#EBEBEB">
+<div class="topBanner">
+  <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+    
+    <!--//--------------------------------------->
+    
+    <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+    <!--<div class="right"><a class="colorGrey loginState" href="#">蒋萌</a> | <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey loginState" href="#">我的智库</a> | <a class="colorGrey" href="#">购物车( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey" href="#">充值</a> | <a class="colorGrey" href="#">帮助</a></div>-->
+    
+    
+    <div class="right user-bar">
+      <div class="downlist">
+        <a class="colorGrey loginState" href="#">蒋萌</a>
+        <div class="list_box listBoxPosition11">
+          <ul>
+            <li><a href="#">　编创中心</a></li>
+            <li><a href="#">　我的主页</a></li>
+            <li><a href="#" class="quit">　退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <span> | </span>
+      <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+      <span> | </span>
+       <div class="downlist">
+        <a class="colorGrey" href="#">编创空间 </a>
+      </div>
+      <span> | </span>
+      <a class="colorGrey" href="#">帮助</a>
+    </div>
+    
+    
+    
+    
+  </div>
+  <script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+	lb.css("display","none");
+	var index=ls.index(this);
+	lb.eq(index).css("display","block");
+},function(){
+	lb.css("display","none");
+	})
+lb.hover(function(){
+	$(this).css("display","block");
+	},function(){
+	$(this).css("display","none");
+})
+})()
+</script>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto ecZone clearfix">
+    <div class="ecSideMenu left">
+      	<div class="editorIntro">
+        	<a href="javascript:void(0);" class="headImage"><img src="../imagesTemp/editorZone/ec1-avatar.jpg" width="112" height="112" /></a>
+            <div class="shortIntro positionR">
+            	<p class="userName"><span>我是创作大师</span></p>
+            	<div class="text-box">切斯·克劳福 (ChaceCrawford)，1985年7月18日出生于德克萨斯州卢博克市，美国演员。2007年...</div>
+                <a href="#" class="edit positionA"></a>
+                <script>
+					$(".shortIntro").hover(function(){$(this).children(".edit").css({"display":"block"})},function(){$(this).children(".edit").css({"display":"none"})})
+                </script>
+            </div>
+        </div>
+        <div class="sideBtn">
+            	<a href="#" class="btn1">作品编创</a>
+                <a href="#" class="btn2">上传素材</a>
+          </div>
+        <div class="line1"></div>
+        <div class="materialLibrary  c_section current">
+        	 <h1>素材库</h1>
+             <p><a href="#">搜索CNKI素材</a></p>
+             <p><a href="#" class="cur">我的CNKI素材库</a></p>
+             <p><a href="#">我的原创素材库</a></p>
+        </div>
+    <div class="line1"></div>
+        <div class="production c_section">
+        	<h1><a href="#">作品管理</a></h1>
+        </div>        
+        <div class="line1"></div>
+        <div class="personal c_section">
+        	<h1><a href="#">个人资料</a></h1>
+        </div>
+         <div class="line1"></div>
+         <a href="javascript:void(0)" class="leaveNote" ><img src="../images/editorZone/zjg-ly.jpg" width="225" height="82" /></a>
+        <script>
+			var Se=$(".c_section")
+			$(Se).hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})
+        </script>
+    </div>
+    <div class="material material1 left"> 
+      <div class="topInfo clearfix">当前位置：<a href="#" class="upper">素材库</a> &gt; 我的CNKI素材库</div>
+      <h1>我的CNKI素材库</h1>
+	  <div class="searchsimple positionR">
+      <input class="left colorGrey" type="text" value="输入关键词，在1.2亿篇文献中搜索素材" />
+       <p class="left">全部</p>
+      <a href="#" class="right">搜索</a>
+      <ul>
+          <li>我的CNKI素材库</li>
+      </ul>
+      <script>
+      (function(){
+						var li=$(".searchsimple ul li ");
+						var popUp1=$(".searchsimple ul");
+						var dropDownList1=$(".searchsimple p");
+						var input=$(".searchsimple input");
+						popUp1.hover(function(){popUp1.css("display","block");},function(){popUp1.css("display","none");});
+						li.hover(function(){popUp1.css("display","block");},function(){}) 
+						dropDownList1.click(function(){popUp1.css("display","block");})	
+						dropDownList1.mouseout(function(){popUp1.css("display","none");})	
+						li.click(function(){
+							var text=$(this).text();	
+							oldValue1=dropDownList1.text();
+							dropDownList1.text(text);
+							if(text=="全部")
+							{
+								if($.trim(input.val()).length==0 || input.val()=="输入关键词，在我的CNKI素材库内搜索素材")
+								{
+								input.val("输入关键词，在1.2亿篇文献中搜索素材").addClass("colorGrey");
+								}
+							}
+							if(text=="我的CNKI素材库")
+							{
+								if($.trim(input.val()).length==0 || input.val()=="输入关键词，在1.2亿篇文献中搜索素材")
+								{
+								input.val("输入关键词，在我的CNKI素材库内搜索素材").addClass("colorGrey");
+								}
+							}
+						$(this).text(oldValue1);
+						popUp1.css("display","none");
+					})	
+						/*文本框内的信息根据选中的类别变化*/
+						input.focus(function()
+						{
+							if(dropDownList1.html()=="全部")
+							{
+								if($(this).val()=="输入关键词，在1.2亿篇文献中搜索素材")
+								{
+									$(this).val("").removeClass("colorGrey");
+								}
+							}
+							else
+							{
+								if(dropDownList1.html()=="我的CNKI素材库")
+								{
+									if($(this).val()=="输入关键词，在我的CNKI素材库内搜索素材")
+									{
+										$(this).val("").removeClass("colorGrey");
+									}
+								}	
+								
+							}
+						})
+						/*文本框内的信息根据选中的类别变化*/
+						input.blur(function()
+						{
+							if(dropDownList1.html()=="全部")
+							{
+								if($(this).val()=="")
+								{
+									$(this).val("输入关键词，在1.2亿篇文献中搜索素材").addClass("colorGrey");
+								}
+							}
+							else
+							{
+								if(dropDownList1.html()=="我的CNKI素材库")
+								{
+									if($(this).val()=="")
+									{
+										$(this).val("输入关键词，在我的CNKI素材库内搜索素材").addClass("colorGrey");
+									}
+								}	
+								
+							}
+							})
+						})()
+                </script>
+      </div>
+    <div class="displayTit"><span>我的CNKI素材库</span>(共3个)<div class="mode positionA clearfix"><a href="#" class="pic left"></a><a href="#" class="lb-c right"></a></div></div>
+      <div class="items" id="materialItems">
+        <div class="new-liebiao">新建素材库</div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div> 
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div> 
+           <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div> 
+            <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div>
+        <div class="folder-liebiao">
+          <div class="editName">
+            <input type="text" class="textInput" />
+            <span class="sure left">确定</span><span class="cancel left">取消</span>
+          </div>
+          <a class="name" href="#">教师教案</a>
+          <div class="conduct"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>
+        </div> 
+            
+         
+        
+      </div>
+      <div class="page viewPage"> <a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="spec_padding ie6p">首页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="ie6p">上一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">01</a><span class="current">02</span><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">03</a><a href="?page=4&amp;type=ch&amp;keys=sdfsd&amp;sort=0">04</a><a href="?page=5&amp;type=ch&amp;keys=sdfsd&amp;sort=0">05</a><a href="?page=6&amp;type=ch&amp;keys=sdfsd&amp;sort=0">06</a><a href="?page=7&amp;type=ch&amp;keys=sdfsd&amp;sort=0">07</a>...<a href="?page=37&amp;type=ch&amp;keys=sdfsd&amp;sort=0">37</a><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="ie6p">下一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="spec_padding ie6p">末页</a> </div>
+    </div>
+  </div>
+</div>
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************-->
+<script>
+/*新建文件夹*/
+$(".new,.new-liebiao").click(function()
+{
+	var newFolder=document.createElement("div");
+	newFolder.className="folder-liebiao";
+	var innerStr='<div class="editName" style="display:block;"><input type="text" class="textInput" /><span class="sure left">确定</span><span class="cancel left">取消</span></div><a class="name" href="#" style="display:none;"></a><div class="conduct" style="display:none;"><a href="javascript:void(0)" class="modifyNormal modify"></a><a href="javascript:void(0)" class="deleteNormal delete"></a></div>';
+	document.getElementById("materialItems").insertBefore(newFolder,$(".folder-liebiao").eq(0)[0]);
+	$(".folder-liebiao").eq(0).html(innerStr);
+	EventBind();
+})
+
+
+function EventBind()/*加入事件绑定*/
+{
+	var textInput=$(".material .items .folder-liebiao .editName .textInput");
+	$(".material .conduct .modify").click(function()
+	{
+		var folder=$(this).parent().parent();
+		folder.children(".name").css("display","none");
+		folder.children(".editName").css("display","block");
+		folder.children(".conduct").css("display","none");
+		var name=folder.children(".name").html();
+		folder.children(".editName").children(".textInput").eq(0)[0].value=name;
+		textInput.focus();
+		textInput.select();
+	})
+	
+	textInput.blur(function()
+	{
+		if($.trim(textInput.val()).length)
+		{
+			var folder=$(this).parent().parent();
+			folder.children(".name").css("display","block");
+			folder.children(".editName").css("display","none");	
+			folder.children(".conduct").css("display","block");
+			var name=folder.children(".editName").children(".textInput").eq(0)[0].value;
+			folder.children(".name").html(name);
+		}
+	})
+	
+	$(".material .conduct .delete").click(function()
+	{
+		folder=$(this).parent().parent().remove();
+		
+	})	
+	/*鼠标移动上去效果*/
+	$(".material .items .new-liebiao").hover(function()
+	{
+		$(this).addClass("newbgg");
+	},function()
+	{
+		$(this).removeClass("newbgg");
+	})
+	$(".material .items .folder-liebiao").hover(function()
+	{
+		$(this).addClass("folderBgg");
+	},function()
+	{
+		$(this).removeClass("folderBgg");
+	})
+}
+EventBind();
+</script>
+<script>
+/**左右高度自适应*/
+mysetHeight(); 
+function mysetHeight()
+{
+	var ecSideMenu=$(".ecSideMenu");
+	var material=$(".material");
+    var maxV=Math.max(ecSideMenu.height(),material.height())+15;
+		 material.height(maxV);	
+}
+</script>
+</body>
+</html>

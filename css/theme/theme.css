@@ -1,0 +1,99 @@
+.marginR0 { margin-right: 0 !important; }
+.theme {padding-bottom: 50px;  position:relative; }
+.theme .skin { position:absolute; top:0; left:50%; margin-left:595px; width:27px; height:27px; background:url(../../images/theme/collection-icon1.gif) no-repeat;}
+.theme .headpic{ display:block; margin:0 auto;}
+.inner { width: 1190px; margin: 0 auto;}
+.theme .panel { width: 1188px; background-color: #fff; color:#666; }
+.theme .introduction { position: relative; width: 1148px; padding: 0 20px 35px; margin-bottom: 6px; background:#fff; }
+.theme .introduction .bg { position: absolute; width: 28px; height: 28px; right:-1px; bottom:-1px; background: url(../../images/theme/theme_panel_bg.png) no-repeat; }
+.theme .introduction h4 { height: 34px; padding-top: 8px; padding-left: 50px; font:bold 16px/34px "宋体"; background: url(../../images/theme/icon1.jpg) 26px 13px no-repeat; }
+.theme .introduction .panel-body { padding:13px 30px 10px; line-height: 30px; background-color: #f7f4eb; font-size: 14px; }
+.theme .content { width: 1188px; padding: 16px 0 60px; }
+.theme .content .con-hd { margin: 0 50px; padding-left: 30px; height: 48px; border-bottom: 1px solid #e3e3e3; background: url(../../images/theme/icon2.gif) left center no-repeat; font:24px/48px "微软雅黑"; color:#333; }
+.theme .con-bd .ul {padding: 40px 0 0px 50px;  *padding-bottom:53px;}
+.theme .con-bd dl { float: left; width: 250px; height: 263px; border: 1px solid #f0f0f0; margin-right: 26px; margin-bottom: 53px; transition:all .2s ease-in-out; }
+.theme .con-bd dl:hover{ box-shadow:3px 3px 17px rgba(0,0,0,0.2), -3px -3px 17px rgba(0,0,0,0.2); }
+.theme .con-bd dd h4 { height: 34px; line-height: 34px; margin-top: 5px; font-size: 14px; font-weight: normal; padding-left:15px; }
+.theme .con-bd dd h4 a{color:#333; }
+.theme .con-bd .info { color:#999; line-height: 20px; overflow: hidden; padding-left:15px; padding-right:10px;}
+.theme .con-bd .info .icon a { float: left; margin-left: 22px; width: 20px; height: 17px;}
+.theme .con-bd .info .icon .icon1 { background: url(../../images/theme/icon3.png) no-repeat; }
+.theme .con-bd .info .icon .icon2{background: url(../../images/theme/icon4.png) no-repeat; }
+.theme .con-bd .info .icon .icon1.click{ background: url(../../images/theme/icon3-a.png) no-repeat; }
+.theme .con-bd .info .icon .icon2.click { background: url(../../images/theme/icon4-a.png) no-repeat; }
+/*theme1*/
+.theme1{background-color: #e2f1de; padding-top:390px;}
+.theme1 .introduction .bg{ background-color:#E2F1DE;}
+.theme1 .panel { border: 1px solid #D6E4D2; }
+/*theme2*/
+.theme2{background-color: #FBEFDC; padding-top:377px;}
+.theme2 .introduction .bg{ background-color:#FBEFDC;}
+.theme2 .panel { border: 1px solid #EEE3D1; }
+.theme2 .panel .boundary{ width:1090px; margin:0 auto; height:0; font-size:0; border-bottom:1px solid #E5E5E5; margin-bottom:13px;}
+/*theme3*/
+.theme3{background-color:#1A2D58; padding-top:377px;}
+.theme3 .introduction .bg{ background-color:#1A2D58;}
+.theme3 .panel { border: 1px solid #EEE3D1; }
+.theme3 .content .classify-nav{ padding:16px 0 0 50px; height:50px; border-bottom:4px solid #EFEFEF; margin-bottom:27px;}
+.theme3 .content .classify-nav a{ float:left; margin-right:2px; width:134px; height:50px; line-height:50px; text-align:center; font-family:"微软雅黑"; font-size:16px; color:#333333; background-image:url(../../images/theme/theme3-card.png); background-repeat:no-repeat; text-decoration:none;}
+.theme3 .content .classify-nav .all{ padding-left:59px; width:75px; color:#e83e3e; background-position:0 -500px; text-align:left; margin-right:20px;}
+.theme3 .content .classify-nav .all:hover{ background-position:0px -550px;}
+.theme3 .content .classify-nav .all.click{ background-position:0px -550px;}
+.theme3 .content .classify-nav .card1{ background-position:0 -400px;}
+.theme3 .content .classify-nav .card1:hover{ background-position:0 -450px;}
+.theme3 .content .classify-nav .card1.click{ background-position:0 -450px;}
+.theme3 .content .classify-nav .card2{ background-position:0 -700px;}
+.theme3 .content .classify-nav .card2:hover{ background-position:0 -750px;}
+.theme3 .content .classify-nav .card2.click{ background-position:0 -750px;}
+.theme3 .content .classify-nav .card3{ background-position:0 -600px;}
+.theme3 .content .classify-nav .card3:hover{ background-position:0 -650px;}
+.theme3 .content .classify-nav .card3.click{ background-position:0 -650px;}
+.theme3 .content .classify-nav .card4{ background-position:0 -100px;}
+.theme3 .content .classify-nav .card4:hover{ background-position:0 -150px;}
+.theme3 .content .classify-nav .card4.click{ background-position:0 -150px;}
+.theme3 .content .classify-nav .card5{ background-position:0  0px;}
+.theme3 .content .classify-nav .card5:hover{ background-position:0  -50px;}
+.theme3 .content .classify-nav .card5.click{ background-position:0  -50px;}
+.theme3 .content .classify-nav .card6{ background-position:0 -300px;}
+.theme3 .content .classify-nav .card6:hover{ background-position:0 -350px;}
+.theme3 .content .classify-nav .card6.click{ background-position:0 -350px;}
+.theme3 .content .classify-nav .card7{ background-position:0 -200px;}
+.theme3 .content .classify-nav .card7:hover{ background-position:0 -250px;}
+.theme3 .content .classify-nav .card7.click{ background-position:0 -250px;}
+/*share*/
+.share{width:52px; position:fixed; left:50%; margin-left:597px; }
+.color1.start{/*top:642px;*/ bottom:0;}
+.color2.start{/*top:629px;*/ bottom:0;}
+.share a{ display:block; background-color:#ffffff; text-align:center; width:50px; border-left-width:1px; border-left-style:solid; border-right-width:1px; border-right-style:solid; }
+.share .a1{ height:36px; padding-top:14px; border-width:1px; border-style:solid;}
+.share .share-btn{ display:none; position:absolute; top:-146px; left:0;}
+.share .share-btn a{ padding:0; float:none; margin:0;padding-top:9px; height:39px;}
+.share .bdshare-button-style0-24 a:hover{ opacity:1;}
+.share .share-btn .sina{ background:#ffffff url(../../images/theme/collection-weibo.png) no-repeat center 9px;}
+.share .share-btn .wechat{ background:#ffffff url(../../images/theme/collection-wechat.png) no-repeat center 9px;}
+.share .share-btn .qq{ background:#ffffff url(../../images/theme/collection-QQzone.png) no-repeat center 9px;}
+.share .share-btn .fold{ height:15px; background-image:url(../../images/theme/collection-fold.png); background-repeat: no-repeat; background-position:center; border-width:1px; border-style:solid; }
+.color1 a{border-color:#D6E4D2;}
+.color1 .a1{border-bottom-color:#CBD8C7; }
+.color1 .share-btn .fold{border-top-color:#EEEFED;}
+.color2 a{border-color:#EEE3D1;}
+.color2 .a1{border-bottom-color:#E2D7C5; }
+.color2 .share-btn .fold{border-top-color:#EDEEED;}
+/*page*/
+.book-page{ text-align:center; color:#333333; padding-top:8px; font-family:Arial, Helvetica, sans-serif;}
+.book-page a{color: #333333; margin-right: 12px; padding: 8px 12px; text-decoration: none; font-size: 14px; border:1px solid #D1D1D1;}
+.book-page a:hover { color: #ffffff; background-color:#E26B62; border-color:#E26B62; }
+.book-page span.current { background-color:#E26B62; border:1px solid #E26B62;color: #fff; margin-right: 12px; padding: 8px 12px;  font-size: 14px; }
+.book-page span.disabled { color: #333333; margin-right: 12px; padding: 8px 12px; text-decoration: none; font-size: 14px; border:1px solid #D1D1D1;
+}
+/*主题页*/
+.main{ border:1px solid #E1DBCF; background-color:#ffffff; margin:0 auto; margin-top:10px; padding-top:30px; padding-bottom:64px; width:1190px;}
+.main .box{ padding-bottom:80px;}
+.main .intro{ padding:0 50px; border-bottom:1px solid #EFEFEF; padding-bottom:32px; margin-bottom:20px;}
+.main .intro .info{ height:22px; line-height:22px; padding-bottom:13px;}
+.main .intro .info a{ font-size:18px; font-family:"微软雅黑"; height:22px;padding-right:20px; border-right:1px solid #D1D1D1; margin-right:12px; color:#333333; text-decoration:none;} 
+.main .intro .info .time{ font-size:14px; font-family:Arial; color:#f5a931; line-height:24px;}
+.main .intro .summary{ height:30px; line-height:30px; overflow:hidden; margin-bottom:10px; padding-right:25px; position:relative; font-size:14px; color:#666666;}
+.main .intro .summary.heightAuto{ height:auto;}
+.main .intro .summary .icon{ position:absolute; right:0px; top:11px; width:14px; height:8px; background: url(../../images/theme/theme-caret.png) no-repeat 0px -18px;}
+.main .intro .summary .icon.toggle{ background-position:0px 0px;}

@@ -1,0 +1,328 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/personalHomepage/global.css" rel="stylesheet" type="text/css"/>
+<link href="../css/personalHomepage/personalHomepage.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<script type="text/javascript" src="../js/functions.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+</head>
+<body>
+<div class="topBanner">
+  <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+      <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+      <div class="right user-bar">
+        <div class="downlist">
+          <a class="colorGrey loginState" href="#">北京大学</a>
+          <div class="list_box listBoxPosition11">
+            <ul>
+              <li><a href="#">　编创中心</a></li>
+              <li><a href="#">　我的主页</a></li>
+              <li><a href="#" class="quit">　退出登录</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <span> | </span>
+        <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+        <span> | </span>
+         <div class="downlist">
+          <a class="colorGrey" href="#">编创空间 </a>
+        </div>
+        <span> | </span>
+        <a class="colorGrey" href="#">帮助</a>
+      </div>         
+  </div>
+</div>
+<script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+    lb.css("display","none");
+    var index=ls.index(this);
+    lb.eq(index).css("display","block");
+},function(){
+    lb.css("display","none");
+    })
+lb.hover(function(){
+    $(this).css("display","block");
+    },function(){
+    $(this).css("display","none");
+})
+})()
+</script>
+<!--*******************banner start**************-->
+<div class="banner">
+  <div class="banner-inner">
+    <div class="touxiang"><div class="icon-v"></div><img class="png" src="../images/personalHomepage/touxiang1.png" height="144" width="144" alt="" /></div>
+    <div class="txt">
+      <div class="title">
+        <h3 class="xiugai">闫春更的个人专栏</h3>
+        <span class="icon png"></span> <span class="zishu">14/16</span> 
+        <!-- 编辑文本 -->
+        <div class="bianji" style="display:none">
+          <ul>
+            <li>
+              <select name="" id="ziti">
+                <option value="" selected="true">字号</option>
+                <option value="">45</option>
+                <option value="">48</option>
+                <option value="">60</option>
+              </select>
+            </li>
+            <li class="colors" style="position:relative;">
+              <select name="color">
+                <option value="">颜色</option>
+              </select>
+              <div class="coimg" style="position:absolute; z-index:5; left:0;top:20px; display:none;"><img class="pngFix" src="../images/personalHomepage/color.png" height="247" width="197" alt="" /></div>
+              <!-- <input type="color" style="display:none" /> --> 
+            </li>
+            <li>恢复默认</li>
+            <li class="save">保存</li>
+          </ul>
+        </div>
+      </div>
+      <div class="qianming">
+        <p class="xiugai">学然后知不足，教然后知困。</p>
+        <span class="png"></span> <i class="zishu">80/200</i> 
+        <!-- 编辑文本 -->
+        <div class="bianji" style="display:none">
+          <ul>
+            <li>
+              <select name="" value="字体">
+                <option value="" selected="true">字号</option>
+                <option value="">12</option>
+                <option value="">14</option>
+                <option value="">16</option>
+              </select>
+            </li>
+            <li class="colors">
+              <select name="颜色" id="colors" value="颜色">
+                <option value="">颜色</option>
+              </select>
+              <!-- <input type="color" style="display:none" /> -->
+              <div class="coimg" style="position:absolute; z-index:5; left:0;top:20px; display:none;"><img class="pngFix" src="../images/personalHomepage/color.png" height="247" width="197" alt="" /></div>
+            </li>
+            <li>恢复默认</li>
+            <li class="save">保存</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="huanfu">
+      <div class="btn"></div>
+    </div>
+  </div>
+  
+</div>
+<!--*******************banner end****************--> 
+
+<!--*******************内容 start****************-->
+<div class="content-wrap">
+  <div class="content"> 
+    <!--*******************左侧内容 start****************-->
+    <div class="sidebar"> 
+      <!--个人信息-->
+      <div class="personnal type">
+        <dl class="nicheng w239">
+          <dt class="blue name">欧阳朵儿<span class="v"></span></dt>
+          <dd class="blue grjj"><span></span>个人简介</dd>
+        </dl>
+        <dl class="job w239">
+          <dt>单位：</dt>
+          <dd>中国知网</dd>
+        </dl>
+        <dl class="w239">
+          <dt>职业：</dt>
+          <dd>互联网高级设计师</dd>
+        </dl>
+        <dl class="jianjie w239">
+          <dt>简介：</dt>
+          <dd>人生不止，寂寞不已。寂寞人生爱无休寞是爱永远的主题我和我的影子独处。它说它悄悄话想跟我说。它说它很想念你。</dd>
+        </dl>
+        <dl class="download download1 w239">
+          <dd> <a href=""><span class="orange">10</span><br />
+            作品</a> <a href=""><span class="orange">3804</span><br />
+            阅读</a></dd>
+        </dl>
+      </div>
+      <!--热门作品-->
+      <div class="hot type">
+        <h4 class="w239">热门作品：</h4>
+        <ul  class="w239">
+          <li><a href="" class="blue">如何成为一枚优雅地女子</a></li>
+          <li><a href="" class="blue">以花入馔：舌尖上的鲜花美食</a></li>
+          <li><a href="" class="blue">小学四年级数学教案</a></li>
+          <li><a href="" class="blue">数列——数列的基本知识和在日</a></li>
+          <li><a href="" class="blue">重载铁路设计与施工技术创新汇</a></li>
+          <li><a href="" class="blue">中小学生心理健康教育·教师读本</a></li>
+          <li class="no-border"><a href="" class="blue">你是灰，而我是色彩</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--*******************左侧内容 end****************--> 
+    <!--*******************右侧内容 start****************-->
+    <div class="content-right personPage-for-page"> 
+      <div class="style">
+        <ul class="paixu">
+          <li class="time current"><a href="">时间<span></span></a></li>
+          <li class="populaarity"><a href="">人气<span></span></a></li>
+        </ul>
+        <ul class="liebiao index">
+          <li class="current"><a href="" class="img-b">大图<span></span></a></li>
+          <li><a href="liebiao.html" class="lb">列表<span></span></a></li>
+        </ul>
+      </div>
+      <div class="index">
+        <div class="show">
+          <ul>
+            <li> <a href=""> <img src="../images/personalHomepage/pic1.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">如果大学可以重来一次</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic2.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">创客：商业模式案例研究</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic3.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">智能家居</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic4.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">带你穿越地理课堂，领略地理学</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic5.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">上GOOGLE 览地球</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic6.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">舌尖上的中国</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic7.jpg" alt="" />
+              <h5 class="blue">从头美到脚——陪伴女人一生的</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic8.jpg" alt="" />
+              <h5 class="blue">医学整形助你美丽蜕变</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic9.jpg" alt="" />
+              <h5 class="blue">用心化妆，做美丽女人</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic10.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">严歌苓文学作品探析</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic11.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">观养生之道，习养生之法</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic12.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">你不得不知的家庭急救常识</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic13.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">网络时代下的国民阅读</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic14.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">韶华易逝，偷飨慢时光</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+            <li> <a href=""> <img src="../images/personalHomepage/pic15.jpg" height="204" width="280" alt="" />
+              <h5 class="blue">《诗经》品鉴录</h5>
+              </a>
+              <div class="read"><span class="bg"></span><span class="txt">阅读(<span>11</span>)</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page">
+        <div id="pagination" class="pagination"><span class="current">1</span><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=2">2</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=3">3</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=4">4</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=5">5</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=6">…</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=2">下一页</a><a href="/Web/ListPic?code=A01&amp;order=time&amp;page=8">尾页</a></div>
+      </div>
+    </div>
+    
+    <!--*******************右侧内容 end****************--> 
+  </div>
+</div>
+<!--*******************footer********************--> 
+
+<!--*******************footer end********************--> 
+<!-- 设置背景 -->
+<div class="beijing">
+  <h3><span><a href=""></a></span>背景设置</h3>
+  <ul>
+    <li>
+    	<a href="javascript:void(0)"><img src="../images/personalHomepage/beijing1.jpg" height="109" width="273" alt="" /></a>
+        <span class="text">图图</span>
+    </li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing2.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing3.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing4.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing5.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing6.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing7.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><a href="javascript:void(0)"><img src="../images/personalHomepage/beijing8.jpg" alt="" /></a><span class="text">图图</span></li>
+    <li><img src="../images/personalHomepage/beijing9.jpg" alt="" /></li>
+  </ul>
+  <!--上传图片-->
+  <div class="shangchuan">
+    <div class="sc-btn">重新上传</div>
+    <div class="img"> <img src="../images/personalHomepage/shanchuan_03.jpg" height="270" width="885" alt="" />
+      <div class="zhezhao-t"></div>
+      <div class="zhezhao-b"></div>
+      <div class="zhezhao-l"></div>
+      <div class="zhezhao-r"></div>
+    </div>
+    <div class="suofang"> <span class="jian"></span> <span class="line"> <span class="circle"></span> </span> <span class="jia"></span> </div>
+  </div>
+  <div class="btn">
+    <div class="btn1"><a href="">确定</a></div>
+    <div class="btn2"><a href="">取消</a></div>
+  </div>
+</div>
+
+
+<div id="zhezhao"></div>
+</body>
+<script>
+$(".beijing li img").click(function(){
+	$(".beijing li img").css({
+		"border":"1px solid #EDEDED",
+		"padding":"2px"
+		});
+	
+	$(this).css({
+		"border":"3px solid #ff9702",
+		"padding":0
+		});
+	
+	})
+
+</script>
+
+</html>
+
+

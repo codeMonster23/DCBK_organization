@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>消息中心</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/userInfo/userInfo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery-tableMenu.js"></script>
+</head>
+
+<body bgcolor="f1ebdf">
+<!--top banner-->
+<div class="topBanner">
+  <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+    
+    <!--//--------------------------------------->
+    
+    <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+    <!--<div class="right"><a class="colorGrey loginState" href="#">蒋萌</a> | <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey loginState" href="#">我的智库</a> | <a class="colorGrey" href="#">购物车( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey" href="#">充值</a> | <a class="colorGrey" href="#">帮助</a></div>-->
+    
+    
+    <div class="right user-bar">
+      <div class="downlist">
+        <a class="colorGrey loginState" href="#">蒋萌</a>
+        <div class="list_box listBoxPosition11">
+          <ul>
+            <li><a href="#">　编创中心</a></li>
+            <li><a href="#">　我的主页</a></li>
+            <li><a href="#" class="quit">　退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <span> | </span>
+      <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+      <span> | </span>
+       <div class="downlist">
+        <a class="colorGrey" href="#">编创空间 </a>
+      </div>
+      <span> | </span>
+      <a class="colorGrey" href="#">帮助</a>
+    </div>
+    
+    
+    
+    
+  </div>
+  <script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+	lb.css("display","none");
+	var index=ls.index(this);
+	lb.eq(index).css("display","block");
+},function(){
+	lb.css("display","none");
+	})
+lb.hover(function(){
+	$(this).css("display","block");
+	},function(){
+	$(this).css("display","none");
+})
+})()
+</script>
+</div>
+<!--top banner over-->
+<script>
+//用户登录后、我的智库弹出菜单
+(function(){
+var ls=$(".toplink .menu_bg01");
+var lb=$(".list_box");
+var time=200;
+ls.hover(function()
+{
+	lb.slideUp(time-100);
+	var index=ls.index(this);
+	lb.eq(index).slideDown(time);
+},function(){})
+lb.hover(function(){},function()
+{
+	$(this).slideUp(time);
+})
+})()
+</script>
+<div class="userInfo">
+	<div class="userInfoBg">
+      <div style="height:20px;"></div>
+      <div class="messageCenter clearfix">
+      	<div class="side left">
+        	<div class="title">消息中心</div>
+            <ul class="items">
+                <li class="current icon1">全部消息</li>
+                <li class="icon2">主编消息</li>
+                <li class="icon3">粉丝消息</li>
+                <li class="icon4">系统消息</li>
+            </ul>
+        </div>
+        <div class="messages left">
+        	<div class="title icon1">全部消息<a href="javascript:void(0)" class="pl-del">批量删除</a></div>
+            <div class="board">
+            	<div class="sameStyle dif1 clearfix">
+            		<div class="topic">
+                    <h1>【认证消息】恭喜您，认证成功~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">鉴于您所填写的背景资料真实有效，通过我们对您的审核，恭喜您，成功通过系统认证，成为我们的认证主编您将拥有自己的专属图标，并且享有创作、汇编等特权。</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                    
+                </div>
+                <div class="sameStyle dif2 clearfix">
+                    <div class="topic">
+                    <h1>【汇编消息】恭喜您，汇编作品审核通过~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">恭喜您，您汇编的作品<a href="#">初级理财攻略</a>通过系统审核，现已发布</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                </div>
+                <div class="sameStyle dif3 clearfix">
+                    <div class="topic">
+                    <h1>【回复消息】您的求助有人回复哦~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">您求助的问题 如何提高孩子注意力 收到了<a href="#">王小花</a>、<a href="#">李梦</a>等 3 人的回复，快去查看吧！</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                </div>
+                <div class="sameStyle dif4 clearfix">
+                     <div class="topic">
+                    <h1>【发布消息】非常抱歉，求助发布失败~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">非常抱歉，您所提交的求助<a href="#">想要一套英语四级答案</a>未能通过系统审核，请修改后重新提交！</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                </div>
+                <div class="sameStyle dif5 clearfix">
+                   <div class="topic">
+                    <h1>【管理员消息】您的留言已收到~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">您好，您的文集目前正在初审阶段，请耐心等待。</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                </div>
+				<div class="sameStyle dif1 clearfix">
+            		<div class="topic">
+                    <h1>【认证消息】恭喜您，认证成功~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">鉴于您所填写的背景资料真实有效，通过我们对您的审核，恭喜您，成功通过系统认证，成为我们的认证主编您将拥有自己的专属图标，并且享有创作、汇编等特权。</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                    
+                </div>
+                <div class="sameStyle dif2 clearfix">
+                    <div class="topic">
+                    <h1>【汇编消息】恭喜您，汇编作品审核通过~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">恭喜您，您汇编的作品<a href="#">初级理财攻略</a>通过系统审核，现已发布</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                </div>
+                <div class="sameStyle dif3 clearfix">
+                    <div class="topic">
+                    <h1>【回复消息】您的求助有人回复哦~</h1>
+                     <span class="time">10月26日 20:30:59</span>
+                    </div>
+                    <p class="word">您求助的问题 如何提高孩子注意力 收到了<a href="#">王小花</a>、<a href="#">李梦</a>等 3 人的回复，快去查看吧！</p>
+                    <div class="info clearfix">
+                    	<span class="left">详情请戳<a href="#">www.zhiku.com</a></span>
+                        <a href="javascript:void(0)" class="right del"></a>
+                    </div>
+                </div>
+                <div class="page"> <a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">&lt;</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">1</a><span class="current">2</span><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">3</a><a href="?page=4&amp;type=ch&amp;keys=sdfsd&amp;sort=0">4</a><a href="?page=5&amp;type=ch&amp;keys=sdfsd&amp;sort=0">5</a><a href="?page=6&amp;type=ch&amp;keys=sdfsd&amp;sort=0">6</a><a href="?page=7&amp;type=ch&amp;keys=sdfsd&amp;sort=0">7</a><a href="?page=36&amp;type=ch&amp;keys=sdfsd&amp;sort=0">...</a><a href="?page=37&amp;type=ch&amp;keys=sdfsd&amp;sort=0">37</a><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">&gt;</a> </div>
+                
+                <div class="noMessage"></div>
+            </div>
+        </div>
+      </div>
+      
+      
+    </div>
+</div>
+<!--foot-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+<!--foot over-->
+
+<script>
+//根据消息的多少来设置页面的高度
+function setHeight()
+{
+	var height1=$(".messageCenter .side").height();
+	var height2=$(".messageCenter .messages").height();
+	if(height1<=height2)
+	{
+		$(".messageCenter").height(height2);
+	}
+	else
+	{
+		$(".page").css("display","none");
+		$(".noMessage").css("display","block").height(height1-30);
+	}
+}
+setHeight();
+
+//左侧切换
+var li=$(".userInfo .messageCenter .side .items li");
+li.click(function()
+{
+	li.removeClass("current");
+	$(this).addClass("current");
+})
+
+//删除消息
+$(".userInfo .messageCenter .messages .board .sameStyle .operate .delete").click(function()
+{
+	if(window.confirm("确定要删除该条短消息吗？"))
+	{
+		$(this).parent().parent().slideUp(200,null,function(){$(this).remove();setHeight();});
+	}
+})
+
+//展开消息详情
+$(".userInfo .messageCenter .messages .board .sameStyle .operate .showMore").click(function()
+{
+	$(".userInfo .messageCenter .messages .board .dif2 .words .text").height("auto");
+	$(this).hide(0);
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/checkboxSelectAll.js"></script>
+<script type="text/javascript" src="../js/jquery.promptToggle.js"></script>
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/new_editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#EBEBEB">
+<div class="topBanner">
+  <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+    
+    <!--//--------------------------------------->
+    
+    <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+    <!--<div class="right"><a class="colorGrey loginState" href="#">蒋萌</a> | <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey loginState" href="#">我的智库</a> | <a class="colorGrey" href="#">购物车( <strong class="colorYellowishBrown">0</strong> )</a> | <a class="colorGrey" href="#">充值</a> | <a class="colorGrey" href="#">帮助</a></div>-->
+    
+    
+    <div class="right user-bar">
+      <div class="downlist">
+        <a class="colorGrey loginState" href="#">蒋萌</a>
+        <div class="list_box listBoxPosition11">
+          <ul>
+            <li><a href="#">　编创中心</a></li>
+            <li><a href="#">　我的主页</a></li>
+            <li><a href="#" class="quit">　退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <span> | </span>
+      <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+      <span> | </span>
+       <div class="downlist">
+        <a class="colorGrey" href="#">编创空间 </a>
+      </div>
+      <span> | </span>
+      <a class="colorGrey" href="#">帮助</a>
+    </div>
+    
+    
+    
+    
+  </div>
+  <script>
+(function(){
+var ls=$(".topBanner .loginState");
+var lb=$(".list_box");
+ls.hover(function()
+{
+	lb.css("display","none");
+	var index=ls.index(this);
+	lb.eq(index).css("display","block");
+},function(){
+	lb.css("display","none");
+	})
+lb.hover(function(){
+	$(this).css("display","block");
+	},function(){
+	$(this).css("display","none");
+})
+})()
+</script>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto ecZone clearfix">
+    <div class="ecSideMenu left">
+      	<div class="editorIntro">
+        	<a href="javascript:void(0);" class="headImage"><img src="../imagesTemp/editorZone/ec1-avatar.jpg" width="112" height="112" /></a>
+            <div class="shortIntro positionR">
+            	<p class="userName"><span>我是创作大师</span></p>
+            	<div class="text-box">切斯·克劳福 (ChaceCrawford)，1985年7月18日出生于德克萨斯州卢博克市，美国演员。2007年...</div>
+                <a href="#" class="edit positionA"></a>
+                <script>
+					$(".shortIntro").hover(function(){$(this).children(".edit").css({"display":"block"})},function(){$(this).children(".edit").css({"display":"none"})})
+                </script>
+            </div>
+        </div>
+        <div class="sideBtn">
+            	<a href="#" class="btn1">作品编创</a>
+                <a href="#" class="btn2">上传素材</a>
+          </div>
+        <div class="line1"></div>
+        <div class="materialLibrary  c_section current">
+        	 <h1>素材库</h1>
+             <p><a href="#" class="cur">搜索CNKI素材</a></p>
+             <p><a href="#">我的CNKI素材库</a></p>
+             <p><a href="#">我的原创素材库</a></p>
+        </div>
+        <div class="line1"></div>
+        <div class="production c_section">
+        	<h1><a href="#">作品管理</a></h1>
+        </div>        
+        <div class="line1"></div>
+        <div class="personal c_section">
+        	<h1><a href="#">个人资料</a></h1>
+        </div>
+         <div class="line1"></div>
+         <a href="javascript:void(0)" class="leaveNote" ><img src="../images/editorZone/zjg-ly.jpg" width="225" height="82" /></a>
+        <script>
+			var Se=$(".c_section")
+			$(Se).hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})
+        </script>
+    </div>
+    <div class="material materialP left"> 
+      <div class="mheader">
+        <div class="title">当前位置：<a href="#">首页</a> &gt; 素材库 &gt; 搜索CNKI素材</div> 
+        <div class="right jg-searchWrap clearfix">
+        	<div class="jg-search positionR  left">
+            	<div class="search-a left"><input type="text" value="输入关键词进行搜索" style="color:#B3B3B3;" onfocus="{this.style.color='#666666';value=''}" onblur="if(value==''){this.style.color='#B3B3B3';this.style.fontSize='12px';value='输入关键词进行搜索'}"></div>
+                <p class="left">全文</p>
+                <a class="left" href="javascript:void(0)"></a>
+                <ul class="positionA">
+                	<li>全文</li>
+                    <li>主题</li>
+                    <li>篇名</li>
+                    <li>关键词</li>
+                    <li>作者</li>
+                    <li>作者单位</li>
+                    <li>文献来源</li>
+                    <li>基金</li>
+                    <li>发表时间</li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="sweep left">清除</a>
+            <script>
+					$(".jg-search p").click(
+						function(){
+						$(this).siblings("ul").css({"display":"block"})
+						})
+						$(".jg-search p").mouseout(function(){
+							$(this).siblings("ul").css({"display":"none"})
+							})
+				   $(".jg-search ul").hover(function(){
+					   $(this).css({"display":"block"})},
+					   function(){
+					   $(this).css({"display":"none"})
+					   })					   
+					$(".jg-search ul li").click(
+						function(){
+						var Html=$(this).html()
+						$(".jg-search p").html(Html)
+						$(this)	.parent("ul").css({"display":"none"})
+							}) 
+					$(".jg-searchWrap .sweep").click(function(){
+						$(".jg-search input").val("").blur()
+						})
+                </script>
+        </div>
+        <!--<div class="line"></div>-->
+      </div>
+      
+      <!--搜索结果-->
+      <div class="scope multiple clearfix">
+      	<div class="left s1 clearfix">
+            <div class="checkbox all left"><span class="check left"></span><span class="text left">全部</span></div>
+        </div>
+        <div class="left s2 clearfix">
+                	<div class="checkbox left"><span class="check left"></span><span class="text left">经济信息科技信息科技管理</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text lock left">农业科技信息科技</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">信息科技</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">社会信息科技科学I</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技I</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">基础科学</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">医药卫生</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">哲学信息科技信息科技人文</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">社会信息科技信息科技信息科技科学II</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技II</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技I</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">基础科学</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">医药卫生</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">哲学信息科技信息科技人文</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">社会信息科技信息科技信息科技科学II</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技II</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技I</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">基础科学</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">医药卫生</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">哲学信息科技信息科技人文</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">社会信息科技信息科技信息科技科学II</span></div>
+                    <div class="checkbox left"><span class="check left"></span><span class="text left">工业科技II</span></div>
+                </div>
+        <a href="javascript:void(0)" class="ctrl">展开</a>
+      </div>
+      
+      <script>
+				/*复选框效果*/
+				$(".scope .checkbox").click(function(){
+					$(this).toggleClass("checked")
+					})
+				$(".scope .all").click(function(){
+					if($(this).hasClass("checked")){
+						$(".scope .s2 .checkbox").addClass("checked")
+						}
+					else{$(".scope .s2 .checkbox").removeClass("checked")}
+					})					
+			/*折叠展开*/
+			$(".multiple .ctrl").click(function(){
+				$(this).toggleClass("toggle")
+				$(this).parent(".multiple").toggleClass("heightAuto")
+				if($(this).text()=="展开"){$(this).text("收起")}
+				else{$(this).text("展开")}
+				})
+    </script>
+      
+      
+      <div class="filtrate">
+      <div class="ti">文章筛选：</div>
+      <div  class="itemm">
+      	<span class="see1">文献类型</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:0px; top:0px; padding-left:27px; padding-right:22px; width:60px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat  center bottom;"><i >文献类型</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm">
+      	<span class="see1">学科分类</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:22px; width:60px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >学科分类</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm">
+      	<span class="see1">发表年度</span>
+         <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:22px; width:60px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >发表年度</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm spec">
+      	<span class="see1">作者</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:40px; padding-right:30px; width:36px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >作者</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm spec">
+      	<span class="see1">机构</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:40px; padding-right:30px; width:36px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >机构</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm spec">
+      	<span class="see1">基金</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:40px; padding-right:30px; width:36px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >基金</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm">
+      	<span class="see1">研究层次</span>
+        <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:22px; width:60px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >研究层次</i></span>
+      </div>
+      <div class="line1"></div>
+      <div  class="itemm">
+      	<span class="see1">文献来源</span>
+         <span class="see2 displayN" style="position:absolute;z-index:30; left:-2px; top:0px; padding-left:28px; padding-right:21px; width:60px; height:35px; line-height:35px; background:#EE8922 url(../images/editorZone/ez100_arrow3.gif) no-repeat bottom center;"><i >文献来源</i></span>
+      </div>
+      </div>
+		<div class="pop2 clearfix">
+      	<a class="close1 positionA" href="javascript:void(0)"></a>
+     	<div class="classes">
+        	<span class="wrapT"><a href="javascript:void(0)">全部</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+        </div>
+        <div class="classes">
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">中国社会科学院语言文字应用研究所</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(128)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+        </div>
+        <div class="classes">
+        	<span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(1458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(128)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(1458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <span class="unfold left">&gt;&gt;</span>
+        <div class="hide displayN">
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(128)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(1458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span>(128)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(1458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">国家社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(128)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">攀登计划</a><span class="hint displayN"><b></b><i></i></span></span><span >(8)</span>
+        </div>
+        <div class="classes">
+        	
+        	<span class="wrapT"><a href="javascript:void(0)">湖南省社会科学基金</a><span class="hint displayN"><b></b><i></i></span></span><span >(123458)</span>
+        </div>
+        <span class="fold left">&lt;&lt;</span>
+        </div>
+      </div>	
+        <script>
+		(function(){
+		$(".pop2 .classes").each(function(){
+		$(this).parent(".pop2").css("display","block")	
+		var Width=$(this).children(".wrapT").width()
+		var Html=$(this).children(".wrapT").children("a").html()
+		$(this).children(".wrapT").children(".hint").children("b").width(Width+200)
+		$(this).children(".wrapT").children(".hint ").children("b").html("点击显示"+'"'+Html+'"'+"的筛选结果")
+		$(this).children(".wrapT").children(".hint ").css({"left":"50%","margin-left":-(Width+200)/2})
+		if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+		$(this).children(".wrapT").children(".hint ").css({"left":"50%","margin-left":-((Width+200)/2+15)})
+		} 
+		$(this).children(".wrapT").children(".hint ").children("i").css({"left":"50%","margin-left":"-3px"})
+		$(this).parent(".pop2").css("display","none")
+		})	
+		})()
+    </script>
+	  <script>
+		(function(){
+		$(".pop2 .hide .classes").each(function(){
+		$(".pop2").css("display","block")	
+		$(".hide").css("display","block")	
+		var Width=$(this).children(".wrapT").width()
+		var Html=$(this).children(".wrapT").children("a").html()
+		$(this).children(".wrapT").children(".hint").children("b").width(Width+200)
+		$(this).children(".wrapT").children(".hint ").children("b").html("点击显示"+'"'+Html+'"'+"的筛选结果")
+		$(this).children(".wrapT").children(".hint ").css({"left":"50%","margin-left":-(Width+200)/2})
+		if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+		$(this).children(".wrapT").children(".hint ").css({"left":"50%","margin-left":-((Width+200)/2+15)})
+		} 
+		$(this).children(".wrapT").children(".hint ").children("i").css({"left":"50%","margin-left":"-3px"})
+		$(".pop2").css("display","none")
+		$(".hide").css("display","none")
+		})	
+		})()
+    </script>
+      <script>
+	  	(function(){
+			$(".filtrate .itemm").click(
+    	function(){
+			$(".filtrate .itemm .see2").css({"display":"none"})
+        	$(this).children(".see2").css({"display":"block"})
+			$(".pop2").css({"display":"block"})
+			$(".filtrate").addClass("ie67bug")
+        })
+		$(".pop2 .classes a").click(
+			function(){
+			$(".pop2 .classes a").removeClass("soil")
+		     $(this).addClass("soil")
+		})
+			$(".pop2 .unfold").click(
+				function(){
+					$(this).siblings(".hide").show()
+					$(this).hide()
+					})
+			$(".pop2 .fold").click(
+				function(){
+					$(this).parent(".hide").hide()
+					$(".pop2 .unfold").show()
+					})
+			
+			$(".classes a").hover(
+			function(){
+				$(this).siblings(".hint").show()
+				$(this).addClass("ie67sick")},
+				function(){
+				$(this).siblings(".hint").hide()
+				$(this).removeClass("ie67sick")}
+			)
+			$(".pop2 .close1").click(
+				function(){
+				$(".pop2").css({"display":"none"})
+				$(".pop2 .hide").css({"display":"none"})	
+				$(".pop2 .unfold").css({"display":"block"})	
+				$(".filtrate .itemm .see2").css({"display":"none"})	
+				$(".filtrate").removeClass("ie67bug")
+					})
+			})()
+      </script>
+      <div class="behavior clearfix">
+      	<div class="all">
+        	<input type="checkbox" id="check" /><label for="check" style="color:#292929;">全选</label>
+        </div>
+        <a class="adds" href="#">批量添加</a>
+        <div class="rank left">
+        	<p>按相关度排序</p>
+            <ul>
+            	<li><a href="#">按相关度排序</a></li>
+                <li><a href="#">按发表时间排序</a></li>
+                <li><a href="#">按下载次数排序</a></li>
+                <li><a href="#">按被引次数排序</a></li>
+            </ul>
+        </div>
+        <script>
+			(function(){
+				var flag=false;
+				var timer;
+				$("body").click(function(){
+					$(".rank ul").hide()
+					$(".rank").removeClass("rank-c")
+					})
+				$(".rank p").click(
+					function(event){
+					$(this).parent(".rank").addClass("rank-c")
+					$(this).siblings("ul").show()
+					event.stopPropagation()})
+				$(".rank p").hover(
+						function(){
+							
+							if($(".rank ul").css("display")=="block" && flag==true){ 
+									clearInterval(timer);
+									$(".rank").addClass("rank-c")
+									$(".rank ul").css({"display":"block"})}
+						},
+						function(){})
+			$(".rank ul").hover(function(){
+					$(this).css({"display":"block"})},
+					
+					function(){
+						flag=true;
+					timer=setTimeout(function()
+					{
+						$(".rank ul").css({"display":"none"});
+					    $(".rank ul").parent(".rank").removeClass("rank-c");
+					
+					},100)
+					
+					})
+					
+				$(".rank ul li").click(
+					function(){
+					 var Text1= $(this).text()
+					$(".rank p").text(Text1)	
+					$(this).parent("ul").hide().removeClass("rank-c")
+						})
+				$(".rank ul li").hover(
+					function(){
+						$(this).addClass("now")
+						},
+						function(){
+						$(this).removeClass("now")
+						}
+				)
+				})()
+        </script>
+        <div class="left limits"><input type="checkbox" id="check0" /><label for="check0" style="color:#292929;">已开通权限专辑</label></div>
+        <div class="switch right">
+        	<div class="count1 left">相关文献<span style="margin:0 6px;">7707123456</span>篇</div>
+            <a class="list1 left" href="#"></a>
+            <a class="xq1 left" href="#"></a>
+        </div>
+      </div>
+      <table class="table1" border="0" cellspacing="0" cellpadding="0" width="920">
+              <tr>
+                	<th width="60">序号</th>
+                  <th width="400">篇名</th>
+                  <th width="80">作者</th>
+                  <th width="155">来源</th>
+                  <th width="73">发布时间</th>
+                  <th width="38">下载</th>
+                  <th width="38">被引</th>
+                  <th width="68">操作</th>
+              </tr>
+              <!--头部-->
+             <tr>
+              	<td><input type="checkbox" id="01" /><label for="01">01</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="02" /><label for="02">02</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#">初中<span class="red1">语文</span>“三四五”课堂教学探索——以潍坊市初中<span class="red1">语文</span>新课改实验为例</a></td>
+                <td class="padding" align="left">张陆慧;遇建勋</td>
+                <td class="padding" align="left">西南民族大学学报(人文社会科学版)</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="03" /><label for="03">03</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="04" /><label for="04">04</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究<span class="red1">语文</span>教学中的语言训练研究<span class="red1">语文</span>教学中的语言训练研究<span class="red1">语文</span>教学中的语言训练研究<span class="red1">语文</span>教学中的语言训练研究<span class="red1">语文</span>教学中的语言训练研究<span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全颜氏全颜氏全颜氏全</td>
+                <td class="padding" align="left">中国连锁中国连锁中国连锁中国连锁中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="05" /><label for="05">05</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="06" /><label for="06">06</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="07" /><label for="07">07</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="08" /><label for="08">08</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="09" /><label for="09">09</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="10" /><label for="10">10</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="11" /><label for="11">11</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="12" /><label for="12">12</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="13" /><label for="13">13</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="14" /><label for="14">14</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="15" /><label for="15">15</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="16" /><label for="16">16</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="17" /><label for="17">17</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="18" /><label for="18">18</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="19" /><label for="19">19</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+              <tr>
+              	<td><input type="checkbox" id="20" /><label for="20">20</label></td>
+                <td class="padding fontSize14px blue1" align="left"><a href="#"><span class="red1">语文</span>教学中的语言训练研究</a></td>
+                <td class="padding" align="left">颜氏全</td>
+                <td class="padding" align="left">中国连锁</td>
+                <td>2009-01-01</td>
+                <td>1234</td>
+                <td>5678</td>
+                <td class="padding6"><a class="read1 left" href="#"></a><a class="collect1 left" href="#"></a></td>
+              </tr>
+            <script type="text/javascript">
+				(function(){
+					$("tr:even td").css("background","#F2F2F2");
+					$("tr:odd td").css("background","#fff");
+				})()
+			</script>
+            </table>
+
+            <div class="page"> <a class="spec_padding ie6p" href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">首页</a><a class="ie6p " href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">上一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">01</a><span class="current">02</span><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">03</a><a href="?page=4&amp;type=ch&amp;keys=sdfsd&amp;sort=0">04</a><a href="?page=5&amp;type=ch&amp;keys=sdfsd&amp;sort=0">05</a><a href="?page=6&amp;type=ch&amp;keys=sdfsd&amp;sort=0">06</a><a href="?page=7&amp;type=ch&amp;keys=sdfsd&amp;sort=0">07</a>···<a class="ie6p" href="?page=37&amp;type=ch&amp;keys=sdfsd&amp;sort=0">下一页</a><a class="spec_padding ie6p" href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">末页</a> </div> 
+    </div>
+  </div>
+</div>
+<div class="pop_add" style="display:none; position:fixed; left:50%; margin-left:-285px;top:60px; z-index:800;">
+	<p>将文章添加到</p>
+    <a class="close positionA" href="#"></a>
+    <div class="list">
+    	<div class="list_item1"><p class="left">吉林省绿色农产品营销战略研究</p><span class="left"></span></div>
+        <div class="list_item1"><p class="left">语文</p><span class="left"></span></div>
+        <div class="list_item1"><p class="left">小学生作文阅读欣赏</p><span class="left"></span></div>
+        <div class="list_item1"><i class="fold"></i><p class="left">智力测试</p><span class="left"></span></div>
+        <div class="list_item1"><i class="unfold"></i><p class="left">智力测试</p><span class="left"></span></div>
+        <div class="list_item2 positionR">
+        	<div class="create"><div class="frame left positionR"><input type="text" value="" /><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+            <div class="sublist"><span>工业品营销中关系质量对顾客购后行为倾向的影响研究</span></div>
+            <div class="sublist"><span>控股股东卷入、两权偏离与营销战略风格——基于第二类代...</span></div>
+            <div class="sublist"><span>特别企划案（安全须知）</span></div>
+            <div class="shelter positionA"></div>
+        </div>
+        <div class="list_item1"><p class="left">智力测试</p><span class="left"></span></div>
+       <div class="list_item2 positionR">
+        	<div class="create"><div class="frame left positionR"><input type="text" value="" /><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+            <div class="shelter positionA"></div>
+        </div>
+        <div class="createItem">
+        	<p>新建素材分类</p>
+            <div class="createNew"><div class="frame left positionR"><input type="text" value="" /><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+        </div>
+    </div>
+    <script>
+		( function(){
+			$(".list .list_item1 p, .list_item2 .sublist span").click(
+				function(){
+				$(".list .list_item1 p, .list_item2 .sublist span").removeClass("brown")
+				$(this).addClass("brown")
+				})
+			$(".list .list_item1 span").hover(
+				function(){$(this).addClass("blue")},
+				function(){$(this).removeClass("blue")})
+		 $(".createItem p").click(function(){$(this).css({"display":"none"});
+		 	$(this).siblings(".createNew").css({"display":"block"})})
+		$(".createItem .createNew .no").click(function(){$(this).parent(".createNew").css({"display":"none"});
+		 	$(".createItem p").css({"display":"block"})})
+		})()
+    </script>
+    <div class="pop_btn">
+    	<a class="sure" href="#">确定</a>
+        <a class="cancel" href="#">取消</a>
+    </div>
+</div>
+<div id="mask" class="mask"></div>
+<script>
+	(function(){
+		$(".adds, .collect1").click(
+			function(){
+				$(".pop_add, .mask").show()
+				})
+		$(".close, .cancel").click(
+			function(){
+				$(".pop_add, .mask").hide()
+				})
+		})()
+</script>
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************-->
+<script>
+/**左右高度自适应*/
+mysetHeight(); 
+function mysetHeight()
+{
+	var ecSideMenu=$(".ecSideMenu");
+	var material=$(".material");
+    var maxV=Math.max(ecSideMenu.height(),material.height())+15;
+		 material.height(maxV);	
+}
+</script>
+</body>
+</html>

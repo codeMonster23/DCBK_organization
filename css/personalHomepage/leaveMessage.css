@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+.colorGrey{ color:#BEBDBD;}
+.writeArea{ width:850px; padding-left:33px; padding-right:32px; background-color:#ffffff; margin-top:10px; padding-top:15px; padding-bottom:12px; margin-bottom:10px; border-bottom:1px solid #DAD1BF;border-top: 3px solid #F6900D;}
+.personPage-for-page .writeArea .title{ height:34px; line-height:34px; color:#8c6e33; font-size:16px; font-family:"楷体";}
+.personPage-for-page .writeArea .textarea{width:836px; border:1px solid #BFA677; padding:8px 6px 2px;height:100px; position:relative; margin-bottom:8px;}
+.personPage-for-page .writeArea .textarea textarea{width:836px; height:98px; border:none 0; font-size:12px; resize:none;  overflow:hidden;outline: none}
+.personPage-for-page .writeArea .textarea .count{position:absolute; right:5px; bottom:3px;font-size:14px; font-weight:bold; color:#D8D8D8;}
+.personPage-for-page .writeArea .textarea .count i{ font-style:normal;}
+.personPage-for-page .writeArea .submit{ float:right; width:98px; text-align:center; height:32px; line-height:32px; border:1px solid #EB8A0C; border-radius:3px; box-shadow:0 0px 1px 2px rgba(221,221,221,0.5); font-size:14px; color:#ffffff; text-decoration:none; font-weight:bold; background-color:#F6910D;}
+.personPage-for-page .writeArea .submit:hover{ background-color:#EF8C0C;}
+.personPage-for-page .showBlock {margin-top: 10px;}
+.personPage-for-page .showBlock .handle{ width:755px;height:36px; padding-right: 10px;background-color:#ffffff; border-bottom:1px solid #F1EBDF;}
+.personPage-for-page .showBlock .handle1{ width:884px;padding-right: 32px;}
+.personPage-for-page .showBlock .handle .items a{ float:left; width:68px; margin-right:1px; height:36px; line-height:36px; text-align:center; color:#3F3F3F; text-decoration:none;}
+.personPage-for-page .showBlock .handle .items a:hover{ color:#FE960F; background-color:#F8F5EF;}
+.personPage-for-page .showBlock .handle .items a.active{ height:37px; position:relative;font-weight:bold; color:#ffffff; background-image:url(../../images/personalHomepage/ph-angle.gif); background-repeat:no-repeat;}
+.personPage-for-page .showBlock .handle .searchWrap{ height:20px; padding:1px 0; width:228px; border:1px solid #BEBEBE; margin-top:6px;}
+.personPage-for-page .showBlock .handle .searchWrap .input{ height:20px; line-height:20px; width:200px; padding-left:6px;outline:none;}
+.personPage-for-page .showBlock .handle .searchWrap .search{ width:17px; height:20px; background:url(../../images/personalHomepage/ph-search-icon.gif) no-repeat center;}
+.personPage-for-page .showBlock .messageBox{ padding:20px 32px 20px 33px; margin-bottom:9px; background-color:#ffffff;}
+.personPage-for-page .showBlock .messageBox .messageA .info .headImg{ position:relative; margin-right:18px;}
+.personPage-for-page .showBlock .messageBox .messageA .info .headImg .shade{ position:absolute; left:0px; top:0; width:56px; height:56px; background:url(../../images/personalHomepage/ph-shade1.png) no-repeat;}
+.personPage-for-page .showBlock .messageBox .messageA .info .personal{ width:678px;}
+.personPage-for-page .showBlock .messageBox .messageA .row1{ line-height:32px;}
+.personPage-for-page .showBlock .messageBox .messageA .row2{ line-height:18px; color:#989898; margin-bottom:3px;}
+.personPage-for-page .showBlock .messageBox .messageA .row3{ line-height:24px; color:#3F3F3F; font-size:14px;}
+.personPage-for-page .showBlock .messageBox .row1 .name{ display:inline-block;*zoom:1;*display:inline;font-size:14px; font-weight:bold; color:#3F3F3F;}
+.personPage-for-page .showBlock .messageBox .row1 .name.vip{ padding-right:20px; background:url(../../images/platform/template1/ti-vip.png) no-repeat right center; margin-right:5px;}
+.personPage-for-page .showBlock .messageBox .row1 .name:hover{ color:#F6910D;}
+.personPage-for-page .showBlock .messageBox .messageA .row2 .delete{ color:#F6910D; padding-left:10px;}
+.personPage-for-page .showBlock .messageBox .favour{ width:85px;}
+.personPage-for-page .showBlock .messageBox .favour .zan{ display:block; width:32px; height:32px; background:url(../../images/personalHomepage/ph-zan.png) no-repeat 0 0; margin:0 auto;}
+.personPage-for-page .showBlock .messageBox .favour .zan:hover{ background-position:0 -44px;}
+.personPage-for-page .showBlock .messageBox .favour .zan.click{background-position:0 -44px; }
+.personPage-for-page .showBlock .messageBox .favour p{ line-height:36px; color:#989898; text-align:center;}
+.personPage-for-page .showBlock .messageBox .favour p span{ color:#F6910D; font-weight:bold;}
+.personPage-for-page .showBlock .messageBox .messageB{ margin-left:74px; padding:12px 0 10px 12px; background-color:#F7F7F7; border:1px solid #E5E5E5; margin-top:13px;}
+.personPage-for-page .showBlock .messageBox .messageB .info .headImg{ position:relative; margin-right:13px;}
+.personPage-for-page .showBlock .messageBox .messageB .info .headImg .shade{ position:absolute; left:0px; top:0; width:42px; height:42px; background:url(../../images/personalHomepage/ph-shade2.png) no-repeat;}
+.personPage-for-page .showBlock .messageBox .messageB .info .personal{ width:600px;}
+.personPage-for-page .showBlock .messageBox .messageB .row1{ line-height:22px; color:#989898;}
+.personPage-for-page .showBlock .messageBox .messageB .row2{ line-height:18px; color:#989898; margin-bottom:3px;}
+.personPage-for-page .showBlock .messageBox .messageB .row3{ line-height:24px; color:#3F3F3F;}
+.personPage-for-page .showBlock .works{margin-left:74px; width:678px;}
+.personPage-for-page .showBlock .works .triangle{ height:7px; font-size:0; background:url(../../images/personalHomepage/ph-triangle.gif) no-repeat 20px center; margin-top:5px;}
+.personPage-for-page .showBlock .works .album{ background-color:#FCEBCE;padding:20px 18px 15px 22px;}
+.personPage-for-page .showBlock .works .album .pic{ border:1px solid #F5DFBC; padding:4px; background-color:#ffffff; box-shadow: 0 0 2px 2px rgba(251,232,200,0.6); margin-right:17px;}
+.personPage-for-page .showBlock .works .album .detail{ width:467px;}
+.personPage-for-page .showBlock .works .album .detail .title{ font-weight:bold; font-size:14px; line-height:20px; color:#EE800B; display:block; margin-bottom:8px;}
+.personPage-for-page .showBlock .works .album .detail .summary{ line-height:22px; color:#40555D;}
+.personPage-for-page .showBlock .works .album .detail .summary .more{ color:#EE800B;}
+.personPage-for-page .showBlock .works .album .detail .data{ margin-top:20px; height:14px; line-height:14px; color:#B5B5B5; text-align:right;}
+.personPage-for-page .showBlock .works .album .detail .data a{ color:#B5B5B5; padding-left:18px;}
+.personPage-for-page .showBlock .works .album .detail .data .zan{ padding-left:12px;background:url(../../images/personalHomepage/new-zan1.png) no-repeat left center;}
+.personPage-for-page .showBlock .works .album .detail .data .zan.click{ background-image:url(../../images/personalHomepage/new-zan2.png);}
+.personPage-for-page .showBlock .works .album .detail .data .comment{ background:url(../../images/personalHomepage/new-com1.png) no-repeat left center;}
+.personPage-for-page .showBlock .works .album .detail .data .comment:hover{ background-image:url(../../images/personalHomepage/new-com2.png);}
+.personPage-for-page .showBlock .works .album .detail .data .collect{ padding-left:18px;background:url(../../images/personalHomepage/new-sc1.png) no-repeat left center;}
+.personPage-for-page .showBlock .works .album .detail .data .collect.click{ background-image:url(../../images/personalHomepage/new-sc2.png);}
+.personPage-for-page .showBlock .works .album .detail .data .share{ background:url(../../images/userInfo/userInfo9-icon3new.png) no-repeat left center;}
+.personPage-for-page .showBlock .loading{ display:block; height:45px; border-bottom:1px solid #DBD2C1; margin-bottom:55px; background-color:#ffffff; text-align:center; line-height:45px;  color:#7F7F7F;}
+.personPage-for-page .showBlock .loading img{ display:inline-block;*zoom:1;*display:inline;vertical-align:middle; margin-right:5px;}
+.personPage-for-page .showBlock .manage{ padding:15px 32px 15px 33px; background-color:#ffffff;}
+.personPage-for-page .showBlock .manage .notice{ display:block; height:32px; line-height:32px; border:1px solid #FEC574; background-color:#FFF3E3; color:#F6910D; font-weight:bold; text-align:center;}
+.personPage-for-page .showBlock .manage .notice span{ display:inline-block;*zoom:1;*display:inline; width:28px; height:18px; line-height:18px; background:url(../../images/platform/template1/t1-message-icon.png) no-repeat; font-weight:normal; color:#ffffff; margin-left:5px;}
+.personPage-for-page .showBlock .btnWrap{width: 150px;height:36px;border-bottom: 1px solid #F1EBDF;background-color: #fff;}
+.personPage-for-page .showBlock .btnWrap .btn{
+	display: block;
+	width: 72px;
+	padding-left: 58px;
+	height: 28px;
+	line-height: 28px;
+	margin: 4px auto;
+	border-radius: 2px;
+	background: #f79200 url(../../images/personalHomepage/ph-icon1.png) 35px center no-repeat;
+	color:#fff;
+	font-size:14px;
+	outline: none;
+}
+.pageWrap {
+	height: 75px;
+	border-bottom: 1px solid #dbd2c0;
+	background-color: #fff;
+	text-align: center;
+}
+.pageWrap a,.pageWrap span{
+	display: inline-block;
+	padding: 0 8px;
+    height: 35px;
+    line-height: 35px;
+    margin: 19px 5px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    font-size: 14px;
+    color: #8e8e8e;
+    font-family: "Arial";
+}
+.pageWrap a.current,.pageWrap a:hover{
+    background-color: #f79327;
+    border-color: #f79327;
+    color:#fff;
+}

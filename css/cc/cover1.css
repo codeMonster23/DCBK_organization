@@ -1,0 +1,179 @@
+﻿@charset "utf-8";
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textarea, p, th, td, form,body { padding: 0px; margin: 0px; }
+body { font-family:"宋体"; font-size:12px; color:#000; }
+img { border:none; }
+strong { font-style:normal }
+ul, li, ol { list-style-type: none; }
+table { border-collapse: collapse; border-spacing: 0 }
+input::-moz-focus-inner {border:0;padding:0;margin:0;}
+input::-ms-clear {display:none;}
+input[type="button"] { cursor:pointer;}
+input,textarea { outline:none;}
+/*input { border:0; background-color:transparent;}*/
+a { text-decoration:none; outline:none;}
+a:hover { text-decoration:underline;}
+.catalogue-title{
+	width: 1056px;
+	height: 124px;
+	padding: 0 50px;
+	padding-top: 130px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 55px;
+	background: url(../../images/cc/bg1.jpg) center 217px no-repeat;
+}
+.catalogue{
+	width: 1056px;
+	height: 902px;
+	padding: 0 50px;
+	background:none;
+	font-family: "微软雅黑";
+}
+.catalogue .wrap .chapter{
+	padding-left: 0;
+	background-color: #fff;
+	color:#a25304;
+	font-weight: normal;
+}
+.catalogue .wrap .chapter-list{
+	background-color: #f5f5f5;
+	border-radius: 5px;
+}
+.catalogue .wrap .item{
+	width: 1044px;
+	color:#333;
+}
+.catalogue .wrap .item .title .dot{
+	color:#333;
+}
+.catalogue .wrap .item .line{
+	width: 1040px;
+}
+.catalogue .wrap .item .title{
+	background-color: #f5f5f5;
+}
+.catalogue .wrap .item .author{
+	padding-right: 12px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #f5f5f5;
+	color:#999;
+}
+.introduction {
+	width: 1240px;
+	margin: 0 auto;
+	padding: 0 50px;
+	padding-bottom: 240px;
+}
+.introduction .con-hd{
+	margin-bottom: 80px;
+}
+.introduction .con-hd h1{
+	margin: 130px 0 35px;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+.introduction .con-hd p{
+	text-indent: 2em;
+	line-height: 50px;
+	font-size: 26px;
+}
+.introduction .con-bd h2{
+	font-size: 32px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	margin-bottom: 26px;
+}
+.introduction .con-bd p{
+	font:24px/50px "宋体";
+}
+.introduction .con-bd p span{
+	display: inline-block;
+	width: 110px;
+	font-family: "微软雅黑";
+}
+.introduction .con-bd .ewm{
+	margin: 10px 0 50px 120px;
+}
+.introduction .con-ft{
+	font-size: 24px;
+	font-family: "微软雅黑";
+	border-top: 1px solid #9a9a9a;
+	color:#666;
+}
+.introduction .con-ft p{
+	margin-top: 26px;
+}
+.introduction .con-ft .p1{
+	font-size: 30px;
+	font-weight: bold;
+	color:#000;
+}
+.prefaceIntro{
+	padding:0 50px;
+}
+.prefaceIntro h1{
+	height: 128px;
+	padding-top: 124px;
+	background:  url(../../images/cc/bg2.jpg) center 213px no-repeat;
+	font-size: 60px;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	color:#000;
+}
+.prefaceIntro .intro{
+	background: none;
+	padding-top: 50px;
+	font-size:26px;
+}
+.prefaceIntro .intro p{
+	font-size: 33px;
+	line-height: 60px;
+	text-indent:2em;
+	color:#000;
+}
+.chapterCover{
+	width: 1240px;
+	padding-top:56px;
+	background:none;
+	background: url(../../images/cc/cc11.jpg) 56px top no-repeat;
+}
+.chapterCover .chapterName{
+	padding-top: 200px;
+	padding-bottom: 40px;
+	font-size: 75px;
+	font-family: "微软雅黑";
+	color:#a25304;
+}
+.chapterCover .title{
+	width: 1140px;
+	background-color: #a25304;
+	height: 340px;
+	font-size: 70px;
+	font-family: "微软雅黑";
+	color:#fff;
+	display: table;
+	padding-left: 50px;
+}
+.chapterCover .title .inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+.chapterCover .title p{
+	display: inline-block;
+	line-height: 100px;
+}
+.chapterCover .lead {
+	padding-left: 456px;
+	padding-right: 90px;
+}
+.chapterCover .lead p{
+	line-height: 46px;
+	font-size: 33px;
+	color:#666;
+	letter-spacing: 3px;
+}
+.back{
+	width: 1240px;
+}

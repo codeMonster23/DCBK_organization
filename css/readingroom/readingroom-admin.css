@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.rr-main .tBanner{ margin:20px 0;}
+.rr-main .tabBox{ background:#ECECEC; border-left:1px solid #D2D2D2; border-top:1px solid #D2D2D2; border-bottom:1px solid #D2D2D2; margin-bottom:24px;}
+.rr-main .tabBox .aside-l{ width:176px;}
+.rr-main .tabBox .aside-l .tab-nav{border-bottom:1px solid #D2D2D2; cursor:pointer; position:relative;}
+.rr-main .tabBox .aside-l .tab-nav.cur{ background:url(../../images/readingroom/rr-asidebbg.gif) repeat-x;}
+.rr-main .tabBox .aside-l .tab-nav .icon{ display:block; height:51px; line-height:51px;font-size:16px; color:#565656; padding-left:37px; background-repeat:no-repeat; background-position:13px 18px; border-right:1px solid #D2D2D2;}
+.rr-main .tabBox .aside-l .tab-nav .jt{ position:absolute; left:156px; top:18px; width:11px; height:15px; background:url(../../images/readingroom/rr-aside-icon3-1.png) no-repeat;}
+.rr-main .tabBox .aside-l .tab-nav .jt{ background-image:url(../../images/readingroom/rr-aside-icon3-2.png);}
+.rr-main .tabBox .aside-l .tab-nav1 .icon{background-image: url(../../images/readingroom/rr-aside-icon1-1.png);}
+.rr-main .tabBox .aside-l .tab-nav1.cur .icon{border-color:#F66E18;background-image: url(../../images/readingroom/rr-aside-icon1-2.png); font-weight:bold; color:#ffffff;}
+.rr-main .tabBox .aside-l .tab-nav2 .icon{background-image: url(../../images/readingroom/rr-aside-icon2-1.png);}
+.rr-main .tabBox .aside-l .tab-nav2.cur .icon{border-color:#F66E18;background-image: url(../../images/readingroom/rr-aside-icon2-2.png);font-weight:bold; color:#ffffff;}
+.rr-main .tabBox .aside-l .tab-nav .subList{ display:none;border-top:1px solid #D2D2D2; border-right:1px solid #D2D2D2; background-color:#ffffff; padding:1px; color:#565656; overflow:hidden;}
+.rr-main .tabBox .aside-l .tab-nav .subList li{ height:35px; line-height:35px; text-align:center; cursor:pointer; margin-bottom:1px;}
+.rr-main .tabBox .aside-l .tab-nav .subList li.click{background-color:#FFF0E7;}
+.rr-main .tabBox .aside-l .tab-nav .subList li:hover{ background-color:#FFF0E7;}
+.rr-main .tabBox .aside-r{ width:1011px; border:1px solid #FF6507; border-top-width:3px; background:#ffffff;margin-top:-1px; margin-bottom:-1px;}
+.rr-main .tabBox .aside-r .tab-section{ display:none;padding-left:34px; padding-top:25px;}
+.rr-main .tabBox .aside-r .tab-section.show{ display:block;}
+.rr-main .tabBox .aside-r .tab-section .route{ color:#565656; line-height:32px;}
+.rr-main .tabBox .aside-r .tab-section .route a{ color:#565656;}
+.rr-main .tabBox .aside-r .tab-section .table1{ margin-bottom:163px;}
+.rr-main .tabBox .aside-r .tab-section .table1 td{ height:40px; border:1px solid #ECEBEA; font-size:16px; color:#565656;}
+.rr-main .tabBox .aside-r .tab-section .table1 .item{ font-weight:bold; text-align:center; background-color:#F6F6F6;}
+.rr-main .tabBox .aside-r .tab-section .table1 td div{ padding-left:22px;}
+.rr-main .tabBox .aside-r .tab-section .subBox{ display:none;}
+.rr-main .tabBox .aside-r .tab-section .subBox.show{ display:block;}
+.rr-main .tabBox .aside-r .tab-section .subBox .table2{ text-align:center; margin-bottom:35px; font-size:14px; color:#565656;}
+.rr-main .tabBox .aside-r .tab-section .subBox .table2 th{ background:#F6F6F6;}
+.rr-main .tabBox .aside-r .tab-section .subBox .table2 th, .rr-main .tabBox .aside-r .tab-section .subBox .table2 td{ border:1px solid #ECEBEA; height:51px;}
+.colorBlue{ color:#0C86D7;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchNav{ width:238px; height:39px; border:1px solid #FEA86F; border-bottom:none; border-right:none;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchNav .tag{ width:118px; height:38px; line-height:38px; font-size:16px; color:#4A4A4A; text-decoration: none; border-right:1px solid #FEA86F; text-align:center;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchNav .tag.selected{ font-weight:bold; background-color:#FFF0E7; height:39px; position:relative; z-index:5;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox{ display:none;border-top:1px solid #FEA86F; margin-top:-1px; width:943px;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox.show{ display:block;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox{ padding:12px 20px 12px 12px; height:41px; border:1px solid #FEA86F; border-top:none; border-bottom:2px solid #FF6609; background:#FFF0E7;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .time{ width:369px; padding:6px 0 6px 21px; border:1px solid #FEA86F; background-color:#ffffff; height:27px;color:#4A4A4A;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .time label{ float:left;padding:0 9px; line-height:27px;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .time span{ float:left;width:82px; height:25px; line-height:25px; padding-left:12px; padding-right:0; cursor:pointer; border:1px solid #DDDDDD;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .time .laydate-icon{ background:url(../../images/readingroom/rr-icon12.gif) no-repeat 77px 11px;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .time .sx{ float:left;width:75px; height:27px; line-height:27px; text-align:center; color:#4A4A4A; text-decoration:none; background:url(../../images/readingroom/rr-btnbg.gif) no-repeat; margin-left:20px;_margin-left:10px;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .count{ line-height:41px;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .topBox .count cite{ color:#E00201; font-style:normal;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3{ text-align:center; color:#4A4A4A;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3 th{ height:36px; border:1px solid #EAEAEA; background-color:#EAEAEA; border-right:1px solid #ffffff; border-left:1px solid #ffffff; font-weight:normal;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3 .first{border-left-color:#EAEAEA;}/*ie7兼容*/
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3 .last{border-right-color:#EAEAEA;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3 td{ border:1px solid #EAEAEA; }
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3 .book{ color:#0C86D7;}
+.rr-main .tabBox .aside-r .tab-section .subBox .switch .switchBox .table3 td div{ padding:10px; line-height:18px; text-align:left;}
+/*page*/
+.logPage{text-align: center; padding-top:42px;padding-bottom: 42px; font-size:16px;}
+.logPage a{color:#FF6507; margin-right: 10px; padding:10px 12px; text-decoration: none;background-color:ffffff; border:1px solid #FF6507;}
+.logPage .cc1{ padding:10px 22px;}
+.logPage .cc2{ padding:10px 14px;}
+.logPage .sl{color:#FF6507; margin-right: 10px; padding:10px 12px;background-color:ffffff; border:1px solid #FF6507;}
+.logPage a:hover{background-color: #FF6507; color: #ffffff;}
+.logPage span.current { background-color: #FF6507; color: #ffffff; margin-right: 5px; padding:10px 12px; border:1px solid #FF6507; }

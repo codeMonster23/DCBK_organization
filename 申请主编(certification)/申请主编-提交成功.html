@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智库认证第三步</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/certification/certification2.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body bgcolor="#F1EBDF">
+<div class="topBanner">
+        <div class="width1190pxAuto clearfix positionR topBanner" style="z-index:1000001">
+            <div class="left jg-head"><a href="#" target="_blank">机构特色资源编创平台</a></div>
+            <div class="right user-bar">
+              <div class="downlist">
+                <a class="colorGrey loginState" href="#">北京大学</a>
+                <div class="list_box listBoxPosition11">
+                  <ul>
+                    <li><a href="#">　编创中心</a></li>
+                    <li><a href="#">　我的主页</a></li>
+                    <li><a href="#" class="quit">　退出登录</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <span> | </span>
+              <a class="colorGrey" href="#">消息( <strong class="colorYellowishBrown">0</strong> )</a>
+              <span> | </span>
+               <div class="downlist">
+                <a class="colorGrey" href="#">编创空间 </a>
+              </div>
+              <span> | </span>
+              <a class="colorGrey" href="#">帮助</a>
+            </div>         
+        </div>
+    </div>
+    <script>
+    (function(){
+    var ls=$(".topBanner .loginState");
+    var lb=$(".list_box");
+    ls.hover(function()
+    {
+        lb.css("display","none");
+        var index=ls.index(this);
+        lb.eq(index).css("display","block");
+    },function(){
+        lb.css("display","none");
+        })
+    lb.hover(function(){
+        $(this).css("display","block");
+        },function(){
+        $(this).css("display","none");
+    })
+    })()
+    </script>
+    <div class="certifiBanner">
+     <div class="banner width1190pxAuto"></div>
+    </div>
+<div class="stepWrap2 width1190pxAuto">
+	<div class="step3"></div>
+    <div class="wrap">
+    	<div class="cont">
+            <div class="prompt">提交成功！</div>
+            <p class="p1">加入申请已提交成功，请耐心等待管理员审核~</p>
+            <p class="p2">审核通过后，会以短信的形式给您发送通知，请注意查收.</p>
+          </div>
+    </div>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<!--******************************底部通用部分 分界线***************************************-->
+ <div class="ecFooter">
+  <div class="width1190pxAuto">
+      <div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+      <div class="websiteInfo left clearfix">
+          <p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+          <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+      </div>
+      <div class="wxwrap clearfix right">
+          <div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+          <div class="about left">
+              <p class="tit">官方微信</p>
+              <p>扫二维码</p>
+              <p>轻松关注</p>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

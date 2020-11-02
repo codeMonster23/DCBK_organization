@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script src="../js/jquery.promptToggle.js"></script>
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="#EBEBEB">
+<div class="ecHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo left editorLogo"><a href="#"><img src="../images/header-and-footer/new_echf-logo1.jpg" width="229" height="40"/></a>
+    <a href="#"><img src="../images/header-and-footer/new_echf-logo3.jpg" width="106" height="40"/></a></div>
+    <div class="addNav left clearfix"><a href="#" class="cur">首页</a> <a href="#">我的主页</a> <a href="#">编创指南</a></div>
+    <div class="editorInfo right"><a class="name" href="#">summer10123</a> | <a class="exit" href="#">退出</a>
+    </div>
+  </div>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto ecZone clearfix">
+    <div class="ecSideMenu left">
+      	<div class="editorIntro">
+        	<a href="javascript:void(0);" class="headImage"><img src="../imagesTemp/editorZone/ec1-avatar.jpg" width="112" height="112" /></a>
+            <div class="shortIntro positionR">
+            	<p class="userName"><span>我是创作大师</span></p>
+            	<div class="text-box">切斯·克劳福 (ChaceCrawford)，1985年7月18日出生于德克萨斯州卢博克市，美国演员。2007年...</div>
+                <a href="#" class="edit positionA"></a>
+                <script>
+					$(".shortIntro").hover(function(){$(this).children(".edit").css({"display":"block"})},function(){$(this).children(".edit").css({"display":"none"})})
+                </script>
+            </div>
+        </div>
+        <div class="sideBtn">
+            	<a href="#" class="btn1">作品编创</a>
+                <a href="#" class="btn2">上传素材</a>
+          </div>
+        <div class="line1"></div>
+        <div class="materialLibrary  c_section current">
+        	 <h1>素材库</h1>
+             <p><a href="#">搜索CNKI素材</a></p>
+             <p><a href="#">我的CNKI素材库</a></p>
+             <p><a href="#" class="cur">我的原创素材库</a></p>
+        </div>
+        <div class="line1"></div>
+        <div class="production c_section">
+        	<h1><a href="#">作品管理</a></h1>
+        </div>
+        <div class="line1"></div>
+        <div class="account  c_section">
+        	<h1>账户管理</h1>
+            <p><a href="#">收益结算</a></p>
+            <p><a href="#">我的银行卡</a></p>
+        </div>
+        <div class="line1"></div>
+        <div class="personal c_section">
+        	<h1><a href="#">个人资料</a></h1>
+        </div>
+         <div class="line1"></div>
+         <div class="message c_section">
+         	<h1><a href="#">消息中心</a></h1>
+         </div>
+        <script>
+			var Se=$(".c_section")
+			$(Se).hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})
+        </script>
+    </div>
+    <div class="myFrame left"> 
+    	<div class="topInfo clearfix"><span class="left">当前位置：<a href="#" class="upper">首页</a> &gt; 素材库 &gt; 我的原创素材库</span>
+            <div class="search right">
+            <div id="search_a" class="search_a">
+            <input id="headq" value="输入关键词，在1.2亿篇文献中搜索素材" class="search_a_input colorGrey" maxlength="30" type="text" />
+            </div>
+            <div id="search_b" class="search_b">全部</div>
+           <span id="wrap_absolute" class="wrap_absolute">
+                <p>我的原创素材库</p>
+                <p>我的CNKI素材库</p>
+            </span>
+            <div class="search_c">
+              <input value="搜素材" class="search_c_button1" type="button" />
+            </div>
+          </div>
+            <script src="../js/searchNew.js"></script>
+        </div>
+        <div class="original">
+        	<div class="showArea left">
+            		<h1 class="my-draft">草稿箱<i>（请您补全以下文章信息；如信息不完整，该文章将无法用于作品编创。）</i></h1>
+            		<div class="contHandle">
+                    	<div class="c1"><input type="checkbox" id="qx" class="left"/><label for="qx" class="left">全选</label></div>
+                        <div class="c2"><a href="javascript:void(0)" class="del">删除</a><a href="javascript:void(0)" class="transfer">批量转移</a></div>
+                        <div class="c3">共 <span>30</span>  篇文章</div>
+                    </div>
+            		<table  class="mytable" border="0" cellspacing="0" cellpadding="0" width="720">
+                      <tr>
+                          <th width="62">序号</th>
+                          <th width="397"><div>篇名</div></th>
+                          <th width="112"><div>分组</div></th>
+                          <th width="130" class="nb">操作</th>
+                      </tr>
+                  	 <!--头部-->
+                      <tr>
+                        <td><input type="checkbox" id="01" /><label for="01">1</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教学模式研究</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="02" /><label for="02">2</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于新疆少数民族传统文化的小学数学情景教学素...</a><div class="pencil left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="03" /><label for="03">3</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于新疆少数民族</a><div class="pencil left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="04" /><label for="04">4</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="05" /><label for="05">5</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="06" /><label for="06">6</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于新疆少数民族</a><div class="pencil left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="07" /><label for="07">7</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="08" /><label for="08">8</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="09" /><label for="09">9</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="10" /><label for="10">10</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="11" /><label for="11">11</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+                        <td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" id="12" /><label for="12">12</label></td>
+                        <td><div class="name"><span class="sign left">草稿</span><a href="#" class="left">基于MOOC的大学英语翻转课堂教</a><div class="note left positionR"><div class="postil positionA"><span class="positionA angle"></span><h3>展现信息魔力，优化语文教学</h3><p><strong>标注：</strong>标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注标注</p></div></div></div></td>
+                        <td><div class="wrap">语文教学</div></td>
+<td><div class="icon"><a href="javascript:void(0)" class="icon1 left"></a><a href="javascript:void(0)" class="icon2 left"></a><a href="javascript:void(0)" class="icon3 left"></a><a href="javascript:void(0)" class="icon4 left"></a></div></td>
+                      </tr>
+            </table>
+           			<script>
+				$(".mytable  tr").hover(
+					function(){$(this).children("td").addClass("bgGrey")},
+					function(){$(this).children("td").removeClass("bgGrey")}
+				)
+				$(".mytable .state").hover(
+					function(){$(this).children(".click").css({"display":"block"});
+					$(this).children(".look").css({"display":"block"});},
+					function(){$(this).children(".click").css({"display":"none"});
+					$(this).children(".look").css({"display":"none"})}
+				)
+			   $(".mytable td .note").hover(
+					function(){
+						$(this).addClass("hovern")
+						$(this).children(".postil").css({"display":"block"})
+						$(this).parents(".name").css({"z-index":80})
+						},
+				function(){
+						$(this).removeClass("hovern")
+						$(this).children(".postil").css({"display":"none"})
+						$(this).parents(".name").css({"z-index":1})
+						})
+			$(".mytable td .pencil").click(
+					function(){
+						$(".mytable td .pencil").removeClass("click")
+						$(this).addClass("click")
+						})
+		   	$(".mytable td .pencil").hover(
+					function(){
+						$(this).addClass("hover")},
+				function(){
+						$(this).removeClass("hover")})
+            </script>
+            		<div class="page newPage specPage"> <!--<a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="spec_padding ie6p">首页</a>--><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">上一页</a><a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0">01</a><span class="current">02</span><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">03</a><a href="?page=4&amp;type=ch&amp;keys=sdfsd&amp;sort=0">04</a><a href="?page=5&amp;type=ch&amp;keys=sdfsd&amp;sort=0">05</a><a href="?page=6&amp;type=ch&amp;keys=sdfsd&amp;sort=0">06</a>...<a href="?page=37&amp;type=ch&amp;keys=sdfsd&amp;sort=0">37</a><a href="?page=3&amp;type=ch&amp;keys=sdfsd&amp;sort=0">下一页</a><span class="fy">到第</span><span class="input"><input type="text" /></span><span class="fy">页</span><a href="#" class="sure">确定</a><!--<a href="?page=1&amp;type=ch&amp;keys=sdfsd&amp;sort=0" class="spec_padding ie6p">末页</a> --></div>   
+            </div>
+            <div class="detail right">
+        	<div class="new">
+            	<a class="newM" href="javascript:void(0)">新建素材库</a>
+                <div class="afterClick">
+                	<input type="text" class="mName" />
+                    <input type="button" value="保存" class="ok" />
+                    <input type="button" value="取消" class="cancel" />
+                </div>
+                <script>
+					$(".newM").click(function()
+					{
+						$(this).hide();
+						$(".afterClick").show();
+					})
+					$(".newM").hover(
+						function(){$(this).addClass("hover")},
+						function(){$(this).removeClass("hover")})
+					$(".new .cancel").click(function()
+					{
+						$(this).parent().hide();
+						$(".newM").show();
+					})
+                </script>
+            </div>
+            <ul class="dItems">
+            	<li><a href="#">全部素材（4556）</a></li>
+                <li><a href="#">英语教学（3556）</a></li>
+                <li><a href="#">数学教学数学教学（21）</a></li>
+                <li class="current"><span class="triangle"></span>语文教学（2344）</li> 
+                <li><a href="#">语文教材（4556）</a></li>
+                <li><a href="#">未分类（4556）</a></li>
+            </ul>
+        </div>
+        </div>
+   </div>
+ </div> 
+</div>
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************-->
+<!--鼠标移动到每个文集上的效果-->
+<script>
+$(".myFrame .picShow .subject").hover(function(){$(this).addClass("subjectHover")},function(){$(this).removeClass("subjectHover")});
+</script>
+<script>
+/*添加到素材库*/
+//detail部分高度自适应
+setHeight(); //在素材库的增删和已添加文章的删除脚本中需要加入
+function setHeight()
+{
+	var detail=$(".detail");
+	var ecSideMenu=$(".ecSideMenu");
+	var material=$(".material")
+    var maxV=Math.max(ecSideMenu.height(),material.height())-26;
+		detail.height(maxV);	
+}
+</script>
+
+</body>
+</html>

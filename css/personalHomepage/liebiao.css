@@ -1,0 +1,27 @@
+/* 内容右侧 */
+.nav-fenlei { background:#fcf6e9; width: 905px; height: 40px; line-height: 40px; padding-left: 10px; }
+.nav-fenlei li { float:left; padding-right: 5px; color:#bababa; }
+.nav-fenlei li span { color:#e3e3e3; }
+.nav-fenlei .current a { color:#FF9702; font-weight: bold; }
+
+
+
+
+
+
+
+
+
+
+
+/* page 
+.viewPage { text-align:right; padding-right:15px; height:30px; line-height:30px; }
+.viewPage a { padding:6px; font-weight:normal; font-size:12px; }
+.viewPage span.current { padding:6px; font-size:12px; }
+.page { text-align: center; padding:17px 0 28px; float:right; }
+.page a { color: #6a6a6a; margin-left: 5px; padding: 9px 13px; text-decoration: none; background-color:#fff; border:1px solid #E4DDD3; }
+.page a:hover { color: #fff; background-color:#FF9702; }
+.page a:active { background: none repeat scroll 0 0 #FF9702; border-color: #000; border-style: solid; border-width: 1px; color: #fff; }
+.page span.current { background:#FF9702; color: #fff; margin-left: 5px; padding:9px 13px; text-decoration: none; font-weight: bold; border:1px solid #E4DDD3; }
+.page span.disabled { margin-right: 3px; padding: 2px 6px; }
+*/

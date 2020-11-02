@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.template2 {}
+.template2 .tHeader { background-repeat: repeat; padding-bottom:25px; }
+.template2 .tHeader .sitemap { line-height: 36px; }
+.template2 .tHeader .sitemap a {}
+.template2 .tHeader .title { font-size: 26px; color: #FFF; font-weight: bold; text-align: center; padding-top: 15px; }
+.template2 .main { padding-bottom:50px;}
+.template2 .aboutArticle { width:808px; overflow:hidden; line-height: 20px; padding-top: 10px; padding-bottom: 10px; color: #FFF; }
+.template2 .aboutArticle .editor { float:left;}
+.template2 .aboutArticle .function { width:475px; float:right;}
+.template2 .aboutArticle .function .stage { float: left; width: 150px; overflow: hidden; }
+.template2 .aboutArticle .function .stage label { float: left; width: 40px; line-height: 20px; }
+.template2 .aboutArticle .function .stage .stars { float:left; margin-top:2px;}
+.template2 .aboutArticle .function .stage .stars a { float:left; margin-right:2px; background-image: url(../../images/platform/platForm11-star2.gif); background-repeat: no-repeat; height: 16px; width: 16px; }
+.template2 .aboutArticle .function .stage .stars .over { background-image: url(../../images/platform/platForm11-star1.gif); }
+.template2 .aboutArticle .function .stage a img { margin-right: 2px; }
+.template2 .aboutArticle .function .conduct { float: left; line-height: 20px; background-repeat: no-repeat; background-position: left center; padding-left: 17px; padding-right: 10px; color:#fff; }
+.template2 .aboutArticle .function .reading { }
+.template2 .aboutArticle .function .praise { background-image: url(../../images/platform/platForm21-praise.gif); }
+.template2 .aboutArticle .function .collect { background-image: url(../../images/platform/platForm21-collect.gif); }
+.template2 .aboutArticle .function .share { background-image: url(../../images/platform/platForm21-share.gif); }
+.template2 .intro { width:808px; overflow:hidden; background-color: #FFF; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;}
+.template2 .intro .picInfo,.template2 .boundary,.template2 .intro .text { float:left;}
+.template2 .intro .picInfo { padding-right: 53px; padding-left: 69px; background-color: #FFF; padding-top: 30px; padding-bottom: 10px; position: relative; }
+.template2 .intro .picInfo .pic {}
+.template2 .intro .picInfo .name { font-size: 14px; font-weight: bold; color: #0f0f0f; line-height: 46px; }
+.template2 .intro .picInfo .price { color: #d79b00; }
+.template2 .intro .picInfo .download { position: absolute; background-image: url(../../images/platform/template2/t2-introDownload.jpg); background-repeat: no-repeat; right: 55px; bottom: 0px; height: 30px; width: 90px; border:0; background-color:transparent; }
+.template2 .boundary { background-image: url(../../images/platform/template2/t2-introBoundary.jpg); background-repeat: no-repeat; height: 294px; width: 2px; }
+.template2 .intro .text { width:325px; padding-left:50px; padding-right:70px; font-size: 14px; color: #0f0f0f; padding-top: 25px; }
+.template2 .intro .text .title { line-height:30px; font-weight: bold; }
+.template2 .intro .text .abstract { font-weight: normal; font-size: 14px; line-height: 26px; }
+.template2 .intro .text .abstract a { color:#0386d9; }
+.template2 .intro .text .labels { color: #c6a756; font-size: 12px; padding-top: 40px; padding-bottom:20px; width:325px; overflow:hidden; line-height:20px; }
+.template2 .intro .text .labels .title1 { width:40px;}
+.template2 .intro .text .labels .bqs { width:285px;}
+.template2 .placeHolder { height:100px;}
+.template2 .noChapterHeight { height:80px; overflow:hidden;}
+.template2 .floatArea { width:808px; height:100px;}
+.template2 .fly { position:fixed; z-index:100; top:0; _position:absolute; _top:expression(eval(document.documentElement.scrollTop)); _left:50%; _margin-left:-404px;}
+* html, * html body { background-image:url(about:blank); background-attachment:fixed;}
+.template2 .floatArea .chapter,.template2 .floatArea .noChapter,.template2 .floatArea .chapter .prev,.template2 .floatArea .chapter .center .num,.template2 .floatArea .chapter .next,.template2 .floatArea .collectDL,.template2 .floatArea .chapter .center { float:left;}
+.template2 .floatArea .chapter { background-repeat: no-repeat; background-position: left center; width: 523px; height:100px; padding-left:34px; }
+.template2 .floatArea .noChapter { width: 557px; height:100px; line-height:100px; color:#fff; font-size:30px; font-weight:bold; }
+.template2 .floatArea .chapter .prev {  }
+.template2 .floatArea .chapter .next {  }
+.template2 .floatArea .chapter .center { width:435px; height:100px;}
+.template2 .floatArea .chapter .center .num {  background-repeat: no-repeat; font-size:14px; font-weight:bold; color:#c2c2c2; padding-bottom:40px; background-position: left bottom; padding-top:15px; padding-left:35px; background-position:35px 39px; cursor:pointer; position: relative; width: 52px; display:none; }
+.template2 .floatArea .chapter .center .num .titleTriangle { display:none;}
+.template2 .floatArea .chapter .center .num .title { position:absolute; height:34px; line-height:34px; overflow:hidden; bottom:-33px; left:20px; width:480px; cursor:default; }
+.template2 .floatArea .chapter .center .num .triangle { font-size: 0px; line-height: 0px; background-image: url(../../images/platform/template2/t2-triangle.gif); background-repeat: no-repeat; height: 11px; width: 17px; position: absolute; left: 38px; top: 61px; }
+.template2 .floatArea .chapter .center .num .title .wrap {border:1px solid #a8a8a8; background-color:#e9e9e9;  text-align:center; color:#414141; font-size:12px; font-weight:normal; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; height:32px; line-height:32px; overflow:hidden; position:absolute; left:0; top:0; width:auto; padding:0 10px; }
+.template2 .floatArea .chapter .prev,.template2 .floatArea .chapter .next { background-repeat: no-repeat; height: 23px; width: 22px; margin-top:39px; cursor:pointer;}
+.template2 .floatArea .collectDL { width:226px; overflow:hidden; padding-left:24px}
+.template2 .floatArea .collectDL .collect { background-image: url(../../images/platform/platForm21-collect.gif); background-repeat: no-repeat; background-position: 22px center; padding-left:43px; width:44px;  font-size:14px; line-height:100px;  }
+.template2 .floatArea .collectDL .download { background-image: url(../../images/platform/template2/t2-download.gif); background-repeat: no-repeat; height: 41px; width: 138px; margin-top:30px }
+.template2 .floatArea .collectDL .collect,.template2 .floatArea .collectDL .download { float:left;}
+.template2 .articleChapters { width:780px; background-color: #f7f7f7; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; padding:13px;}
+.template2 .articleChapters .inner { background-color: #fff; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; border:1px solid #e8e8e8;}
+
+.template2 .articleChapters .inner .paragraph { padding-left: 40px; padding-right: 40px; }
+.template2 .articleChapters .inner .paragraph .chapter { padding-bottom: 10px; }
+.template2 .articleChapters .inner .paragraph .chapter .frame { display: none; padding-bottom: 3px; }
+.template2 .articleChapters .inner .paragraph .chapter .chapterName { font-size: 16px; font-weight: bold; color: #5b4a2f; line-height: 40px; padding-top: 20px; }
+.template2 .articleChapters .inner .paragraph .chapter .item {}
+.template2 .articleChapters .inner .paragraph .chapter .item .title { line-height: 24px; height: 24px; background-image: url(../../images/platform/template1/t7-dotBg.jpg); background-repeat: repeat-x; background-position: left center; color: #5b4a2f; margin-top: 10px; cursor: pointer; }
+.template2 .articleChapters .inner .paragraph .chapter .item .title .name { background-image: url(../../images/platform/template2/t2-pdf.jpg); background-repeat: no-repeat; background-position: left center; padding-left: 36px; font-size: 14px; background-color: #FFF; float: left; padding-right: 10px; }
+.template2 .articleChapters .inner .paragraph .chapter .item .title .author { float: right; background-color: #FFF; padding-left: 10px; }
+.template2 .articleChapters .inner .paragraph .chapter .item .abstract {border:1px solid #dadada; border-top:none; background-color:#f7f7f7; padding:10px 20px 5px 20px; line-height: 24px; color: #696b6b; }
+.template2 .articleChapters .inner .paragraph .chapter .item .topPic { font-size: 0px; line-height: 0px; background-image: url(../../images/platform/template2/t2-top.jpg); background-repeat: no-repeat; height: 10px; }
+.template2 .articleChapters .inner .paragraph .chapter .item .abstract .text { border-bottom:1px dotted #dadada; padding-bottom: 5px; }
+.template2 .articleChapters .inner .paragraph .chapter .item .abstract .text a { color: #0386d9; }
+.template2 .articleChapters .inner .paragraph .chapter .item .abstract .source { line-height: 24px; padding-top: 5px; color: #a3a2a2; height: 24px; }
+.template2 .articleChapters .inner .paragraph .chapter .item .abstract .source span { padding-right: 50px; }
+.template2 .gap { height:20px; position:relative;}
+.template2 .gap .joint { position:absolute; background-image:url(../../images/platform/template2/t2-joint.gif); width:10px; height:30px; top: -1px; z-index:99; }
+.template2 .gap .joint1 { left:60px;}
+.template2 .gap .joint2 { right:60px;}
+
+.template2 .price1 { text-align: center; -moz-border-radius:0 0 10px 10px; -webkit-border-radius:0 0 10px 10px; border-radius:0 0 10px 10px; /*border:1px solid #727272;*/ height:68px; margin-top:-8px; padding-top:30px;padding-left:230px;  }
+.template2 .price1 .howMuch { font-size: 14px; color: #fff; line-height: 42px; font-weight: bold;  }
+.template2 .price1 .howMuch .save { font-size: 12px; color: #a3a2a2; font-weight: normal; }
+.template2 .price1 .buy { padding-left:20px;}
+.template2 .price1 .buy input { background-image: url(../../images/platform/template2/t2-download.gif); background-repeat: no-repeat; height: 41px; width: 138px; font-size: 16px; font-weight: bold; color: #FFF; line-height: 44px; border:0; background-color:transparent; }
+.template2 .price1 .howMuch,.template2 .price1 .buy { float:left;}
+.template2 .relatived { margin-top: 15px; padding-bottom: 20px; }
+.template2 .relatived .title { line-height: 24px; font-size: 14px; font-weight: bold; color: #5b4a2f; padding-left: 28px;  }
+.template2 .relatived .items { width: 770px; overflow: hidden; }
+.template2 .relatived .items .box { float: left; text-align: center; width: 200px; line-height: 22px; padding-right: 28px; padding-left: 28px; padding-top: 10px; }
+.template2 .relatived .items .box .pic {}
+.template2 .relatived .items .box .name { display: block; font-size: 14px; font-weight: bold; color: #222; padding-top: 5px; }
+.template2 .relatived .items .box .editor { color: #8c8a8a; }
+.template2 .editorInfo { width:806px; background-color: #f7f7f7; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; }
+
+.template2 .editorInfo { height:250px; overflow:hidden; }
+.template2 .editorInfo .editor1 { overflow: hidden; width: 240px; padding-left: 30px; float:left; background-color:#e8e7e4; height:165px; padding-top:85px;  }
+.template2 .editorInfo .editor1 .avatar {}
+.template2 .editorInfo .editor1 .info { padding-left: 12px; }
+.template2 .editorInfo .editor1 .info .name { font-size: 16px; font-weight: bold; line-height: 22px; height: 22px; width: 124px; }
+.template2 .editorInfo .editor1 .info .name a { color:#5b4a2f; }
+.template2 .editorInfo .editor1 .info .name span { padding-left:8px; height: 22px; width: 19px; background-image: url(../../images/platform/platForm6.gif); background-repeat: no-repeat; background-position: right center; }
+.template2 .editorInfo .editor1 .info .position { line-height: 24px; }
+.template2 .editorInfo .editor1 .info .follow { width:58px; height:22px; }
+.template2 .editorInfo .editor1 .info .follow span { border-color: #ffffff; color: #333333; border-radius: 2px; border-style: solid; border-width: 1px; display: inline-block; height: 18px; line-height: 18px; padding: 0 9px 0 10px; white-space: nowrap; font-size: 12px; cursor: pointer; background-color: #f2f2f2; }
+.template2 .editorInfo .editor1 .info .follow span em { margin-right: 2px; vertical-align: -2px; color: #ffa00a; font: bold 16px Arial; height: 16px; text-decoration: none; }
+
+.template2 .editorInfo .relatived .items { width:530px;}

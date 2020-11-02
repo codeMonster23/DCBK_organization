@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*homepage*/
+.colorGrey{ color:#C6C6C6;}
+input{ border:none 0; font-family:"宋体"; }
+.rr-main{ margin-top:20px;}
+.rr-main .topBlock{ margin-bottom:20px;}
+.rr-main .topBlock .banner img{ display:block;}
+.rr-main .topBlock .affiche{ height:47px; border-bottom:1px solid #ECECEC; background-color:#FFE9DB; position:relative;}
+.rr-main .topBlock .affiche p{ padding-top:17px; padding-left:35px; background: url(../../images/readingroom/rr-icon1.gif) no-repeat 11px 17px; color:#565656; line-height:14px;}
+.rr-main .topBlock .affiche p a{color:#565656;}
+.rr-main .topBlock .affiche .more{ position:absolute; font-weight:bold; color:#565656; right:6px; top:16px; line-height:14px;}
+.rr-main .contBox{}
+.rr-main .contBox .leftSide{ width:269px;}
+.rr-main .contBox .leftSide .classifyNav{ margin-bottom:20px;}
+.rr-main .contBox .leftSide .classifyNav .tit{ font-weight:bold; font-size:16px; color:#ffffff; height:32px; padding-top:15px; line-height:20px;*line-height:18px;  border-bottom:1px solid #ffffff; background:#FF6207 url(../../images/readingroom/rr-icon2.gif) no-repeat 10px 17px; padding-left:33px;}
+.rr-main .contBox .leftSide .classifyNav .item{ position:relative;}
+.rr-main .contBox .leftSide .classifyNav .item .noSub{ display:block; height:47px; line-height:47px; padding-left:34px; background:#ffffff url(../../images/readingroom/rr-icon4.gif) no-repeat 254px center; color:#565656; font-size:14px; text-decoration:none; border-bottom:1px solid #EAEAEA; }
+.rr-main .contBox .leftSide .classifyNav .item .sub{ display:block; height:47px; line-height:47px; padding-left:34px; background:#ffffff url(../../images/readingroom/rr-icon4.gif) no-repeat 254px center; color:#565656; font-size:14px; text-decoration:none; border-bottom:1px solid #EAEAEA; }
+.rr-main .contBox .leftSide .classifyNav .last a{ border-bottom-color:#ffffff;}
+.rr-main .contBox .leftSide .classifyNav .item .sub.hover{ margin-top:-1px; border:1px solid #FF6207; width:236px;border-right:none; background-color:#FFEFE5; background-image:none; padding-left:33px; font-weight:bold; color:#FF6207; position:relative; z-index:100; }
+.rr-main .contBox .leftSide .classifyNav .item .cur{ font-weight:bold; color:#FF6207; background-image:url(../../images/readingroom/rr-icon3.gif); background-color:#FFEFE5;}
+.rr-main .contBox .leftSide .classifyNav .item .subList{ display:none;position:absolute; left:269px; top:0px;width:609px; border:1px solid #FF6207; background-color:#FFEFE5; padding-left:16px; padding-top:16px;z-index:50; *font-size:0px;*padding-top:14px; /*ie7自带高度*/}
+.rr-main .contBox .leftSide .classifyNav .item .subList a{ height:14px; line-height:14px; font-size:14px; color:#565656; padding:0 16px; border-right:1px solid #ECBA9A; margin-bottom:17px; cursor:pointer; white-space:nowrap;}
+.rr-main .contBox .leftSide .tjzp{ width:230px; padding:0 20px 10px 19px; background-color:#ffffff; border-top:3px solid #FF6207; margin-top:20px; margin-bottom:11px;}
+.rr-main .contBox .leftSide .tjzp h1{ height:36px; line-height:36px; font-size:16px; color:#565656;}
+.rr-main .contBox .leftSide .tjzp h1 a{ font-size:12px; font-weight:normal; color:#3C8ACC; margin-left:120px;}
+.rr-main .contBox .leftSide .tjzp dl{ border-bottom:1px solid #EAEAEA; margin-bottom:20px;}
+.rr-main .contBox .leftSide .tjzp dl.last{ border:none; margin-bottom:0;}
+.rr-main .contBox .leftSide .tjzp dl img{ display:block;}
+.rr-main .contBox .leftSide .tjzp dl dd{ height:37px; line-height:37px; text-align:center;}
+.rr-main .contBox .leftSide .tjzp dl dd a{ color:#3C8ACC;}
+.rr-main .contBox .leftSide .links{width:230px; padding:0 20px 0px 19px; background-color:#ffffff; border-top:3px solid #FF6207; padding-bottom:10px; margin-bottom:10px;}
+.rr-main .contBox .leftSide .links h1{ border-bottom:1px solid #E5E5E5; height:36px; line-height:36px; font-size:16px; color:#565656; margin-bottom:5px;}
+.rr-main .contBox .leftSide .links a{ display:block; line-height:34px; color:#3C8ACC;}
+.rr-main .contBox .leftSide .ad{ margin-bottom:10px; font-size:0px;}
+.rr-main .contBox .leftSide .message{ display:block; width:168px; padding-left:101px; background:#FF6207 url(../../images/readingroom/rr-icon5.png) no-repeat 65px center; padding-top:17px; height:33px;color:#ffffff; font-size:16px; font-weight:bold; text-decoration:none; margin-bottom:30px;}
+.rr-main .contBox .rightSide{ width:902px;}
+.rr-main .contBox .rightSide .caption{ height:46px; border-top:2px solid #FF6207; border-bottom:1px solid #ECECEC; background-color:#ffffff; padding-right:10px; margin-bottom:10px;}
+.rr-main .contBox .rightSide .caption h1{ line-height:46px; color:#FF6207; font-size:16px; padding-left:10px;}
+.rr-main .contBox .rightSide .caption .search{ margin-top:8px;}
+.rr-main .contBox .rightSide .caption .search .bg{background:url(../../images/readingroom/rr-icon6.gif) no-repeat; width:12px; height:29px;}
+.rr-main .contBox .rightSide .caption .search .input{ width:250px; border-bottom:1px solid #D9D9D9; border-top:1px solid #D9D9D9; padding-top:3px; height:24px;}
+.rr-main .contBox .rightSide .caption .search .input input{ height:20px; line-height:20px; font-size:12px; width:250px;}
+.rr-main .contBox .rightSide .caption .search .btn{ width:53px; height:29px; background:url(../../images/readingroom/rr-icon7.gif) no-repeat;}
+.rr-main .contBox .rightSide .rank{ width:102px; height:24px; border:1px solid #FF6207; background-color:#ffffff; margin-bottom:10px;}
+.rr-main .contBox .rightSide .rank span{ line-height:24px; cursor:pointer; padding-left:10px; width:41px; color:#FF6207; background:url(../../images/readingroom/rr-icon8-1.gif) no-repeat 38px center;}
+.rr-main .contBox .rightSide .rank .active{ color:#ffffff; background-image:url(../../images/readingroom/rr-icon8-2.gif); background-color:#FF6207;}
+.rr-main .contBox .rightSide .picShow dl{ float: left;width:292px; height:279px; border:1px solid #EAEAEA; margin-right:10px; background-color:#ffffff; margin-bottom:10px;}
+.rr-main .contBox .rightSide .picShow dl.hover{ border-color:#FF6207;}
+.rr-main .contBox .rightSide .picShow dl dt{ padding:6px; padding-bottom:0;}
+.rr-main .contBox .rightSide .picShow dl dt img{ display:block;}
+.rr-main .contBox .rightSide .picShow dl .title{  height:34px; line-height:34px; font-size:14px; font-weight:bold;}
+.rr-main .contBox .rightSide .picShow dl .title a{ display:block;padding-left:6px;color:#3C8ACC; text-decoration:none;}
+.rr-main .contBox .rightSide .picShow dl .name{  line-height:33px; border-top:1px solid #EAEAEA;}
+.rr-main .contBox .rightSide .picShow .hover .name{ border-color:#FFEFE5; background-color:#FFEFE5;}
+.rr-main .contBox .rightSide .picShow dl .name a{padding-left:6px; display:block; color:#9B9B9B; text-decoration:none;}
+
+/*page*/
+.rr-page{text-align: center; padding-top:45px;padding-bottom: 45px; font-size:14px; color:#696969; font-weight:bold;}
+.rr-page a{color:#696969; margin-right: 5px; padding:14px 13px; text-decoration: none;background-color:#F1F1F1; border:1px solid #D1D1D1;}
+.rr-page a:hover{background-color: #FF6207; color: #ffffff; border-color:#FF6207;}
+.rr-page span.current { background-color: #FF6207; color: #ffffff; margin-right: 5px; padding:14px 13px;font-size: 14px; font-weight: bold; border:1px solid #FF6207; }
+/*rr-login*/
+.rr-login{ width:532px; height:365px; background-color:#F6F6F6; border-top:3px solid #FF6207; position:relative;}
+.rr-login .close{ position:absolute; top:20px; right:20px;width:13px; height:13px; background:url(../../images/readingroom/rr-login-close.gif) no-repeat;}
+.rr-login h1{ font-size:36px; font-family:"Microsoft YaHei"; color:#565656; line-height:122px; text-align:center;}
+.rr-login .form{ width:392px; margin:0 auto;}
+.rr-login .form .box{ background:#ffffff; border:1px solid #D3D3D3; height:42px;}
+.rr-login .form .box label{ width:44px; height:42px; background-color:#D3D3D3; background-repeat:no-repeat; background-position: center;}
+.rr-login .form .name{ margin-bottom:20px;}
+.rr-login .form .name label{ background-image:url(../../images/readingroom/rr-login-name.png);}
+.rr-login .form .psw label{ background-image:url(../../images/readingroom/rr-login-psw.png);}
+.rr-login .form .input{ padding-top:12px;}
+.rr-login .form input{ width:334px; height:20px; line-height:20px;font-size:16px; padding-left:10px;}
+.rr-login .form input::-webkit-input-placeholder {color:#D3D3D3;}
+.rr-login .form input:-moz-placeholder {/* Firefox 18- */color: #D3D3D3;}
+.rr-login .form input::-moz-placeholder{/* Firefox 19+ */ color: #D3D3D3;}
+.rr-login .form input:-ms-input-placeholder {color:#D3D3D3;}
+.rr-login .form .tips{ height:32px;}
+.rr-login .form .tips .wrong{ color:#FF0302; line-height:32px;}
+.rr-login .form .tips a{ color:#3D8BCE; line-height:32px;}
+.rr-login .form .btn{ display:block; height:45px; line-height:45px; text-align:center; background-color:#FF6207; font-size:16px; color:#ffffff; text-decoration:none; font-weight:bold;}
+/*公告*/
+.rr-main .contBox .rightSide .noticeList{ padding-left:19px; padding-right:76px; background-color:#ffffff; margin-top:-10px;}
+.rr-main .contBox .rightSide .noticeList ul li{ height:52px; line-height:52px; padding-left:18px; background:url(../../images/readingroom/rr-icon9.gif) no-repeat left  center; border-bottom:1px solid #F5F5F5;}
+.rr-main .contBox .rightSide .noticeList ul li a{ font-size:14px; color:#3C8ACC;}
+.rr-main .contBox .rightSide .noticeList ul li span{ color:#A3A3A3; margin-left:5px;}
+.rr-main .contBox .rightSide .detailBox{ border-top:2px solid #FF6207; background:#ffffff url(../../images/readingroom/rr-noticebg.jpg) no-repeat top center; padding:0 78px 60px;}
+.rr-main .contBox .rightSide .detailBox h1{ height:72px; line-height:72px; text-align:center;font-size:30px; font-family:"Microsoft YaHei"; color:#FF6207; padding-top:62px; border-bottom:1px solid #D5D5D5;}
+.rr-main .contBox .rightSide .detailBox  .time{ color:#7F7F7F; text-align:center; height:30px; line-height:30px; margin-bottom:25px;}
+.rr-main .contBox .rightSide .detailBox .article{ color:#333333; line-height:30px; font-size:14px; text-indent:28px; word-break:break-all;}
+.rr-main .contBox .rightSide .detailBox .inscribe{ font-size:16px; color:#565656; font-weight:bold; margin:50px 0; text-align:right;}
+.rr-main .contBox .rightSide .detailBox .return{ display:block; width:244px; margin:0 auto; height:38px; line-height:38px; text-align:center; font-size:16px; font-weight:bold; color:#565656; background:url(../../images/readingroom/rr-detail-btnbg.gif) no-repeat; text-decoration:none;}
+/*留言弹窗*/
+.pop-message{ width:776px; padding:0 20px; border-top:3px solid #FF6207; position:relative; background-color:#F6F6F6;}
+.pop-message .close{ position:absolute; top:22px; right:20px;width:13px; height:13px; background:url(../../images/readingroom/rr-login-close.gif) no-repeat;}
+.pop-message .title{ padding-top:8px; height:38px; line-height:38px; color:#565656; border-bottom:1px solid #D3D3D3; font-size:16px;}
+.pop-message .form{ padding:23px 30px 30px;}
+.pop-message .form .item{ margin-bottom:20px;}
+.pop-message .form label{ font-size:16px; color:#565656; font-weight:bold; line-height:36px;}
+.pop-message .form input{ width:620px; padding-left:7px; height:34px; line-height:34px; border:1px solid #D3D3D3; font-family:"宋体"; font-size:16px;}
+.pop-message .form textarea{ width:613px; padding:7px; border:1px solid #D3D3D3; font-size:16px; resize:none; height:252px; overflow-y:hidden;}
+.pop-message .form .btns{ width:294px; height:40px; margin:0 auto; padding-top:10px;}
+.pop-message .form .btns a{ width:134px; line-height:40px; text-align:center; font-weight:bold; font-size:16px; text-decoration:none;}
+.pop-message .form .btns .sure{ background-color:#FF6207; color:#ffffff;}
+.pop-message .form .btns .cancel{ background-color:#C9C9C9; color:#565656;}
+.pop-success{ width:776px;border-top:3px solid #FF6207; position:relative; padding:0 20px 80px; background-color:#F6F6F6; }
+.pop-success .close{ position:absolute; top:22px; right:20px;width:13px; height:13px; background:url(../../images/readingroom/rr-login-close.gif) no-repeat;}
+.pop-success .title{ padding-top:8px; height:38px; line-height:38px; color:#565656; border-bottom:1px solid #D3D3D3; font-size:16px;}
+.pop-success .p1{ margin-top:109px; height:73px; line-height:68px; padding-left:332px;font-size:58px; font-family:"Microsoft YaHei"; color:#565656; background:url(../../images/readingroom/rr-icon10.gif) no-repeat 219px center; margin-bottom:20px; }
+.pop-success .p2{ font-size:24px; font-family:"Microsoft YaHei"; line-height:38px; padding-left:217px; color:#575757;}
+.pop-success .return{ display:block; margin:100px auto 0px; width:250px; height:40px; line-height:40px; color:#ffffff; font-size:16px; font-weight:bold; text-align:center; background-color:#FF6207;}

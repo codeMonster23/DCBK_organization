@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/new_editorZone.css" rel="stylesheet" type="text/css" />
+<link href="../css/editorZone/e_creatZone.css" rel="stylesheet" type="text/css" />
+<title>汇编素材文章预览</title>
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+</head>
+
+<body bgcolor="#EBEBEB">
+<!--top banner-->
+<div class="ecHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo left editorLogo"><a href="#"><img src="../images/header-and-footer/new_echf-logo1.jpg" width="229" height="40"/></a>
+    <a href="#"><img src="../images/header-and-footer/new_echf-logo3.jpg" width="106" height="40"/></a></div>
+    <div class="addNav left clearfix"><a href="#">首页</a> <a href="#">我的主页</a> <a href="#">编创指南</a></div>
+    <div class="editorInfo right"><a class="name" href="#">summer10123</a><a class="img" href="#"><img src="../images/editorZone/ec-icon19-message.png" width="15" height="14" align="absmiddle" /></a><a href="#">（<i>123</i>）</a>| <a class="exit" href="#">退出</a>
+    </div>
+  </div>
+</div>
+
+<!--top banner over-->
+<div class="article_cont clearfix">
+	<div class="tit_info tit_info1 left clearfix">
+    	<h1>重视启发式教育就是一种精神现代化</h1>
+        <p>作者：张立伟；许文涛&nbsp;|&nbsp;关键词：食品 遗传 生物</p>
+    </div>
+    <div class="tit_btn right">
+    	<a href="#" class="btn right">点击预览</a>
+        <p>请点击此处，切换到ios系统预览页面</p>
+    </div>
+</div>
+<div class="book mgb55">
+    <div class="book_hd">
+        <div class="header_l left">
+            <a class="btn btn1" href="">全屏显示</a>
+            <a class="btn btn2" href="">放大</a>
+            <a class="btn btn3" href="">缩小</a>
+        </div>
+        <div class="header_c left">
+            <a class="btn btn4" href="">上一页</a>
+            <div class="btn btn5" href=""><input type="text" value="12"/>/15 <a href="">跳转</a></div>
+            <a class="btn btn6" href="">下一页</a>
+        </div>
+        <div class="header_r right"><a class="btn btn7" href="">添加到素材库</a></div>
+    </div>
+    <div class="book_bd"></div>
+</div>
+<div class="pop_add spec_add" style="display:none; position:fixed; left:50%; margin-left:-290px;top:60px; z-index:999;">
+	<p class="tit">转移到素材库</p>
+    <a class="close positionA" href="#"></a>
+	
+    <div class="option positionR">
+    <p class="initial">选择素材库</p>
+    	<div class="list">
+    	<div class="list_item1"><p class="left">吉林省绿色农产品营销战略研究</p><span class="left"></span></div>
+        <div class="list_item1"><p class="left">语文</p><span class="left"></span></div>
+        <div class="list_item1"><p class="left">小学生作文阅读欣赏</p><span class="left"></span></div>
+        <div class="list_item1"><i class="fold"></i><p class="left">智力测试</p><span class="left"></span></div>
+        <div class="list_item1"><i class="unfold"></i><p class="left">智力测试</p><span class="left"></span></div>
+        <div class="list_item2 positionR">
+        	<div class="create"><div class="frame left positionR"><input type="text" value="" /><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+            <div class="sublist"><span>工业品营销中关系质量对顾客购后行为倾向的影响研究</span></div>
+            <div class="sublist"><span>控股股东卷入、两权偏离与营销战略风格——基于第二类代...</span></div>
+            <div class="sublist"><span>特别企划案（安全须知）</span></div>
+            <div class="shelter positionA"></div>
+        </div>
+        <div class="list_item1"><p class="left">智力测试</p><span class="left"></span></div>
+       <div class="list_item2 positionR">
+        	<div class="create"><div class="frame left positionR"><input type="text" value="" /><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+            <div class="shelter positionA"></div>
+        </div>
+        <div class="createItem">
+        	<p>新建素材分类</p>
+            <div class="createNew"><div class="frame left positionR"><input type="text" value="" /><span class="positionA">创建</span></div><span class="no left">取消</span></div>
+        </div>
+    </div>
+   		<script>
+		( function(){
+			$(".list .list_item1 p, .list_item2 .sublist span").click(
+				function(){
+				$(".list .list_item1 p, .list_item2 .sublist span").removeClass("brown")
+				$(this).addClass("brown")
+				})
+			$(".list .list_item1 span").hover(
+				function(){$(this).addClass("blue")},
+				function(){$(this).removeClass("blue")})
+		 $(".createItem p").click(function(){$(this).css({"display":"none"});
+		 	$(this).siblings(".createNew").css({"display":"block"})})
+		$(".createItem .createNew .no").click(function(){$(this).parent(".createNew").css({"display":"none"});
+		 	$(".createItem p").css({"display":"block"})})
+		})()
+    </script>
+    	<script>
+		(function(){
+			$(".option .initial").click(
+				function(){
+					$(this).siblings(".list").css({"display":"block"})	
+					});
+			$(".option .list").click(
+				function(){
+					$(this).css({"display":"none"})	
+					})
+			})()
+        </script>
+    </div>
+    <h3>为该文章添加标注</h3>
+    <div class="textarea positionR"><textarea></textarea><span class="positionA">您还能输入<var>--</var>字</span></div>
+    <script>
+        (function() {
+
+            var counter = $(".textarea textarea").val().length; //获取文本域的字符串长度
+
+            $(".textarea span var").text(100 - counter);
+
+            $(".textarea textarea").keyup(function() {
+                var text = $(".textarea textarea").val();
+                var counter = text.length;
+                $(".textarea span var").text(100 - counter);    //每次减去字符长度
+            });
+
+        })()
+    </script>
+    <div class="pop_btn">
+    	<a class="sure" href="#">确定</a>
+        <a class="cancel" href="#">取消</a>
+    </div>
+</div>
+<div id="mask" class="mask"></div>
+<script>
+	(function(){
+		$(".add").click(
+			function(){
+				$(".pop_add, .mask").show()
+				})
+		$(".close, .cancel").click(
+			function(){
+				$(".pop_add, .mask").hide()
+				})
+		})()
+</script>
+<!--foot-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+<!--foot over-->
+<!--******************************script 分界线***************************************-->
+</body>
+</html>

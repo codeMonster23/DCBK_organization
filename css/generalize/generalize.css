@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.nav .dropDownList{ display:none;}
+.banner-wrap{height:130px; width:100%; background:#23C0F1 url(../../images/generalize/banner.jpg) no-repeat top center; padding-top:405px;}
+.banner-wrap .tips{width:1043px; height:92px; padding-top:10px; background:url(../../images/generalize/bannertip.png) no-repeat; margin:0 auto;font-family:"Microsoft YaHei"; font-size:14px; }
+.banner-wrap .tips h1{width:80px; height:27px; text-align:center; line-height:27px; background:url(../../images/generalize/titbg.png) no-repeat; color:#004F87;margin-left:46px; font-weight:normal; font-size:14px; margin-bottom:7px;}
+.banner-wrap .tips p{width:950px; text-indent:28px; margin:0 auto;color:#fff; line-height:24px;}
+.section{width:100%; padding-top:45px; padding-bottom:18px;}
+.section1{background:#F9F7E1 url(../../images/generalize/section1bg.gif) repeat-x top; }
+.section2{background:#55DBBC;}
+.section3{background:#F4BDC6;}
+.section4{background:#B2E190;}
+.section .title{font-size:28px; font-family:"Microsoft YaHei"; color:#414141; padding-left:16px; padding-bottom:6px; font-weight:normal; width:1174px; margin:0 auto;}
+.section .title .btn{ width:103px; height:30px; right:10px; bottom:5px; background:url(../../images/generalize/addcart.png) no-repeat; color:#fff; font-size:18px; font-family:"Microsoft YaHei"; padding-left:45px; padding-top:10px;}
+.section1 .title{border-bottom:1px solid #C7A53D;}
+.section2 .title{border-bottom:1px solid #068467;}
+.section3 .title{border-bottom:1px solid #C42A6B;}
+.section4 .title{border-bottom:1px solid #4DA916;}
+.section .showlist{padding-left:14px; border-top-width:1px; border-top-style:solid; padding-top:20px; width:1176px; margin:0 auto;}
+.section1 .showlist{border-top-color:#FFFFFF;}
+.section2 .showlist{border-top-color:#8CEDD7;}
+.section3 .showlist{border-top-color:#FADDE1;}
+.section4 .showlist{border-top-color:#C8F6AD;}
+.section .showlist .item{padding:16px; border:1px solid #fff; background:#fff; margin-right:16px; margin-bottom:22px;width:244px;}
+.section1 .showlist .itemHover{border:1px solid #C7A53D;}
+.section2 .showlist .itemHover{border:1px solid #068467;}
+.section3 .showlist .itemHover{border:1px solid #c42a6b;}
+.section4 .showlist .itemHover{border:1px solid #4da916;}
+.item .pic{margin-bottom:20px;width:244px;}
+.item .name{font-size:14px;height:16px;margin-bottom:12px;}
+.item .name a{ color:#343434;}
+.item .name input{margin-right:6px;margin-top:2px;margin-top:1px\0;*width:13px; *height:13px; *margin-top:1px;}
+.item .evaluate{padding-left:18px; height:18px; line-height:18px; color:#343434;}
+.item .evaluate img{margin-right:2px;}
+.bg2{height:7px; background:url(../../images/generalize/section2bg.png) repeat-x; margin-top:-7px; font-size:0px;}
+.bg3{height:7px; background:url(../../images/generalize/section3bg.png) repeat-x; margin-top:-7px; font-size:0px;}
+.bg4{height:7px; background:url(../../images/generalize/section4bg.png) repeat-x; margin-top:-7px; font-size:0px;}
+.section .classify{color:#545454; font-size:16px; font-family:"宋体"; margin-left:36px;}
+.section .classify a{color:#545454; padding:0 10px;}                          
+.section .classify a:hover{ text-decoration:none;}
+.section1 .classify .active{color:#eada26;}
+.section2 .classify .active{color:#FFFFFF;}
+.section3 .classify .active{color:#D82A6C;}
+.section4 .classify .active{color:#12a44c;}
+.addAll{height:140px; background:url(../../images/generalize/allbg.gif) repeat-x; padding-top:60px;}
+.addAll a{display:block; width:356px; height:70px; line-height:70px;padding-left:158px; border:1px solid #CD8211;margin:0 auto; color:#fff;font-size:36px; font-family:"Microsoft YaHei"; background:#F8B551 url(../../images/generalize/cart.png) no-repeat 94px center;}
+.addAll a:hover{background-color:#FBBE63; text-decoration:none;}

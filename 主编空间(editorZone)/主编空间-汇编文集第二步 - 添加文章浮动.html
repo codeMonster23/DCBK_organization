@@ -1,0 +1,1912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.promptToggle.js"></script>
+<script type="text/javascript" src="../js/checkboxSelectAll.js"></script>
+<!--<script type="text/javascript" src="../js/editorZone/borderBlink.js"></script>-->
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#f1ebde">
+<div class="header editorHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo editorLogo left"><a href="#"></a></div>
+    <div class="editorZoneLogo left"></div>
+    <div class="editorInfo right"> <a class="exit" href="#">退出 &gt;&gt;</a> <a class="message" href="#"><a/> </a><a class="name" href="#">刘志斌</a>
+      <div class="avatar"><img src="../imagesTemp/editorZone/ez2-avatar.jpg" width="47" height="47" /></div>
+    </div>
+  </div>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main"> 
+  <!-- 有无章节浮动按钮 -->
+  <div class="floatBtn noChapter"></div>
+  
+  <!-- 添加到素材库 -->
+  <div class="moveTo">
+    <div class="add">移动到其他章节</div>
+    <div class="libWrap">
+      <div class="lib">
+        <input id="c1" type="radio" name="lib" checked="checked" />
+        <label for="c1">第一章</label>
+      </div>
+      <div class="lib">
+        <input id="c2" type="radio" name="lib" />
+        <label for="c2">第二章</label>
+      </div>
+      <div class="lib">
+        <input id="c3" type="radio" name="lib" />
+        <label for="c3">第三章</label>
+      </div>
+      <div class="lib">
+        <input id="c4" type="radio" name="lib" />
+        <label for="c4">第四章</label>
+      </div>
+      <div class="lib">
+        <input id="c5" type="radio" name="lib" />
+        <label for="c5">第五章</label>
+      </div>
+      <div class="lib">
+        <input id="c6" type="radio" name="lib" />
+        <label for="c6">第六章</label>
+      </div>
+      <div class="lib">
+        <input id="c7" type="radio" name="lib" />
+        <label for="c7">第七章</label>
+      </div>
+      <div class="lib">
+        <input id="c8" type="radio" name="lib" />
+        <label for="c8">第八章</label>
+      </div>
+      <div class="lib">
+        <input id="c9" type="radio" name="lib" />
+        <label for="c9">第九章</label>
+      </div>
+    </div>
+    <div class="btns">
+      <input value="确定" type="button" />
+      <input value="取消" type="button" />
+    </div>
+  </div>
+  <div class="width1190pxAuto editorZone clearfix">
+    <div class="procedure">
+      <div class="banner"><img src="../images/editorZone/ez6-banner2.jpg" width="1163" height="44" /></div>
+      <div class="steps">
+        <div class="chapter left">
+          <div class="chapter-title"><span>幼儿责任思维培养课例集（社会责任篇）</span></div>
+          <div class="wrapCC"> <a href="javascript:void(0)" class="previous">&lt;</a>
+            <ul class="chooseChapter">
+              <li class="current"><span>第1章</span>
+                <div class="close"></div>
+              </li>
+            </ul>
+            <a href="javascript:void(0)" class="next">&gt;</a>
+            <div class="addChapter">+</div>
+          </div>
+          <script>
+/*************显示 章节关闭的叉*************/
+		  function displayClose()
+		  {		var lis=$(".procedure .steps .chapter .chooseChapter li")
+				var len=lis.length;  
+				if(len>1)
+				{
+					for(var i=0;i<len;i++)
+					{
+						if(lis.eq(i)[0].className=="current")
+						{
+							lis.eq(i).children(".close").css("display","block");
+						}
+						else
+						{
+							lis.eq(i).children(".close").css("display","none");
+						}
+					}
+				}
+		  }
+/*************点击章节的切换效果*************/
+		  function TableTransition(controlNodes,displayNodes,mode,afterClass,beforeClass)
+		  {
+			  if(mode)
+			  {
+				  if(mode=="click")
+				  {
+					 controlNodes.click(function()
+					 {
+						var index=controlNodes.index(this);
+						controlNodes.removeClass(afterClass).addClass(beforeClass);
+						controlNodes.children(".close").css("display","none");
+						$(this).removeClass(beforeClass).addClass(afterClass);
+						if($(".procedure .steps .chapter .chooseChapter li").length>1)
+						{
+							$(this).children(".close").css("display","block");
+						}
+						if(displayNodes)
+						{
+							displayNodes.css("display","none");
+							displayNodes.eq(index).css("display","block");
+						}
+					 })
+				  }
+			  }
+		  }
+/*************删除章节*************/
+		 function deleteChapter()
+		 {
+			 var ylis=$(".procedure .steps .chapter .chooseChapter li");
+			 var ylen=ylis.length;
+			 ylis.eq(ylen-1).children(".close").click(function()
+			 {
+				  ylis=$(".procedure .steps .chapter .chooseChapter li");
+				  ylen=ylis.length;
+				  var index=ylis.index($(this).parent());
+				  $(this).parent().remove();
+				  ylis=$(".procedure .steps .chapter .chooseChapter li");
+				  ylen=ylis.length;
+				  for(var j=0;j<ylen;j++)
+				  {
+					  ylis.eq(j).children("span").html("第"+(j+1)+"章");
+				  }
+				  var xarr=getBlockDiv();
+				  var xindex=ylis.index(xarr[0]);
+				  var yindex=ylis.index(xarr[xarr.length-1]);
+				  if(xindex!=0)//判断是否多余7个章节
+				  {
+					  ylis.eq(xindex-1).css("display","block");
+				  }
+				  else 
+				  {
+					  if($(".procedure .steps .chapter .chooseChapter li").length>6)
+					  {
+						  $(".procedure .steps .chapter .chooseChapter li").eq(6).css("display","block");
+					  }
+				  }
+				  if(index!=ylen)//判断是否是最后一个li
+				  {
+					  ylis.eq(index).addClass("current");
+				  }
+				  else
+				  {
+					  ylis.eq(index-1).addClass("current");
+				  }
+				  if(ylen<=7) //当li小于7个时
+				  {
+					  $(".procedure .steps .chapter .previous,.procedure .steps .chapter .next").css("display","none");
+					  ylis.parent().width("auto");
+				  }
+				  displayClose();
+			 })
+		 }
+/*************新增章节*************/
+		  function addChapter()
+		  {
+			   $(".addChapter").click(function()
+			   {
+					   var lis=$(".procedure .steps .chapter .chooseChapter li");
+					   var len=lis.length;
+					   if((len)>6)
+					   {
+						   $(".procedure .steps .chapter .previous,.procedure .steps .chapter .next").css("display","block");
+						   lis.parent().width(563); //当已有七个章节，则固定宽度
+						   for(var i=0;i<len-6;i++)
+						   {
+								lis.eq(i).css("display","none");	   
+						   }
+					   }
+					   lis.removeClass("current");
+					   var newLi=document.createElement("li");
+					   newLi.className="current";
+					   var span=document.createElement("span");
+					   var str="第"+(len+1)+"章";
+					   var newText=document.createTextNode(str);
+					   span.appendChild(newText);
+					   newLi.appendChild(span);
+					   var closeDiv=document.createElement("div");
+					   closeDiv.className="close";
+					   newLi.appendChild(closeDiv);
+					   lis.parent()[0].appendChild(newLi);
+					   displayClose();
+					   TableTransition($(".procedure .steps .chapter .chooseChapter li"),null,"click","current");
+					   deleteChapter();/*删除章节*/   
+			   })
+		  }
+/*************获取显示在页面的章节li,并返回数组*************/
+		  function getBlockDiv()
+		  {
+			   var lis=$(".procedure .steps .chapter .chooseChapter li");
+			   var len=lis.length; 
+			   var arr=new Array();
+				for(var i=0;i<len;i++)/*找出显示li*/
+				{
+					if(lis.eq(i).css("display")=="block")
+					{
+						arr.push(lis.eq(i));
+					}
+				}
+				return arr;
+		  }
+/*************往前移动*************/
+		   function moveForward()
+		   {
+			   $(".procedure .steps .chapter .previous").click(function()
+			   {
+					var lis=$(".procedure .steps .chapter .chooseChapter li");
+					var len=lis.length;
+					if(len>7)
+					{
+						arr=[];
+						arr=getBlockDiv();
+						var index=lis.index(arr[0]);
+						if(index!=0)
+						{
+							arr[arr.length-1].css("display","none");
+							lis.eq(index-1).css("display","block");
+						}
+					}
+			   })
+		   }
+/*************往后移动*************/
+		   function moveBack()
+		   {
+			   $(".procedure .steps .chapter .next").click(function()
+			   {
+					var lis=$(".procedure .steps .chapter .chooseChapter li");
+					var len=lis.length;
+					if(len>7)
+					{
+						arr=[];
+						arr=getBlockDiv();
+						var index=lis.index(arr[arr.length-1]);
+						if(index+1!=lis.length)
+						{
+							lis.eq(index+1).css("display","block");
+							lis.eq(index-6).css("display","none");
+						}
+					}
+			   })
+		   }
+/******************************主函数执行部分**************************************/
+		  /*章节切换*/
+		  TableTransition($(".procedure .steps .chapter .chooseChapter li"),null,"click","current");
+		  /*删除章节*/
+		  deleteChapter();
+		  /*新增章节*/
+		  addChapter();
+		   /*往前移动*/
+		   moveForward();
+		   /*往后移动*/
+		   moveBack();
+</script> 
+          <!--输入章节标题--> 
+          <!--<div class="inputCaption">
+          	<div>请输入章节标题：</div>
+            <input type="text" class="text" value="中英文2-25个字" class="colorGrey" />
+            <input type="button" class="btn" value="确定" />
+          </div>--> 
+          <!--已输入章节显示-->
+          <div class="articlContentWrap">
+            <div class="caption"> <span>第一章：</span>
+              <div class="textDisp">大复读生发生地</div>
+              <div class="modifyWrap">
+                <input type="text" class="modifyInput modifyInputGrey colorGrey" value="请输入章节标题" name="modifyInput" />
+                <!--点击下面的a标签可以清除文本框内的内容--> 
+                <a href="javascript:void(0)" class="clearText"></a> </div>
+              <div class="modify"><a href="javascript:void(0)"></a></div>
+              <script>
+				/*章节标题*/
+				  function clickOrBlur()
+				  {
+					  if(clickFlag)
+					  {
+						  $('.procedure .steps .chapter .caption .modifyWrap .modifyInput').val('');
+					  }
+					  else
+					  {
+						  if(modifyInput.val())
+						  {
+							  var value=modifyInput.val();
+							  modifyInput.parent().css("display","none");
+							  $(".textDisp").css("display","block").html(value);  
+							  $(".modify").css("display","block");  
+						  }
+						  else
+						  {
+							modifyInput.val("请输入章节标题").addClass("colorGrey");
+						  }		
+					  }
+					  clickFlag=false;
+				      blurFlag=false; 
+				  }
+				  var modifyInput=$(".procedure .steps .chapter .caption .modifyWrap .modifyInput");
+				  var clickFlag=false;
+				  var blurFlag=false;
+				  $(".clearText").click(function()
+				  {
+					  clickFlag=true;
+					  setTimeout(clickOrBlur,200);
+				  })
+				  modifyInput.blur(function()
+				  {
+					  blurFlag=true;
+					  setTimeout(clickOrBlur,200);
+				  })
+				  modifyInput.focus(function()
+				  {
+					  if($(this).val()=="请输入章节标题")
+					  {
+						  $(this).val("").removeClass("colorGrey");  
+					  }
+				  })
+				  $(".procedure .steps .chapter .caption .modify").click(function()
+				  {
+					  var value=$(".textDisp").html().toString();
+					  $(".textDisp").css("display","none");
+					  modifyInput.parent().css("display","block");
+					  modifyInput.val(value);
+					  modifyInput.focus();
+					  $(this).css("display","none");  
+				  })
+            </script>
+              <div class="addArticle">
+                <input type="button" value="" />
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="blank noedit"></a>
+            <ul class="article">
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道—论分权式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路——论分权式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路——论分权式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路——论分权式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+              <li>&gt; 中国的大国发展道路式改革的得失<span class="modifyArticle"><a class="firstA a1" href="javascript:void(0)"></a><a class="secondA a2" href="javascript:void(0)"></a></span></li>
+            </ul>
+            <script>
+		    /*添加的文章条目鼠标移动上去效果*/
+          	$(" li").hover(function()
+			{
+				$(this).addClass("bgColorLightGray");
+				var as=$(this).children(".modifyArticle").children("a");
+				as.eq(0).removeClass("a1").addClass("a3");
+				as.eq(1).removeClass("a2").addClass("a4");
+				
+			},function()
+			{
+				$(this).removeClass("bgColorLightGray");
+				var as=$(this).children(".modifyArticle").children("a");
+				as.eq(0).removeClass("a3").addClass("a1");
+				as.eq(1).removeClass("a4").addClass("a2");
+			})
+          </script> 
+            <script>
+		  /*移动到其他章节弹出框*/
+          $(" li .modifyArticle .firstA").click(function(e)
+		  {
+			    var e=e || window.event;
+				var tc=e.clientY+"px";
+				var lc=e.clientX+"px";
+				var tv,lv;
+				if(e.pageX)
+				{
+					lv=e.pageX+"px";
+					tv=e.pageY+"px";
+				}
+				else
+				{
+					var tc=e.clientY+"px";
+					var lc=e.clientX+"px";
+					var ts=document.documentElement.scrollTop || document.body.scrollTop;
+					var ls=document.documentElement.scrollLeft || document.body.scrollLeft;
+					lv=lc+ls+"px";
+					tv=tc+ts+"px";
+				}
+				$(".moveTo").css({"left":lv,"top":tv});
+				$(".moveTo").slideDown(100);
+		  })
+		  
+		  /*弹出框消失*/
+		  $(".moveTo").hover(function(){},function(){$(this).slideUp(100);})
+		  
+		  
+          </script>
+            <div class="conduct">
+              <input type="button" class="returnTo" value="返回修改选题" />
+              <input type="button" class="saveIt" value="存草稿" />
+              <input type="button" class="PreviewIt" value="预览" />
+            </div>
+            <script>
+          //按钮鼠标经过效果
+		  (function()
+		  {
+			  var input=$(".procedure .steps .chapter .conduct input");
+			  input.hover(function()
+			  {
+				  var classes=$(this).attr("class");
+				  classes +="Hover";
+				  $(this)[0].className=classes;
+			  },function()
+			  {
+				  var classes=$(this).attr("class");
+				  var subClass=classes.substr(0,classes.length-5);
+				  $(this)[0].className=subClass;
+			  })
+			  
+		  })()
+          </script> 
+          </div>
+        </div>
+        <div class="subset right"> 
+          <!--欢迎页-->
+          <div class="welcomePic" style="display:none;"><img src="../images/editorZone/ez10-welcomePage2.jpg" width="384" height="603" /></div>
+          <!--添加文章-->
+          <div class="switchTable" style="display:block;">
+            <div class="title">添加文章</div>
+            <div class="coverPics"> <a class="active" href="javascript:void(0)">从素材库导入</a> <a class="inactive" href="javascript:void(0)">检索文章</a> </div>
+            <!-- 从素材库里添加文章 -->
+            <div class="picsBox" style="display:block;">
+              <div class="fromLibrary">
+                <div class="librarySearch">
+                  <input type="text" value="搜索素材库" class="text colorGrey" />
+                  <input type="button" class="btn" value="搜索" />
+                  <script>
+					  /*文本框内文字显隐和样式更换*/
+					  PromptToggle($(".subset .picsBox .librarySearch .text"),"搜索素材库","colorGrey");
+					</script> 
+                </div>
+                <div class="return"><a href="javascript:void(0)">&lt;&lt;返回全部素材库</a></div>
+                <div class="searchPrompt">"大国发展道路"在我的素材库中的检索结果：</div>
+                <!-- 隐藏的搜索结果div 
+                <div class="searchResult">
+                	<ul class="stage">
+                      <li class="secondStage">
+                          <span class="item">
+                              <input type="checkbox" align="absbottom" />中国的大国发展道路
+                          </span>
+                          <span class="item">
+                              <input type="checkbox" />中国的大国发展道路——论分权式改革的得失
+                          </span>
+                          <span class="item">
+                              <input type="checkbox" />中国的大国发展道改革的得失
+                          </span>
+                          <span class="item">
+                              <input type="checkbox" />中国的大国发展道路——改革的得失
+                          </span>
+                      </li>
+                    </ul>
+                </div>-->
+                <div class="stageWrap">
+                  <ul class="stage">
+                    <li class="firstStage fold" >宏观经济</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >宏观经济</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >达尔文的进化论基础</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >高级程序设计课程第一讲</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >历史转折中的邓小平</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >好声音第三季那英组四强出炉</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >宏观经济</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >宏观经济</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >达尔文的进化论基础</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >高级程序设计课程第一讲</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >历史转折中的邓小平</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >好声音第三季那英组四强出炉</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >宏观经济</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >宏观经济</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >达尔文的进化论基础</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >高级程序设计课程第一讲</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >历史转折中的邓小平</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                  <ul class="stage">
+                    <li class="firstStage fold" >好声音第三季那英组四强出炉</li>
+                  </ul>
+                  <div class="secondStage">
+                    <div class="tit">
+                      <div class="name">宏观经济</div>
+                      <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a></div>
+                    <div class="topPic"></div>
+                    <div class="items">
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——改革的得失</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路</label>
+                      </div>
+                      <div class="row">
+                        <input type="checkbox" />
+                        <label>中国的大国发展道路——论分权式改革的得失</label>
+                      </div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                    <div class="addToWJ">
+                      <input type="button" value="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="turnPage"><a href="#">上一页</a> <a href="#">下一页</a></div>
+              </div>
+            </div>
+            
+            <!-- 检索文章 -->
+            <div class="picsBox" style="display:none;">
+              <div class="retrieve"> 
+                <!--<div class="librarySearch">
+                	<input type="text" value="搜索素材库" class="text colorGrey" /><input type="button" class="btn" value="搜索" />
+                    <script>
+					  /*文本框内文字显隐和样式更换*/
+					  PromptToggle($(".subset .picsBox .librarySearch .text"),"搜索素材库","colorGrey");
+					</script>
+                </div>-->
+                <div class="classify">
+                  <select>
+                    <option>类别</option>
+                  </select>
+                  <input type="text" value="" class="text" />
+                  <input type="button" class="btn" value="搜索" />
+                </div>
+                <div class="sort">排列：
+                  <input type="radio" name="x" checked="checked" id="time" />
+                  <label for="time">发表时间</label>
+                  <input type="radio" name="x" id="degree" />
+                  <label for="degree">相关度</label>
+                </div>
+                <div class="resultStr">
+                  <div class="name">“幼儿园”的检索结果(23)</div>
+                  <a href="javascript:void(0)" class="back">&lt;&lt;返回全部素材</a> </div>
+                <div class="wrapScrollDiv">
+                  <div class="scrollDiv">
+                    <div class="intro">
+                      <div class="name">
+                        <input type="checkbox" />
+                        幼儿园小班美术教案——盖子比本领</div>
+                      <div class="abstract" style="display:block;">呼万唤，苏亚雷斯终于公开道歉，30日的一纸声明渀佛已经为这个事件画上了句号，“苏牙”服软。。。<a class="download" href="#">&nbsp;</a></div>
+                      <div class="author"><span class="left">来源：《课程.教材.教法》2011年第03期</span> <!-- <span class="right">作者：薛寅俊</span> --></div>
+                    </div>
+                    <div class="intro">
+                      <div class="name">
+                        <input type="checkbox" />
+                        幼儿园小班美术教案——盖子比本领</div>
+                      <div class="abstract">呼万唤，苏亚雷斯终于公开道歉，30日的一纸声明渀佛已经为这个事件画上了句号，“苏牙”服软。。。<a class="download" href="#">&nbsp;</a></div>
+                      <div class="author"><span class="left">来源：《课程.教材.教法》2011年第03期</span> <!-- <span class="right">作者：薛寅俊</span> --></div>
+                    </div>
+                    <div class="intro">
+                      <div class="name">
+                        <input type="checkbox" />
+                        幼儿园小班美术教案——盖子比本领</div>
+                      <div class="abstract">呼万唤，苏亚雷斯终于公开道歉，30日的一纸声明渀佛已经为这个事件画上了句号，“苏牙”服软。。。<a class="download" href="#">&nbsp;</a></div>
+                      <div class="author"><span class="left">来源：《课程.教材.教法》2011年第03期</span> <!-- <span class="right">作者：薛寅俊</span> --></div>
+                    </div>
+                    <div class="intro">
+                      <div class="name">
+                        <input type="checkbox" />
+                        幼儿园小班美术教案——盖子比本领</div>
+                      <div class="abstract">呼万唤，苏亚雷斯终于公开道歉，30日的一纸声明渀佛已经为这个事件画上了句号，“苏牙”服软。。。<a class="download" href="#">&nbsp;</a></div>
+                      <div class="author"><span class="left">来源：《课程.教材.教法》2011年第03期</span> <!-- <span class="right">作者：薛寅俊</span> --></div>
+                    </div>
+                    <div class="iPage">
+                      <div class="selectAll" style="padding-left:0;">
+                        <input type="checkbox" />
+                        <span>全选</span></div>
+                      <a href="#">上一页</a> <a href="#">下一页</a></div>
+                  </div>
+                  <div class="addToWJ">
+                    <input type="button" value="" />
+                  </div>
+                  <a href="#" class="more">显示更多&gt;&gt;</a> </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="chooseTemplate" style="display:none;">
+            <div class="title">编辑封面<a class="replace" href="#">换一组</a></div>
+            <div class="template"><img src="../imagesTemp/editorZone/ez14-template1.jpg" width="345" height="203" /><img src="../imagesTemp/editorZone/ez14-template2.jpg" width="345" height="203" /></div>
+            
+          </div>--> 
+          
+        </div>
+      </div>
+    </div>
+    <div class="release">
+      <input type="button" value="编辑完成，提交发布" />
+    </div>
+  </div>
+</div>
+
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="footer">
+  <div class="width1190pxAuto">
+    <div class="links width1190pxAuto overflowHidden">
+      <div class="linkBox linkBoxBorderRight">
+        <div class="title">新手上路</div>
+        <ul class="items">
+          <li><a href="#">注册智库</a></li>
+          <li><a href="#">如何为账户充值</a></li>
+          <li><a href="#">如何查找文集</a></li>
+          <li><a href="#">如何购买文集</a></li>
+          <li><a href="#">如何阅读文集</a></li>
+          <li><a href="#">常用软件下载</a></li>
+        </ul>
+      </div>
+      <div class="linkBox linkBoxBorderRight">
+        <div class="title">支付方式</div>
+        <ul class="items">
+          <li><a href="#">网上银行</a></li>
+          <li><a href="#">支付宝</a></li>
+          <li><a href="#">银行汇款</a></li>
+          <li><a href="#">知网卡</a></li>
+          <li><a href="#">更多支付方式</a></li>
+          <li><a href="#">发票索取>></a></li>
+        </ul>
+      </div>
+      <div class="linkBox linkBoxBorderRight">
+        <div class="title">认证专区</div>
+        <ul class="items">
+          <li><a href="#">主编认证</a></li>
+          <li><a href="#">主编特权</a></li>
+          <li><a href="#">机构认证</a></li>
+          <li><a href="#">机构特权</a></li>
+        </ul>
+      </div>
+      <div class="linkBox linkBoxBorderRight">
+        <div class="title">关于我们</div>
+        <ul class="items">
+          <li><a href="#">关于CNKI智库</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">友情链接</a></li>
+          <li><a href="#">网站地图</a></li>
+        </ul>
+      </div>
+      <div class="linkBox linkBoxBorderRight1">
+        <div class="lbWrap">
+          <div class="erweima"><img src="../imagesTemp/platForm/platform9-ewm.gif" width="58" height="58" /></div>
+          <div class="about">
+            <p class="name">智库官方微信</p>
+            <p class="">扫二维码</p>
+            <p class="">轻松关注</p>
+          </div>
+        </div>
+        <div class="weibo">
+          <div class="sina left">新浪微博</div>
+          <div class="ljgz left">立即关注</div>
+        </div>
+      </div>
+    </div>
+    <div class="websiteInfo">
+      <p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在线发行：同方知网（北京）技术有限公司</p>
+      <p>京ICP证040431号  互联网出版许可证 新出网证(京)字008号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京市公安局海淀分局 备案号110 1081725</p>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************--> 
+
+<script>
+/*切换*/
+var coverA=$(".coverPics a");
+coverA.click(function(){
+	var index=coverA.index(this);
+	coverA.removeClass("active").addClass("inactive");
+	coverA.eq(index).removeClass("inactive").addClass("active");
+	$(".picsBox").css("display","none");
+	$(".picsBox").eq(index).css("display","block");
+	})
+</script> 
+<script>
+/*右侧切换框内部标题与按钮点击效果*/
+(function()
+{
+	var stage=$(".stage");
+	stage.click(function()
+	{
+		$(".turnPage").css("display","none");
+		var index=$(".stage").index(this);
+		stage.css("display","none");
+		$(".secondStage").eq(index).css("display","block");
+	})
+	$(".back").click(function()
+	{
+		$(".turnPage").css("display","block");
+		stage.css("display","block");
+		$(".secondStage").css("display","none");
+	})
+})()
+</script> 
+<script>
+/*有无章节浮动按钮点击样式变换*/
+(function()
+{
+	var haveChapter=false;
+	$(".floatBtn").click(function()
+	{
+		if(!haveChapter)
+		{
+		   $(".wrapCC").slideUp(400);
+		   $(".procedure .steps .chapter .caption .modifyWrap,.procedure .steps .chapter .caption .modify").css("display","none")
+		   $(".procedure .steps .chapter .caption span").css("visibility","hidden");
+		   $(".procedure .steps .chapter .caption .textDisp").css("display","block");
+		   $(this).removeClass("noChapter").addClass("haveChapter");
+		   haveChapter=true;
+		}
+		else
+		{
+		   $(".wrapCC").slideDown(400);
+		   $(".procedure .steps .chapter .caption .modifyWrap").css("display","block")
+		   $(".procedure .steps .chapter .caption span").css("visibility","visible");
+		   $(".procedure .steps .chapter .caption .textDisp").css("display","none");
+		   $(this).removeClass("haveChapter").addClass("noChapter");
+		   haveChapter=false; 
+		}
+	})		  
+})()
+</script> 
+<script>
+/*全选功能*/
+var handler1=$(".procedure .steps .subset .switchTable .iPage .selectAll input");
+var checkboxes1=$(".procedure .fromLibrary .stageWrap .secondStage .items .row input");
+var handler2=$(".procedure .steps .subset .switchTable .iPage .selectAll input");
+var checkboxes2=$(".procedure .steps .subset .switchTable .retrieve .intro .name input");
+selectAll(handler1,checkboxes1);
+selectAll(handler2,checkboxes2);
+</script> 
+<script>
+//设定添加的文集ul的高度
+function setHeight()
+{
+	var ul=$(".procedure .steps .chapter .article");
+	if(ul.height()>350)
+	{
+		ul.height("auto");	
+	}
+	else
+	{
+		ul.height(350);
+	}
+}
+
+/*删除已添加素材*/
+$(" li .modifyArticle .secondA").click(function()
+{
+	  var li=$(this).parent().parent();
+	  li.slideUp(400,function(){li.remove();});
+	  setHeight();
+	  
+})
+
+
+/*添加到文集*/
+$(".addToWJ").click(function()
+{
+	$(".procedure .steps .chapter .blank").css("display","none");
+	$(".procedure .steps .chapter .article").css("display","block");
+	setHeight();
+})
+</script> 
+<script>
+/*当没有输入章节标题时候，点击添加文章文本框闪动提示*/
+
+$(".procedure .steps .chapter .addArticle input,.procedure .steps .chapter .blank").click(function()
+{
+	function blinkInput(div,input)
+	{
+		var borderFlag=false;
+		var time;
+        setTimeout(blinkBorder,0);
+		function blinkBorder()
+		{
+			time=0;
+			for(var i=0;i<8;i++)
+			{
+				time+=100;
+				setTimeout(function()
+				{
+					modifyBorder();		
+				},time);	
+			}
+		}
+		function modifyBorder()
+		{
+			borderFlag=!borderFlag;
+			if(borderFlag)
+			{
+				div.removeClass("border1").addClass("border2");	
+				input.removeClass("colorGrey").addClass("color");
+			}
+			else
+			{
+				div.removeClass("border2").addClass("border1");
+				input.removeClass("color").addClass("colorGrey");
+			}
+		}
+		
+		
+				
+	}
+	var input=$(".procedure .steps .chapter .caption .modifyWrap .modifyInput");
+	if(input.val().length=0 || input.val()=="请输入章节标题")
+	{
+		$(".procedure .steps .chapter .blank").addClass("noedit").removeClass("editable");		
+		blinkInput($(".procedure .steps .chapter .caption .modifyWrap"),$(".procedure .steps .chapter .caption .modifyWrap .modifyInput"));
+		$(".procedure .steps .subset .welcomePic").slideDown(200);
+		$(".procedure .steps .subset .switchTable").slideUp(200);
+	}
+	else
+	{
+		$(".procedure .steps .chapter .blank").removeClass("noedit").addClass("editable");
+		$(".procedure .steps .subset .welcomePic").slideUp(200);
+		$(".procedure .steps .subset .switchTable").slideDown(200);
+	}
+})
+</script>
+
+<script>
+//左侧添加文章模块浮动
+(function(){              
+	var pageScroll;
+	window.onscroll=function()
+	{
+		if($(".procedure .steps .chapter .article").css("display")=="block")
+		{
+		  var li=$(".procedure .steps .chapter .article li");
+		  var count=li.length;
+		  if(count>8)
+		  {
+			var pageScroll=document.documentElement.scrollTop || document.body.scrollTop;
+			var subset=$(".procedure .steps .subset");
+			if(pageScroll>=150 && pageScroll<150+(count-8)*41)
+			{
+				subset.addClass("subsetFixed").css("margin-top","-35px");
+			}
+			else
+			{
+				subset.removeClass("subsetFixed");
+				if(pageScroll > 150+(count-8)*41)
+				{
+					subset.css("margin-top",(count-8)*41+"px");  
+				}  
+			}
+		  }
+		}
+	}
+})()			 
+          </script>
+</body>
+</html>

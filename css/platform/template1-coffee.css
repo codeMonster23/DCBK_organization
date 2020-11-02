@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+
+/*coffee template css*/
+
+.t1-BodyBgC { background-color: #b19e7e; }
+.t1-mainBgC { background-color: #dfd5c9; }
+.t1-siteMapColor { color: #005285; }
+.t1-bannnerBgPic { background-image:url(../../images/platform/template1/t1-headerPic-black2-2.jpg); background-repeat: no-repeat; height: 268px; width: 994px; }
+.t1-priceColor { color:#72450A; }
+.t1-conductC { color:#fff;}
+.t1-sideBorderBottom { border-bottom:1px solid #baa788;}
+.t1-sideTitleC { color:#643912;}
+.t1-sideContentC { color:#643912; }
+.t1-sideContentBg { background-image: url(../../images/platform/template1/t3-pic2.jpg); background-repeat: no-repeat; background-position: left center;}
+.t1-sideContentCurrent { color:#e45e03; }
+.t1-sideIntroLabelC { color:#e45e03;}
+.t1-editorInfoC { color:#fff;}
+.t1-sideEditorBg { background-color:#d2c4b3;}
+.t1-sideBoxNameC { color:#643912;}
+.t1-sideMoreIntro-unfold { background-image: url(../../images/platform/template1/t10-unfold3.gif); }
+.t1-sideMoreIntro-fold { background-image: url(../../images/platform/template1/t10-fold3.gif);}
+
+/*catalog*/
+.t1-catalogBgPic {background-image: url(../../images/platform/template1/t4-catalogBg2.jpg);}
+.t1-catalogTitleBorder { border-top:14px solid #c6a756;}
+.t1-catalogTitleC { color:#161616;}
+.t1-catalogBtmBg {background-image: url(../../images/platform/template1/t4-catalogBtm2.jpg);}
+.t1-floatAreaBorder { border-top: 8px solid #9b6634; }
+.template1 .banner .function .conduct:hover { color:#000; opacity:1;   }

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.topBanner{margin-bottom: 0;}
+.certifiHeader{height:54px; background:url(../../images/certification/bg-x.gif) repeat-x; overflow:hidden;}
+.certifiHeader .logo{width:148px; height:28px; padding-top:13px; background:url(../../images/certification/logo.jpg) no-repeat center bottom;}
+.certifiHeader .logo a{display:block; height:28px;}
+.certifiHeader .certifiLogo{ width:116px; height:28px; padding-left:5px; padding-top:12px;background: url(../../images/certification/tit_logo.jpg) no-repeat right bottom;}
+.certifiHeader .certifiInfo{height:54px; line-height:54px; width:280px; color:#A7A7A7}
+.certifiHeader .certifiInfo a{color:#A7A7A7;}
+.certifiHeader .certifiInfo a:hover{text-decoration:none;}
+.certifiBanner{ height:300px; background:#F4E9D5 url(../../images/certification/jg_bg.jpg) no-repeat top center; }
+.stepWrap2{margin-top:-75px; height:507px;margin-bottom:30px;border-top: 2px solid #e40404;}
+.stepWrap2 .step3{height:50px; background: url(../../images/certification/step01.jpg) no-repeat;}
+.stepWrap2 .wrap{background:#ffffff;border: 1px solid #f1e0d0;}
+.stepWrap2 .cont{width:670px; margin:0 auto;height: 360px;}
+.stepWrap2 .prompt{ padding-top:90px; width:590px; height:85px;line-height: 85px; background: url(../../images/certification/success_logo.jpg) no-repeat 7px bottom; margin-bottom:10px; color:#222; font-family:"Microsoft YaHei"; font-size:40px; padding-left:118px;} 
+.stepWrap2 .cont p{color:#222; font-size:14px; padding-left:118px; line-height:42px; font-weight:bold; position:relative;} 
+.stepWrap2 .cont .p2{margin-bottom:30px;}
+.stepWrap2 .cont .p2 span{ position:absolute; left:280px; top:11px;_left:198px;*top:-1px; width:15px; height:18px; background:url(../../images/certification/QQ.gif) no-repeat; }
+.stepWrap2 .cont .btn{width:670px; border-top:1px solid #EDEDED; padding-top:30px; padding-left:80px;}
+.stepWrap2 .cont .btn a{float:left; width:216px; height:94px;}
+.stepWrap2 .cont .btn .home{ background:url(../../images/certification/home.jpg) no-repeat; margin-right:74px;}
+.stepWrap2 .cont .btn .myzone{background:url(../../images/certification/myzone.jpg) no-repeat;}

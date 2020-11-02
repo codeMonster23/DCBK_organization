@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0013)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>智库</title>
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css" />
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jQuery-v1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.promptToggle.js"></script>
+<link href="../css/editorZone/editorZone.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#f1ebde">
+<div class="ecHeader">
+  <div class="width1190pxAuto overflowHidden">
+    <div class="logo left editorLogo"><a href="#"><img src="../images/header-and-footer/new_echf-logo1.jpg" width="229" height="40"/></a>
+    <a href="#"><img src="../images/header-and-footer/new_echf-logo3.jpg" width="106" height="40"/></a></div>
+    <div class="addNav left clearfix"><a href="#">首页</a> <a href="#">我的主页</a> <a href="#">编创指南</a></div>
+    <div class="editorInfo right"><a class="name" href="#">summer10123</a><a class="img" href="#"><img src="../images/editorZone/ec-icon19-message.png" width="15" height="14" align="absmiddle" /></a><a href="#">（<i>123</i>）</a>| <a class="exit" href="#">退出</a>
+    </div>
+  </div>
+</div>
+<!--******************************头部通用部分 分界线***************************************-->
+
+<div class="main">
+  <div class="width1190pxAuto editorZone clearfix">
+   <a href="#" class="hbzs"></a>
+    <div class="procedure">
+      <div class="banner"><img src="../images/editorZone/ez6-banner1.jpg" width="1163" height="44" /></div>
+      <div class="steps">
+        <div class="fill left">
+          <div class="typeText">
+            <label>文集标题：</label>
+                <div class="frameText frameBorder">
+                <input class="colorGrey textPart" type="text" value="请输入..." />
+                </div>
+            
+          </div>
+          <!--<div class="prompt"><span>中英文2-25个字</span></div>-->
+          
+          
+          
+          <div class="subTitle clearfix">
+          	<div class="add-remove plus">增加副标题</div>
+            <div class="subName">
+            	<label>副标题：</label>
+                <div class="subDiv">
+                	<input type="text" class="subTitleInput" value="" />
+                </div>
+            	
+            </div>
+          </div>
+          <script>
+          //增加副标题
+		  	  var time=100;
+			  $(".procedure .steps .fill .subTitle .add-remove").click(function(){
+				  var subName=$(this).parent().children(".subName");
+				  if(subName.css("display")=="none")
+				  {
+					$(this).html("删除副标题").removeClass("plus").addClass("minus");
+					subName.slideDown(time);
+					
+				  }
+				  else
+				  {
+					$(this).html("添加副标题").removeClass("minus").addClass("plus");  
+					subName.slideUp(time);  
+				  }
+				  })
+		  
+          </script>
+          
+          
+          <div class="typeText">
+            <label>关 键 词：</label>
+        	<div class="frame frameBorder" id="parentFrame">
+                <input class="colorGrey" id="keyword" type="text" value="请用空格键隔开" />
+            </div>
+			<script>
+				/*文本框内文字显隐和样式更换*/
+				PromptToggle($(".procedure .steps .fill .typeText .textPart"),"请输入...","colorGrey");
+			</script>
+          </div>
+          <div class="prompt"><span>中英文1-5个关键字</span></div>
+          <div class="typeTextarea">
+            <label>文集简介：</label>
+            <textarea></textarea>
+          </div>
+          <div class="prompt"><span>中英文5-500字</span></div>
+          <div class="typeSelect">
+            <label>文集分类：</label>
+            <select>
+              <option>分类一</option>
+            </select>
+            <select>
+              <option>分类二</option>
+            </select>
+            <select>
+              <option>分类三</option>
+            </select>
+            <a class="addSelect" href="javascript:void(0)">+</a> </div>
+          <!--<div class="boundary"></div>-->
+          <div class="interface">
+            <label>文集封面：</label>
+            <div class="area areaBorder">
+              <div class="preview cover"></div>
+              <a href="javascript:void(0);" class="change change1"></a> </div>
+          </div>
+          <div class="prompt"><span>上传图片过大/过小</span></div>
+          <div class="interface">
+            <label>文集模板：</label>
+            <div class="area areaBorder">
+              <div class="preview template"></div>
+              <a href="javascript:void(0);" class="change change2"></a> </div>
+          </div>
+          <div class="prompt"><span>上传图片过大/过小</span></div>
+          <div class="boundary"></div>
+          <div class="operate">
+          	<input type="button" value="下一步" class="next" />
+            <input type="button" value="存草稿" class="save" />
+          </div>
+          
+        </div>
+        <div class="subset right"> 
+          <!--欢迎页-->
+          <div class="welcomePic"><img src="../images/editorZone/ez10-welcomePage.jpg" width="414" height="576" /></div>
+          <!--编辑文集封面-->
+          <div class="switchTable">
+            <div class="title">编辑封面</div>
+            <div class="coverPics"><a class="active" href="javascript:void(0)">上传图片</a><a class="inactive" href="javascript:void(0)">系统图片</a></div>
+            <!-- 上传图片 -->
+            <div class="picsBox">
+              <div class="uploadPart">
+                
+                <div class="prompt">您可以对您上传的图片进行剪切，系统自动生成234*170像素的标准尺寸文集封面。</div>
+                <!--<div class="uploadPic">
+                  <input id="route" type="text" class="route" />
+                  <input type="button" class="browse" value="浏览" onclick="browse.click();" />
+                  <input id="browse" type="file" style="display:none;" />
+                </div>-->
+                <div class="showPic"><a href="#"><img src="../images/editorZone/ez13.gif" width="327" height="225" /></a></div>
+                <div class="prompt"><strong>文集封面预览:</strong>(237*170像素)</div>
+                <div class="showPic"><a href="#"><img src="../images/editorZone/ez13.gif" width="237" height="170" /></a></div>
+                <!--<div class="uploadBtn"><input type="button" value="上传" /></div>-->
+              </div>
+              <div class="picBtns"><input type="button" value="确定" class="confirm" /></div>
+            </div>
+            <!-- 系统图片 -->
+            <div class="picsBox" style="display:none;">
+            	<div class="systemPic">
+                    <ul class="defaultPics">
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover1.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover2.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover3.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover4.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover5.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover6.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover7.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover8.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover9.jpg" width="161" height="108" /></li>
+                    <li class="normal"><img src="../imagesTemp/editorZone/ez7-cover10.jpg" width="161" height="108" /></li>
+                  </ul>
+                    <div class="pageNav"><a href="#">上一页</a> <a href="#">下一页</a></div>
+                </div>
+              
+            </div>
+            <!--<div class="btns">
+              <input type="button" value="取消" class="cancel" />
+              <input type="button" value="确定" class="confirm" />
+            </div>-->
+          </div>
+          <!--选择模板-->
+          <div class="chooseTemplate" style="display:none;">
+            <div class="title">选择模板<!--<a class="replace" href="#">换一组</a>--></div>
+            <div class="template">
+                    <div class="systemPic">
+                        <ul class="defaultPics">
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template1.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template2.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template3.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template4.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template5.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template6.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template7.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template8.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template9.jpg" width="161" height="108" /></li>
+                        <li class="normal"><img src="../imagesTemp/editorZone/ez14-template10.jpg" width="161" height="108" /></li>
+                      </ul>
+                        <div class="pageNav"><a href="#">上一页</a> <a href="#">下一页</a></div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************底部通用部分 分界线***************************************-->
+<div class="ecFooter">
+  <div class="width1190pxAuto">
+  	<div class="f-logo left"><a href="#"><img src="../images/header-and-footer/new_echf-logo2.jpg" /></a></div>
+    <div class="websiteInfo left clearfix">
+    	<p><span class="left">数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</span><span class="right">在线发行：同方知网（北京）技术有限公司</span></p>
+        <p><span class="left">京ICP证040431号 互联网出版许可证 新出网证(京)字008号</span><span class="right">北京市公安局海淀分局 备案号110 1081725</span></p>
+    </div>
+    <div class="wxwrap clearfix right">
+    	<div class="left ewm"><img src="../images/header-and-footer/new_echf1.jpg" width="105" height="105" /></div>  
+        <div class="about left">
+        	<p class="tit">官方微信</p>
+            <p>扫二维码</p>
+            <p>轻松关注</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--******************************script 分界线***************************************--> 
+
+<script>
+/*图片选中效果*/
+(function(){
+var defaultPicLi=$(".defaultPics li");
+defaultPicLi.click(function(){
+	var index=0
+	if($(".procedure .steps .subset .chooseTemplate").css("display")=="block")
+	{
+		index=1;
+	}
+	defaultPicLi.removeClass("click").addClass("normal");
+	$(this).removeClass("normal").addClass("click");
+	var src=$(this).children("img").attr("src");
+	if(src!=null)
+	{
+		var pre=$(".area .preview").eq(index);
+		if(pre.contents("img"))
+		{
+			pre.children().remove();
+		}
+		
+			var img=document.createElement("img");
+			img.src=src;
+			img.width=pre.width();
+			img.height=pre.height();
+			pre.append(img);
+		
+	}
+	})
+	
+/*var img=$(".template img");	
+img.click(function(){
+	    img.removeClass("imgClick");		
+		$(this).addClass("imgClick");
+		var src=$(this)[0].src;
+		if(src!=null)
+		{
+			$(".area .preview").eq(1).children("img")[0].src=src;	
+		}
+	})	
+*/
+})()
+</script>
+
+<script>
+/*系统图片与上传图片切换*/
+(function(){
+var coverA=$(".coverPics a");
+coverA.click(function(){
+	var index=coverA.index(this);
+	coverA.removeClass("active").addClass("inactive");
+	coverA.eq(index).removeClass("inactive").addClass("active");
+	$(".picsBox").css("display","none");
+	$(".picsBox").eq(index).css("display","block");
+	})
+})()
+</script> 
+<script>
+/*增加select 最多插入两排*/
+(function(){
+$(".addSelect").click(function(){
+	var count=$(".typeSelect select").length;
+	if(count==3)
+	{
+		$(".typeSelect label").css("height","60px");
+		for(var i=0;i<3;i++)
+		{
+			var selectNode=document.createElement("select");
+			selectNode.id="lastSelect";
+			$(".typeSelect").append(selectNode);
+			$("#lastSelect").insertBefore(".addSelect");
+			selectNode.id="";
+		}
+		$(this).html("-");
+	}
+	if(count==6)
+	{
+		$(".typeSelect label").css("height","auto");
+		for(var j=5;j>2;j--)
+		{
+			$(".typeSelect select").eq(j).remove();
+		}
+		$(this).html("+");
+	}
+	})
+})()	
+</script> 
+<script>
+/*点击编辑文集封面或文集模板*/
+
+	function SubsetDisplay(switchTable,chooseTemplate)
+	{
+		var coverNode=$(".switchTable");
+		var templateNode=$(".chooseTemplate");	
+		$(".welcomePic").slideUp(400);
+		if(switchTable)
+		{
+			coverNode.slideDown(400);
+			templateNode.slideUp(400);
+		}
+		if(chooseTemplate)
+		{
+			coverNode.slideUp(400);
+			templateNode.slideDown(400);
+		}
+	}
+	
+//选择文集/模板区域鼠标移动上去效果 点击效果
+(function(){	
+	var change=$(".interface .area .change");
+	var preview=$(".interface .area .preview");
+	var area=$(".interface .area");
+	area.hover(function()
+	{
+		$(this).removeClass("areaBorder").addClass("borderRed1");
+		var pre=$(this).children(".preview");
+		var classes=pre.attr("class");
+		classes +="Hover";
+		pre[0].className=classes;
+	},function()
+	{
+		$(this).removeClass("borderRed1").addClass("areaBorder");
+		var pre=$(this).children(".preview");
+		var classes=pre.attr("class");
+		var subClass=classes.substr(0,classes.length-5);
+		pre[0].className=subClass;
+	})
+	change.click(function(){
+			var index=change.index(this);
+			if(index==0)
+			{
+				SubsetDisplay(true,false);	
+			}
+			if(index==1)
+			{
+				SubsetDisplay(false,true);
+			}
+		})
+	preview.click(function(){
+			var index=preview.index(this);
+			if(index==0)
+			{
+				SubsetDisplay(true,false);	
+			}
+			if(index==1)
+			{
+				SubsetDisplay(false,true);
+			}
+		})	
+})()	
+</script>
+<script>
+/*插入关键字*/
+(function(){
+var input=$("#keyword");
+var jsNode=document.getElementById("keyword");
+function CreateKeywordNode(value)
+{
+	var keyword=document.createElement("div");
+	var closeIt=document.createElement("div");
+	closeIt.className="close";
+	keyword.className="keyword";
+	var text=document.createTextNode(value);
+	keyword.appendChild(text);
+	keyword.appendChild(closeIt);
+	document.getElementById("parentFrame").insertBefore(keyword,jsNode);
+	jsNode.value="";	
+}
+
+/*根据用户的输入是否带有空格来判断*/
+input.keyup(function(e)
+{
+	var value=$(this).val();
+	var useInputLength=value.length;
+	
+	if($.trim(value).length!=useInputLength && Boolean($.trim(value).length))
+	{   
+		var children=$(this).parent().children();
+		var sumLen=0;
+		var childrenLen=children.length;
+		for(var i=0;i<childrenLen;i++)
+		{
+			sumLen += children.eq(i).width();
+		}
+		if(sumLen<350)
+		{
+			CreateKeywordNode(jsNode.value);
+			$(".keyword .close").click(function(){$(this).parent().remove();});
+		}
+	}
+});
+
+input.focus(function()
+{
+	if($(this).val()=="请用空格键隔开")
+	{
+		$(this).val("");
+		$(this).removeClass("colorGrey");
+	}
+})
+input.blur(function()
+{
+	if($(this).val()=="" && $(this).parent().children().length==1)
+	{
+		$(this).val("请用空格键隔开");
+		$(this).addClass("colorGrey");
+	}
+	else
+	{
+		var value=$(this).val();
+		var useInputLength=value.length;
+		if($.trim(value).length==useInputLength && Boolean($.trim(value).length))
+		{   
+			var children=$(this).parent().children();
+			var sumLen=0;
+			var childrenLen=children.length;
+			for(var i=0;i<childrenLen;i++)
+			{
+				sumLen += children.eq(i).width();
+			}
+			if(sumLen<350)
+		    {
+				CreateKeywordNode(jsNode.value);
+				$(".keyword .close").click(function(){$(this).parent().remove();});
+			}
+		}
+	}
+})
+})()	
+</script>
+
+<script>	
+/*当文本框获得焦点时，边框变为红色	*/
+(function(){
+$(".procedure .steps .fill .typeText input").focus(function()
+{ 
+	$(this).parent().addClass("borderRed1").removeClass("frameBorder");
+})	
+$(".procedure .steps .fill .typeText input").blur(function()
+{
+	$(this).parent().removeClass("borderRed1").addClass("frameBorder");
+})
+
+$(".procedure .steps .fill .typeTextarea textarea").focus(function()
+{ 
+	$(this).addClass("borderRed1").removeClass("frameBorder");
+})	
+$(".procedure .steps .fill .typeTextarea textarea").blur(function()
+{
+	$(this).removeClass("borderRed1").addClass("frameBorder");
+})
+})()
+</script>
+<script>
+(function(){
+		  /*存草稿和下一步按钮的鼠标移动上去效果*/
+		  var input=$(".procedure .steps .fill .operate input");
+		  input.hover(function()
+		  {
+			  var classes=$(this).attr("class");
+			  classes +="Hover";
+			  $(this)[0].className=classes;
+		  },function()
+		  {
+			  var classes=$(this).attr("class");
+			  var subClass=classes.substr(0,classes.length-5);
+			  $(this)[0].className=subClass;
+		  })
+})()		  
+
+
+</script>
+<script>
+	/*计算汇编助手按钮定位的left值*/
+	fn1();
+	$(window).resize(function() {
+		fn1();
+	});
+	function fn1() {
+		var wWidth=$(window).width();
+		$(".hbzs").css("left",(wWidth-1190)/2-30+"px");
+	};
+</script>
+</body>
+</html>

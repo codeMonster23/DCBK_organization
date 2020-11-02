@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.t2-BodyBgC { background-color: #8cd4e3; }
+.template2 .t2-headerBg { background-image: url(../../images/platform/template2/t2-headerBg-lightBlue.jpg); border-top:1px solid #2b8792; border-bottom:1px solid #2a838c;}
+.template2 .t2-headerBg .t2-sitemapC { color: #c0c0c0; }
+.template2 .t2-floatAreaBgC { background-color:#8cd4e3; }
+.template2 .t2-price1BgC { background-color:#2d9da9;}
+.template2 .t2-articleChaptersBorder { border:1px solid #5ebacb;}
+.template2 .floatArea .t2-chapterBar {background-image: url(../../images/platform/template2/t2-floatArea5-Bara.jpg); }
+.template2 .floatArea .chapter .t2-prevIcon {background-image: url(../../images/platform/template2/t2-floatArea3a.jpg);}
+.template2 .floatArea .chapter .t2-nextIcon {background-image: url(../../images/platform/template2/t2-floatArea4a.jpg);}
+
+.template2 .floatArea .chapter .center .t2-numIcon {background-image: url(../../images/platform/template2/t2-floatArea2a.jpg); color:#eaf5f9;}
+.template2 .floatArea .chapter .center .current {background-image: url(../../images/platform/template2/t2-floatArea1a.jpg); color:#faea79;}
+.template2 .floatArea .collectDL .t2-collectColor { color:#eaf5f9; }

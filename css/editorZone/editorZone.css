@@ -1,0 +1,1356 @@
+.editorZone { background-color: #f7f6ef; /*margin-top: -36px; */position:relative; /*_top:-36px*/ }
+.editorZone input { background-color:transparent; border:0; }
+* html, * html body { background-image:url(about:blank); background-attachment:fixed; }
+.floatBtn { background-repeat: no-repeat; height: 65px; width: 33px; position: absolute; left: 50%; top: 200px; margin-left: -631px; /*_position:absolute; top:expression(eval(document.documentElement.scrollTop+200)); */ cursor: pointer; }
+.noChapter { background-image: url(../../images/editorZone/ez30-floatIcon1.jpg); }
+.haveChapter { background-image: url(../../images/editorZone/ez30-floatIcon2.jpg); }
+.editorSideMenu { padding-top: 10px; padding-right: 10px; padding-left: 10px; width: 221px; padding-bottom: 20px; }
+.editorSideMenu .specialItem { background-image: url(../../images/editorZone/ez3.jpg); background-repeat: no-repeat; height: 47px; width: 221px; line-height: 44px; font-weight: bold; font-size: 18px; }
+.editorSideMenu .specialItem a { font-weight: bold; color: #FFF; padding-left: 46px; display:block; }
+.editorSideMenu .normalItem { }
+.editorSideMenu .normalItem .title { line-height: 37px; background-image: url(../../images/editorZone/ez4-banner.jpg); background-repeat: no-repeat; height: 37px; font-size: 14px; font-weight: bold; color: #FFF; }
+.editorSideMenu .normalItem .mTitle { background-image: url(../../images/editorZone/ez4-material1.jpg); line-height: 41px; background-repeat: no-repeat; height: 41px; font-size: 14px; font-weight: bold; color: #FFF; }
+.editorSideMenu .normalItem .title a { color:#fff; display:block; padding-left:33px; }
+.editorSideMenu .normalItem .mTitle a { display:block; padding-left:46px; }
+.editorSideMenu .normalItem .title .current { color:#ffff00; }
+.editorSideMenu .normalItem .options { border:1px solid #cbb587; border-top:none; width:218px; padding-top: 10px; padding-bottom: 10px; }
+.editorSideMenu .normalItem .options li { line-height: 28px; font-size: 14px; }
+.editorSideMenu .normalItem .options li a { color: #333; display:block; padding-left: 33px; height:28px; }
+.editorSideMenu .normalItem .options li .current { color:#cc0000; font-weight:bold; }
+.editorIndex { width: 947px; background-color: #fff; }
+.editorIndex .displayItems { color:#ccc; line-height: 40px; padding-top: 12px; position:relative; height:40px; padding-bottom:3px; border-bottom:1px solid #cccccc; margin-left:10px; }
+.editorIndex .displayItems .innerBorder { border-bottom:2px solid #f3f2f2}
+.editorIndex .displayItems .title { color:#353535; font-size:16px; font-weight:bold; }
+.editorIndex .displayItems .title a { color:#353535; }
+.editorIndex .displayItems .view { position:absolute; right:20px; top:15px; height:36px; line-height:36px; }
+.editorIndex .displayItems .view a { color:#adadad; padding-right: 20px; background-repeat: no-repeat; background-position: right center; }
+.editorIndex .displayItems .view .datu { background-image: url(../../images/editorZone/ez55-icon2.gif); }
+.editorIndex .displayItems .view .datu-current { background-image: url(../../images/editorZone/ez55-icon1.gif); }
+.editorIndex .displayItems .view .liebiao { background-image: url(../../images/editorZone/ez55-icon3.gif); padding-left:5px; }
+.editorIndex .displayItems .view .liebiao-current { background-image: url(../../images/editorZone/ez55-icon4.gif); padding-left:5px; }
+.editorIndex .uc { height:32px; padding-top: 14px; padding-right: 0; padding-bottom: 11px; margin-left: 9px; margin-right:13px; position:relative; z-index:100; border-bottom:1px dashed #c6c6c6; }
+.editorIndex .uc .select { height:30px; border:1px solid #9c9c9c; line-height:30px; float:left; width:150px; background-image: url(../../images/editorZone/ez58.jpg); background-repeat: no-repeat; background-position: 130px center; position:relative; }
+.editorIndex .uc .select .list { position:absolute; top:30px; left:-1px; background-color:#fff; width:150px; border:1px solid #9c9c9c; border-top:none; display: none; }
+.editorIndex .uc .select .list a { display:block; padding-left: 10px; color:#353535;}
+.editorIndex .uc .select .list a:hover { background-color:#f7ecb6; text-decoration:none;}
+.editorIndex .uc .select .displayedItem { padding-left: 10px; cursor:pointer;}
+.editorIndex .uc .select .list .item {}
+.editorIndex .uc .search { width:300px;}
+.editorIndex .uc .search input { height:32px; float:left; border:1px solid #9c9c9c; background-color:transparent;}
+.editorIndex .uc .search .textInput { width:263px; border-right:0; height:30px; line-height:30px; padding-left:5px;}
+.editorIndex .uc .search .btn { width:30px; border-left:none; background-image: url(../../images/editorZone/ez59.jpg); background-repeat: no-repeat; }
+.editorIndex .total-manage { padding-top:10px; padding-left:10px;}
+.editorIndex .table-manage { font-size: 14px; text-align: center; background-color: #FFF; }
+.editorIndex .table-manage .conduct { font-size:12px; color:#949494;}
+.editorIndex .table-manage .conduct a { padding:0;}
+.editorIndex .table-manage .conduct .blue{color:#0066CC;}
+.editorIndex .table-manage .highlight { color:#d50002;}
+.editorIndex .table-manage th { font-weight: bold; color: #353535; line-height: 38px; border:1px solid #ccc; background-color:#f6f6ee; }
+.editorIndex .table-manage td { line-height: 48px; color: #333333; border:1px solid #ccc; }
+.editorIndex .table-manage td .name { color: #0066cc;padding-left: 10px; float:left; }
+.editorIndex .table-manage td .jy{float:left; width:74px; height:22px; position:relative; background: url(../../images/editorZone/ez102_jianyi.gif) no-repeat; margin-top:6px; cursor:pointer;}
+.editorIndex .table-manage td .jy p{ display:none;position:absolute; width:264px; padding:12px; background:#FFFFF3; border:1px solid #CFA560; border-radius:5px; top:30px; left:0; color:#676767; line-height:18px; font-size:12px;}
+.editorIndex .table-manage td .jy p span{position:absolute; width:9px; height:6px; background:url(../../images/editorZone/ez102_jiao.gif) no-repeat; left:32px; top:-6px;}
+.editorIndex .table-manage td .modify { color: #f22a03; text-decoration: underline; padding-right: 5px; padding-left: 5px; }
+.editorIndex .table-manage td .delete { color: #ccc; padding-right: 5px; padding-left: 5px; }
+.editorIndex .table-manage td.hui14 { color:#999; font-size:14px;}
+.editorIndex .table-manage td a.blue14 { color:#06C; text-decoration:underline;}
+.editorIndex .table-manage td a.blue14:hover { color:#c00;}
+.editorIndex .table-manage td a.orange14 { color:#fd7523; text-decoration:underline;}
+.editorIndex .table-manage td a.orange14:hover { color:#c00;}
+.editorIndex .no-work { width:913px; border:1px solid #CCC; background:#FFF; height:360px; text-align:center; font-size:22px; font-family:微软雅黑; border-top:none; margin-bottom:50px; padding-top:60px; color:#999;}
+.editorIndex .no-work a { color:#c00; text-align:center; text-decoration: underline;}
+
+.editorIndex .prompt { font-size: 16px; line-height: 36px; color: #353535; font-weight: bold; border-bottom:1px solid #eeeeee; margin-left:10px; margin-right:11px; padding-top:5px; font-family:微软雅黑; position:relative; padding-left:1px; }
+.editorIndex .prompt .link { position:absolute; color: #cc0000; right:10px; top:5px; line-height:36px; font-size:14px; font-weight:normal; font-family:宋体; }
+.editorIndex .prompt .link a { color: #cc0000; text-decoration:underline;}
+/*.editorIndex .total { padding-bottom: 10px; width: 946px; overflow: hidden; padding-top:9px; padding-left:1px; }*/
+.editorIndex .nopaddingTotal { padding-bottom:0px;}
+.editorIndex .total .first,.editorIndex .total .sumData { margin:0 10px; _display:inline; position:relative; float:left;  }
+.editorIndex .total .first { height: 143px; width: 325px;  float: left; background-color:#60d295;  border:1px solid #57c78b; margin-right:0px; margin-left:11px;}
+.editorIndex .total .first a { float: left; width: 161px; padding-top: 97px; background-repeat: no-repeat; background-position: center top; background-position:center 16px; font-size: 14px; font-weight: bold; color: #fff; text-align: center; line-height: 45px; height: 45px; }
+.editorIndex .total .first .start { background-image: url(../../images/editorZone/ez5-d3.png);   }
+.editorIndex .total .first .create { background-image: url(../../images/editorZone/ez5-d4.png); }
+.editorIndex .total .first .line { height:110px; border-left:1px solid #17a458; border-right:1px solid #87f8bc; float:left;margin-top:20px;}
+.editorIndex .total .first .start:hover,.editorIndex .total .first .create:hover { background-color:#17a458; text-decoration:none;}
+
+.editorIndex .total .sumData { height:143px; width:586px; background-color:#7cb9e5; font-size:14px; font-weight:bold;  border:1px solid #6fb2df;}
+.editorIndex .total .sumData .data-hover { background-color:#4e94c5;}
+.editorIndex .total .sumData .data { width:145px; text-align:center; padding-top:35px; height:108px;}
+.editorIndex .total .sumData .data .count,.editorIndex .total .sumData .data .item { line-height:38px;}
+.editorIndex .total .sumData .data .count { text-align:center;}
+.editorIndex .total .sumData .data .count table {}
+.editorIndex .total .sumData .data .count a { font-size:30px;}
+.editorIndex .total .sumData .data .count a,.editorIndex .total .sumData .data .item a { color:#fff;} 
+.editorIndex .total .sumData .dataLine { height:80px;  margin-top:35px; border-left:1px solid #4e95c3; border-right:1px solid #aadcff;}
+/*.editorIndex .total .subject { float: left; width: 273px; height: 265px; padding-top: 10px; padding-right: 10px; padding-left: 10px; background-color:#f1f1f1; margin:0 11px; _display:inline; position:relative; margin-top:0px; margin-bottom:20px; }*/
+/*.editorIndex .total .subjectHover { background-color:#f7ecb6; z-index:30; }*/
+.editorIndex .total .subject dt {}
+.editorIndex .total .subject dt a { display:block; height: 198px; width: 272px; }
+/*.editorIndex .total .subject .caption { font-size: 14px; color: #4c4c4c; line-height: 30px; font-weight: bold; padding-top: 5px; height: 30px; overflow: hidden; display:block; }*/
+.editorIndex .total .subject .caption-hover { color:#e20002;}
+.editorIndex .total .subject .readers { float:right; line-height:28px; color:#6f6f6f;}
+.editorIndex .total .subject .readers-manage { line-height:20px; color:#6f6f6f;}
+.editorIndex .total .subject .readers-manage a { color:#6f6f6f;}
+.editorIndex .total .subject .readers-manage .highlight { color:#e00001;}
+/*.editorIndex .total .subject .readers a, .editorIndex .total .subject .continue a, .editorIndex .total .subject .delete a { color:#333333; color:#6f6f6f; }*/
+.editorIndex .total .subject .continue, .editorIndex .total .subject .delete { background-repeat: no-repeat; background-position: left center; padding-left: 17px; position: absolute; line-height: 20px; height: 20px; bottom: 7px; }
+.editorIndex .total .subject .checked { position:absolute; top:177px; right:20px; height:24px;background-color:#737375; background-color:rgba(115,115,115,0.5); border-radius:5px; padding:0 15px; line-height:24px; color:#fff; *background-color:#737375;  }
+.editorIndex .total .subject .jy{position:absolute; top:0px; right:15px; height:25px; width:69px; background:url(../../images/editorZone/ez102_jianyixiugai.gif) no-repeat; cursor:pointer;}
+.editorIndex .total .subject .jy p{ display:none;position:absolute; left:76px; top:0;width:264px; padding:14px; border:1px solid #CFA560; background:#FFFFF3; border-radius:4px; z-index:100; color:#686767; line-height:18px;}
+.editorIndex .total .subject .jy p span{position:absolute; width:6px; height:11px; left:-6px; top:8px; background:url(../../images/editorZone/ez102_jiao1.gif) no-repeat;}
+.editorIndex .total .boundary { border-top:1px dashed #ccc; height:0; font-size:0; line-height:0; float:left; width: 921px; margin-top: 28px; margin-right: 13px; margin-bottom: 28px; margin-left: 13px; _display:inline; }
+.editorIndex .total .more { float: left; width: 930px; font-size: 14px; line-height: 42px; font-weight: bold; text-align: right; padding-right: 17px; }
+.editorIndex .total .more a { color: #333; }
+.editorIndex .total .more .pageStyle { background-color:#f1f1f1; color:#6a6a6a; padding:6px 10px;}
+.editorIndex .zoneIndexPage { padding-top:0; padding-right:9px;}
+.release { padding:40px 0; text-align:center; border-right:15px solid #fff; }
+.release input { background-image: url(../../images/editorZone/ez35-btn-submit.jpg); background-repeat: no-repeat; width:223px; height:47px; font-size:18px; color:#fff; font-weight:bold; }
+.procedure { padding-top: 13px; padding-right: 14px; padding-bottom: 0; padding-left: 12px; overflow: hidden; background-color: #FFF; }
+.procedure .steps { width: 1163px; overflow: hidden; background-color: #f6f5f0; }
+.procedure .steps .fill { float: left; width: 661px; background-color: #FFF; padding-top: 44px; padding-left: 72px; padding-bottom: 65px; border-right:1px solid #cfcaaf;}
+.procedure .steps .fill .subTitle { padding-left:80px; color:#e81b00; width:580px;}
+.procedure .steps .fill .subTitle .add-remove { padding-top:7px; padding-bottom:7px;  padding-left:14px; cursor:pointer; width:84px; }
+.procedure .steps .fill .subTitle .plus {background:url(../../images/editorZone/ez60-icon1.gif) no-repeat 0px 10px;}
+.procedure .steps .fill .subTitle .minus {background:url(../../images/editorZone/ez60-icon2.gif) no-repeat 0px 10px;}
+.procedure .steps .fill .subTitle .subName { display:none; }
+.procedure .steps .fill .subTitle .subName label { width:60px; }
+.procedure .steps .fill .subTitle .subName .subDiv { float:left; height: 30px; padding-top: 6px; overflow: hidden; width: 506px; border: 1px solid #CCC; width:446px; }
+.procedure .steps .fill .subTitle .subName .subDiv .subTitleInput { line-height: 22px; height: 22px; border: 0px none;background-color: transparent; width: 440px; padding-left:5px; font-size:14px;}
+.procedure .steps .fill label { line-height: 36px; float: left; font-size: 14px; font-weight: bold; color: #656565; width: 80px; }
+.procedure .steps .fill .typeText { height: 36px; padding-top: 13px; }
+.procedure .steps .fill .prompt { color: #cc0000; padding-left: 80px; line-height: 20px; height: 20px; }
+.procedure .steps .fill .prompt span { display:none; }
+.procedure .steps .fill .typeText input { line-height: 34px; height: 34px; width: 497px; font-size: 14px; padding-left: 5px; }
+.procedure .steps .fill .typeText .frame { height: 30px; padding-top: 6px; overflow: hidden; width: 501px; padding-left:5px; }
+.procedure .steps .fill .typeText .frameText { height: 30px; padding-top: 6px; overflow: hidden; width: 506px; }
+.procedure .steps .fill .typeText .frameBorder { border:1px solid #ccc; }
+.procedure .steps .fill .typeText .frame .keyword { background-color: #666666; line-height: 22px; height: 22px; padding-left: 8px; padding-right: 15px; position: relative; color: #FFF; margin-right: 5px; margin-bottom: 8px; }
+.procedure .steps .fill .typeText .frame .keyword .close { height: 5px; width: 5px; background-image: url(../../images/editorZone/ez8-close.gif); background-repeat: no-repeat; position: absolute; top: 3px; right: 3px; cursor: pointer; }
+.procedure .steps .fill .typeText .frame .keyword, .procedure .steps .fill .typeText .frame input { float:left; }
+.procedure .steps .fill .typeText .frame input { line-height: 22px; height: 22px; border:0; background-color:transparent; width: 160px; padding-left:0; }
+.procedure .steps .fill .typeText .frameText .textPart { line-height: 22px; height: 22px; border:0; background-color:transparent; width: 480px; }
+.procedure .steps .fill .typeTextarea { padding-top: 13px; overflow:hidden;}
+.procedure .steps .fill .typeTextarea textarea { height: 82px; width: 501px; max-width:501px; max-height:82px; min-width:501px; min-height:82px; padding-left: 5px; }
+.procedure .steps .fill .typeTextarea textarea.frameBorder{border: 1px solid #ccc;}
+.procedure .steps .fill .typeSelect { padding-top: 10px; padding-bottom: 10px; width: 590px; overflow: hidden; }
+.procedure .steps .fill .typeSelect label { line-height: 24px; }
+.procedure .steps .fill .typeSelect select { width: 153px; margin-right: 10px; height:24px; margin-bottom: 10px; }
+.procedure .steps .fill .typeSelect .addSelect { float: left; height: 16px; width: 16px; border:1px solid #ea1a00; background-color:#fff; font-size: 14px; line-height: 16px; color: #ea1a00; font-weight: bold; text-align: center; font-family: "Arial"; margin-top:3px; }
+.procedure .steps .fill .typeSelect .addSelect:hover { text-decoration:none; }
+.procedure .steps .fill .typeText input, .procedure .steps .fill .typeTextarea textarea, .procedure .steps .fill .typeSelect select, .procedure .steps .fill .interface .area { float:left; }
+.procedure .steps .fill .boundary { border-top:1px dotted #ccc; font-size:0; height:0; line-height:0; margin:15px 0; width:590px; }
+.procedure .steps .fill .interface { width: 661px; overflow: hidden; margin-top: 10px; }
+.procedure .steps .fill .interface label { }
+.procedure .steps .fill .interface .area { height: 137px; width: 505px; position: relative; background-color:#fcfcfc; }
+.procedure .steps .fill .interface .areaBorder { border:1px solid #dfdfdf; }
+.procedure .steps .fill .interface .areaBorderHover { border:1px solid #dfdfdf; }
+.procedure .steps .fill .interface .preview { background-repeat: no-repeat; position: absolute; left: 15px; top: 13px; height: 108px; width: 161px; text-align:center; border:1px solid #dddddd; background-color:#ffffff; cursor:pointer; background-position: center center; }
+.procedure .steps .fill .interface .cover { background-image: url(../../images/editorZone/ez32-icon1.jpg); }
+.procedure .steps .fill .interface .coverHover { background-image: url(../../images/editorZone/ez32-icon1-hover.jpg); }
+.procedure .steps .fill .interface .template { background-image: url(../../images/editorZone/ez32-icon2.jpg); }
+.procedure .steps .fill .interface .templateHover { background-image: url(../../images/editorZone/ez32-icon2-hover.jpg); }
+.procedure .steps .fill .interface .change { background-repeat: no-repeat; position: absolute; right: 13px; bottom: 13px; font-size: 14px; font-weight: bold; color: #999; height: 39px; width: 195px; line-height: 39px; }
+.procedure .steps .fill .interface .change1 { background-image: url(../../images/editorZone/ez32-btnIcon1.jpg); }
+.procedure .steps .fill .interface .change2 { background-image: url(../../images/editorZone/ez32-btnIcon2.jpg); }
+.procedure .steps .fill .operate { width: 590px; overflow: hidden; }
+.procedure .steps .fill .operate .save { background-image: url(../../images/editorZone/ez33-btnIcon.gif); width: 75px; }
+.procedure .steps .fill .operate .saveHover { background-image: url(../../images/editorZone/ez33-btnIcon.gif); width: 75px; color:#d7a02b; background-position:-75px top; }
+.procedure .steps .fill .operate .next { background-image: url(../../images/editorZone/ez33-btnIcon2.gif); width: 85px; }
+.procedure .steps .fill .operate .nextHover { background-image: url(../../images/editorZone/ez33-btnIcon2.gif); width: 85px; color:#d7a02b; background-position:-85px top; }
+.procedure .steps .fill .operate input { border:0; background-color:transparent; cursor:pointer; line-height: 31px; height: 31px; background-repeat: no-repeat; color:#666666; margin-left:10px; float: right; }
+.procedure .steps .subset { width: 429px; }
+.procedure .steps .subsetFixed { position: fixed; left: 50%; margin-left: 151px; top: -12px; _position:absolute; _top:expression(eval(document.documentElement.scrollTop-150)); }
+.procedure .steps .subset .welcomePic { text-align: center; padding-top: 55px; }
+.procedure .steps .subset .switchTable { padding-top: 44px; padding-left: 18px; padding-right: 26px; display: none; }
+.procedure .steps .subset .switchTable .title { font-size: 18px; color: #cc0000; line-height: 38px; /*border-bottom:1px dashed #dfd2b9;*/ margin-bottom: 5px; }
+.procedure .steps .subset .switchTable .coverPics { width: 385px; overflow: hidden; position: relative; z-index: 6; }
+.procedure .steps .subset .switchTable .coverPics .active { font-weight: bold; color: #333; background-color: #FFF; border:1px solid #e2e1e1; border-bottom:none; }
+.procedure .steps .subset .switchTable .coverPics .inactive { background-color: #eee6d6; border:1px solid #d8d4c3; color:#999999; border-bottom:none; }
+.procedure .steps .subset .switchTable .coverPics a { float: left; height: 32px; width: 106px; line-height: 32px; font-size: 14px; text-align: center; margin-right: 7px; position: relative; z-index: 6; }
+.procedure .steps .subset .switchTable .coverPics a:hover { text-decoration:none; }
+.procedure .steps .subset .switchTable .systemPic { border:1px solid #e2e1e1; }
+.procedure .steps .subset .switchTable .defaultPics { width: 370px; overflow: hidden; background-color: #FFF; padding-left: 13px; padding-top: 17px; padding-bottom: 5px; position: relative; z-index: 5; margin-top: -1px; }
+.procedure .steps .subset .switchTable .defaultPics li { float: left; width: 161px; cursor: pointer; margin-right: 7px; margin-left: 7px; height: 108px; margin-top:4px; overflow:hidden; }
+.procedure .steps .subset .switchTable .defaultPics li.normal { border:3px solid #fff; }
+.procedure .steps .subset .switchTable .defaultPics li.click { border:3px solid #ee5500; }
+.procedure .steps .subset .switchTable .pageNav { text-align:right; padding-right:20px; line-height:30px; height:30px; background-color:#fff; padding-bottom:5px; }
+.procedure .steps .subset .switchTable .pageNav a { color:#999; }
+.procedure .steps .subset .switchTable .uploadPart { background-color: #fff; border: 1px solid #E2E1E1; z-index:5; margin-top:-1px; padding-bottom:35px; }
+.procedure .steps .subset .btns { padding-top: 20px; }
+.procedure .steps .subset .btns input { height: 39px; width: 111px; background-repeat: no-repeat; font-size: 14px; font-weight: bold; margin-right: 25px; margin-left: 45px; border:0; background-color:transparent; cursor: pointer; }
+.procedure .steps .subset .btns .confirm { background-image: url(../../images/editorZone/ez11-btnOk.jpg); color: #fff; }
+.procedure .steps .subset .btns .cancel { background-image: url(../../images/editorZone/ez11-btnCancel.jpg); color: #999; }
+/*.procedure .steps .subset .switchTable .uploadPic { padding-top: 39px; padding-left: 22px; }
+.procedure .steps .subset .switchTable .uploadPic .route { line-height: 28px; height: 28px; width: 280px; padding-left: 3px; border:1px solid #ccc; }
+.procedure .steps .subset .switchTable .uploadPic .browse { background-image: url(../../images/editorZone/ez12-browse.jpg); background-repeat: no-repeat; height: 30px; width: 54px; font-weight: bold; color: #FFF; border:0; background-color:transparent; }
+.procedure .steps .subset .switchTable .uploadPart .prompt {  padding-left:22px; color:#999999; line-height:30px;}
+*/
+.procedure .steps .subset .switchTable .uploadPic { padding:0px 76px; }
+.procedure .steps .subset .switchTable .uploadPic .route { line-height: 28px; height: 28px; width: 280px; padding-left: 3px; border:1px solid #ccc; }
+.procedure .steps .subset .switchTable .uploadPic .browse { background-image: url(../../images/editorZone/ez12-browse.jpg); background-repeat: no-repeat; height: 30px; width: 54px; font-weight: bold; color: #FFF; border:0; background-color:transparent; }
+.procedure .steps .subset .switchTable .uploadPart .prompt { color:#999999; line-height:20px; padding:10px 28px; }
+.procedure .steps .subset .switchTable .uploadPart .showPic { text-align: center; }
+.procedure .steps .subset .switchTable .picBtns { text-align:right; padding-top:10px; }
+.procedure .steps .subset .switchTable .picBtns input { background-image: url(../../images/editorZone/ez40.jpg); background-repeat: no-repeat; height: 26px; width: 89px; color:#a83d04; font-size:14px; font-weight:bold; }
+.procedure .steps .subset .switchTable .uploadPart .uploadBtn { text-align:center; }
+.procedure .steps .subset .switchTable .uploadPart .uploadBtn input { background-image: url(../../images/editorZone/ez34.jpg); background-repeat: no-repeat; height: 31px; width: 139px; font-size: 16px; font-weight: bold; color: #ee5500; line-height: 31px; border:0; background-color:transparent; }
+.procedure .steps .subset .chooseTemplate { padding-top: 24px; padding-left: 22px;}
+.procedure .steps .subset .chooseTemplate .title { width:380px;font-size: 14px; color: #656565; line-height: 28px; border-bottom:1px dotted #B7B7B7; text-align:center;margin-bottom: 5px; font-weight:bold;}
+.procedure .steps .subset .chooseTemplate .title .replace { position: absolute; left: 334px; top: 11px; font-size: 12px; color: #999; text-decoration: underline; height: 24px; line-height: 24px; }
+.procedure .steps .subset .chooseTemplate .template { text-align:center; }
+.procedure .steps .subset .chooseTemplate .template .systemPic { /*border:1px solid #e2e1e1;*/ }
+.procedure .steps .subset .chooseTemplate .template .defaultPics {overflow: hidden; /*background-color: #FFF; */padding-left: 3px; padding-top: 18px;position: relative; z-index: 5;}
+.procedure .steps .subset .chooseTemplate .template .defaultPics li { float: left; width: 180px; cursor: pointer; height: 238px; overflow:hidden; margin-right:18px; margin-bottom:20px; padding:1px;}
+.procedure .steps .subset .chooseTemplate .template .defaultPics li.normal img {border:1px solid #CBCBCB; }
+.procedure .steps .subset .chooseTemplate .template .defaultPics li.click img{position:relative; left:-1px; top:-1px;border:2px solid #CB6507; }
+.procedure .steps .subset .chooseTemplate .template .pageNav { text-align:right; padding-right:20px; line-height:30px; height:30px; background-color:#fff; padding-bottom:5px;}
+.procedure .steps .subset .chooseTemplate .template .pageNav a { color:#999; }
+/*.procedure .steps .subset .chooseTemplate .template img { border:1px solid #d3d1d1;}
+.procedure .steps .subset .chooseTemplate .template .imgClick { border:1px solid #cc0000;}
+*/
+.procedure .steps .subset .switchTable .fromLibrary { padding-top: 30px; padding-left: 20px; background-color: #FFF; padding-bottom: 35px; border: 1px solid #E2E1E1; margin-top: -1px; width:363px; /*overflow:hidden;*/ }
+.procedure .steps .subset .switchTable .librarySearch { width: 340px; overflow: hidden; padding-bottom: 20px; }
+.procedure .steps .subset .switchTable .librarySearch input { line-height: 28px; height: 28px; border:1px solid #ccc; float: left; }
+.procedure .steps .subset .switchTable .librarySearch .text { width: 280px; padding-left: 5px; border-right:none; }
+.procedure .steps .subset .switchTable .librarySearch .btn { background-color: #f0f0f0; color: #333; font-weight: bold; width: 52px; height: 30px; }
+.procedure .steps .subset .switchTable .fromLibrary .return { display: none; }
+.procedure .steps .subset .switchTable .fromLibrary .return a { color: #06C; }
+.procedure .steps .subset .switchTable .fromLibrary .searchResult { display: none; }
+.procedure .steps .subset .switchTable .fromLibrary .searchPrompt { color:#333; line-height:24px; padding-top:5px; display:none; }
+/*.procedure .steps .subset .switchTable .fromLibrary .stage { padding-right: 20px; margin-top: 10px; margin-bottom: 10px; float:left; width:161px; }*/
+.procedure .steps .subset .switchTable .fromLibrary .stage .li { }
+/*.procedure .steps .subset .switchTable .fromLibrary .stage .firstStage { line-height: 20px; height: 20px; color: #0070c0; font-size: 14px; padding-left: 25px; background-position: left 4px; background-repeat: no-repeat; cursor: pointer; overflow:hidden; }*/
+/*.procedure .steps .subset .switchTable .fromLibrary .stageWrap { width:362px; overflow:hidden; height:403px; }
+.procedure .steps .subset .switchTable .fromLibrary .stage .fold { background-image: url(../../images/editorZone/ez8-folder.gif); }
+.procedure .steps .subset .switchTable .fromLibrary .stage .unfold { background-image: url(../../images/editorZone/ez8-open1.gif); }*/
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap{width:340px; height:400px;}
+/*.procedure .steps .subset .switchTable .fromLibrary .stageWrap-empty{height:360px;}*/
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap h1{ font-weight:normal; font-size:14px; color:#666666; border-bottom:1px solid #E4E4E4; padding-bottom:6px; margin-bottom:6px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap h1 span{ padding-bottom:12px; cursor:pointer;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap h1 span.cur{ font-weight:bold; color:#de0000; background:url(../../images/editorZone/ec-icon21-angle.gif) no-repeat center bottom;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap h1 a{ line-height:14px; color:#0066CC; text-decoration:none; font-size:12px; padding-left:15px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap h1 .sx{ top:3px; right:50px;background:url(../../images/editorZone/ez1026_refresh.jpg) no-repeat left center;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap h1 .gl{ top:3px; right:3px;background: url(../../images/editorZone/ez1026_guanli.jpg) no-repeat left center;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .small-wrap{padding-top:20px; border-bottom:1px solid #E4E4E4; padding-bottom:30px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .small-wrap p{width:246px; padding-left:30px; line-height:30px; color:#797979; background:url(../../images/editorZone/ez1026_icon.jpg) no-repeat left 3px; margin:0 0 10px 40px; *position:relative;*left:40px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .small-wrap .create-btn{ display:block;width:204px; line-height:46px; font-weight:bold; text-align:center; color:#fff; background:#DE0000; margin:0 auto; font-size:16px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .small-wrap .create-btn0{background:#53A0EA; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .wxts{color:#797979; padding-top:10px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .wxts h2{font-size:12px; line-height:36px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .wxts p{line-height:22px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .wxts .haspadding{ padding-left:18px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .wxts a{color:#0066CC;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .wxts .pa{margin-bottom:10px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list{width:330px; height:354px; overflow:auto;padding-left:10px; padding-top:8px;background:#fff; *position:relative;/*兼容ie6、7否则滚动条bug*/;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .liston{width:auto; height:auto; /*overflow:hidden;*/padding-left:10px; padding-top:8px;background:#fff; *position:relative;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item1{height:18px; line-height:18px; padding-left:34px; background:url(../../images/editorZone/ez100_file.gif) no-repeat 13px center; margin-bottom:14px; position:relative;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item1 p{height:18px; line-height:18px; padding:0 2px; font-size:14px; color:#4D4D4D; font-weight:normal; cursor:pointer; margin-right:8px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item1 .brown{background:#E2D2A8;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item1 span{ width:8px; height:8px; background:url(../../images/editorZone/ez100_jia.gif) no-repeat; margin-top:5px; cursor:pointer;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .blue{background:url(../../images/editorZone/ez100_jiahover.gif) no-repeat;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list i{position:absolute; left:0; top:5px; width:9px; height:9px; cursor:pointer;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .fold{background:url(../../images/editorZone/ez100_jiahao.gif) no-repeat; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .unfold{background:url(../../images/editorZone/ez100_jianhao.gif) no-repeat; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item2{margin-top:-10px; padding-left:49px; background:url(../../images/editorZone/ez100_fileline.gif) 21px top repeat-y; position:relative; padding-top:17px; width:260px;/*写宽度兼容ie6*/}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item2on{width:330px; height:402px; margin:0; padding:0; background:none; position:static;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item2 .sublist{padding-left:22px; height:24px; line-height:24px; background:url(../../images/editorZone/ez100_file.gif) no-repeat left center; margin-bottom:6px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item2 .sublist span{padding:0 2px; font-size:14px; color:#4D4D4D; cursor:pointer;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item2 .sublist .brown{background:#E2D2A8;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .list .list_item2 .shelter{ width:1px; height:11px;*height:17px; _height:16px; background:#fff; left:21px; bottom:0px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage {/*padding-bottom: 8px; */width: 330px; display: none; *background:#fff; margin-top:-8px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .tit { line-height: 34px; height: 34px; color:#000000;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .tit  a {font-size: 12px;  text-decoration:none; color:#0166CD;}
+
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .topPic { background-image: url(../../images/editorZone/ez36-triangle.jpg); background-repeat: no-repeat; height: 8px; font-size: 0px; line-height: 0px; background-position: 40px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items { background-color: #f4f4f4; padding: 10px 0 10px 10px; line-height: 26px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row { line-height: 26px; height: 26px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row input { float: left; margin-top: 6px; height: 15px; width: 15px; }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row label { float: left; padding-left: 10px; height: 26px; overflow: hidden; /*width: 280px; */}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .grey label { color:#9C9C9C }
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row .ybnote{ width:12px; height:14px; background: url(../../images/editorZone/ez99_note.gif) no-repeat; cursor:pointer; margin-left:12px;margin-top:6px; z-index:600;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row .hover{background:url(../../images/editorZone/ez99_notehover.png) no-repeat;}
+
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row .ybnote .postil{ display:none;left:-415px; top:-30px;width:400px; min-height:100px; _height:100px;border:1px solid #CFA460; padding-top:10px; padding-bottom:10px;z-index:999; background:#FFFEF2; border-radius:5px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row .ybnote .postil .angle{ right:-12px;top:30px; width:12px; height:14px; background:url(../../images/editorZone/ez99_bzjiao.gif) no-repeat;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row .ybnote .postil h3{ padding-left:13px; line-height:16px; color:#CFA460; font-size:12px; margin-bottom:6px;padding-right: 13px;}
+.procedure .steps .subset .switchTable .fromLibrary .stageWrap .secondStage .items .row .ybnote .postil p{font-size:12px; line-height:18px; color:#666666; padding:0 13px;}
+.procedure .steps .subset .switchTable .iPage { padding:10px 0; text-align:right; padding-right:6px; background-color: #f4f4f4; height:24px; line-height:24px; border-top:1px solid #fff; }
+.procedure .steps .subset .switchTable .iPage .selectAll { float:left; width:60px; height:24px; line-height:24px; padding-left:10px; }
+.procedure .steps .subset .switchTable .iPage .selectAll input { float:left; height:15px; width:15px; margin-top:5px; }
+.procedure .steps .subset .switchTable .iPage .selectAll span { float:left; padding-left:10px; }
+.procedure .steps .subset .switchTable .iPage .choosePage{ float:left; height:24px; color:#999999; line-height:24px;}
+.procedure .steps .subset .switchTable .iPage .choosePage a, .procedure .steps .subset .switchTable .iPage .choosePage span{ float:left; padding-right:5px;}
+.procedure .steps .subset .switchTable .iPage .choosePage span input{ width:34px; height:22px; line-height:22px; border:1px solid #CCCCCC; text-align:center; vertical-align:middle; font-family:宋体; font-size:12px; margin-top:-3px;*margin-top:-1px;}
+.procedure .steps .subset .switchTable .iPage a { color:#999999; }
+.procedure .steps .subset .switchTable .iPage .choosePage .sure{ padding-right:0; width:46px; height:22px; line-height:22px; color:#F15407; background:#FEF3ED; border:1px solid #FEB38C; text-align:center; text-decoration:none;}
+.procedure .steps .subset .switchTable .iPage .choosePage .sure:hover{color:#ffffff; background:#F05502; border:1px solid #CE4801; }
+
+.procedure .steps .subset .switchTable .fromLibrary .turnPage { padding-top:10px; text-align:right; padding-right:20px; }
+.procedure .steps .subset .switchTable .fromLibrary .turnPage a { color:#999; }
+.procedure .steps .subset .switchTable .addToWJ { text-align: right; padding-top: 10px; }
+.procedure .steps .subset .switchTable .addToWJ input { background-image: url(../../images/editorZone/ez37-btn.jpg); background-repeat: no-repeat; height: 27px; width: 89px; }
+.procedure .steps .subset .switchTable .retrieve { padding-top: 30px; padding-left: 20px; background-color: #FFF; padding-bottom: 0px; border: 1px solid #E2E1E1; margin-top: -1px; }
+.procedure .steps .subset .switchTable .retrieve .classify { height: 26px; }
+.procedure .steps .subset .switchTable .retrieve .classify * { float: left; border:1px solid #ccc; float: left; }
+.procedure .steps .subset .switchTable .retrieve .classify select { width: 98px; height: 24px; margin-right: 6px; }
+.procedure .steps .subset .switchTable .retrieve .classify .text { line-height: 22px; height: 22px; width: 178px; padding-left: 5px; border-right:none; }
+.procedure .steps .subset .switchTable .retrieve .classify .btn { background-color: #f0f0f0; color: #333; font-weight: bold; width: 52px; height: 24px; line-height: 24px; }
+.procedure .steps .subset .switchTable .retrieve .sort { line-height: 20px; text-align: right; font-weight: bold; padding-top: 8px; padding-bottom: 8px; border-bottom:2px solid #eeeeee; margin-right: 20px; }
+.procedure .steps .subset .switchTable .retrieve .sort input { }
+.procedure .steps .subset .switchTable .retrieve .resultStr { line-height: 30px; height: 30px; padding-right:20px; }
+.procedure .steps .subset .switchTable .retrieve .resultStr .name { float: left; font-weight: bold; font-size: 14px; color: #666666; width:250px; height:28px; overflow:hidden; }
+.procedure .steps .subset .switchTable .retrieve .resultStr .back { float: right; color: #666666; }
+.procedure .steps .subset .switchTable .retrieve .wrapScrollDiv { position:relative; padding-bottom: 15px; width:343px; }
+.procedure .steps .subset .switchTable .retrieve .wrapScrollDiv .more { position:absolute; bottom:0px; right:170px; color: #36C; display: none; }
+.procedure .steps .subset .switchTable .retrieve .scrollDiv { width: 333px; background-color:#f4f4f4; padding-left:10px; }
+.procedure .steps .subset .switchTable .retrieve .intro { border-bottom:1px dotted #ccc; margin-right: 20px; }
+.procedure .steps .subset .switchTable .retrieve .intro .name { color: #3366cc; font-weight: bold; line-height: 30px; height: 30px; padding-top: 5px; }
+.procedure .steps .subset .switchTable .retrieve .intro .abstract { color: #999; border:1px solid #e1e1e1; line-height: 20px; padding-top: 4px; padding-right: 12px; padding-bottom: 4px; padding-left: 12px; margin-left: 20px; display: none; height:60px; }
+.procedure .steps .subset .switchTable .retrieve .intro .abstract .newread { background-image: url(../../images/editorZone/ez101_iconread.gif); background-repeat: no-repeat; padding-top: 9px; padding-right: 7px; padding-bottom: 9px; padding-left: 7px; background-position: left center; }
+.procedure .steps .subset .switchTable .retrieve .intro .abstract .newread:hover{text-decoration:none;}
+.procedure .steps .subset .switchTable .retrieve .intro .author { line-height: 26px; color: #999999; padding-left: 20px; height: 26px; }
+.procedure .steps .chapter { width: 734px; background-color: #FFF; padding-top: 24px; padding-bottom:40px; }
+.procedure .steps .chapter .chapter-title{ width:715px; margin:0 auto; height:30px; line-height:30px; text-align:center;background:url(../../images/editorZone/ezline.gif) no-repeat center; color:#CC0000; font-size:14px; font-weight:bold; margin-bottom:15px;}
+.procedure .steps .chapter .chapter-title span{background:#fff; padding:0 6px;}
+.procedure .steps .chapter .wrapCC { height: 31px; border-bottom:1px solid #d46561; margin-right: 35px; margin-left: 35px; position: relative; z-index: 7; width:664px; }
+.procedure .steps .chapter .chooseChapter { height: 31px; position: relative; z-index: 8; float:left; padding-left:3px; }
+.procedure .steps .chapter .chooseChapter li { float: left; font-size: 14px; color: #cb7962; text-align: center; height: 30px; width: 75px; line-height: 30px; border:1px solid #db927e; border-bottom:none; margin-right: 3px; _display:inline; position:relative; z-index:8; cursor: pointer; background-image: url(../../images/editorZone/ez35-titleBg.jpg); background-repeat: repeat-x; _bottom:-1px; display:block; }
+.procedure .steps .chapter .chooseChapter li .close { position:absolute; font-size: 0px; line-height: 0px; background-image: url(../../images/editorZone/ez35-titleClose.jpg); background-repeat: no-repeat; height: 8px; width: 8px; top:10px; right:5px; background-position: center center; display:none; }
+.procedure .steps .chapter .chooseChapter .current { border:1px solid #D46561; border-bottom:1px solid #fff; background-color:#fff; color: #cc0000; background-image:none; font-weight:bold; }
+.procedure .steps .chapter .previous, .procedure .steps .chapter .next { float: left; font-size: 20px; color: #f8d5cf; text-align: center; height: 31px; width: 78px; line-height: 31px; border:1px solid #d0d0d0; border-bottom:none; margin-right: 5px; _display:inline; background-color: #eaeaea; position: relative; z-index: 8; cursor: pointer; width: 19px; border:none; background-repeat: no-repeat; background-position: center center; background-color:transparent; display:none; }
+.procedure .steps .chapter .previous { margin-right:0; }
+.procedure .steps .chapter .next { }
+.procedure .steps .chapter .previous:hover, .procedure .steps .chapter .next:hover { text-decoration:none; }
+.procedure .steps .chapter .addChapter { float: left; font-size: 24px; color: #f4c7bc; text-align: center; height: 30px; width: 27px; line-height: 30px; border:1px solid #f1bea9; border-bottom:none; margin-right: 5px; _display:inline; background-color: #fdf9f7; position: relative; z-index: 8; cursor: pointer; padding-right: 5px; _bottom:-1px; font-family: Arial; padding-left:5px; }
+.procedure .steps .chapter .caption { position:relative;font-weight: normal; margin-right: 0px; margin-left: 35px; margin-top: 40px; margin-bottom: 40px; height: 36px; position: relative; overflow: hidden; width:664px; }
+.procedure .steps .chapter .caption span { float: left; font-family: 微软雅黑; font-size: 22px; color: #666; }
+.procedure .steps .chapter .caption .modifyWrap { border:1px solid #abadb3; border-bottom:1px solid #dbdfe6; height:27px; width:308px; float: left; padding-left: 5px; padding-top:7px; position:relative; overflow:hidden; }
+.procedure .steps .chapter .caption .border1 { border:1px solid #abadb3; }
+.procedure .steps .chapter .caption .border2 { border:1px solid #cc0000; }
+.procedure .steps .chapter .caption .modifyWrap .color { color:#cc0000; }
+.procedure .steps .chapter .caption .modifyWrap .modifyInput { border:0; background-color:transparent; height:20px; line-height:20px; width:278px; padding-right:30px; }
+.procedure .steps .chapter .caption .modifyWrap .modifyInputGrey { }
+.procedure .steps .chapter .caption .modifyWrap .modifyInputRed { color:#cb0000; }
+.procedure .steps .chapter .caption .textDisp { font-family: 微软雅黑; font-size: 22px; color: #666; float:left; line-height:22px; display:none; line-height:30px; padding-right:15px; }
+.procedure .steps .chapter .caption .modifyWrap .clearText { position:absolute; right:11px; top:12px; font-size: 0px; line-height: 0px; background-image: url(../../images/editorZone/ez35-deleteText.jpg); background-repeat: no-repeat; height: 9px; width: 10px; }
+.procedure .steps .chapter .caption .modify { height: 20px; width: 20px; float: left; padding-top: 7px; display: none; }
+.procedure .steps .chapter .caption .modify a { height: 20px; width: 20px; display: block; background-image: url(../../images/editorZone/ez8-modify.gif); background-repeat: no-repeat; }
+.procedure .steps .chapter .caption .lead{ position:absolute; right:125px; top:10px;font-family: 微软雅黑; font-size: 14px; color:#1093DF; padding-left:21px; height:16px; line-height:16px; text-decoration:none; background:url(../../images/editorZone/ec-step2-icon1.gif) no-repeat left 2px;}
+.procedure .steps .chapter .addArticle { font-size: 14px; color: #999999; float: right; }
+/*.procedure .steps .chapter .addArticle input { background-image: url(../../images/editorZone/ez35-addArticle.jpg); background-repeat: no-repeat; height: 35px; width: 115px; font-weight: bold; color: #999; font-size: 14px; border:0; background-color:transparent; cursor: pointer; }*/
+.procedure .steps .chapter .addArticle input{ margin-top:2px;width:100px; height:32px;background:url(../../images/editorZone/ec-step2-icon5.gif) no-repeat;}
+.procedure .steps .chapter .leadBox{ display:none;margin:-26px 0 21px 35px; width:664px; }
+.procedure .steps .chapter .leadBox .textRow{margin-bottom:11px;}
+.procedure .steps .chapter .leadBox .textRow label{ float:left; font-size:14px; height:32px; line-height:32px;color:#4A4A4A; margin-right:8px;}
+.procedure .steps .chapter .leadBox .textRow .dy_textarea{ float:left;border:1px solid #D9D9D9;width:613px; height:212px; max-width:613px; min-width:613px; max-height:212px; min-height:212px; padding:8px 6px;overflow-y:scroll; font-size:12px;}
+.procedure .steps .chapter .leadBox .btnRow{ height:38px;width:664px;}
+.procedure .steps .chapter .leadBox .btnRow a{ float:right; width:100px; line-height:38px; font-size:14px;font-family: 微软雅黑; color:#ffffff; background:#D80100; border-radius:4px; text-align:center; text-decoration:none;}
+.procedure .steps .chapter .leadBox .btnRow a:hover{ background:#BC0100;}
+.procedure .steps .chapter .leadBox .btnRow .limit, .procedure .steps .chapter .leadBox .btnRow .overrun{font-family: 微软雅黑;  float:right; height:38px; line-height:38px; padding-right:40px; color:#ccc; font-size:14px;}
+.procedure .steps .chapter .leadBox .btnRow  var{ font-style:normal; padding:5px;}
+.procedure .steps .chapter .leadBox .btnRow .overrun var{ color:#d80100;}
+.procedure .steps .chapter .leadBrief{ display:none;margin-left:35px; height:18px; padding-top:9px; padding-bottom:9px; border-bottom:1px solid #CCCCCC; width:664px; margin-bottom:15px; margin-top:-12px;cursor:pointer;}
+.procedure .steps .chapter .leadBrief.hover{ background-color:#f9f9f9;}
+.procedure .steps .chapter .leadBrief .asideLeft{ float:left; height:18px; line-height:18px; padding-left:47px; font-size:14px; color:#4a4a4a; background:url(../../images/editorZone/ec-step2-icon6.gif) no-repeat 25px top; width:522px; }
+.procedure .steps .chapter .leadBrief .asideRight{ float:right; height:18px; padding-right:14px;}
+.procedure .steps .chapter .leadBrief .asideRight a{ float:left; width:18px; height:18px;}
+.procedure .steps .chapter .leadBrief .asideRight .view{ background:url(../../images/editorZone/ec-step2-icon2.gif) no-repeat; margin-right:12px;}
+.procedure .steps .chapter .leadBrief.hover .asideRight .view{ background:url(../../images/editorZone/ec-step2-icon2hover.png) no-repeat;}
+.procedure .steps .chapter .leadBrief .asideRight .edit{ background:url(../../images/editorZone/ec-step2-icon3.gif) no-repeat; margin-right:12px;}
+.procedure .steps .chapter .leadBrief.hover .asideRight .edit{ background:url(../../images/editorZone/ec-step2-icon3hover.png) no-repeat;}
+.procedure .steps .chapter .leadBrief .asideRight .delete{ background:url(../../images/editorZone/ec-step2-icon4.gif) no-repeat; }
+.procedure .steps .chapter .leadBrief.hover .asideRight .delete{background:url(../../images/editorZone/ec-step2-icon4hover.png) no-repeat;}
+.procedure .steps .chapter .blank { background-repeat: no-repeat; height: 348px; width: 567px; display:block; margin-left:125px; }
+.procedure .steps .chapter .editable { background-image: url(../../images/editorZone/ez35-editAreax.jpg); }
+.procedure .steps .chapter .noedit { background-image: url(../../images/editorZone/ez35-editArea.jpg); }
+.procedure .steps .chapter .articlContentWrap { }
+.procedure .steps .chapter .article { margin-right: 31px; margin-left: 53px; width:650px; /*overflow:hidden; */display:none; }
+.procedure .steps .chapter .article li { line-height: 40px; height: 40px; border-bottom:1px dotted #d1d1d1; font-size: 14px; color: #666; padding-left: 14px; position:relative;*margin-bottom:-4px;}
+.procedure .steps .chapter .article li.hasBox{height:66px;}
+.procedure .steps .chapter .article li .note{ width:12px; height:14px; background:url(../../images/editorZone/ez99_note.gif) no-repeat; cursor:pointer; margin-left:6px;_margin-left:3px; margin-top:14px;*margin-top:13px;}
+.procedure .steps .chapter .article li .hovern{background:url(../../images/editorZone/ez99_notehover.png) no-repeat; z-index:500;}
+.procedure .steps .chapter .article li .note .postil{ display:none;left:28px; top:-30px;width:400px; min-height:100px; _height:100px;border:1px solid #CFA460; padding-top:10px; padding-bottom:10px;z-index:100; background:#FFFEF2; border-radius:5px; z-index:999;}
+.procedure .steps .chapter .article li .note .postil .angle{ left:-13px; top:26px; width:13px; height:15px; background:url(../../images/editorZone/ez101_bzjiao.gif) no-repeat;}
+.procedure .steps .chapter .article li .note .postil h3{ padding-left:13px;line-height:16px; color:#CFA460; font-size:12px; margin-bottom:6px;}
+.procedure .steps .chapter .article li .note .postil p{font-size:12px; line-height:18px; color:#666666; padding:0 13px;}
+.procedure .steps .chapter .article li .yc{ font-size:12px; color:#ffffff; padding:0 3px; background:#EA0202; height:16px; line-height:16px; margin-left:6px; _margin-left:3px; margin-top:12px; }
+.moveTo { position:absolute; width: 126px; text-align: left; line-height: 24px; border:1px solid #cccccc; background-color: #FFF; z-index: 100; display:none; }
+.moveTo .libWrap { height:120px; overflow-x:hidden; overflow-y:scroll; padding-top: 5px; }
+.moveTo .lib { padding-left:13px; line-height: 24px; height: 24px; overflow: hidden; padding-right: 5px; }
+.moveTo .lib input { margin-top: 2px; margin-right: 3px; margin-bottom: 0px; margin-left: 0px; padding: 0px; }
+.moveTo .add { line-height: 24px; height: 24px; background-color: #f4f4f4; background-image: url(../../images/editorZone/ez20.gif); background-position: 10px center; background-repeat: no-repeat; color: #0066cc; padding-left: 25px; cursor: point; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; }
+.moveTo .btns { text-align:center; padding:5px 0; background-color:#F4F4F4; }
+.moveTo .btns input { margin:0 5px; width:48px; height:22px; }
+.procedure .steps .chapter .article li .modifyArticle { position: absolute; top: 10px; right: 0px; height: 20px; width: 122px;}
+.procedure .steps .chapter .article li .modifyArticle a { float: left; height: 18px; width: 18px; margin-right: 11px; background-repeat:no-repeat; }
+.procedure .steps .chapter .article li .modifyArticle .a1 { background-image: url(../../images/editorZone/ez37-icon1.jpg); }
+.procedure .steps .chapter .article li .modifyArticle .a2 { background-image: url(../../images/editorZone/ez37-icon2.jpg); }
+.procedure .steps .chapter .article li .modifyArticle .a3 { background-image: url(../../images/editorZone/ez37-icon3.jpg); }
+.procedure .steps .chapter .article li .modifyArticle .a4 { background-image: url(../../images/editorZone/ez37-icon4.jpg); }
+.procedure .steps .chapter .article li .modifyArticle .a5 { background-image: url(../../images/editorZone/ez101_icon1.gif);}
+.procedure .steps .chapter .article li .modifyArticle .a6 { background-image: url(../../images/editorZone/ez101_icon2.gif);}
+.procedure .steps .chapter .article li .modifyArticle .a7 { background-image: url(../../images/editorZone/ez37-icon5.png);}
+.procedure .steps .chapter .article li .modifyArticle .a8 { background-image: url(../../images/editorZone/ez37-icon6.png);}
+.procedure .steps .chapter .article li .linksBox{clear:left;line-height:24px; padding-left:15px;}
+.procedure .steps .chapter .article li .linksBox a{ float:left; color:#1593DD; font-size:12px; text-decoration:none; margin-right:6px;}
+.procedure .steps .chapter .article li .linksBox .link2{ width:12px; height:12px; background:url(../../images/editorZone/ez37-icon7.png) no-repeat; margin-right:28px; margin-top:6px;}
+.procedure .steps .chapter .conduct { height: 40px; position: relative; margin-top: 30px; }
+.procedure .steps .chapter .conduct input { border:0; background-color:transparent; position: absolute; color:#666666; background-repeat: no-repeat; }
+.procedure .steps .chapter .conduct .returnTo { background-image: url(../../images/editorZone/ez35-btnModify.gif); background-repeat: no-repeat; height: 30px; left: 35px; top: 0px; width: 100px; }
+.procedure .steps .chapter .conduct .returnToHover { background-image: url(../../images/editorZone/ez35-btnModify.gif); background-repeat: no-repeat; height: 30px; left: 35px; top: 0px; width: 100px; color:#d7a02b; background-position:-100px top; }
+/*.procedure .steps .chapter .conduct .preview { background-image: url(../../images/editorZone/ez8-preview.gif); background-repeat: no-repeat; background-position: left center; padding-left: 22px; *padding-left: 15px; text-decoration: underline; color: #999; height: 16px; margin-top: 12px; left: 130px; top: 0px; }*/
+.procedure .steps .chapter .conduct .saveIt { background-image: url(../../images/editorZone/ez33-btnIcon.gif); height: 31px; width: 75px; top: 0px; right: 120px; line-height: 31px; }
+.procedure .steps .chapter .conduct .saveItHover { background-image: url(../../images/editorZone/ez33-btnIcon.gif); height: 31px; width: 75px; top: 0px; right: 120px; line-height: 31px; color:#d7a02b; background-position:-75px top; }
+.procedure .steps .chapter .conduct .PreviewIt { background-image: url(../../images/editorZone/ez33-btnIcon.gif); height: 31px; width: 75px; background-repeat: no-repeat; top: 0px; right: 35px; }
+.procedure .steps .chapter .conduct .PreviewItHover { background-image: url(../../images/editorZone/ez33-btnIcon.gif); height: 31px; width: 75px; background-repeat: no-repeat; top: 0px; right: 35px; color:#d7a02b; background-position:-75px top; }
+.procedure .steps .chapter .inputCaption { padding-left: 60px; height: 150px; padding-right: 80px; padding-top: 70px; display: none; }
+.procedure .steps .chapter .inputCaption div { font-size: 14px; font-weight: bold; line-height: 28px; }
+.procedure .steps .chapter .inputCaption .text { height:38px; width:592px; border:1px solid #d6d6d6; padding-left:5px; background-color:transparent; display: block; margin-bottom: 12px; }
+.procedure .steps .chapter .inputCaption .btn { background-image: url(../../images/editorZone/ez11-btnCancel.jpg); background-repeat: no-repeat; height: 39px; width: 111px; font-size: 14px; font-weight: bold; color: #cc0000; border:0; background-color:transparent; float: right; }
+.procedure .displayOk { width:808px; overflow:hidden; margin-left: 80px; padding-top: 75px; padding-left: 120px; position:relative; }
+.procedure .displayOk .pic { background-image: url(../../images/editorZone/ez14-ok.jpg); background-repeat: no-repeat; height: 111px; width: 82px; }
+.procedure .displayOk .words { padding-left: 35px; width: 200px; padding-top: 15px; }
+.procedure .displayOk .pic, .procedure .displayOk .words { float:left; }
+.procedure .displayOk .words .words1 { font-size: 18px; font-weight: bold; color: #cc0000; line-height: 30px; }
+.procedure .displayOk .words .words2 { font-size: 14px; color: #999; line-height: 30px; }
+
+.procedure .displayOk .cansai { position:absolute; right:40px; bottom:25px; width:175px; height:80px; color:#ff953f;}
+.procedure .displayOk .cansai a.cs{ width:124px; height:48px; background:url(../../images/editorZone/ezload_btn_cs.jpg) no-repeat; font-size:18px; font-family:微软雅黑; color:#fff; line-height:48px; padding-left:50px; text-decoration:none; display:block;}
+.procedure .displayOk .cansai a.cs:hover { background:url(../../images/editorZone/ezload_btn_cs_a.jpg) no-repeat;}
+.procedure .displayOk .cansai a.about { font-size:12px; text-decoration:underline; color:#ff953f; line-height:30px; text-align:left; padding-left:40px;}
+.procedure .displayOk .cansai a.about:hover { color:#fd4e01;}
+
+.procedure .tags { padding:30px 50px 20px 50px; background-color:#f8f8f8; width:660px; margin:0 auto; }
+.procedure .tags .title { font-size: 12px; line-height: 38px; color: #797979; }
+.procedure .tags .useOperateWrap { height:40px; padding-bottom:30px; }
+.procedure .tags .useOperateWrap .frame { border:1px solid #ccc; height: 30px; padding-top: 8px; padding-left: 8px; overflow: hidden; width:525px; float:left; background-color:#fff; }
+.procedure .tags .useOperateWrap .btn { height:40px; border:1px solid #ccc; width:90px; text-align:center; float:left; border-left:none; background-color:#eee; font-size:14px; font-weight:bold; color:#666; }
+.procedure .tags .useOperateWrap .btn:hover { background-color:#00a12d; border:1px solid #00a12d; border-left:none; color:#fff; }
+.procedure .tags .frame .keyword { background-color: #666666; line-height: 22px; height: 22px; padding-left: 8px; padding-right: 15px; position: relative; color: #FFF; margin-right: 5px; margin-bottom: 8px; }
+.procedure .tags .frame .keyword .close { height: 5px; width: 5px; background-image: url(../../images/editorZone/ez8-close.gif); background-repeat: no-repeat; position: absolute; top: 3px; right: 3px; cursor: pointer; }
+.procedure .tags .frame .keyword, .procedure .tags .frame input { float:left; }
+.procedure .tags .frame input { line-height: 22px; height: 22px; border:0; background-color:transparent; width: 160px; }
+.procedure .tags .prompt { color: #cc0000; line-height: 20px; height: 20px; display:none; }
+.procedure .tags .btns { padding-top: 30px; width: 400px; margin-right: auto; margin-left: auto; }
+.procedure .tags .btns input { height: 39px; width: 111px; background-repeat: no-repeat; font-size: 14px; font-weight: bold; margin-right: 25px; margin-left: 45px; border:0; background-color:transparent; cursor: pointer; }
+.procedure .tags .btns .confirm { background-image: url(../../images/editorZone/ez11-btnOk.jpg); color: #fff; }
+.procedure .tags .btns .cancel { background-image: url(../../images/editorZone/ez11-btnCancel.jpg); color: #999; }
+.procedure .common { background-color: #f8f8f8; padding-top: 14px; width: 660px; overflow: hidden; padding-bottom: 14px; outline:none; }
+.procedure .common li { line-height: 22px; height: 22px; width: 70px; text-align: center; border:1px solid #b6b5b5; background-color:#fefaf2; font-size: 12px; color: #626262; float: left; margin:3px 3px; cursor: pointer; }
+.procedure .moreChoice { line-height:54px; color:#3333; height: 54px; width:530px; margin:40px auto 0 auto; padding-bottom:100px; }
+.procedure .moreChoice a { color:#02b7e6; margin-right:10px; background-repeat: no-repeat; background-position: left center; padding-left: 64px; float: left; font-size: 16px; font-weight: bold; margin:0 20px; }
+.procedure .moreChoice .a1 { background-image: url(../../images/editorZone/ez38-icon1.jpg); }
+.procedure .moreChoice .a2 { background-image: url(../../images/editorZone/ez38-icon2.jpg); }
+.procedure .moreChoice .a3 { background-image: url(../../images/editorZone/ez38-icon3.jpg); }
+.procedure .afterClick { padding:40px 50px 40px 50px; background-color:#f8f8f8; width:660px; margin:0 auto; display: none; }
+.procedure .afterClick .title { font-weight: bold; color: #797979; padding-bottom: 10px; }
+.procedure .afterClick .title span { color: #00a2e8; }
+.procedure .afterClick .signs { width: 650px; overflow: hidden; }
+.procedure .afterClick .signs .keyword { float:left; line-height: 20px; height: 20px; padding-right: 12px; padding-left: 12px; background-color: #fceac7; text-align: center; color: #626262; margin-right: 5px; margin-bottom:5px; }
+.procedure .afterClick .signs .modify { float:left; background-image: url(../../images/editorZone/ez39.jpg); background-repeat: no-repeat; height: 14px; width: 15px; margin-top: 2px; margin-left: 8px; cursor:pointer; }
+.articlesManagement { padding-right: 10px; padding-left: 10px; padding-top: 10px; background-color: #fff; }
+.articlesManagement .managementHeader { height:35px; border-bottom:1px solid #999999; width: 907px; position: relative; z-index: 10; padding-left: 22px; }
+.articlesManagement .managementHeader a { float: left; background-image: url(../../images/editorZone/ez15-articleManagementHeader2.gif); background-repeat: no-repeat; height: 35px; width: 133px; line-height: 35px; text-align: center; font-size: 14px; font-weight: bold; color: #fff; margin-right: 9px; position: relative; z-index: 11; top: 1px; }
+.articlesManagement .managementHeader .active { background-image: url(../../images/editorZone/ez15-articleManagementHeader1.gif); color: #007f53; }
+.articlesManagement .content { width: 889px; background-color: #f7f7f7; padding-right: 20px; padding-left: 20px; }
+/*empirical value*/
+.articlesManagement .content .editPoints { min-height:540px; }
+.articlesManagement .content .points { font-size: 14px; font-weight: bold; color: #333333; line-height: 34px; padding-top: 14px; height: 34px; }
+.articlesManagement .content .points div { float:left; padding-right:40px; }
+.articlesManagement .content .timePlugin { width: 889px; overflow: hidden; line-height: 28px; padding-top: 20px; padding-bottom: 15px; }
+.articlesManagement .content .timePlugin .text1, .articlesManagement .content .timePlugin .text2, .articlesManagement .content .timePlugin .plugin { float: left; }
+.articlesManagement .content .timePlugin .text1 { font-weight: bold; font-size: 14px; }
+.articlesManagement .content .timePlugin .text2 { color: #999; padding-right: 10px; padding-left: 10px; }
+.articlesManagement .content .timePlugin .plugin { height: 28px; width: 180px; }
+.articlesManagement .content .subject { line-height: 30px; color: #ccc; font-size: 14px; border-bottom:1px dashed #c6c6c6; padding:9px 50px 5px 0; position:relative; height:30px; overflow:hidden; }
+.articlesManagement .content .subject .flexible { position:absolute; background-repeat:no-repeat; height:11px; width:11px; font-size:0; line-height:0; right:10px; bottom:15px; cursor:pointer; }
+.articlesManagement .content .subject .unfold { background-image:url(../../images/editorZone/ez54-icon1.png); }
+.articlesManagement .content .subject .fold { background-image:url(../../images/editorZone/ez54-icon2.png); }
+.articlesManagement .content .subject a { color: #333; }
+.articlesManagement .content .sort-search { width: 889px; overflow: hidden; padding-top: 17px; padding-bottom: 14px; }
+.articlesManagement .content .sort-search .sort { width: 300px; padding-top: 13px; }
+.articlesManagement .content .sort-search .sort input { }
+.articlesManagement .content .sort-search .sort label { padding-left: 4px; padding-right: 26px; }
+.articlesManagement .content .sort-search .sort input, .articlesManagement .content .sort-search .sort label { float: left; *line-height:22px;}
+.articlesManagement .content .sort-search .search { width: 355px; overflow: hidden; }
+.articlesManagement .content .sort-search .search .textInput { height: 28px; width: 282px; padding-left: 5px; border:1px solid #cfcece; background-color:#FFF; line-height: 28px; }
+.articlesManagement .content .sort-search .search .btn { font-size: 14px; color: #FFF; background-color: #d70909; height: 30px; width: 63px; border:1px solid #b80000; }
+.articlesManagement .content .sort-search .search .textInput, .articlesManagement .content .sort-search .search .btn { float: left; }
+.articlesManagement .content table { font-size: 14px; text-align: center; background-color: #FFF; }
+.articlesManagement .content table th { font-weight: bold; color: #cc0000; line-height: 38px; border:1px solid #ccc; }
+.articlesManagement .content table td { line-height: 34px; color: #333333; border:1px solid #ccc; }
+.articlesManagement .content table td a { color: #0066cc; padding-right: 10px; padding-left: 10px; }
+.articlesManagement .content table td .modify { color: #f22a03; text-decoration: underline; padding-right: 5px; padding-left: 5px; }
+.articlesManagement .content table td .delete { color: #ccc; padding-right: 5px; padding-left: 5px; }
+.page { color: #378713; text-align: center; padding-top: 50px; padding-right: 3px; padding-bottom: 50px; padding-left: 3px; }
+.page a { color: #6a6a6a; margin-right: 5px; padding: 13px; text-decoration: none; font-size: 14px; font-weight: bold; background-color:#f1f1f1; }
+.page a:hover { color: #fff; background-color:#666666; }
+.page a:active { background: none repeat scroll 0 0 #0061de; border-color: #000; border-style: solid; border-width: 1px; color: #fff; }
+.page span.current { background-color: #666666; color: #fff; margin-right: 5px; padding: 13px; text-decoration: none; font-size: 14px; font-weight: bold; }
+.page span.disabled { color: #378713; margin-right: 3px; padding: 2px 6px; }
+.material { width: 929px; background-color: #FFF; padding-left: 20px;}
+.material .mheader { height: 40px; position: relative; border-bottom:1px solid #ccc; width: 929px; z-index:100000; }
+.material .mheader .title { height: 40px; width: 169px; line-height: 40px;color: #292929; left: 0px; top: 0px; background-position: 17px center;}
+.material .mheader .title a { color: #292929; }
+.material .mheader .search { height: 42px; position:relative; margin-left:0px; right:10px; top:3px; width:444px; z-index:100; }
+.material .mheader .search_a { float: left; height: 26px; width: 274px; border:1px solid #ffa626; padding-top:6px; border-right:none; }
+.material .mheader .search_a_input { height: 20px; width: 250px; background-color: transparent; border:0; line-height: 20px; padding-left: 5px; }
+.material .mheader .search_b { height: 32px; width: 80px; background-image: url(../../images/editorZone/ez43.gif); background-repeat: no-repeat; float: left; line-height: 32px; color: #383737; background-position: 60px center; border:1px solid #ffa626; border-left:none; font-size:12px; }
+.material .mheader .wrap_absolute { position: absolute; width: 90px; left: 250px; top: 33px; background-color: #FFF; z-index: 20000; padding-bottom: 6px; display: none; overflow: hidden; border:1px solid #ffa626; border-top:none; }
+.material .mheader .wrap_absolute p { font-family: 宋体; text-indent: 10px; line-height: 24px; cursor: pointer; }
+.material .mheader .search_c { float: left; height: 34px; width: 82px; }
+.material .mheader .search_c input { width:76px; height:34px; font-size:12px; font-weight:normal; background-color:#febf39; color:#733d02; background-image: url(../../images/editorZone/ez45.jpg); background-repeat: no-repeat; border:0; }
+.material .mheader .line { border-bottom:2px solid #f3f2f2; width: 929px; left: 0px; bottom: 1px; z-index:99; }
+.material .mheader .title, .material .mheader .search, .material .mheader .line { position: absolute; }
+.material h1 { text-align: center; line-height: 48px; height:48px; font-size: 48px; font-family: 微软雅黑; font-weight: normal; color: #4a4a4a; text-shadow:3px 3px 3px #d0d5cb; margin-right:16px; padding:30px 0; position:relative; }
+.material h1 .returnToS { font-size: 12px; font-weight: normal; color: #0071c2; left: 50%; bottom: 12px; position: absolute; margin-left:85px; text-shadow:none; }
+.material .separateLine { line-height:0; font-size:0; border-top:3px solid #f3f2f2; border-bottom:1px solid #cccccc; margin-right:20px; }
+.material .search { height: 42px; position:relative; margin-left:150px; }
+.material .search_a { float: left; height: 30px; width: 425px; border:1px solid #9c9c9c; padding-top:10px; border-right:none; }
+.material .search_a_input { height: 20px; width: 420px; background-color: transparent; border:0; line-height: 20px; padding-left: 5px; }
+.material .search_b { height: 40px; width: 80px; background-image: url(../../images/editorZone/ez43.gif); background-repeat: no-repeat; float: left; line-height: 40px; color: #383737; font-size: 14px; background-position: 60px center; border:1px solid #9c9c9c; border-left:none; }
+.material .wrap_absolute { position: absolute; width: 90px; left: 415px; top: 41px; background-color: #FFF; z-index: 20000; padding-bottom: 6px; display: none; overflow: hidden; border:1px solid #9c9c9c; border-top:none; }
+.material .wrap_absolute p { font-family: 宋体; font-size: 14px; text-indent: 10px; line-height: 24px; cursor: pointer; }
+.material .search_c { float: left; height: 42px; width: 82px; }
+.material .search_c input { width:82px; height:42px; border:1px solid #9c9c9c; border-left:none; font-size:14px; font-weight:bold; background-color:#f5f5f5; color:#666; }
+.material .search_d { float:left; padding-left:20px; padding-top:25px; color:#0071c2; }
+.material .mClassify { color:#b9b9b9; padding:20px 40px; background-color:#f5f5f5; margin-right:18px; margin-top:20px; }
+.material .mClassify a { line-height:28px; font-size:14px; color:#0071c2; padding:0 14px; }
+.material .displayItems { color:#ccc; line-height: 36px; padding-top: 20px; position:relative; height:36px; }
+.material .displayItems .title { color:#646464; font-size:16px; font-weight:bold; }
+.material .displayItems .view { position:absolute; right:20px; top:16px; height:36px; line-height:36px; }
+.material .displayItems .view a { color:#adadad; padding-right: 20px; background-repeat: no-repeat; background-position: right center; }
+.material .displayItems .view .datu { background-image: url(../../images/editorZone/ez55-icon2.gif); }
+.material .displayItems .view .datu-current { background-image: url(../../images/editorZone/ez55-icon1.gif); }
+.material .displayItems .view .liebiao { background-image: url(../../images/editorZone/ez55-icon3.gif); padding-left:5px; }
+.material .displayItems .view .liebiao-current { background-image: url(../../images/editorZone/ez55-icon4.gif); padding-left:5px; }
+.material .items { overflow: hidden; width: 917px; padding-top:38px; padding-left:12px; }
+.material .items .new, .material .items .folder { float:left; height: 154px; width: 216px; margin-right: 13px; margin-bottom: 16px; }
+.material .items .new { background-color: #f4f4f4; border:1px dashed #c5c5c5; background-image: url(../../images/editorZone/ez18.gif); background-repeat: no-repeat; background-position: center 21px; text-align: center; color: #a6a5a5; height: 39px; padding-top: 115px; cursor: pointer; }
+.material .items .folder { border:1px solid #e1e0e0; background-image: url(../../images/editorZone/ez16-materialFolder.png); _background-image: url(../../images/editorZone/ez16-materialFolder.gif); background-repeat: no-repeat; background-position: center 13px; }
+.material .items .folderBg { background-color:#fae9ea; }
+.material .items .folder .editName { width:180px; overflow: hidden; top: 0px; right: 0px; height: 24px; padding-top: 95px; padding-left: 25px; display: none; }
+.material .items .folder .editName .textInput { height: 20px; width: 165px; padding-left: 2px; border:1px solid #cfcece; background-color:#FFF; line-height: 20px; }
+.material .items .folder .editName .btn { font-size: 12px; color: #999999; background-color: #fbfbfb; height: 22px; width: 34px; border:1px solid #ccc; }
+.material .items .folder .editName .textInput, .material .items .folder .editName .btn { float: left; }
+.material .items .folder .name { padding-left: 13px; color: #858585; text-align: center; padding-top: 100px; padding-bottom: 4px; display:block; line-height:20px; height:20px; overflow:hidden; word-break:break-all; word-wrap:break-word; width:190px; }
+.material .items .folder .conduct { height: 20px; width: 50px; margin-right: auto; margin-left: auto; padding-top: 3px; }
+.material .items .folder .conduct a { background-repeat: no-repeat; float: left; height: 20px; width: 20px; }
+.material .items .folder .conduct .modify { margin-right: 10px; }
+.material .items .folder .conduct .modifyGrey { background-image: url(../../images/editorZone/ez8-modifyDisabled.gif); margin-right: 10px; }
+.material .items .folder .conduct .modifyNormal { background-image: url(../../images/editorZone/ez8-modify.gif); margin-right: 10px; }
+.material .items .folder .conduct .delete { }
+.material .items .folder .conduct .deleteGrey { background-image: url(../../images/editorZone/ez8-allDeleteDisabled.gif); }
+.material .items .folder .conduct .deleteNormal { background-image: url(../../images/editorZone/ez8-allDelete.gif); }
+.material .items .new-liebiao, .material .items .folder-liebiao { float:left; height: 44px; width: 181px; margin-right: 10px; margin-bottom: 16px; padding-left:37px; _display:inline; }
+.material .items .new-liebiao { background-color: #fddede; border:1px dashed #f87171; background-image: url(../../images/editorZone/ez55-icon5.gif); background-repeat: no-repeat; background-position: 9px center; color: #f34141; cursor: pointer; line-height:44px; }
+.material .items .folder-liebiao { border:1px solid #e1e0e0; background-image: url(../../images/editorZone/ez55-icon6.gif); background-repeat: no-repeat; background-position: 12px center; position:relative; }
+.material .items .folderBg-liebiao { background-color:#fae9ea; }
+.material .items .folder-liebiao .name { color: #858585; display:block; line-height:44px; width:162px; overflow:hidden; }
+.material .items .folder-liebiao .conduct { height: 20px; width: 50px; position:absolute; top:14px; right:10px; }
+.material .items .folder-liebiao .conduct a { background-repeat: no-repeat; float: left; height: 20px; width: 20px; }
+.material .items .folder-liebiao .conduct .modify { margin-right: 10px; }
+.material .items .folder-liebiao .conduct .modifyGrey { background-image: url(../../images/editorZone/ez8-modify_03.gif); margin-right: 10px; }
+.material .items .folder-liebiao .conduct .modifyNormal { background-image: url(../../images/editorZone/ez55-icon7.gif); margin-right: 10px; }
+.material .items .folder-liebiao .conduct .delete { }
+.material .items .folder-liebiao .conduct .deleteGrey { background-image: url(../../images/editorZone/ez8-allDelete_03.gif); }
+.material .items .folder-liebiao .conduct .deleteNormal { background-image: url(../../images/editorZone/ez55-icon8.gif); }
+.material .items .folder-liebiao .editName { width:114px; overflow: hidden; height: 22px; display: none; padding-top:12px; }
+.material .items .folder-liebiao .editName .textInput { height: 20px; width: 110px; padding-left: 2px; border:1px solid #cfcece; background-color:#FFF; line-height: 20px; }
+.material .items .folder-liebiao .editName .btn { font-size: 12px; color: #999999; background-color: #fbfbfb; height: 22px; width: 34px; border:1px solid #ccc; }
+.material .items .folder-liebiao .editName .textInput, .material .items .folder-liebiao .editName .btn { float: left; }
+.viewPage { text-align:right; padding-right:15px; padding:10px 15px 30px 3px; height:30px; line-height:30px; }
+.viewPage a { padding:6px; font-weight:normal; font-size:12px; }
+.viewPage span.current { padding:6px; font-size:12px; }
+.material .turnPage { text-align:right; padding:0px 20px 20px 20px; *padding-top:16px;
+}
+.material .turnPage a { color:#999; }
+.material .form { padding-top: 20px; padding-left:190px; }
+.material .form input { background-color:transparent; border:0; }
+.material .form .row { width: 700px; overflow: hidden; font-size: 14px; padding-top:10px; padding-bottom:10px; }
+.material .form .row .title, .material .form .row .radio, .material .form .row .radioLabel, .material .form .row .sub, .material .form .row .frame, .material .form .row .frame1, .material .form .row .span, .material .form .row .date, .material .form .row .sub .item .subTitle, .material .form .row .titleWrap { float: left; }
+.material .form .row .titleWrap { padding-top:9px; }
+.material .form .row .title { font-size: 16px; font-weight: bold; margin-right: 13px; border-right:1px solid #999999; line-height:18px; height:18px; width:80px; _display:inline; }
+.material .form .row .radio { }
+.material .form .row .radioLabel { font-size: 14px; color: #0071c2; padding-right: 15px; padding-left:5px; line-height:18px; }
+.material .form .row .sub { }
+.material .form .row .sub .item { width:600px; overflow:hidden; padding-bottom:13px; }
+.material .form .row .sub .item .subTitle { width:46px; line-height:36px; }
+.material .form .row .frame { height:27px; border:1px solid #b4b4b4; width:340px; padding-top:7px; }
+.material .form .row .frame .advanceField { line-height:20px; height:20px; padding-left:5px; width:320px; }
+.material .form .row .frame1 { height:27px; border:1px solid #b4b4b4; width:388px; padding-top:7px; }
+.material .form .row .frame1 .advanceField { line-height:20px; height:20px; padding-left:5px; width:368px; }
+.material .form .row .span { padding-right:10px; line-height:36px; }
+.material .form .row .date { width:163px; height:36px; border:1px solid #b4b4b4; margin-right:10px; }
+.material .form .btns { padding-top:30px; padding-bottom:30px; padding-left:125px; }
+.material .form .btns input { border:1px solid #adaeb3; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; background-color:#f6f6f6; width:130px; height:40px; line-height:40px; color:#626262; font-size:16px; font-weight:bold; margin-right:60px; }
+.material .searchResult { float: left; width: 929px; padding-top:20px; }
+.material .searchResult .summary { width:907px; }
+.material .searchResult .summary .classify { color:#c6e4bb; font-size:14px; background-color:#e4f4da; line-height:32px; text-align:center; padding:15px 0; }
+.material .searchResult .summary .section { width:907px; overflow:hidden; }
+.material .searchResult .summary .section .part1 { width:717px; }
+.material .searchResult .summary .section .part1 .sort-frame { width:680px; }
+.material .searchResult .summary .section .part1 .resultSum { border-bottom:2px solid #4baa2b; color:#1a7300; line-height:42px; font-size:14px; }
+.material .searchResult .summary .section .part1 .selectAll { width:697px; }
+.summary .frame1 { border:1px solid #dfdfdf; border-top:none; padding:1px; margin-bottom:50px; }
+.summary .frame2 { border:1px dashed #ebebeb; }
+.summary .frame3 { border:1px dashed #ebebeb; padding:2px; position:relative; }
+.summary .frame3 .repeatSearch { background-image:url(../../images/editorZone/ez53.jpg); width:auto; background-color:#fbfbfb; background-position: center 90px; height: 351px; background-repeat: no-repeat; }
+.summary .frame3 .words { position:absolute; height:24px; line-height:24px; color: #a7a7a7; top:180px; width:700px; margin-left:100px; text-align:center; }
+.summary .frame3 .repeatSearch .search { margin-left:180px; padding-top:220px; }
+.summary .frame3 .repeatSearch .search_a { width:330px; background-color:#fff; }
+.summary .frame3 .repeatSearch .search_a_input { width:325px; }
+.summary .frame3 .repeatSearch .search_b { background-color:#fff; }
+.summary .frame3 .repeatSearch .wrap_absolute { top:261px; left:320px; }
+.material .summary .section .part1 .searchResultIfm { width:717px; }
+.material .summary .section .part1 .searchResultIfm .item { width:697px; }
+.material .summary .section .part1 .searchResultIfm .title { width:697px; }
+.material .searchResult .summary .section .part2 { }
+/*side nav css*/
+.material .side-nav { padding-left:10px; width:180px; padding-top: 6px; float: left; overflow: hidden; }
+.material .side-nav .side-banner { text-align:center; line-height:35px; color:#ffffff; font-size:14px; background-image: url(../../images/editorZone/ez50.jpg); background-repeat: no-repeat; height: 35px; width: 180px; font-weight: bold; }
+.material .menu { width:178px; border:1px solid #4baa2c; border-top:none; }
+.material .menu .item { font-size:14px; border-bottom:1px dotted #d5d5d5; }
+.material .menu .item .title-plus a, .menu .item .title-minus a, .menu .item a { color:#207701; text-decoration:none; display:block; }
+.material .menu .item .title-plus a:hover, .menu .item .title-minus a:hover, .menu .item a:hover { color: #207701; text-decoration:none; }
+.material .menu .item div a { color:#207800; }
+.material .menu .item a { color:#333; outline:none; }
+.material .menu .item a:hover { color:red; text-decoration: none; }
+.material .menu .item ul { line-height: 29px; padding-left: 33px; text-indent: 33; color: #333333; padding-bottom:10px; padding-top:5px; display: none; }
+.material .menu .item ul li { line-height: 29px; }
+.material .menu .item ul li a { height:29px; }
+.material .menu .plus, .menu .minus { background-repeat: no-repeat; background-position: left 9px; }
+.material .menu .item .title-plus { background-image: url(../../images/editorZone/ez51-icon2.jpg); }
+.material .menu .item .title-minus { background-image: url(../../images/editorZone/ez51-icon1.jpg); }
+.material .menu .item .title-plus, .menu .item .title-minus { line-height:34px; background-color:#f3feee; padding-left: 33px; background-repeat: no-repeat; background-position: 16px center; cursor:pointer; color:#207800; }
+.material .menu .plus { background-image: url(../images/wxwy6-icon2-brown.jpg); }
+.material .menu .minus { background-image: url(../images/wxwy6-icon1-brown.jpg); }
+.material .searchResult .summary .classify a { color:#1a7300; padding:0 7px; }
+.material .searchResult .summary .classify a.active { color:#e80000; font-weight:bold; }
+.material .searchResult .summary .switch-table { line-height: 34px; font-family: 宋体; font-size: 12px; color: #000; position: relative; height: 34px; border-bottom:2px solid #4baa2b }
+.material .searchResult .summary .switch-table a { background-image: url(../../images/editorZone/ez47-bg2.jpg); background-repeat: no-repeat; float: left; height: 34px; width: 88px; text-align: center; text-decoration: none; font-size: 14px; color: #1a7300; margin-right: 2px; _display:inline; outline:none; }
+.material .searchResult .summary .switch-table .active { font-weight: bold; color: #FFF; background-image: url(../../images/editorZone/ez47-bg1.jpg); }
+.material .searchResult .summary .switch-table span { position:absolute; width: 400px; height: 34px; top: 0px; right: 0px; text-align: right; padding-right: 20px; color: #4d4d4d; overflow:hidden; }
+.material .searchResult .summary .books-type { border:1px solid #edb3b3; background-color:#fdf4f4; line-height:40px; color:#edb3b3; font-size: 14px; padding-left: 16px; }
+.material .searchResult .summary .books-type a { color:#9a0003; font-size: 14px; text-decoration: none; }
+.material .searchResult .summary .books-type a:hover { text-decoration: underline; }
+.material .searchResult .summary .books-type .current { font-weight: bold; color: #e4393c; }
+.material .searchResult .summary .books-type span { color:#333333; }
+.material .searchResult .summary .sort-frame { width: 870px; padding-left:20px; padding-right:15px; border:1px solid #4baa2b; border-top:none; background-color:#f7fcf4; }
+.material .searchResult .summary .sort-frame .sort { color: #333333; }
+.material .searchResult .summary .sort-frame .sort tr td .opt { width: 340px; overflow: hidden; height: 30px; padding-top: 4px; font-family: 宋体; font-size: 12px; font-weight: normal; }
+.material .searchResult .summary .sort-frame .sort tr td .opt a { line-height: 26px; border:1px solid #cecbce; text-align: center; color: #4d4d4d; background-color: #FFF; float: left; height: 26px; margin-right: 5px; _display:inline; text-decoration: none; width: 71px; }
+.material .searchResult .summary .sort-frame .sort tr td .opt a:hover { background-color: #41b21f; border:1px solid #41b21f; color:#fff; }
+.material .searchResult .summary .sort-frame .sort tr td .opt .active { font-weight: bold; color: #FFF; background-color: #41b21f; border:1px solid #41b21f; background-position: 6px 7px; }
+.material .searchResult .summary .sort-frame .sort tr td .sy { display: inline; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; height: auto; width: auto; font-size: 12px; color: #4d4d4d; text-decoration: none; }
+.material .searchResult .summary .sort-frame .sort tr td .sy-red { color:#ea0000; display: inline; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; height: auto; width: auto; font-size: 12px; font-weight: bold; text-decoration: none; }
+.material .searchResult .summary .sort-frame .sort tr td span { color: #bfbfbf; }
+.material .searchResult .summary .selectAll { padding:10px; border-bottom:1px solid #e5e5e5; overflow:hidden; height:20px; line-height:20px; position:relative; }
+.material .searchResult .summary .selectAll input, .material .searchResult .summary .selectAll label, .material .searchResult .summary .selectAll select { float:left; margin-right:10px; }
+.material .searchResult .summary .selectAll .filter { float:right; height:20px; line-height:20px; }
+.material .searchResult .summary .selectAll .filter a { color:#000; float:left; width:36px; }
+.material .searchResult .summary .selectAll .filter a:hover,.material .searchResult .summary .selectAll .filter .current { color:#E9254B; font-weight:bold; text-decoration:none; }
+.material .searchResult .summary .selectAll input { margin-top:3px; *margin-top:0px;
+}
+.material .searchResult .summary .selectAll label { margin-right:20px; }
+.material .searchResult .summary .selectAll select { }
+.material .searchResultIfm { width: 907px; overflow: hidden; position:relative; border-bottom:1px dotted #cccccc; padding-top:10px; padding-bottom:10px; }
+.material .searchResultIfm .toLib { width:131px; height:34px; position:absolute; top:47px; right:21px !important; right:20px; _right:14px; }
+.material .searchResultIfm .toLib input { background-image:url(../../images/editorZone/ez49.jpg); border:0; width:131px; height:34px; color:#a83d04; font-size:14px; }
+.material .searchResultIfm .item { width:732px; padding:0 10px; }
+.material .searchResultIfm .title { line-height: 26px; overflow: hidden; width: 718px; font-family: 宋体; font-size: 16px; color: #0070c0; text-decoration: none; margin:0 0 4px 0; }
+.material .searchResultIfm .title .caption { float: left; }
+.material .searchResultIfm .title a { text-decoration: underline }
+.material .searchResultIfm .title .localA { color: #0070C0; ; }
+.material .searchResultIfm .title img { vertical-align:middle; }
+.material .searchResultIfm .title span { float: left; display:block; padding-right:10px; padding-top:6px; *padding-top:2px;}
+.material .searchResultIfm .title .icon-download { background-image:url(../../images/editorZone/ez48-icon1.jpg); }
+.material .searchResultIfm .title .icon-download-color { background-image:url(../../images/editorZone/ez48-icon3.jpg); }
+.material .searchResultIfm .title .add { background-image:url(../../images/editorZone/ez48-icon2.jpg); }
+.material .searchResultIfm .title .icon-download,.material .searchResultIfm .title .icon-download-color, .material .searchResultIfm .title .add { background-repeat: no-repeat; background-position: right center; text-decoration: none; width: 13px; height:12px; display:block; float:left; margin-left:10px; margin-top:6px; }
+.material .searchResultIfm table { font-family: 宋体; font-size: 14px; line-height: 36px; color: #af1f23; font-weight: normal; }
+.material .searchResultIfm .title table tr td a { color: #af1f23; text-decoration: underline; }
+.material .searchResultIfm p { line-height: 24px; color: #4d4d4d; padding-right: 15px; }
+.material .searchResultIfm p span { color: #0070c0; }
+.material .searchResultIfm p span a { color: #0070c0; text-decoration: none; }
+.material .searchResultIfm p span a:hover { text-decoration: underline; }
+.material .searchResultIfm .pics { padding:12px 0; overflow: hidden; }
+.material .searchResultIfm .pics .picitem { display:table-cell; vertical-align:middle; *font-size:87px;
+text-align:center; overflow:hidden; }
+.material .searchResultIfm .pics a { text-a: center; display: block; font-family: 宋体; font-size: 12px; color: #0070c0; line-height: 36px; text-decoration: underline; float: left; padding-right: 12px; padding-left: 12px; }
+.material .searchResultIfm .pics a img { vertical-align:middle; max-width:100px; max-height:100px; width: expression(this.width > 100 && this.width / 100 >= this.height / 100 ? 100 : true);
+height: expression(this.height > 100 && this.width / 100 < this.height / 100 ? 100 : true);
+}
+.material .searchResultIfm .pics a:hover { }
+.material .searchResultIfm .abstractLine { border-top:1px dotted #dfdddc; margin:5px 28px 10px 0; }
+.material .searchResultIfm .from { color: #666; font-size: 12px; position: relative; height: 24px; padding-top:10px; }
+.material .searchResultIfm .from .count { position: absolute; height: 24px; top: 10px; right: 0px; width: 30%; text-align: right; padding-right: 25px; color: #666666; }
+.material .searchResultIfm .from a { color: #339933; text-decoration: none; }
+.mMoveTo { }
+.mMoveTo .moveTo { width: 180px; text-align: left; line-height: 24px; /*left: 279px; top: 37px;*/ border:1px solid #cccccc; background-color: #FFF; position:absolute; z-index: 100000000; display: none; }
+.mMoveTo .moveTo .libWrap { height:120px; overflow-x:hidden; overflow-y:scroll; padding-top: 5px; }
+.mMoveTo .moveTo .lib { padding-left:13px; line-height: 24px; height: 24px; overflow: hidden; padding-right: 5px; }
+.mMoveTo .moveTo .lib input { margin-top: 2px; margin-right: 3px; margin-bottom: 0px; margin-left: 0px; padding: 0px; }
+.mMoveTo .moveTo .add { line-height: 24px; height: 24px; background-color: #f4f4f4; background-image: url(../../images/editorZone/ez20.gif); background-position: 10px center; background-repeat: no-repeat; color: #0066cc; padding-left: 25px; cursor: point; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; }
+.mMoveTo .moveTo .build { line-height: 24px; height: 24px; background-color: #f4f4f4; background-image: url(../../images/editorZone/ez21.gif); background-position: 13px center; background-repeat: no-repeat; color: #ccc; padding-left: 32px; cursor: point; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; font-size: 12px; cursor:pointer; }
+.mMoveTo .moveTo .newFolder { text-align: right; background-color: #f4f4f4; padding-top: 5px; padding-bottom: 5px; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; display: none; width: 180px; overflow: hidden; }
+.mMoveTo .moveTo .newFolder input { float: none; }
+.mMoveTo .moveTo .newFolder .textInput { width: 166px; margin-right: 5px; margin-left: 5px; padding-left: 2px; border:1px solid #e7e7e7; margin-bottom: 3px; background-color: #fff; }
+.mMoveTo .moveTo .newFolder .btn { margin-right: 5px; color: #999999; background-color: #fefefe; height: 16px; width: 30px; border:1px solid #ccc; }
+.batch { width: 929px; overflow: hidden; }
+.batch .manage { width: 716px; }
+.batch .manage .nameModify { line-height: 34px; padding-top: 11px; color: #cc0000; font-weight: bold; font-size: 14px; background-image: url(../../images/editorZone/ez19.gif); background-position: left 13px; padding-left: 42px; background-repeat: no-repeat; height: 34px; position:relative; padding-bottom:7px; z-index:88; }
+.batch .manage .nameModify span { padding-right: 26px; }
+.batch .manage .nameModify a { background-repeat: no-repeat; height: 20px; width: 20px; margin-right: 4px; margin-top: 8px; }
+.batch .manage .nameModify .modify { background-image: url(../../images/editorZone/ez8-modify.gif); }
+.batch .manage .nameModify .delete { background-image: url(../../images/editorZone/ez8-allDelete.gif); }
+.batch .manage .nameModify span, .batch .manage .nameModify a { float: left; }
+.batch .manage .modifyInput { border:1px solid #ccc; height:22px; line-height:22px; width:300px; padding-left: 5px; display: none; float:left; margin-top:6px; background-color:#fff; margin-right:10px; }
+.batch .manage .nameModify .operate { height: 24px; padding-top: 12px; padding-bottom: 12px; color: #333333; width:156px; position:absolute; top:0; right:0; z-index:89; }
+.batch .manage .nameModify .operate .batchDelete { border:1px solid #d2d1d1; height: 24px; line-height:22px; width: 46px; background-color: #f8f7f7; }
+.batch .manage .nameModify .operate select { width: 100px; border:1px solid #7e9db9; height:24px; line-height:24px; position:relative; z-index:10; }
+/*.batch .manage .nameModify .operate .btn { color: #FFF; background-color: #ec0a0a; width: 44px; line-height: 20px; height: 22px; border:1px solid #cc0000; }*/
+.batch .manage .libList { text-align: center; border:1px solid #dfdfdf; color: #333; position: relative; z-index: 7; }
+.batch .manage .libList .needPadding { padding:0 10px;}
+.batch .manage .libList th { line-height: 36px; background-color: #f1f1f1; font-weight: normal; }
+.batch .manage .libList td { line-height: 36px; border:1px solid #dfdfdf; }
+.batch .manage .libList td .wrap { height:22px; width:96px; cursor: pointer; margin-right: auto; margin-left: auto; }
+.batch .manage .libList td .moveTo { position:absolute; width: 180px; text-align: left; line-height: 24px; left: 410px; top: 66px; border:1px solid #cccccc; display: none; background-color: #FFF; padding-top: 10px; z-index: 10; }
+.batch .manage .libList td .moveTo .libWrap { height:120px; overflow-x:hidden; overflow-y:scroll; }
+.batch .manage .libList td .moveTo .lib { padding-left:13px; line-height: 24px; height: 24px; }
+.batch .manage .libList td .moveTo .build { line-height: 24px; height: 24px; background-color: #f4f4f4; background-image: url(../../images/editorZone/ez21.gif); background-position: 13px center; background-repeat: no-repeat; color: #0066cc; padding-left: 32px; cursor: point; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; }
+.batch .manage .libList td .moveTo .newFolder { text-align: right; background-color: #f4f4f4; padding-top: 5px; padding-bottom: 5px; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; display: none; }
+.batch .manage .libList td .moveTo .newFolder input { }
+.batch .manage .libList td .moveTo .newFolder .textInput { width: 166px; margin-right: 5px; margin-left: 5px; padding-left: 2px; border:1px solid #e7e7e7; margin-bottom: 3px; background-color: #fff; }
+.batch .manage .libList td .moveTo .newFolder .btn { margin-right: 5px; color: #999999; background-color: #fefefe; height: 16px; width: 30px; border:1px solid #ccc; }
+.batch .manage .libList td .materialLib { padding-right: 7px; height: 20px; width: 82px; line-height: 20px; padding-left: 7px; }
+.batch .manage .libList td .ItemHover { border:1px solid #cccccc; background-color:#faf9f9; }
+.batch .manage .libList td .materialLib .innerDiv { background-image: url(../../images/editorZone/ez20.gif); background-repeat: no-repeat; background-position: right center; padding-right: 15px; width: 67px; height: 20px; }
+.batch .manage .libList td a { }
+.batch .manage .libList td .download { color: #0066cc; }
+.batch .manage .libList td .delete { color: #999; }
+.batch .manage .repeatSearch { background-image: url(../../images/editorZone/ez46.gif); background-repeat: no-repeat; height: 351px; width: 716px; }
+.batch .manage .repeatSearch .search { margin-left:100px; padding-top:220px; }
+.batch .manage .repeatSearch .search_a { width:330px; background-color:#fff; }
+.batch .manage .repeatSearch .search_a_input { width:325px; }
+.batch .manage .repeatSearch .search_b { background-color:#fff; }
+.batch .manage .repeatSearch .wrap_absolute { top:261px; left:320px; }
+.batch .manage .frame1 { border:1px solid #dfdfdf; border-top:none; width:711px; padding:1px; margin-bottom:50px; }
+.batch .manage .frame2 { border:1px dashed #ebebeb; }
+.batch .manage .frame3 { border:1px dashed #ebebeb; padding:2px; position:relative; }
+.batch .manage .frame3 .repeatSearch { background-image:url(../../images/editorZone/ez52.jpg); width:auto; background-color:#fbfbfb; background-position: center 90px; }
+.batch .manage .frame3 .words { position:absolute; height:24px; line-height:24px; color: #a7a7a7; top:180px; width:560px; margin-left:70px; text-align:center; }
+.batch .detail { width: 181px; background-color: #f5f5f5; border-left:1px solid #c6c5c5; }
+.batch .detail .new { padding-top: 15px; padding-bottom: 15px; padding-left: 10px; border-bottom:1px solid #e2e2e2; }
+/*.batch .detail .new .newM { background-image: url(../../images/editorZone/ez22.gif); background-repeat: no-repeat; height: 38px; width: 155px; font-size: 14px; font-weight: bold; color: #333333; padding-left: 40px; border:0; background-color:transparent; margin:5px 0 4px 0; }*/
+.batch .detail .new .afterClick { }
+.batch .detail .new .afterClick .mName { width:150px; height:20px; line-height:20px; padding-left:5px; border:1px solid #ffa626; background-color:#fff; }
+.batch .detail .new .afterClick .ok { border:1px solid #ffa626; background-color:#ffbc3f; color:#733d02; }
+.batch .detail .new .afterClick .cancel { border:1px solid #d3d3d3; background-color:#f8f8f8; color:#959595; }
+.batch .detail .new .afterClick .ok, .batch .detail .new .afterClick .cancel { width:48px; height:20px; line-height:20px; margin-top:5px; }
+.batch .detail .dItems { }
+.batch .detail .dItems li { line-height: 38px; height: 38px; border-top:1px solid #fff; border-bottom:1px solid #e2e2e2; font-size: 14px; color: #616161; background-image: url(../../images/editorZone/ez8-folder.gif); background-repeat: no-repeat; background-position: 16px center; padding-left: 42px; cursor: pointer; background-color: #f5f5f5; position: relative; }
+.batch .detail .dItems li a { color:#616161; }
+.batch .detail .dItems .triangle { background-image: url(../../images/editorZone/ez23.gif); background-repeat: no-repeat; height: 11px; width: 7px; position: absolute; left: -1px; top: 14px; }
+.batch .detail .dItems .current { background-color: #e2e2e2; background-image: url(../../images/editorZone/ez8-open1.gif); }
+.searchMaterial { width: 929px; }
+.searchMaterial .result { font-size: 14px; color: #999; line-height: 30px; padding-top: 15px; }
+.searchMaterial .requirement { background-color: #f6f6f6; line-height: 24px; color: #333; padding-bottom: 15px; width: 909px; overflow: hidden; }
+.searchMaterial .requirement .part { background-image: url(../../images/editorZone/ez29.gif); background-repeat: repeat; height: 31px; padding-top:10px }
+.searchMaterial .requirement .title { font-size: 14px; font-weight: bold; color: #333; padding-left: 6px; }
+.searchMaterial .requirement .sort { width: 402px; overflow: hidden; padding-left: 10px; float: left; padding-top: 13px; }
+.searchMaterial .requirement .sort a { color: #333; height: 22px; width: 75px; border:1px solid #bab9b9; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius:3px; text-align: center; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fefefe, endColorstr=#eae9e9, grandientType=0);
+background:-webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#eae9e9)); background:-moz-linear-gradient(top, #fefefe, #eae9e9); margin-right: 5px; }
+.searchMaterial .requirement .sort a span { background-image:url(../../images/editorZone/ez24.gif); background-repeat:no-repeat; background-position:64px 8px; float:left; height:22px; width:75px; }
+.searchMaterial .requirement .place { width: 310px; overflow: hidden; float: left; padding-left: 8px; }
+.searchMaterial .requirement .place label { color:#999; float:left; }
+.searchMaterial .requirement .place a { color: #333; }
+.searchMaterial .requirement .place .current { font-weight: bold; color: #cc0000; }
+.searchMaterial .requirement .type { float: left; width: 185px; padding-left: 15px; }
+.searchMaterial .requirement .type select { width: 100px; margin-top: 3px; }
+.searchMaterial .requirement .deal { float: left; width: 299px; padding-top: 13px; overflow: hidden; padding-left: 17px; }
+.searchMaterial .requirement .deal select { width: 150px; margin-left: 10px; }
+.searchMaterial .requirement .deal .btn { background-color: #eb0a0a; color: #FFF; border:1px solid #cc0000; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius:3px; margin-left: 10px; height: 20px; width: 42px; line-height: 20px; }
+.searchMaterial .requirement .deal span { font-weight:normal; color:#666666; line-height: 20px; padding-left: 6px; }
+.searchMaterial .requirement .deal .checkbox { margin-top: 3px; }
+.searchMaterial .requirement span, .searchMaterial .requirement .sort a, .searchMaterial .requirement .type select, .searchMaterial .requirement .deal select, .searchMaterial .requirement .deal input { float:left; }
+.searchMaterial .materialIntro { margin-right: 20px; position: relative; z-index: 99; }
+.searchMaterial .materialIntro .article { border-bottom:1px dashed #ccc; padding-bottom: 10px; padding-top: 5px; }
+.searchMaterial .materialIntro .article .caption { width: 892px; line-height: 26px; font-size: 14px; padding-left: 17px; padding-top: 10px; height: 26px; }
+.searchMaterial .materialIntro .article .caption span { }
+.searchMaterial .materialIntro .article .caption input { float: left; margin-right: 6px; margin-top: 6px; }
+.searchMaterial .materialIntro .article .caption .text { font-weight: bold; color: #3366cc; cursor: pointer; }
+.searchMaterial .materialIntro .article .caption .operate { background-image: url(../../images/editorZone/ez8-open.gif); background-repeat: no-repeat; height: 19px; width: 21px; background-position: 16px center; padding-left: 16px; margin-top: 4px; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo { position:absolute; width: 126px; text-align: left; line-height: 24px; left: 279px; top: 37px; border:1px solid #cccccc; background-color: #FFF; z-index: 100; display: none; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .libWrap { height:120px; overflow-x:hidden; overflow-y:scroll; padding-top: 5px;}
+.searchMaterial .materialIntro .article .caption .operate .moveTo .lib { padding-left:13px; line-height: 24px; height: 24px; overflow: hidden; padding-right: 5px; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .lib input { margin-top: 2px; margin-right: 3px; margin-bottom: 0px; margin-left: 0px; padding: 0px; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .add { line-height: 24px; height: 24px; background-color: #f4f4f4; background-image: url(../../images/editorZone/ez20.gif); background-position: 10px center; background-repeat: no-repeat; color: #0066cc; padding-left: 25px; cursor: point; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .build { line-height: 24px; height: 24px; background-color: #f4f4f4; background-image: url(../../images/editorZone/ez21.gif); background-position: 13px center; background-repeat: no-repeat; color: #ccc; padding-left: 32px; cursor: point; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; font-size: 12px; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .newFolder { text-align: right; background-color: #f4f4f4; padding-top: 5px; padding-bottom: 5px; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; display: none; width: 126px; overflow: hidden; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .newFolder input { float: none; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .newFolder .textInput { width: 112px; margin-right: 5px; margin-left: 5px; padding-left: 2px; border:1px solid #e7e7e7; margin-bottom: 3px; background-color: #fff; }
+.searchMaterial .materialIntro .article .caption .operate .moveTo .newFolder .btn { margin-right: 5px; color: #999999; background-color: #fefefe; height: 16px; width: 30px; border:1px solid #ccc; }
+.searchMaterial .materialIntro .article .caption .download { background-image: url(../../images/editorZone/ez8-download.gif); background-repeat: no-repeat; height: 19px; width: 14px; background-position: 13px center; padding-left: 13px; padding-top: 4px; }
+.searchMaterial .materialIntro .article .caption .count { color: #666; }
+.searchMaterial .materialIntro .article .abstractFrame { font-size: 0px; line-height: 0px; background-image: url(../../images/editorZone/ez25.gif); background-repeat: no-repeat; height: 6px; width: 858px; margin-left: 37px; display: none; }
+.searchMaterial .materialIntro .article .abstract { width:836px; border:1px solid #e4e4e4; border-top:none; line-height: 22px; color: #999; padding: 5px 10px; margin-left: 37px; background-color: #fafafa; display: none; }
+.searchMaterial .materialIntro .article .abstract a { }
+.searchMaterial .materialIntro .article .origin { color: #999; line-height: 30px; padding-left: 37px; height: 30px; }
+.searchMaterial .materialIntro .article .origin span { margin-right:40px; }
+.profile { width: 829px; background-color: #FFF; padding-right: 55px; padding-left: 65px; padding-bottom: 30px; }
+.profile .title { font-size: 20px; line-height: 50px; color: #cc0000; padding-top: 10px; text-align: center; }
+.profile .info { width: 717px; background-color: #fafafa; border:1px solid #e1e1e1; overflow: hidden; padding-right: 50px; padding-left: 60px; padding-bottom: 37px;}
+.profile .info .saveOrEdit { line-height: 40px; height: 40px; overflow: hidden; }
+.profile .info .saveOrEdit span, .profile .info .saveOrEdit div, .profile .info .saveOrEdit a { float:left; }
+.profile .info .saveOrEdit span { font-size: 14px; font-weight: bold; color: #575757; }
+.profile .info .saveOrEdit div { width: 590px; border-top:1px solid #e6e6e6; margin-top: 18px; font-size:0; line-height:0; margin-left:9px; _display:inline; }
+.profile .info .saveOrEdit a { -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; border:1px solid #e6e6e6; width:44px; height:21px; line-height: 21px; color: #575757; text-align: center; margin-top: 8px; }
+.profile .info .item { height: 32px; padding-top: 9px; padding-bottom: 9px; font-size: 14px; color: #575757; }
+.profile .info .display { line-height:32px; padding-left:5px; float:left; width: 448px; word-break: break-all; word-wrap: break-word; }
+.profile .info .itemArea { padding-top: 9px; padding-bottom: 9px; height: 158px; font-size:14px; color:#575757; overflow:hidden; }
+.profile .info label { color: #808080; text-align: right; width: 86px; line-height: 30px; padding-right: 5px; }
+.profile .info .item .inputFrame { color: #575757; border:1px solid #e3e3e3; background-color: #FFF; height: 24px; width: 450px; padding-top: 6px; line-height: 18px; display:none; }
+.profile .info .itemArea textarea { border:1px solid #e3e3e3; background-color: #FFF; height: 156px; width: 440px; padding-top: 6px; float:left; min-height:156px; max-height:156px; min-width:440px; max-width:440px; padding-left: 5px; line-height: 24px; color: #575757; padding-right: 5px; display:none; color:#575757; }
+.profile .info .item .inputFrame input { width: 440px; padding-left: 5px; line-height: 18px; height: 18px; border:none; background-color:transparent; }
+.profile .info .errorMessage { margin-left:16px; border:1px solid #ffd9bb; background-color:#fff7f5; height:30px; background-image: url(../../images/editorZone/ez26.gif); background-repeat: no-repeat; background-position: 10px center; padding-left: 29px; _display:inline; line-height: 30px; color: #666; font-size: 12px; padding-right: 10px;  }
+.profile .info label, .profile .info .item .inputFrame, .profile .info .errorMessage { float:left; }
+.profile .info .avatar { margin-bottom:50px;}
+.profile .info .avatar .photo { float: left; width: 150px; padding-right: 13px; }
+.profile .info .avatar .upload { float: left; }
+.profile .info .avatar .upload .btn { }
+.profile .info .avatar .upload .btn input { background-image: url(../../images/editorZone/ez27-btn.gif); background-repeat: no-repeat; height: 28px; width: 157px; color: #575757; padding-left: 25px; font-size: 12px; border:0; background-color:transparent; }
+.profile .info .avatar .upload .instruction { color: #a7a7a7; width: 269px; line-height: 18px; padding-top: 25px; padding-bottom: 5px; }
+.profile .info .avatar .upload .preprocess { }
+
+/*绑定手机开始*/
+.profile .info .phone{width:717px; overflow:hidden; }
+.profile .info .phone h1{position:relative;height:34px; line-height:34px; width:130px; text-align:center; font-size:16px; color:#666666; border:1px solid #E5E5E5; border-bottom:none;border-radius:4px  4px  0  0;  z-index:2; background:#fff;}
+.profile .info .phone .phone_cont{padding:28px 22px 40px; width:671px; border:1px solid #E5E5E5; border-radius:0 4px 4px 4px; margin-top:-1px;}
+.profile .info .phone .phone_cont .tit{ height:51px; line-height:51px; padding-left:70px; padding-bottom:12px; font-family:微软雅黑; font-size:20px; color:#cc0000; background:url(../../images/editorZone/ez200_mobile.jpg) no-repeat 6px top; border-bottom:1px dashed #D0D0D0; margin-bottom:20px;}
+.profile .info .phone .phone_cont .tit a{right:0; bottom:12px; width:125px; height:41px; text-align:center; line-height:41px; color:#fff; font-size:18px; background: url(../../images/editorZone/ez200_bdbtn.gif) no-repeat;}
+.profile .info .phone .phone_cont .tit a:hover{text-decoration:none;}
+.profile .info .phone .phone_cont .tips{color:#999999; line-height:24px; padding-left:72px;}
+.profile .info .phone .phone_cont .info_wrap{ width:410px; margin:0 auto; overflow:hidden;font-size:14px; }
+.profile .info .phone .phone_cont .info_wrap .info_p{overflow:hidden;}
+.profile .info .phone .phone_cont .info_wrap .info_p label{ width:92px; height:38px; line-height:38px; text-align:right; color:#666666; padding-right:0;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txt{width:316px; height:36px; line-height:36px; border:1px solid #DDDDDD;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txtclick{border:1px solid #FDAC5C;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txt input{height:36px; *line-height:32px;padding-left:6px; color:#666666; width:300px;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txt .hint{left:6px; top:0; height:36px; color:#CCCCCC;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txt .judge{ right:6px; top:9px; width:18px; height:18px;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txt .w{background:url(../../images/editorZone/ez200_wrong.jpg) no-repeat;}
+.profile .info .phone .phone_cont .info_wrap .info_p .txt .r{background:url(../../images/editorZone/ez200_right.jpg) no-repeat;}
+.profile .info .phone .phone_cont .info_wrap .error{height:26px; padding-top:10px; color:#F99A59; font-size:12px; text-indent:95px;}/*错误提示语*/
+.profile .info .phone .phone_cont .info_wrap .yzm .txt{width:152px; margin-right:10px;}
+.profile .info .phone .phone_cont .info_wrap .yzm .txt input{width:140px;}
+.profile .info .phone .phone_cont .info_wrap  .info_p .noyzm{ width:152px; height:36px; line-height:36px; text-align:center; border:1px solid #DDDDDD; color:#DDDDDD;}/*验证码无法点击状态*/
+.profile .info .phone .phone_cont .info_wrap  .info_p .getyzm{width:152px; height:36px; line-height:36px; text-align:center; border:1px solid #DDDDDD; color:#8C8C8C; cursor:pointer;}/*验证码可以点击状态*/
+.profile .info .phone .phone_cont .phone_btn{width:410px; overflow:hidden; margin:0 auto;}
+.profile .info .phone .phone_cont .phone_btn a{width:152px; height:38px; line-height:38px; text-align:center;font-family:微软雅黑; font-size:16px; margin-left:10px;}
+.profile .info .phone .phone_cont .phone_btn .sure{border:1px solid #E70000; background:#E70000; color:#fff;}
+.profile .info .phone .phone_cont .phone_btn .cancel{border:1px solid #DDDDDD; color:#9f9f9f;}
+.profile .info .phone .phone_cont .show{width:490px; margin:0 auto;}
+.profile .info .phone .phone_cont .show label, .profile .info .phone .phone_cont .show a{ height:38px; line-height:38px;}
+.profile .info .phone .phone_cont .show .num{height:36px; line-height:36px; border:1px solid #949494; background:#ECECEC; color: #333333; padding-left:10px; width:308px; font-size:14px;}
+.profile .info .phone .phone_cont .show label {font-size:14px; color:#666666;}
+.profile .info .phone .phone_cont .show a{color:#3B8DD3; font-size:12px; padding-left:6px;}
+.profile .info .phone .phone_cont .show p{padding:10px 0 50px 92px; color:#999999;}
+/*绑定手机结束*/
+
+.messageCenter { background-color: #FFF; width: 909px; padding-right: 20px; padding-left: 20px; }
+.messageCenter .title { font-size: 24px; line-height: 66px; color: #cc0000; text-align: center; }
+.messageCenter .doubleLine { border-top:1px solid #ccc; border-bottom:1px solid #ccc; font-size: 0px; line-height: 0px; height: 2px; }
+.messageCenter .message { position: relative; width: 894px; overflow: hidden; padding-top: 15px; padding-bottom: 15px; border-bottom:1px solid #dadada; padding-left: 15px; }
+.messageCenter .messageBgColor { background-color: #fbfafa; }
+.messageCenter .message .sign { line-height: 16px; text-align: center; height: 16px; width: 31px; color: #FFF; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius:6px; }
+.messageCenter .message .new { border:1px solid #c70202; background-color: #ed0b0b; margin-top: 3px; }
+.messageCenter .message .read { border:1px solid #0342ac; background-color: #2671fb; }
+.messageCenter .message .state { line-height: 24px; padding-left: 12px; width: 675px; font-size: 14px; color: #333; }
+.messageCenter .message .state a { color: #0033cc; }
+.messageCenter .message .sign, .messageCenter .message .state { float: left; }
+.messageCenter .message .date { color: #999; right: 47px; bottom: 15px; font-size: 14px; height: 20px; width: 100px; }
+.messageCenter .message .delete { background-image: url(../../images/editorZone/ez28-delete.gif); background-repeat: no-repeat; height: 20px; width: 20px; right: 14px; bottom: 17px; }
+.messageCenter .message .unfold { background-image: url(../../images/editorZone/ez28-unfold.gif); background-repeat: no-repeat; height: 22px; width: 22px; top: 10px; right: 14px; display: none; }
+.messageCenter .message .date, .messageCenter .message .delete, .messageCenter .message .unfold { position: absolute; }
+/*popup*/
+.pop1 { width: 478px; margin-left: -239px; left: 50%; top: 20%; position: absolute; border:1px solid #e7e7e7; padding-bottom: 30px; background-color: #FFF; }
+.pop1 .title { height: 38px; margin-right: 12px; margin-left: 12px; line-height: 38px; font-size: 16px; font-weight: bold; color: #cc0000; position: relative; border-bottom:1px dotted #e7e7e7; padding-top: 3px; }
+.pop1 .title .close { background-image: url(../../images/editorZone/ez31.gif); background-repeat: no-repeat; height: 19px; width: 19px; position: absolute; top: 9px; right: 0px; }
+.pop1 .text { font-size: 14px; color: #999; line-height: 24px; padding-right: 30px; padding-left: 30px; padding-top: 20px; }
+.pop1 .text a { color:#096cbf; text-decoration:underline;}
+.pop1 .text a:hover { color:#c00;}
+.pop1 .btns { text-align: center; padding-top: 20px; }
+.pop1 .btns input { line-height: 36px; height: 36px; width: 106px; font-size: 14px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; }
+.pop1 .btns .cancel { background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f1f1)); background:-moz-linear-gradient(top, #ffffff, #f2f1f1); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f2f1f1, grandientType=0);
+border:1px solid #ccc; _background-color:#f9f8f8; margin-right: 30px; }
+.pop1 .btns .confirm { font-weight: bold; color: #FFF; /*background:-webkit-gradient(linear, 0 0, 0 100%, from(#ef0000), to(#cd0000)); background:-moz-linear-gradient(top, #ef0000, #cd0000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ef0000, endColorstr=#cd0000, grandientType=0);*/
+border:1px solid #a70e0e; background-color:#df0000; }
+
+/*popup20151012增加*/
+.popwide { width:698px;}
+.pop1wz { left:42%;} 
+.pop1 .con { padding:20px; overflow:hidden;}
+.pop1 .con .zb{  overflow:hidden; height:88px;}
+.pop1 .con .zb li{ float:left; width:121px; height:34px; line-height:34px; text-align:center; color:#494949; background:url(../../images/editorZone/zb.jpg) no-repeat; margin:0px 5px 10px; cursor:pointer; color:#494949;}
+.pop1 .con .zb .selected{background:url(../../images/editorZone/zbxz.jpg) no-repeat;}
+.pop1 .zhangcheng { font-size:12px; color:#ff953f; text-align:center; margin:20px 0;}
+.pop1 .zhangcheng a { text-decoration:underline; color:#ff953f;}
+.pop1 .zhangcheng a:hover { color:#fd4e01;}
+
+/*popup20151026增加*/
+.hbzs{ position:fixed; top:165px; width:30px; height:92px; background:url(../../images/editorZone/ez1026_zhushou.jpg) no-repeat;}
+.procedure .steps .subset .switchTable .wxts{color:#797979; padding-top:10px; padding-bottom:30px; border-top: 1px solid #e4e4e4; width: 340px;}
+.procedure .steps .subset .switchTable .wxts h2{font-size:12px; line-height:36px;}
+.procedure .steps .subset .switchTable .wxts p{line-height:22px;}
+.procedure .steps .subset .switchTable .wxts .haspadding{ padding-left:18px;}
+.procedure .steps .subset .switchTable .wxts a{color:#0066CC;}
+.procedure .steps .subset .switchTable .wxts .pa{margin-bottom:10px;}
+
+/*20151029增加*/
+.procedure .steps .subset .switchTable .librarySearch { width: 340px; overflow: hidden; padding-bottom: 42px; position:relative;}
+.procedure .steps .subset .switchTable .librarySearch input { line-height: 28px; height: 28px; border:1px solid #ccc; float: left; }
+.procedure .steps .subset .switchTable .librarySearch .text { width:180px; padding-left: 5px; border-right:none; font-family:宋体}
+.procedure .steps .subset .switchTable .librarySearch p{width:91px;line-height: 28px; height: 28px; border:1px solid #ccc; border-right:none; border-left:none; padding-right:10px; text-align:right; background:url(../../images/editorZone/ez1029_jt.gif) no-repeat 93px center; color:#848484; cursor:pointer;}
+.procedure .steps .subset .switchTable .librarySearch .btn { background-color: #f0f0f0; color: #333; font-weight: bold; width: 52px; height: 30px; }
+.procedure .steps .subset .switchTable .librarySearch ul{ display:none;position:absolute; width:98px; border:1px solid #ccc; border-top:none; right:52px; top:29px; background:#ffffff;}
+.procedure .steps .subset .switchTable .librarySearch ul li{line-height:20px; color:#848484; text-align:center; cursor:pointer;}
+/*添加新建*/
+.stagebig .createItem{width:470px; padding-left:15px; height:26px; margin-top:10px; margin-bottom:10px; display:inline-block\0;}/*ie8又开始变态了*/
+.stagebig .createItem p{padding-left:22px; height:26px; line-height:26px; background:url(../../images/editorZone/ez100_dajia.gif) no-repeat left center; color:#3B8ACF; font-size:14px; padding-top:0px; cursor:pointer; margin-bottom:0px;}
+.stagebig .createItem .createNew{ width:470px; height:26px; display:none;}
+.stagebig .createItem .createNew .frame{ width:233px; height:24px; line-height:24px; border:1px solid #C0A154; margin-right:6px;}
+.stagebig .createItem .createNew  input{height:24px; line-height:24px; *height:22px; *line-height:22px;width:190px; padding-left:6px; font-size:14px; border:none 0;}
+.stagebig .createItem .createNew .frame span{top:-1px; right:-1px;width:36px; height:26px; line-height:26px; background:#D2BB80; text-align:center; cursor:pointer;color:#fff; font-size:12px;}
+.stagebig .createItem .createNew .no{width:34px; height:24px; line-height:24px; text-align:center; border:1px solid #C0A154; color:#D2BB80; cursor:pointer;}
+
+/*20160112*/
+.procedure .steps .chapter .xy { font-size: 14px; color: #CC0000; text-align: center; height: 30px; width: 75px; line-height: 30px; border:1px solid #db927e; margin-left:5px; border-bottom:none;_display:inline; position:relative; z-index:8; cursor: pointer; background:#FFEDCD;_bottom:-1px; font-weight:bold;}
+.procedure .steps .chapter .xy.current{ background:none; border-bottom:1px solid #ffffff;}
+.articlContentWrap .xy_tit{height:30px; width:347px; margin-left:35px; border:1px solid #CCCCCC; margin-top:34px; margin-bottom:20px;}
+.articlContentWrap .xy_tit input{line-height:30px; height:30px; font-size:14px; padding-left:12px; width:330px;*margin-left:-35px; font-family:宋体;}
+.articlContentWrap .xy_text{font-size:14px; margin-left:35px;height:auto; width: 650px; max-width:650px; min-width:650px;min-height:407px; padding-left: 12px; padding-top:12px;border:1px solid #ccc; }
+/*新增授权*/
+.procedure .accredit{ width:964px; margin:0 auto; padding-top:40px; padding-bottom:90px;}
+.procedure .accredit .title{ margin-bottom:20px;}
+.procedure .accredit .title h1{font-family:微软雅黑; font-size:32px; font-weight:normal; color:#cc0000; text-align:center; height:50px; line-height:50px; }
+.procedure .accredit .title p{ color:#999999; text-align:center; line-height:24px; height:24px;}
+.procedure .accredit .title p a{ color:#0066CC; text-decoration:underline;}
+.procedure .accredit .procedure{ text-align:center; font-size:14px; color:#666666; height:36px; line-height:36px; padding:0;}
+.procedure .accredit .table-wrap{ width:844px; padding:12px 60px 40px; background:#F1EBDE;}
+.procedure .accredit .tips{ height:32px; margin-bottom:10px;}
+.procedure .accredit .tips span{ font-size:16px; color:#986903; font-weight:bold; padding-top:12px;}
+.procedure .accredit .tips a{ width:105px; height:30px; line-height:30px; text-align:center; color:#ffffff; background:#FF7D0A; border:1px solid #ED7204; border-radius:4px; text-decoration:none;}
+.procedure .accredit .table-wrap .sq-table{ overflow:hidden; text-align:center; font-size:14px; margin-bottom:38px;}
+.procedure .accredit .table-wrap .sq-table th{ font-weight:normal; color:#666666; border-right:1px solid #EAEAEA; height:60px;}
+.procedure .accredit .table-wrap .sq-table td{  border-right:1px solid #EAEAEA;  border-top:1px solid #EAEAEA; }
+.procedure .accredit .table-wrap .sq-table .num{ color:#999999; font-family:Arial;}
+.procedure .accredit .table-wrap .sq-table .name{ padding:15px 11px 15px 13px; line-height:30px; text-align:left; color:#333333;}
+.procedure .accredit .table-wrap .sq-table .state{ padding-left:16px;}
+.procedure .accredit .table-wrap .sq-table .state a{ float:left;}
+.procedure .accredit .table-wrap .sq-table .state .button{ width:90px; height:30px; line-height:30px; text-align:center; color:#ffffff; border-radius:4px; margin-right:10px; text-decoration:none;}
+.procedure .accredit .table-wrap .sq-table .state .ysq{ background:#C3C3C3; cursor: text;}
+.procedure .accredit .table-wrap .sq-table .state .djsq{ background:#FD7700;}
+.procedure .accredit .table-wrap .sq-table .state .look{ font-size:12px; color:#3366CC; text-decoration:underline; height:20px; line-height:20px; padding-top:10px; } 
+.procedure .accredit .table-wrap .sq-table .nb{ border-right:none;}
+.procedure .accredit .table-wrap .fb{ display:block; margin:0 auto; width:214px; text-align:center; height:60px; line-height:60px; font-family:微软雅黑; font-size:20px; color:#ffffff; border-radius:3px; text-decoration:none;}
+.procedure .accredit .table-wrap .fb1{ background: #C0C0C0; cursor:text;}
+.procedure .accredit .table-wrap .fb2{ background:#D70303;}
+/*2016.3.28*/
+.procedure .steps .fill .interface .area{ height:248px;}
+.procedure .steps .fill .interface .preview{ top:17px; left:19px; width:151px; height:214px; overflow:hidden;}
+.procedure .steps .subset .switchTableNew { padding: 0;}
+.procedure .steps .subset .switchTable .chooseBg{ padding-left:15px; padding-top:22px;}
+.procedure .steps .subset .switchTable .chooseBg h1{ height:36px; line-height:36px; width:400px; border-bottom:1px solid #CFCAAF; font-size:14px; color:#666666; position:relative; margin-bottom:23px;}
+.procedure .steps .subset .switchTable .chooseBg h1 span{ position:absolute; left:57px; bottom:-6px;width:12px; height:7px; background: url(../../images/editorZone/ec-icon21-bgarrow.gif) no-repeat;}
+.procedure .steps .subset .switchTable .chooseBg .bgList{ padding-left:2px;}
+.procedure .steps .subset .switchTable .chooseBg .bgList li{ float:left; width:120px; height:170px; border:1px solid #D0D0D0; margin-right:14px; margin-bottom:22px; cursor:pointer;}
+.procedure .steps .subset .switchTable .editBg{ padding-top:21px;}
+.procedure .steps .subset .switchTable .editBg .editCover{ height:574px; margin-bottom:38px; padding-left:26px;width:374px; }
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup{ position:relative;width:374px; height:530px; overflow:hidden; margin-bottom:11px;}
+/*左侧预览缩略图*/
+.procedure .steps .fill .interface .surface{height:0; padding-top:214px;*background-position:center 70px;}
+.procedure .steps .fill .interface .surface .litimg{ position:relative;width:151px; height:214px;}
+.procedure .steps .fill .interface .surface .litimg.display{ position:absolute; left:0; top:0; z-index:10;}
+.procedure .steps .fill .interface .surface .litimg .figure{ width:100%; position:absolute;}
+.procedure .steps .fill .interface .surface .style1 .pic{ position:absolute; left:0; top:0;}
+.procedure .steps .fill .interface .surface .style1 .block1{ position:absolute; left:0px; top:37px; width:100%; height:14px; line-height:14px; }
+.procedure .steps .fill .interface .surface .style1 .block2{ position:absolute; left:0px; top:60px; width:100%; height:14px; line-height:14px; }
+.procedure .steps .fill .interface .surface .style1 .block3{ position:absolute; left:0px; top:85px; width:100%; height:14px; line-height:14px;}
+.procedure .steps .fill .interface .surface .style1 .figure{ left:0; bottom:0;}
+/*编辑封面区域样式*/
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea{width:374px; height:530px; position:relative;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea.current{  position:absolute; left:0; top:0; z-index:20;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .picBg{ position:absolute; left:0; top:0;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item{ position:absolute;color: #000000; cursor:pointer;border:1px solid transparent;-moz-user-select:none; z-index:5;background:url(about:blank); text-align:center; font-family:微软雅黑}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .text{ padding-left:5px; padding-right:5px; display:block; word-break:break-all; overflow:hidden;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-1 .text{height:32px;width:362px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-1 .text{ height:50px; width:362px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .text.vertical{ padding-left:0;padding-right:0px; padding-top:5px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item.default{ border:1px dashed #bcbcbc;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item.dblclick{ border:1px solid #bcbcbc; background-color:#ffffff; z-index:10;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .del{ display:none;position:absolute; top:-7px; right:-4px; width:13px; height:13px; background:url(../../images/editorZone/ec-cover-icon1.png) no-repeat;}
+/*属性编辑盒子开始*/
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox{ display:none;position:absolute; left:0px; top:-32px;width:286px; padding-left:4px; padding-top:4px; height:21px; border:1px solid #E1DAC0; border-radius:3px; filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66FFFFFF', endColorstr='#66FFFFFF');}
+:root .procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox{filter:none;background:rgba(255,255,255,0.4); }
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-1 .editBox, .procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-1 .editBox{ width:230px;}
+/*垂直模板的编辑栏*/
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox.upright{ left:-186px; width:226px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-1 .editBox.upright{ width:170px; left:-145px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .item .editBox.upright{ left:-10px; top:6px; z-index:20;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .item3 .editBox.upright{ left:-148px; top:-32px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .fontFamily{ float:left; height:18px;width:74px;outline:none; color:#8A8A8A; font-size:12px;line-height:18px; font-family:宋体; margin-right:3px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .fontSize{ float:left; height:18px;width:52px;outline:none; color:#8A8A8A; font-size:12px;line-height:18px; font-family:宋体; margin-right:3px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .fontColor{ float:left; width:17px; height:17px; margin-right:3px; background:url(../../images/editorZone/ec-cover-icon3.png) no-repeat;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .alignLeft{ float:left; width:17px; height:17px; background:url(../../images/editorZone/ec-cover-icon4.png) no-repeat; margin-right:3px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .alignCenter{float:left; width:17px; height:17px; background:url(../../images/editorZone/ec-cover-icon5.png) no-repeat;margin-right:3px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .alignRight{float:left; width:17px; height:17px; background:url(../../images/editorZone/ec-cover-icon6.png) no-repeat;margin-right:3px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .boxSave{ float:left; width:31px; height:15px; line-height:15px; text-align:center; border:1px solid #7491B5; border-radius:2px; color:#ffffff; background:#76A1D4; font-size:12px; text-decoration:none; margin-right:3px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .boxSave:hover{ background:#27AAED;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .item .editBox .boxCancel{float:left; width:31px; height:15px; line-height:15px; text-align:center; border:1px solid #98ABC2; border-radius:2px; color:#97ABBC; background:#ffffff; font-size:12px; text-decoration:none;}
+/*属性编辑盒子结束*/
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-1{ width:362px; height:32px; line-height:32px;  font-size:24px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-1{ width:362px; height:50px; line-height:50px;  font-size:40px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-1{width:30px; height:380px;/*line-height:28px; */ font-size:24px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .type3-1{ height:340px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-2{ width:362px; line-height:20px; font-size:14px}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-2{ width:362px; line-height:20px; font-size:14px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-2{width:20px; height:370px;/*line-height:18px;  */font-size:14px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-3{ width:362px; height:20px; line-height:20px; font-size:12px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-3{ width:362px; height:20px; line-height:20px; font-size:12px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-3{ width:20px; height:245px; /*line-height:18px; */font-size:12px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .illustration{ position:absolute; width:100%;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .illustration a{ position:absolute; top:0;height:22px; line-height:22px; color:#E3E3E3; padding-left:18px; width:53px; background:url(../../images/editorZone/ec-cover-unload.png) no-repeat; /*border-radius:3px; background-color:#000000;background-image:url(../../images/editorZone/ec-cover-unload.gif); background-repeat:no-repeat; background-position:4px center; background-color:rgba(0,0,0,0.5);*/ text-align:left;text-decoration:none;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .illustration a:hover{ background:url(../../images/editorZone/ec-cover-unloadhover.png) no-repeat; color:#C3C3C3;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover1 .item1{ left:5px; top:82px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover1 .item2{ left:5px; top:130px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover1 .item3{ left:5px; top:190px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover2 .item1{ left:5px; top:320px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover2 .item2{ left:5px; top:365px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover2 .item3{ left:5px; top:414px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover3 .item1{ right:18px; top:47px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover3 .item2{ right:52px; top:80px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover3 .item3{ right:76px; top:248px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover4 .item1{ left:5px; top:108px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover4 .item2{ left:5px; top:152px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover4 .item3{ right:5px; top:440px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover5 .item1{ left:5px; top:357px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover5 .item2{ left:5px; top:395px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover5 .item3{ left:5px; top:440px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover6 .item1{ left:5px; top:45px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover6 .item2{ left:5px; top:85px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover6 .item3{ left:5px; top:272px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover7 .item1{ left:5px; top:290px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover7 .item2{ left:5px; top:350px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover7 .item3{ left:5px; top:402px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .item1{ left:45px; top:10px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .item2{ left:85px; top:10px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .item3{right:67px; bottom:0px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover9 .item1{ left:5px; top:80px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover9 .item2{ left:5px; top:144px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover9 .item3{ left:5px; top:193px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover1 .illustration{ left:0; bottom:0;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover2 .illustration{ left:0;top:10px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover3 .illustration{ left:0; top:153px; text-align:left;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover4 .illustration{ left:0;top:203px; text-align:right;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover5 .illustration{ left:0; top:58px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover6 .illustration{ text-align:right;top:125px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover6 .illustration img{border:1px solid #BBBBBB; margin-right:7%;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover7 .illustration{ left:0;top:71px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .illustration{ bottom:80px; left:0;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .illustration img{ margin-left:9.2%;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover9 .illustration{ left:0px; top:230px; text-align:center;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover1 .illustration a{ right:0; }
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover2 .illustration a{ right:12px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover3 .illustration a{ left:202px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover4 .illustration a{ right:0px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover5 .illustration a{ left:237px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover6 .illustration a{ right:28px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover7 .illustration a{ left:260px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover8 .illustration a{ left:49px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .cover9 .illustration a{ right:57px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .input{font-family:微软雅黑; border:none 0;color:#000000; text-align:center;} 
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .input.colorGrey{ color:#999999;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-1 .input1{ display:none;width:356px; padding-left:5px; height:32px; line-height:32px; font-size:26px; }
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-1 .input1{ display:none;width:356px; padding-left:5px; height:50px; line-height:50px; font-size:40px; }
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-1 .input1{ display:none; width:30px; text-align:center; height:375px; resize:none; overflow:hidden; font-size:26px; padding-top:5px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-2 .input2{ display:none;width:350px; padding:1px 5px 0 5px; resize:none;font-size:14px; overflow:hidden;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-2 .input2{ display:none; width:356px; padding-left:5px; height:20px; line-height:20px; font-size:14px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-2 .input2{ display:none; width:20px; text-align:center; height:365px; resize:none; overflow:hidden; font-size:14px; padding-top:5px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type1-3 .input3{ display:none; width:356px; height:20px; line-height:20px; padding-left:5px; font-size:12px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type2-3 .input3{ display:none; width:356px; height:20px; line-height:20px; padding-left:5px; font-size:12px;}
+.procedure .steps .subset .switchTable .editBg .editCover .coverGroup .coverArea .type3-3 .input3{ display:none; width:20px; text-align:center; height:240px; resize:none; overflow:hidden; font-size:12px; padding-top:5px;}
+.procedure .steps .subset .switchTable .editBg .editCover .operateBtn{ height:34px; *margin-top:20px;}
+.procedure .steps .subset .switchTable .editBg .editCover .operateBtn .addText, .procedure .steps .subset .switchTable .editBg .editCover .operateBtn .previewBtn{ float:left; margin-right:8px; height:32px; line-height:32px; font-size:14px; color:#333333; border:1px solid #C9C9C9; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; background-color:#EFEFEF; text-decoration:none;}
+.procedure  .steps .subset .switchTable .editBg .editCover .operateBtn .addText{ padding-left:27px; width:65px; background-image:url(../../images/editorZone/ec-cover-icon7.gif); background-repeat:no-repeat; background-position:7px center;}
+/*添加文本不可点击的样式*/
+.procedure .steps .subset .switchTable .editBg .editCover .operateBtn .enable{ color:#B9B9B9; cursor:text;}
+.procedure .steps .subset .switchTable .editBg .editCover .operateBtn .previewBtn{ padding-left:35px; width:57px; background-image:url(../../images/editorZone/ec-cover-icon8.gif); background-repeat:no-repeat; background-position:11px center;}
+.procedure .steps .subset .switchTable .editBg .editCover .operateBtn .saveBtn{ float:right; height:34px; line-height:34px; font-size:14px; color:#ffffff; font-weight:bold; text-align:center; width:107px; border-radius:4px; background-color:#D10201; text-decoration:none;}
+.procedure .steps .subset .switchTable .editBg .styleTab{ padding-left:20px; padding-bottom:30px;}
+.procedure .steps .subset .switchTable .editBg .styleTab .tagBox{ height:34px; line-height:34px; border-bottom:1px solid #CCCCCC; width:392px; margin-bottom:22px;}
+.procedure .steps .subset .switchTable .editBg .styleTab .tagBox a{ float:left; width:115px; text-align:center; font-size:14px; color:#797979; text-decoration:none;}
+.procedure .steps .subset .switchTable .editBg .styleTab .tagBox a.cur{ border:1px solid #CCCCCC; border-bottom:none; font-weight:bold; color:#333333; background:#F6F5F0;_margin-bottom:-1px; _position:relative;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgType{*margin-bottom:22px;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgType li{float:left; width:120px; height:170px; border:1px solid #D0D0D0; margin-right:13px; margin-bottom:22px; cursor:pointer;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgType li.cur img{ margin-left:-2px; margin-top:-2px;border:2px solid #ED631D;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgImg{ padding-left:10px;*margin-bottom:22px;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgImg li{ float:left; width:170px; height:124px; margin-right:29px; margin-bottom:22px; cursor:pointer;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgImg li img.current{ margin-left:-2px; margin-top:-2px;border:2px solid #ED631D;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .bgImg li .addImg{ display:block; font-size:14px; color:#bdbdbd; text-align:center; background:#ffffff url(../../images/editorZone/ec-icon21-uploadimg.gif) no-repeat center 14px; padding-top:88px; border:4px solid #E9E9E9; height:28px; text-decoration:none;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .picPage{ padding-right:28px; text-align:right; margin-bottom:75px;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .picPage a{ padding:5px 10px; border:1px solid #FDB28C; background:#FFF5F0; color:#656565; font-family:Arial; font-size:16px; text-decoration:none;}
+.procedure .steps .subset .switchTable .editBg .styleTab .displayBox .picPage a.in{ border:none; background:none; color:#ED5508; font-weight:bold; cursor:default;}
+
+/*拾色器*/
+#iColorPicker {
+	color: #fff;
+	background: #333;
+	border: 1px solid #ccc;
+	padding: 5px;
+	z-index: 9999
+}
+#colorPreview {
+	height: 50px;
+	border: 1px solid #000;
+	background: #fff;
+	cursor: pointer;
+	height: 60px
+}
+table.pickerTable {
+	border-collapse: collapse
+}
+table.pickerTable td {
+	width: 12px;
+	height: 14px;
+	border: 1px solid #000;
+	cursor: pointer
+}
+/*预览页面*/
+.shade{ display:none;width:100%; height:100%; position:fixed; left:0; top:0;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');_position:absolute;_top:expression(eval(document.documentElement.scrollTop+0));z-index:500;}
+:root  .shade{filter:none;/*处理IE9浏览器中的滤镜效果*/background-color:rgba(0,0,0,0.6); }
+.pre-close{display:none; position:fixed; top:100px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+100+"px")); right:8.5%; width:107px; height:108px; background:url(../../images/editorZone/ec-cover-close.png) no-repeat; z-index:700;}
+.pre-close:hover{ background-image:url(../../images/editorZone/ec-cover-closehover.png)}
+.preview-group{ display:none;position: absolute; width:611px; height:863px;top:200px; left:50%; margin-left:-305px; z-index:600; overflow:hidden;}
+.preview-group .pg-cover{ width:611px; height:863px; position:relative;}
+.preview-group .pg-cover.show{ position:absolute; left:0; top:0px; z-index:800;}
+.preview-group .pg-cover .picbg{ position:absolute; left:0; top:0;}
+.preview-group .pg-cover .pg-box{ position:absolute; }
+.preview-group .pg-cover .img{ position:absolute; width:100%;}
+.preview-group .model1 .pg-box1{ font-size:50px; line-height:54px; text-align:center; width:600px; left:5px;}
+.preview-group .model1 .pg-box2{ font-size:20px; line-height:24px; text-align:center; width:600px; left:5px;}
+.preview-group .model1 .pg-box3{ font-size:16px; line-height:20px; text-align:center; width:600px; left:5px;}
+.preview-group .model2 .pg-box1{ font-size:60px; line-height:68px; text-align:center; width:600px; left:5px;}
+.preview-group .model2 .pg-box2{ font-size:14px; line-height:20px; text-align:center; width:600px; left:5px;}
+.preview-group .model2 .pg-box3{ font-size:14px; line-height:20px; text-align:center; width:600px; left:5px;}
+.preview-group .model3 .pg-box1{ font-size:50px;width:54px; text-align:center;}
+.preview-group .model3 .pg-box2{ font-size:14px;width:18px; text-align:center;}
+.preview-group .model3 .pg-box3{ font-size:12px;width:16px; text-align:center;}
+.preview-group .model4 .pg-box1{ font-size:50px;width:54px; text-align:center;}
+.preview-group .model4 .pg-box2{ font-size:14px;width:18px; text-align:center;}
+.preview-group .model4 .pg-box3{ font-size:20px;width:28px; text-align:center;}
+.preview-group .pg-cover1 .pg-box1{top:150px;}
+.preview-group .pg-cover2 .pg-box1{top:531px;}
+.preview-group .pg-cover3 .pg-box1{ top:80px; right:40px;}
+.preview-group .pg-cover4 .pg-box1{ top:246px; }
+.preview-group .pg-cover5 .pg-box1{ top:579px;}
+.preview-group .pg-cover6 .pg-box1{ top:91px;}
+.preview-group .pg-cover7 .pg-box1{ top:507px;}
+.preview-group .pg-cover8 .pg-box1{ top:32px; left:74px;}
+.preview-group .pg-cover9 .pg-box1{ top:157px;}
+.preview-group .pg-cover1 .pg-box2{top:217px;}
+.preview-group .pg-cover2 .pg-box2{ top:594px;}
+.preview-group .pg-cover3 .pg-box2{ top:115px; right:100px;}
+.preview-group .pg-cover4 .pg-box2{ top:307px;}
+.preview-group .pg-cover5 .pg-box2{ top:660px;}
+.preview-group .pg-cover6 .pg-box2{top:428px; }
+.preview-group .pg-cover7 .pg-box2{top:615px; }
+.preview-group .pg-cover8 .pg-box2{top:71px; left:149px; }
+.preview-group .pg-cover9 .pg-box2{ top:230px;}
+.preview-group .pg-cover1 .pg-box3{top:310px;}
+.preview-group .pg-cover2 .pg-box3{top:651px;}
+.preview-group .pg-cover3 .pg-box3{ right:135px; top:565px;}
+.preview-group .pg-cover4 .pg-box3{ top:725px; }
+.preview-group .pg-cover5 .pg-box3{top:705px; }
+.preview-group .pg-cover6 .pg-box3{ top:152px;}
+.preview-group .pg-cover6 .pg-box3{ top:152px;}
+.preview-group .pg-cover7 .pg-box3{ top:660px;}
+.preview-group .pg-cover8 .pg-box3{ top:520px; right:111px;}
+.preview-group .pg-cover9 .pg-box3{ top:280px;}
+.preview-group .pg-cover1 .img{ left:0; bottom:0;}
+.preview-group .pg-cover2 .img{ left:0; top:17px; text-align:center;}
+.preview-group .pg-cover3 .img{ left:0; top:249px;}
+.preview-group .pg-cover4 .img{ left:0; top:335px; text-align:right;}
+.preview-group .pg-cover5 .img{ left:0; top:95px; text-align:center;}
+.preview-group .pg-cover6 .img{ left:0; top:180px; text-align:right;}
+.preview-group .pg-cover6 .img img{ border:1px solid #BBBBBB; margin-right:7%;}
+.preview-group .pg-cover7 .img{ left:0; top:116px; text-align:center;}
+.preview-group .pg-cover8 .img{ left:0; bottom:132px;}
+.preview-group .pg-cover8 .img img{ margin-left:9.2%;}
+.preview-group .pg-cover9 .img{ left:0; top:377px; text-align:center;}
+
+/*合成页面*/
+.compound{ width:1240px; height:1754px;}
+.compound .coverFinal{ width:1240px; height:1754px; position:relative;}
+.compound .coverFinal .bgPic{ position:absolute; left:0; top:0;}
+.compound .coverFinal .part{ position:absolute; word-break:break-all; font-family:微软雅黑}
+.compound .coverFinal .inset{ position:absolute; width:100%;}
+.compound .category1 .part1{ font-size:90px; line-height:104px; text-align:center; width:1160px;left:40px; height:104px; overflow:hidden;}
+.compound .category1 .part2{ font-size:38px; line-height:42px; text-align:center; width:1200px;left:20px;}
+.compound .category1 .part3{ font-size:24px; line-height:32px; text-align:center; width:1200px;left:20px;}
+.compound .category2 .part1{ font-size:120px; line-height:134px; text-align:center; width:1160px; left:40px; height:134px; overflow:hidden;}
+.compound .category2 .part2{ font-size:32px; line-height:38px; text-align:center; width:1200px; left:20px;}
+.compound .category2 .part3{ font-size:28px; line-height:38px; text-align:center; width:1200px; left:20px;}
+.compound .category3 .part1{ font-size:90px; text-align:center; width:104px; overflow:hidden;}
+.compound .category3 .part2{ font-size:28px; text-align:center; width:34px;}
+.compound .category3 .part3{ font-size:24px; text-align:center; width:32px;}
+.compound .category4 .part1{ font-size:90px; text-align:center; width:104px;overflow:hidden;}
+.compound .category4 .part2{ font-size:28px; text-align:center; width:34px;}
+.compound .category4 .part3{ font-size:40px; text-align:center; width:54px;}
+.compound .coverFinal1 .part1{top:307px;}
+.compound .coverFinal2 .part1{top:1064px;}
+.compound .coverFinal3 .part1{ top:160px; right:76px;}
+.compound .coverFinal4 .part1{top:494px;}
+.compound .coverFinal5 .part1{top:1178px;}
+.compound .coverFinal6 .part1{top:180px;}
+.compound .coverFinal7 .part1{top:1017px;}
+.compound .coverFinal8 .part1{ top:60px; left:140px;}
+.compound .coverFinal9 .part1{top:300px;}
+.compound .coverFinal1 .part2{top:438px;}
+.compound .coverFinal2 .part2{top:1190px;}
+.compound .coverFinal3 .part2{ top:238px; right:200px;}
+.compound .coverFinal4 .part2{top:608px;}
+.compound .coverFinal5 .part2{top:1330px;}
+.compound .coverFinal5 .part2{top:1330px;}
+.compound .coverFinal6 .part2{top:324px;}
+.compound .coverFinal7 .part2{top:1274px;}
+.compound .coverFinal8 .part2{ top:138px; left:296px;}
+.compound .coverFinal9 .part2{top:465px;}
+.compound .coverFinal1 .part3{top:620px;}
+.compound .coverFinal2 .part3{top:1300px;}
+.compound .coverFinal3 .part3{ top:1240px; right:272px;}
+.compound .coverFinal4 .part3{top:1472px;}
+.compound .coverFinal5 .part3{top:1430px;}
+.compound .coverFinal6 .part3{top:900px;}
+.compound .coverFinal7 .part3{top:1355px;}
+.compound .coverFinal8 .part3{top:1040px; right:215px;}
+.compound .coverFinal9 .part3{top:558px;}
+.compound .coverFinal1 .inset{ left:0; bottom:0;}
+.compound .coverFinal2 .inset{ left:0; top:34px; text-align:center;}
+.compound .coverFinal3 .inset{ left:0;top:503px;text-align:left;}
+.compound .coverFinal4 .inset{left:0; top:670px;text-align:right;}
+.compound .coverFinal5 .inset{left:0; top:190px; text-align:center;}
+.compound .coverFinal6 .inset{ left:0; top:430px; text-align:right;}
+.compound .coverFinal6 .inset img{ margin-right:7%; border:1px solid #BBBBBB;}
+.compound .coverFinal7 .inset{ left:0; top:232px; text-align:center;}
+.compound .coverFinal8 .inset{ left:0; bottom:282px; text-align:left;}
+.compound .coverFinal8 .inset img{ margin-left:9.2%;}
+.compound .coverFinal9 .inset{ top:754px; left:0; text-align:center;}
+
+/*2016.05.31上传图片弹窗*/
+.image-pop1{ width:430px; height:260px; background-color:#ffffff;}
+.image-pop1 h1{ height:42px; line-height:42px; padding-left:10px; border-bottom:1px solid #BABABA; background: url(../../images/editorZone/ec-coverpop-topbg.gif) repeat-x; position:relative; font-size:16px; color:#6B6B6B;}
+.image-pop1 h1 a{ position:absolute; top:16px; right:10px; width:11px; height:11px; background:url(../../images/editorZone/ec-coverpop-close.png) no-repeat;}
+.image-pop1 .group-p{ padding:20px 57px 0 58px;}
+.image-pop1 .group-p p{ font-size:14px; color:#6B6B6B; line-height:34px;}
+.image-pop1 .group-p .btn1{ display:block;height:39px; line-height:39px; padding-left:103px; width:212px; color:#ED5307; font-size:14px; font-weight:bold; margin-top:20px; text-decoration:none; background:url(../../images/editorZone/ec-coverpop-btn1.gif) no-repeat;}
+.image-pop2{ width:799px; height:476px; background-color:#ffffff;}
+.image-pop2 h1{ height:42px; line-height:42px; padding-left:10px; border-bottom:1px solid #BABABA; background: url(../../images/editorZone/ec-coverpop-topbg.gif) repeat-x; position:relative; font-size:16px; color:#6B6B6B;}
+.image-pop2 h1 a{ position:absolute; top:16px; right:10px; width:11px; height:11px; background:url(../../images/editorZone/ec-coverpop-close.png) no-repeat;}
+.image-pop2 .cont{ padding:20px 21px 0; margin-bottom:20px;}
+.image-pop2 .cont .clipping{ width:420px; background-color:#C9C9C9; margin-right:20px; text-align:center;}
+.image-pop2 .cont .clipping span{ height:100%; width:0; display:inline-block; overflow:hidden; font-size:0; vertical-align:middle;}
+.image-pop2 .cont .clipping img { vertical-align:middle;}
+.image-pop2 .cont .line{ width:0; font-size:0; height:334px; border-left:1px solid #C9C9C9; margin-right:20px; }
+.image-pop2 .box{padding-left:21px;}
+.image-pop2 .box .btn2{ width:113px; height:39px; line-height:39px; text-align:center; font-size:14px; font-weight:bold; color:#ED5307; background:url(../../images/editorZone/ec-coverpop-btn2.gif) no-repeat; text-decoration:none; margin-right:10px;}
+.image-pop2 .box .btn3{ width:113px; height:39px; line-height:39px; text-align:center; font-size:14px; font-weight:bold; color:#6B6B6B; background:url(../../images/editorZone/ec-coverpop-btn3.gif) no-repeat; text-decoration:none;}
+
+/*2016.06.12意见反馈*/
+.btn-advice{
+	position: fixed;
+	bottom:150px;
+	z-index:10;
+}
+/*2016.06.21*/
+.procedure .steps .subset .welcomePic{
+	padding-top: 33px;
+}
+.procedure .steps .subset .welcomePic h2{
+	font-family: 微软雅黑;
+	font-size: 18px;
+	color:#502b15;
+}
+.procedure .steps .subset .welcomePic p{
+	position: relative;
+	width: 414px;
+	height: 12px;
+	margin: 14px auto 22px;
+	color:#967968;
+	border-bottom: 1px solid #967968;
+}
+.procedure .steps .subset .welcomePic p span{
+	position: absolute;
+	left:50%;
+	margin-left: -157px;
+	top:50%;
+	width: 274px;
+	height: 12px;
+	background-color: #f6f5f0;
+}
+.procedure .steps .subset .welcomePic p span.width314{
+	width: 314px;
+}
+/*2016.07.04*/
+.typeCheckBox{
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+.typeCheckBox .checkbox span{
+	float: left;
+	margin-right: 30px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.typeCheckBox .checkbox span i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background:  url(../../images/editorZone/radio.png) no-repeat;
+	margin-right: 9px;
+}
+.typeCheckBox .checkbox span.active i{
+	background:  url(../../images/editorZone/radio-active.png) no-repeat;
+}
+.procedure .steps .fill .typeText.price{
+	overflow: hidden;
+	height: 38px;
+}
+.procedure .steps .fill .typeText.price .inputPrice{
+	float: left;
+	width: 508px;
+}
+.procedure .steps .fill .typeText.price .frameBorder,.procedure .steps .fill .typeText.price .frameText {
+	float: left;
+	width: 153px;
+	height: 36px;
+	padding-top: 0;
+}
+.procedure .steps .fill .typeText.price .frameText .textPart{
+	width: 125px;
+	margin-top: 6px;
+}
+.procedure .steps .fill .typeText.price .frameText i{
+	float: right;
+	width: 20px;
+	line-height: 36px;
+	font-style: normal;
+}
+.procedure .steps .fill .typeText.price span{
+	float: left;
+	line-height: 38px;
+	margin-left: 10px;
+	color:#999;
+}

@@ -1,0 +1,46 @@
+/* ------内容右侧------- */
+.content-right { float:right; height: 1700px; position:relative; }
+.nav { width:915px; background:#fff; text-align: center; font-size: 16px; margin-left: 11px; }
+.nav li { display:inline-block; _zoom:1; _display:inline; margin:0 25px; padding:8px 0 4px; }
+.nav .current { border-bottom: 4px solid #FF9702; padding:7px 14px 3px; font-weight: bold; }
+.nav .current a { color:#FF9702; }
+.kongbai { width: 200px; margin:130px auto 0; }
+.kongbai p { padding:25px 0 0 25px; }
+/* page */
+.viewPage { text-align:right; padding-right:15px; height:30px; line-height:30px; }
+.viewPage a { padding:6px; font-weight:normal; font-size:12px; }
+.viewPage span.current { padding:6px; font-size:12px; }
+.page { text-align: center; padding:17px 0 28px; position:absolute; right:0; bottom:0; }
+.page a { color: #6a6a6a; margin-left: 5px; padding: 9px 13px; text-decoration: none; background-color:#fff; border:1px solid #E4DDD3; }
+.page a:hover { color: #fff; background-color:#FF9702; }
+.page a:active { background: none repeat scroll 0 0 #FF9702; border-color: #000; border-style: solid; border-width: 1px; color: #fff; }
+.page span.current { background:#FF9702; color: #fff; margin-left: 5px; padding:9px 13px; text-decoration: none; font-weight: bold; border:1px solid #E4DDD3; }
+.page span.disabled { margin-right: 3px; padding: 2px 6px; }
+/* .page{
+    position:absolute;
+    right:0;
+    bottom:0;
+    padding:17px 0 28px;
+}
+.page li{
+    float:left;
+    border:1px solid #E4DDD3;
+    background:#fff;
+    height: 33px;
+    line-height: 33px;
+    margin-left: 8px;
+    text-align: center;
+}
+.page .pre,.page .next{
+    width:76px;
+}
+.page .num{
+    width:33px;
+}
+.page .current{
+    background:#FF9702;
+}
+.page .current a{
+    color:#fff;
+}
+ */

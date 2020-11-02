@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textarea, p, th, td, form,body { padding: 0px; margin: 0px; }
+body { font-family:"宋体"; font-size:12px; color:#000; }
+img { border:none; }
+strong { font-style:normal }
+ul, li, ol { list-style-type: none; }
+table { border-collapse: collapse; border-spacing: 0 }
+input::-moz-focus-inner {border:0;padding:0;margin:0;}
+input::-ms-clear {display:none;}
+input[type="button"] { cursor:pointer;}
+input,textarea { outline:none;}
+/*input { border:0; background-color:transparent;}*/
+a { text-decoration:none; outline:none;}
+a:hover { text-decoration:underline;}
+.cover { width: 1240px; margin-right: auto; margin-left: auto; background-color: #FFF; text-align: center; padding-top: 100px; background-image: url(../../images/cc/cc5.jpg); background-repeat: no-repeat; height: 1654px; position: relative; }
+.cover .banner { height:38px; width:1180px; margin:36px auto;}
+.cover .banner .redPart { float:left; width:900px; height:38px; background-color:#c9331b; border-right:1px solid #fbbc9c; text-align:left; line-height:38px; color:#fff; font-size:24px; font-family:Arial, Helvetica, sans-serif; padding-left:20px; }
+.cover .banner .yellowPart { float:left; width:259px; height:38px; background-color:#e68645; }
+.cover .articleName { font-size: 60px; font-weight: bold; color: #dc0000; line-height: 80px;  padding-right: 100px; padding-left: 100px; overflow:hidden; }
+.cover .ce { padding-right:100px; text-align:right; font-size:26px; color:#4a4a4a; padding-bottom:80px; font-weight:bold;} 
+.cover .titlex { color:#4a4a4a; font-weight:bold; font-size:30px; padding-top:40px; padding-left:110px; padding-right:110px; line-height:42px; overflow:hidden;}
+.cover .subTitle { font-size: 20px; color: #4a4a4a; font-weight: bold; }
+.cover .subTitle span { font-weight:normal; font-size:12px;}
+.cover .centerPic {}
+.cover .btm { background-image: url(../../images/cc/cc2.jpg); background-repeat: no-repeat; background-position: center center; height: 73px; position: absolute; bottom: 45px; width: 437px; margin-left: -219px; left: 50%; }
+.catalogue { width: 800px; margin-right: auto; margin-left: auto; padding-top: 160px; background-image: url(../../images/cc/cc3.jpg); background-repeat: no-repeat; height: 742px; position: relative; background-position: center 41px; background-color: #FFF; }
+.catalogue .wrap { padding-bottom: 15px; }
+.catalogue .wrap .chapter { line-height: 34px; font-weight: bold; font-size: 20px; color: #fff; font-size:22px;  border-radius:5px;  padding:6px 24px; margin-bottom:15px; background-color:#1fb7a8; width:752px;}
+.catalogue .wrap .item { width: 770px; overflow: hidden; line-height: 40px; color: #3b3b3b; margin-left: 12px; font-size:16px; }
+.catalogue .wrap .item .title { float: left; padding-right:5px; background-color:#fff; }
+.catalogue .wrap .item .title .dot { color:#53aa70; padding:0 5px; font-size:12px;}
+.catalogue .wrap .item .author { float: right; padding-left:5px; background-color:#fff; color:#3b3b3b; font-size:14px; }
+.catalogue .wrap .item .line { border-bottom:1px dotted #b0b0b0; font-size: 0px; line-height: 0px; position: absolute; bottom: 20px; width: 780px; left: 0px; z-index:20; }
+.catalogue .wrap .item,.catalogue .wrap .item .title,.catalogue .wrap .item .author { position: relative; z-index:30; }
+.back { width: 1032px; margin-right: auto; margin-left: auto;  }
+.chapterCover { background-image: url(../../images/cc/cc10.jpg); background-repeat: no-repeat; background-position:center 70px; overflow:hidden; width: 1032px; margin-right: auto; margin-left: auto; height: 1460px; margin-top:120px;  }
+.chapterCover .chapterName {  padding-top: 560px; font-weight:normal; font-size: 30px; }
+.chapterCover .title { padding-top:5px; float:right; width:740px; line-height:60px; font-size:50px; margin-bottom:55px; }
+.chapterCover .title,.chapterCover .chapterName {text-align: right; color:#20b7a8; font-family:"微软雅黑"; padding-right: 50px;}
+.chapterCover .lead{ padding-left:180px; padding-right:50px; clear:both;}
+.chapterCover .lead p{font-size:20px; color:#20b7a8; line-height:36px; text-indent:40px;}
+.chapterIntro { background-color:#ffffff;background-image:url(../../images/cc/cc8.jpg); background-repeat: no-repeat; background-position:center 0; width: 1032px; margin-right: auto; margin-left: auto; min-height: 1217px; }
+.chapterIntro .intro { font-size:30px; line-height:48px; padding:220px 90px 0 90px; color:#047254;}
+.prefaceIntro { width: 1032px; margin-right: auto; margin-left: auto; min-height: 1217px;background-color:#ffffff; }
+.prefaceIntro h1{font-size:54px; color:#ffffff; text-align:center;line-height:60px; padding-top:70px; background:#20B7A8;padding-bottom: 14px;font-weight: bold;}
+.prefaceIntro .intro {background-image:url(../../images/cc/cc9.jpg); background-repeat: no-repeat; background-position:center top;  font-size:30px; line-height:48px; padding:74px 90px 0 90px; color:#047254;}
+/*2016.04.15*/
+.album{ width:1032px; height:1216px; margin:0 auto;}
+.album .logo{ padding-top:75px; text-align:center; margin-bottom:40px;}
+.album .tit{ line-height:60px; text-align:center;font-family:"Microsoft YaHei"; font-size:36px; color:#1D1D1D;}
+.album .info{ line-height:30px; text-align:center; font-family:"Microsoft YaHei"; color:#1e1e1e; margin-bottom:70px;}
+.album .article .category{ text-align:center; margin-bottom:14px;}
+.album .article .top{ text-align:center; margin-bottom:10px;}
+.album .article .bottom{ text-align:center; margin-top:10px;}
+.album .article p{ width:630px; margin:0 auto; font-size:14px; color:#3c3c3c; line-height:32px; text-indent:28px;}
+.viewHeader{ width:1032px; margin:0 auto;color:#1EB6A7;font-family:"Microsoft YaHei"; font-size:24px; border-bottom:2px solid #1EB6A7; padding-bottom:2px;}
+.viewHeader .inner{ padding-left:87px; line-height:50px; border-bottom:1px solid #1EB6A7;}
+.album .block{ width:875px; margin:0 auto;margin-bottom:112px;}
+.album .block .category{margin:0 auto;height:30px; margin-bottom:20px;}
+.album .block .textBox{ background:#ffffff; padding:0px 66px 20px; }
+.album .block .textBox .name{ font-family:"黑体"; font-size:24px; line-height:30px; margin-bottom:28px; text-align:center;}
+.album .block .textBox p{ font-size:14px; color:#3c3c3c; text-indent:28px; line-height:32px;}
+.album .block .bottom{ margin:0 auto;}
